@@ -13,6 +13,8 @@ export default function Landing() {
     const [btnLoad, setBtnLoad] = React.useState(false);
     const [emailError, setEmailError] = React.useState('')
 
+
+
     const handleSubmit = async (e) => {
         e.preventDefault();
         setBtnLoad(true);
@@ -50,7 +52,7 @@ export default function Landing() {
 
     const handleEmail = (e) => {
         const email = e.target.value;
-        const gmailRegex = /@gmail\.com$/;
+        const gmailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         setEmail(email);
         if (email === "") {
             setEmailError('');
@@ -120,7 +122,7 @@ export default function Landing() {
                             <h1 className='font-light text-[#FEF9F1] text-[13px] lg:text-[16px]' onClick={handleEmailClick}>hello@get1.ai</h1>
                         </div>
                     </div>
-                </div> 
+                </div>
             </div>
         </div>
     )
