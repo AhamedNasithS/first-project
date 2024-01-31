@@ -120,7 +120,7 @@ export default function Landing() {
                             <h1 className='font-light text-[#FEF9F1] text-[13px] lg:text-[16px]' onClick={handleEmailClick}>hello@get1.ai</h1>
                         </div>
                     </div>
-                </div>
+                </div> 
             </div>
         </div>
     )
