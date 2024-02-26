@@ -92,34 +92,34 @@ export default function Landing() {
                         <button className={`px-[15px] py-[10px] bg-[#FDD320] text-nowrap rounded-[5px] text-[#0E1014] text-[12px] sm:text-[14px] font-medium ${btnLoad ? "opacity-50" : "opacity-100"} ${email ? "opacity-100" : "opacity-50"}`} onClick={handleSubmit} disabled={!email || emailError}>{btnLoad ? 'Loading...' : 'Request early access'}</button>
                     </div>
                 </div>
-                {emailError && (<h1 className='text-[#FF6157] text-[14px] text-start mt-[10px] font-medium'>{emailError}</h1>)}
+                {emailError && (<p className='text-[#FF6157] text-[14px] text-start mt-[10px] font-medium'>{emailError}</p>)}
             </div>
             <img src={Glow} alt='Glow' className='absolute left-[50%] -translate-x-[50%] w-[800px] z-0 -top-[280px] xl:top-auto' />
-            <div className='w-full overflow-hidden z-[3] radialGradient'><h1 className='font-semibold text-[14px] sm:text-[18px] lg:text-[26px] xl:text-[35px] text-[#FEF9F1] text-center mt-[50px] w-10/12 sm:w-9/12 lg:w-8/12 xl:w-1/2 mx-auto mb-[20px]'>it’s not for everyone</h1></div>
+            <div className='w-full overflow-hidden z-[3] radialGradient'><p className='font-semibold text-[14px] sm:text-[18px] lg:text-[26px] xl:text-[35px] text-[#FEF9F1] text-center mt-[50px] w-10/12 sm:w-9/12 lg:w-8/12 xl:w-1/2 mx-auto mb-[20px]'>it’s not for everyone</p></div>
             <div className=' p-[10px] border-[#FDD320]/[20%] h-[70px] sm:h-[90px] lg:h-[100px] xl:h-[150px] border-[1px] rounded-[20px] DarkerGrostesqueSemibold text-[24px] sm:text-[36px] lg:text-[50px] xl:text-[80px] max-w-[300px] sm:max-w-[400px] lg:max-w-[730px] w-full mx-auto relative mb-[80px] sm:mb-[120px] xl:mb-[100px]mb-[150px]'>
                 <div className='flex gap-[20px] absolute left-[35%] -translate-x-[50%]'>
-                    <h1 className='text-[#FEF9F1]'>It’s for</h1>
+                    <h3 className='text-[#FEF9F1]'>It’s for</h3>
                     <div className='inline-block'>
                         {textArray.map((text, index) => (
-                            <h1 key={index} className={`verticalFilp absolute z-0 text-[#FFE269] ${currentIndex === index ? 'current-index' : 'hidden'}`}>{text}</h1>
+                            <h3 key={index} className={`verticalFilp absolute z-0 text-[#FFE269] ${currentIndex === index ? 'current-index' : 'hidden'}`}>{text}</h3>
                         ))}
                     </div>
                     <div className='h-[22px] sm:h-[28px] lg:h-[20px] xl:h-[30px] w-[100px] rounded-b-[20px] sm:w-[250px] lg:w-[300px] xl:w-[480px] mx-[10px] bg-[#010306] z-[2] absolute -bottom-[22px] sm:-bottom-[23px] lg:-bottom-[12px] xl:-bottom-[17px] left-[52px] sm:left-[0px]'></div>
                 </div>
             </div>
             {/* <div className='w-full border-b-[1px] border-t-[1px] border-[#403D39] py-[20px] mb-[100px] flex justify-center gap-[10px] sm:gap-[40px] items-center'>
-                <h1 className='font-normal text-[14px] sm:text-[20px] text-[#FEF9F1] text-center'>Together we will create a history</h1>
+                <p className='font-normal text-[14px] sm:text-[20px] text-[#FEF9F1] text-center'>Together we will create a history</p>
                 <button className='px-[5px] py-[10px] sm:p-[10px] w-[130px] sm:w-[170px] bg-[#FDD320] rounded-[6px] text-[#0E1014] text-[12px] sm:text-[14px] font-medium text-nowrap'>Apply for investment</button>
             </div> */}
             <div className='mb-[40px] sm:mb-[70px] xl:mb-[100px] w-9/12 mx-auto sm:flex  justify-between items-center'>
                 <img src={Logo} alt='logo' className='w-[40px] lg:w-[50px]' />
-                <h1 className='text-[#D1D1D1] text-[12px] lg:text-[14px] font-normal mt-[20px] sm:mt-0'>© Copyrights {currentYear} | All rights reserved</h1>
+                <p className='text-[#D1D1D1] text-[12px] lg:text-[14px] font-normal mt-[20px] sm:mt-0'>© Copyrights {currentYear} | All rights reserved</p>
                 <div>
                     <div className='flex gap-[15px] lg:gap-[20px] items-center sm:justify-end mt-[20px] sm:mt-0'>
-                        <h1 className='text-[#858585] text-[14px] lg:text-[16px] font-medium'>Contact: </h1>
-                        <div className='text-center flex items-center justify-center gap-[5px]'>
+                        <p className='text-[#858585] text-[14px] lg:text-[16px] font-medium'>Contact: </p>
+                        <div className='text-center flex items-center justify-center gap-[5px] cursor-pointer'>
                             <IoMdMail className="stroke-[#FFFFFF] fill-[#FFF] w-[16px] h-[16px] lg:w-[20px] lg:h-[20px] flex shrink-0" />
-                            <h1 className='font-light text-[#FEF9F1] text-[13px] lg:text-[16px]' onClick={handleEmailClick}>hello@get1.ai</h1>
+                            <p className='font-light text-[#FEF9F1] text-[13px] lg:text-[16px]' onClick={handleEmailClick}>hello@get1.ai</p>
                         </div>
                     </div>
                 </div>
