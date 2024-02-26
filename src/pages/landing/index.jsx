@@ -116,7 +116,7 @@ export default function Landing() {
                 <h1 className='text-[#D1D1D1] text-[12px] lg:text-[14px] font-normal mt-[20px] sm:mt-0'>© Copyrights {currentYear} | All rights reserved</h1>
                 <div>
                     <div className='flex gap-[15px] lg:gap-[20px] items-center sm:justify-end mt-[20px] sm:mt-0'>
-                        <h1 className='text-[#858585] text-[14px] lg:text-[16px] font-medium'>Contact: </h1>
+                        <p className='text-[#858585] text-[14px] lg:text-[16px] font-medium'>Contact: </p>
                         <div className='text-center flex items-center justify-center gap-[5px]'>
                             <IoMdMail className="stroke-[#FFFFFF] fill-[#FFF] w-[16px] h-[16px] lg:w-[20px] lg:h-[20px] flex shrink-0" />
                             <h1 className='font-light text-[#FEF9F1] text-[13px] lg:text-[16px]' onClick={handleEmailClick}>hello@get1.ai</h1>
