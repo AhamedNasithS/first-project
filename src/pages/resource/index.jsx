@@ -22,7 +22,7 @@ export default function Resources() {
             <img src={Light} alt='light' data-aos="zoom-in" data-aos-duration="1000" className='flex xl:hidden absolute -top-[20px] sm:-top-[180px] lg:-top-[230px]  max-w-full w-full' />
             <div className={`mt-[80px] sm:mt-[150px] lg:mt-[200px] xl:mt-[380px] relative z-[4] transition-transform duration-[1000ms] ${isHovered ? "xl:scale-[1]" : "xl:scale-[0.8]"}`}>
                 <h1 className='text-[#EDEDED] text-[22px] sm:text-[40px] lg:text-[60px] xl:text-[80px] text-center leading-10 DarkerGrostesqueMedium'>We Have<span className='text-[#FFE269]'> Reinvented</span></h1>
-                <h1 className='textBorder text-[24px] sm:text-[60px] lg:text-[100px] xl:text-[140px] text-transparent text-center font-medium'>HOW?</h1>
+                <h1 className='textBorder text-[24px] sm:text-[60px] lg:text-[100px] xl:text-[140px] text-[#FFF] sm:text-transparent  text-center font-medium'>HOW?</h1>
                 <div className='w-10/12 mx-auto grid grid-cols-2 sm:grid-cols-5 gap-[10px]'>
                     <div className='flex flex-col justify-center items-center'>
                         <img src={Company} alt='compant' className='w-[22px] sm:w-[40px] lg:w-[55px]' />
