@@ -2,6 +2,10 @@ import React from 'react'
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Landing from './pages/landing';
 import Landing1 from './pages/landing1';
+import ContactUs from './pages/contact';
+import Refund from './pages/refund';
+import Privacy from './pages/privacy';
+import Terms from './pages/terms';
 
 export default function App() {
   return (
@@ -9,6 +13,10 @@ export default function App() {
       <Routes>
         <Route path="/*" element={<Landing />} />
         <Route path='/development' element={<Landing1/>}/>
+        <Route path='/ContactUs' element={<ContactUs/>}/>
+        <Route path='/RefundandCancellation' element={<Refund/>}/>
+        <Route path='/PrivacyPolicy' element={<Privacy/>}/>
+        <Route path='/TermsandConditions' element={<Terms/>}/>
       </Routes>
     </Router>
   )

@@ -111,7 +111,7 @@ export default function Landing() {
                 <p className='font-normal text-[14px] sm:text-[20px] text-[#FEF9F1] text-center'>Together we will create a history</p>
                 <button className='px-[5px] py-[10px] sm:p-[10px] w-[130px] sm:w-[170px] bg-[#FDD320] rounded-[6px] text-[#0E1014] text-[12px] sm:text-[14px] font-medium text-nowrap'>Apply for investment</button>
             </div> */}
-            <div className='mb-[40px] sm:mb-[70px] xl:mb-[100px] w-9/12 mx-auto sm:flex  justify-between items-center'>
+            <div className='w-9/12 mx-auto sm:flex  justify-between items-center mb-[80px]'>
                 <img src={Logo} alt='logo' className='w-[40px] lg:w-[50px]' />
                 <p className='text-[#D1D1D1] text-[12px] lg:text-[14px] font-normal mt-[20px] sm:mt-0'>© Copyrights {currentYear} | All rights reserved</p>
                 <div>
@@ -123,6 +123,12 @@ export default function Landing() {
                         </div>
                     </div>
                 </div>
+            </div>
+            <div className='flex justify-between w-9/12 mx-auto mb-[40px] sm:mb-[70px] xl:mb-[100px]'>
+                <a href='/ContactUs'><p className='text-[#858585] text-[14px] lg:text-[16px] font-medium'>Contact us </p></a>
+                <a href='/RefundandCancellation'><p className='text-[#858585] text-[14px] lg:text-[16px] font-medium'>Refund Policy </p></a>
+                <a href='/PrivacyPolicy'><p className='text-[#858585] text-[14px] lg:text-[16px] font-medium'>Privacy Policy </p></a>
+                <a href='/TermsandConditions'><p className='text-[#858585] text-[14px] lg:text-[16px] font-medium'>Terms and Conditions </p></a>
             </div>
         </div>
     )
