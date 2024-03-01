@@ -82,9 +82,9 @@ export default function Landing() {
         <div className='flex flex-col justify-start items-center w-full h-full bg-[#010306] relative overflow-hidden px-[20px] sm:px-0'>
             <img src={Logo} alt='logo' className='z-[1] mt-[50px] w-[75px] sm:w-auto' />
             <video src={Main} className='absolute z-[0] left-[50%] -translate-x-[50%] sm:w-[460px] -top-[20px] sm:-top-[30px]' autoPlay muted loop />
-            <h1 className='DarkerGrostesqueSemibold text-[30px] sm:text-[50px] xl:text-[80px] text-[#FEF9F1] z-[1] mt-[80px] leading-3'>One intelligent App</h1>
-            <h1 className='DarkerGrostesqueSemibold text-[30px] sm:text-[60px] xl:text-[110px] bg-gradient-to-l from-[#FDD220] to-[#FFFFFF] bg-clip-text text-transparent z-[1] text-center'>to manage your work and life </h1>
-            <h1 className='DarkerGrostesqueMedium text-[14px] sm:text-[24px] text-[#FEF9F1] mt-[20px] z-[1]'>Built with intelligence & empathy</h1>
+            <h2 className='DarkerGrostesqueSemibold text-[30px] sm:text-[50px] xl:text-[80px] text-[#FEF9F1] z-[1] mt-[80px] leading-3'>One intelligent App</h2>
+            <h2 className='DarkerGrostesqueSemibold text-[30px] sm:text-[60px] xl:text-[110px] bg-gradient-to-l from-[#FDD220] to-[#FFFFFF] bg-clip-text text-transparent z-[1] text-center'>to manage your work and life </h2>
+            <h3 className='DarkerGrostesqueMedium text-[14px] sm:text-[24px] text-[#FEF9F1] mt-[20px] z-[1]'>Built with intelligence & empathy</h3>
             <div className='max-w-[500px]'>
                 <div className='bg-transparent w-full p-[1px] rounded-[10px] mt-[40px] z-[1] animation relative'>
                     <div className='w-full bg-[#000] rounded-[10px] z-[5] flex gap-[10px] relative p-[10px]'>
