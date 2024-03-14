@@ -4,8 +4,8 @@ import menu from "../../../images/menuburger.png"
 import { NavLink } from "react-router-dom";
 const Navigation = ({open, setOpen}) => {
     let Links =[
-      {name:"Home",link:"/"},
-      {name:"Feature",link:"/development"},
+      {name:"Home",link:"/home"},
+      {name:"Feature",link:"/"},
       {name:"User Guide",link:"/"},
       
     ];
