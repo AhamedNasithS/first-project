@@ -145,3 +145,93 @@ body {
   mask-image: paint(smooth-corners);
   -webkit-mask-image: paint(smooth-corners); /* So you can see it */
 }
+
+.yellowlinear {
+  background: rgb(254,254,254);
+  background: linear-gradient(274deg, rgba(254,254,254,1) 18%, rgba(199,180,93,1) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  }
+  
+  .circle {
+  background: linear-gradient(162.93deg, rgba(75, 106, 231, 0.054) 13.91%, rgba(95, 138, 250, 0.15) 88.25%);
+  background-size: cover;
+  }
+  
+  
+  
+  .nav {
+  background: linear-gradient(360deg, #111830 -57.05%, rgba(19, 19, 19, 0) 435.9%);
+  }
+  
+  
+  @layer utilities {
+  .border-gradient:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 100px;
+  width: 0;
+  height: 100%;
+  background-image: linear-gradient(to right, rgb(197, 245, 22), #6B7280);
+  transition: width 0.3s ease;
+  z-index: 0;
+  background-color: #111830;
+  }
+  
+  .hover:border-gradient:hover:before {
+  width: 100%;
+  }
+  }
+  
+  .cool-link {
+  display: inline-block;
+  color: #ffffff;
+  text-decoration: none;
+  }
+  
+  .cool-link::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #ffffff;
+  transition: width .3s;
+  }
+  
+  .cool-link:hover::after {
+  width: 100%;
+  transition: width .3s;
+  }
+  
+  @media only screen and (min-width : 320px) {
+  .cool-link {
+  
+  color: #ffffff;
+  text-decoration: none;
+  }
+  
+  .cool-link::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #ffffff;
+  transition: width .3s;
+  }
+  
+  .cool-link:hover::after {
+  width: 100%;
+  transition: width .3s;
+  }
+  }
+  
+  .bg-yellowlinear {
+  background: rgb(253,210,32);
+  background: linear-gradient(273deg, rgba(253,210,32,1) 15%, rgba(255,255,255,1) 71%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  }
