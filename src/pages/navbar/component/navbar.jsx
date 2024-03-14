@@ -14,10 +14,10 @@ const Navigation = ({open, setOpen}) => {
     <div className='shadow-md w-full sticky top-0 left-0  z-50 nav'>
       <div className='md:flex items-center justify-between bg-white py-[20px] pb-[17px] md:px-10 px-7 nav'>
       <div className='font-light text-2xl cursor-pointer flex items-center text-gray-800 2xl:m-[16px]'>
-        <div className='flex text-3xl text-indigo-600 mr-1 pt-2'> 
+        <NavLink to="/" className='flex text-3xl text-indigo-600 mr-1 pt-2'> 
             <img src={logo} className='w-[32px] h-[32px]' alt='noimg'/>
             <h1 className="DarkerGrostesque font-[600px] text-[#E4E8EB] px-[10px] mt-[-5px]">1.ai</h1>
-        </div>
+        </NavLink>
         
       </div>
       
