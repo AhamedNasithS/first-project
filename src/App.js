@@ -6,12 +6,16 @@ import ContactUs from './pages/contact';
 import Refund from './pages/refund';
 import Privacy from './pages/privacy';
 import Terms from './pages/terms';
+import Home from './pages/home 2';
+import Navbar from './pages/navbar';
 
 export default function App() {
   return (
     <Router>
+      <Navbar/>
       <Routes>
         <Route path="/*" element={<Landing />} />
+        <Route path='/home' element={<Home/>}/>
         <Route path='/development' element={<Landing1/>}/>
         <Route path='/ContactUs' element={<ContactUs/>}/>
         <Route path='/RefundandCancellation' element={<Refund/>}/>
