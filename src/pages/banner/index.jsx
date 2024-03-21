@@ -1,8 +1,6 @@
 import React from 'react'
 import axios from 'axios';
-import Logo from "../../images/one.ai_Logo.svg";
 import Main from "../../videos/logoBackground.mp4";
-import Glow from "../../images/Glowing.svg";
 import Swal from 'sweetalert2'
 
 export default function Banner() {
@@ -70,9 +68,9 @@ export default function Banner() {
 
   return (
     <div className='flex flex-col justify-start items-center'>
-      <img src={Logo} alt='logo' className='z-[1] mt-[50px] w-[55px] sm:w-auto' />
+      <img src="https://dz1x1c630cl14.cloudfront.net/webassets/one.ai_Logo.svg" alt='logo' className='z-[1] mt-[50px] w-[55px] sm:w-auto' />
       <video src={Main} className='absolute z-[0] left-[50%] -translate-x-[50%] sm:w-[460px] sm:-top-[30px] mainVideo' autoPlay muted loop />
-      <img src={Glow} alt='Glow' className='absolute left-[50%] -translate-x-[50%] z-0 -top-[280px] xl:top-auto' />
+      <img src="https://dz1x1c630cl14.cloudfront.net/webassets/Glowing.svg" alt='Glow' className='absolute left-[50%] -translate-x-[50%] z-0 -top-[280px] xl:top-auto' />
       <div className='DarkerGrostesqueSemibold text-center z-[1] mt-[40px] sm:mt-[80px] text-[#FEF9F1]'>
         <h1 className='text-[30px] sm:text-[50px] xl:text-[80px] leading-3'>One intelligent App</h1>
         <h1 className='text-[30px] sm:text-[60px] xl:text-[110px] bg-gradient-to-l from-[#FDD220] to-[#FFFFFF] bg-clip-text text-transparent z-[1] text-center'>to manage your work and life </h1>

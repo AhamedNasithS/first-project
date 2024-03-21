@@ -1,7 +1,5 @@
 import React from "react";
-import chatimg from "../../../../images/chatimg.svg"
-import Elliped from "../../../../images/Ellipsed.svg"
-import previewone from "../../../../images/channel.svg"
+
 export default function Chat() {
     return (
         <>
@@ -15,16 +13,16 @@ export default function Chat() {
           </div>
           <div className="grid grid-cols-1 mx-auto md:grid-cols-3 md:w-10/12 md:mx-auto lg:mt-[30px] lg:w-12/12  2xl:w-10/12 2xl:mx-auto">
             <div className="mt-[20px] col-span-1">
-              <img src={previewone} className="w-fit h-[300px] mx-auto md:w-fit md:h-[250px] lg:w-fit lg:h-[320px] xl:w-full xl:h-[450px]" alt="noimg" />
+              <img src="https://dz1x1c630cl14.cloudfront.net/webassets/channel.svg" className="w-fit h-[300px] mx-auto md:w-fit md:h-[250px] lg:w-fit lg:h-[320px] xl:w-full xl:h-[450px]" alt="noimg" />
             </div>
 
             
             <div className="mt-[20px] col-span-2">
-              <img src={chatimg} className="" alt="noimg" />
+              <img src="https://dz1x1c630cl14.cloudfront.net/webassets/chatimg.svg" className="" alt="noimg" />
             </div>
           </div>
         </div>
-         <img src={Elliped} alt="elipsed" className="z-[0] hidden sm:block md:absolute md:top-[1000px] md:w-[500px] md:left-[50px] lg:absolute lg:top-[1300px] lg:w-[600px] lg:left-[60px] xl:absolute xl:w-[600px] xl:top-[2000px] xl:left-[300px]  2xl:absolute 2xl:w-[1200px] 2xl:top-[1830px] 2xl:left-[500px]"/>
+         <img src="https://dz1x1c630cl14.cloudfront.net/webassets/Ellipsed.svg" alt="elipsed" className="z-[0] hidden sm:block md:absolute md:top-[1000px] md:w-[500px] md:left-[50px] lg:absolute lg:top-[1300px] lg:w-[600px] lg:left-[60px] xl:absolute xl:w-[600px] xl:top-[2000px] xl:left-[300px]  2xl:absolute 2xl:w-[1200px] 2xl:top-[1830px] 2xl:left-[500px]"/>
           
       </section>
        {/* <section className="p-[20px] mt-[40px] md:mt-[50px] lg:mt-[50px] xl:mt-[50px] 2xl:mt-[50px]">

@@ -1,12 +1,11 @@
 import React from 'react'
-import logo from "../../../../images/one_ai-Logo.svg";
 
 export default function Footer() {
     return (
         <div className='w-full  mt-[200px] '>
             <div className='grid grid-cols-2 gap-[60px] w-11/12 mx-auto borderFooter py-8'>
                 <div className='flex justify-between items-start w-full mt-[30px]'>
-                    <img src={logo} alt='logo' className='w-[110px]' />
+                    <img src="https://dz1x1c630cl14.cloudfront.net/webassets/one_ai-Logo.svg" alt='logo' className='w-[110px]' />
                     <div className="flex flex-col gap-[10px]">
                         <h2 className='text-[#E2E8FFBF] text-[14px] font-medium'>Product</h2>
                         <h3 className='text-[#E2E8FF8C] text-[14px] font-normal mt-[10px]'>Changelog</h3>

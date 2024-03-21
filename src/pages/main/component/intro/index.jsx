@@ -1,5 +1,4 @@
 import React from 'react'
-import background from "../../../../images/background.svg";
 import hero from "../../../../videos/hero_banner.mov";
 
 export default function Intro() {
@@ -11,7 +10,7 @@ export default function Intro() {
     };
 
     return (
-        <div className="bg-cover bg-center h-full w-full flex flex-col items-center relative" style={{ backgroundImage: `url(${background})` }}>
+        <div className="bg-cover bg-center h-full w-full flex flex-col items-center relative" style={{ backgroundImage: `url(https://dz1x1c630cl14.cloudfront.net/webassets/background.svg)` }}>
             <h2 className='text-[70px] text-[#FFFFFF] inter-bold mt-[40px]'>One intelligent Platform</h2>
             <h2 className='text-[70px] bg-gradient-to-l from-[#FDD220] to-[#FFFFFF] bg-clip-text text-transparent inter-bold'>for your team to work faster</h2>
             <div className='flex gap-[20px] items-center mt-[40px] '>

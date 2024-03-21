@@ -2,9 +2,6 @@ import React from 'react'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import Testimonial_1 from "../../../../images/testimonial1.svg";
-import Testimonial_2 from "../../../../images/testimonial2.svg";
-import Testimonial_3 from "../../../../images/testimonial3.svg";
 
 export default function Testimonial() {
     var settings = {
@@ -38,9 +35,9 @@ export default function Testimonial() {
     };
 
     const Testimonials = [
-        { image: `${Testimonial_1}` },
-        { image: `${Testimonial_2}` },
-        { image: `${Testimonial_3}` },
+        { image: "https://dz1x1c630cl14.cloudfront.net/webassets/testimonial1.svg" },
+        { image: "https://dz1x1c630cl14.cloudfront.net/webassets/testimonial2.svg" },
+        { image: "https://dz1x1c630cl14.cloudfront.net/webassets/testimonial3.svg" },
     ];
 
     return (
