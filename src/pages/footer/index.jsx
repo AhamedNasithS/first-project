@@ -1,5 +1,4 @@
 import React from 'react'
-import Logo from "../../images/one.ai_Logo.svg"
 import { AiFillLinkedin, AiFillFacebook, AiFillInstagram } from "react-icons/ai"
 import { IoMdMail } from "react-icons/io"
 
@@ -14,7 +13,7 @@ export default function Footer() {
         <>
             <div className='mb-[80px] w-full sm:w-9/12 mx-auto border-t-[1px] border-[#403D39]'>
                 <div className='sm:flex  justify-between items-center mt-[40px] w-11/12 mx-auto'>
-                    <img src={Logo} alt='logo' className='w-[40px] lg:w-[50px]' />
+                    <img src="https://dz1x1c630cl14.cloudfront.net/webassets/one.ai_Logo.svg" alt='logo' className='w-[40px] lg:w-[50px]' />
                     <div>
                         <div className='flex gap-[15px] lg:gap-[20px] items-center sm:justify-end mt-[20px] sm:mt-0'>
                             <h1 className='text-[#858585] text-[14px] lg:text-[16px] font-medium'>Contact: </h1>

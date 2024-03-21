@@ -1,6 +1,4 @@
 import React from "react";
-import logo from "../../../images/one.ai_Logo.svg"
-import menu from "../../../images/menuburger.png"
 import { NavLink } from "react-router-dom";
 const Navigation = ({open, setOpen}) => {
     let Links =[
@@ -15,14 +13,14 @@ const Navigation = ({open, setOpen}) => {
       <div className='md:flex items-center justify-between bg-white py-[20px] pb-[17px] md:px-10 px-7 nav'>
       <div className='font-light text-2xl cursor-pointer flex items-center text-gray-800 2xl:m-[16px]'>
         <div className='flex text-3xl text-indigo-600 mr-1 pt-2'> 
-            <img src={logo} className='w-[32px] h-[32px]' alt='noimg'/>
+            <img src="https://dz1x1c630cl14.cloudfront.net/webassets/one.ai_Logo.svg" className='w-[32px] h-[32px]' alt='noimg'/>
             <h1 className="DarkerGrostesque font-[600px] text-[#E4E8EB] px-[10px] mt-[-5px]">1.ai</h1>
         </div>
         
       </div>
       
       <div onClick={()=> {setOpen(!open); } } className='text-3xl absolute right-8 top-6 cursor-pointer md:hidden'>
-         <img src={menu} className='w-[20px] h-[20px] mt-[7px]' alt='noimg'  name={open ? 'close':'menu'} />
+         <img src="https://dz1x1c630cl14.cloudfront.net/webassets/menuburger.png" className='w-[20px] h-[20px] mt-[7px]' alt='noimg'  name={open ? 'close':'menu'} />
           {/* <ion-icon name={open ? 'close':'menu'} ></ion-icon> */}
       </div>
       

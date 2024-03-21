@@ -1,5 +1,4 @@
 import React from 'react'
-import ai from "../../../../images/ai copy.svg";
 
 export default function Ai() {
   return (
@@ -10,7 +9,7 @@ export default function Ai() {
             <h4 className='mt-[10px] text-[#E4E8EB] font-normal text-[24px]'>For example, Top performer of the quarter, pending approvals, priority list, attendance, work from home status Etc. </h4>
         </div>
         <div className='basis-1/2 flex justify-end'>
-            <img src={ai} alt='channel' />
+            <img src="https://dz1x1c630cl14.cloudfront.net/webassets/ai copy.svg" alt='channel' />
         </div>
     </div>
   )

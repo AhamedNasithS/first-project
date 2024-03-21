@@ -1,10 +1,10 @@
 import React from 'react'
 import axios from 'axios';
 import { IoMdMail } from "react-icons/io";
-import Logo from "../../images/one.ai_Logo.svg";
+// import Logo from "https://dz1x1c630cl14.cloudfront.net/webassets/one.ai_Logo.svg";
 import Main from "../../videos/logoBackground.mp4";
 import Swal from 'sweetalert2'
-import Glow from "../../images/Glowing.svg";
+// import Glow from "https://dz1x1c630cl14.cloudfront.net/webassets/Glowing.svg";
 
 export default function Landing() {
     const [email, setEmail] = React.useState('');
@@ -80,7 +80,7 @@ export default function Landing() {
 
     return (
         <div className='flex flex-col justify-start items-center w-full h-full bg-[#010306] relative overflow-hidden px-[20px] sm:px-0'>
-            <img src={Logo} alt='logo' className='z-[1] mt-[50px] w-[75px] sm:w-auto' />
+            <img src="https://dz1x1c630cl14.cloudfront.net/webassets/one.ai_Logo.svg" alt='logo' className='z-[1] mt-[50px] w-[75px] sm:w-auto' />
             <video src={Main} className='absolute z-[0] left-[50%] -translate-x-[50%] sm:w-[460px] -top-[20px] sm:-top-[30px]' autoPlay muted loop />
             <h2 className='DarkerGrostesqueSemibold text-[30px] sm:text-[50px] xl:text-[80px] text-[#FEF9F1] z-[1] mt-[80px] leading-3'>One intelligent App</h2>
             <h2 className='DarkerGrostesqueSemibold text-[30px] sm:text-[60px] xl:text-[110px] bg-gradient-to-l from-[#FDD220] to-[#FFFFFF] bg-clip-text text-transparent z-[1] text-center'>to manage your work and life </h2>
@@ -94,7 +94,7 @@ export default function Landing() {
                 </div>
                 {emailError && (<p className='text-[#FF6157] text-[14px] text-start mt-[10px] font-medium'>{emailError}</p>)}
             </div>
-            <img src={Glow} alt='Glow' className='absolute left-[50%] -translate-x-[50%] w-[800px] z-0 -top-[280px] xl:top-auto' />
+            <img src="https://dz1x1c630cl14.cloudfront.net/webassets/Glowing.svg" alt='Glow' className='absolute left-[50%] -translate-x-[50%] w-[800px] z-0 -top-[280px] xl:top-auto' />
             <div className='w-full overflow-hidden z-[3] radialGradient'><p className='font-semibold text-[14px] sm:text-[18px] lg:text-[26px] xl:text-[35px] text-[#FEF9F1] text-center mt-[50px] w-10/12 sm:w-9/12 lg:w-8/12 xl:w-1/2 mx-auto mb-[20px]'>it’s not for everyone</p></div>
             <div className=' p-[10px] border-[#FDD320]/[20%] h-[70px] sm:h-[90px] lg:h-[100px] xl:h-[150px] border-[1px] rounded-[20px] DarkerGrostesqueSemibold text-[24px] sm:text-[36px] lg:text-[50px] xl:text-[80px] max-w-[300px] sm:max-w-[400px] lg:max-w-[730px] w-full mx-auto relative mb-[80px] sm:mb-[120px] xl:mb-[100px]mb-[150px]'>
                 <div className='flex gap-[20px] absolute left-[35%] -translate-x-[50%]'>
@@ -112,7 +112,7 @@ export default function Landing() {
                 <button className='px-[5px] py-[10px] sm:p-[10px] w-[130px] sm:w-[170px] bg-[#FDD320] rounded-[6px] text-[#0E1014] text-[12px] sm:text-[14px] font-medium text-nowrap'>Apply for investment</button>
             </div> */}
             <div className='w-9/12 mx-auto sm:flex  justify-between items-center mb-[80px]'>
-                <img src={Logo} alt='logo' className='w-[40px] lg:w-[50px]' />
+                <img src='https://dz1x1c630cl14.cloudfront.net/webassets/one.ai_Logo.svg' alt='logo' className='w-[40px] lg:w-[50px]' />
                 <p className='text-[#D1D1D1] text-[12px] lg:text-[14px] font-normal mt-[20px] sm:mt-0'>© Copyrights {currentYear} | All rights reserved</p>
                 <div>
                     <div className='flex gap-[15px] lg:gap-[20px] items-center sm:justify-end mt-[20px] sm:mt-0'>

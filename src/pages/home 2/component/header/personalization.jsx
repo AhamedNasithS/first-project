@@ -1,6 +1,4 @@
 import React from "react"
-import Preview from "../../../../images/preview.svg";
-import previewone from "../../../../images/channel.svg"
 export default function Personalisation () {
     return(
         <>
@@ -14,12 +12,12 @@ export default function Personalisation () {
          </div>    
          <div className="grid grid-cols-1 mx-auto md:grid-cols-3 md:w-10/12 md:mx-auto lg:mt-[30px] lg:w-12/12  2xl:w-10/12 2xl:mx-auto">
             <div className="mt-[20px] col-span-1">
-              <img src={previewone} className="w-fit h-[300px] mx-auto md:w-fit md:h-[250px] lg:w-fit lg:h-[320px] xl:w-full xl:h-[450px]" alt="noimg" />
+              <img src="https://dz1x1c630cl14.cloudfront.net/webassets/channel.svg" className="w-fit h-[300px] mx-auto md:w-fit md:h-[250px] lg:w-fit lg:h-[320px] xl:w-full xl:h-[450px]" alt="noimg" />
             </div>
 
            
             <div className="mt-[20px] col-span-2">
-              <img src={Preview} className="" alt="noimg" />
+              <img src="https://dz1x1c630cl14.cloudfront.net/webassets/preview.svg" className="" alt="noimg" />
             </div>
           </div>
       </section>

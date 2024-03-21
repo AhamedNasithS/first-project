@@ -1,12 +1,10 @@
 import React from 'react'
-import arrow from "../../../../images/arrow.svg";
-import glow from "../../../../images/glow3.svg";
 
 export default function PreferTools() {
   return (
     <div className="relative w-10/12 mx-auto mt-[100px]">
-        <img src={arrow} alt="arrow" className='absolute right-0 top-[150px]'/>
-        <img src={glow} alt="arrow" className='absolute -right-[100px] -top-[140px] w-[500px] h-[900px]'/>
+        <img src="https://dz1x1c630cl14.cloudfront.net/webassets/arrow.svg" alt="arrow" className='absolute right-0 top-[150px]'/>
+        <img src="https://dz1x1c630cl14.cloudfront.net/webassets/glow3.svg" alt="arrow" className='absolute -right-[100px] -top-[140px] w-[500px] h-[900px]'/>
         <h2 className='text-center text-[45px] font-semibold bg-gradient-to-l from-[#FDD220] to-[#FFFFFF] bg-clip-text text-transparent'>When you can manage complex takes easily with 1.ai, why would you still prefer during multiple tools to run your business?</h2>
         <div className='mt-[60px] p-10  bg-[#0F162F80] border-[1px] border-[#E2E8FF1A] rounded-[16px] max-w-[650px] mx-[80px]'>
             <div className='flex gap-6 items-center mx-[60px]'>

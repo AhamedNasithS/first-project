@@ -1,5 +1,4 @@
 import React from 'react'
-import channel from "../../../../images/channel copy.svg";
 
 export default function Channel() {
   return (
@@ -10,7 +9,7 @@ export default function Channel() {
             <h4 className='mt-[10px] text-[#E4E8EB] font-normal text-[24px]'>A Channel is embedded with main features like pin, copy, reply, react, save, forward, edit , delete and most importantly checkin-checkout options </h4>
         </div>
         <div className='basis-1/2 flex justify-end'>
-            <img src={channel} alt='channel' />
+            <img src="https://dz1x1c630cl14.cloudfront.net/webassets/channel copy.svg" alt='channel' />
         </div>
     </div>
   )

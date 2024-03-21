@@ -1,5 +1,4 @@
 import React from 'react';
-import glow from "../../images/glow3.svg";
 import Header from '../header';
 import Intro from './component/intro';
 import WebHeader from './component/webheader';
@@ -21,7 +20,7 @@ export default function Main() {
     <div className='flex flex-col justify-start items-center w-full h-full bg-[#010306] relative overflow-hidden px-[20px] sm:px-0'>
       <Header/>
       <Intro/>
-      <img src={glow} alt='glow' className='absolute top-[700px] w-[408px] h-[930px] left-[50%] -translate-x-[50%]'/>
+      <img src="https://dz1x1c630cl14.cloudfront.net/webassets/glow3.svg" alt='glow' className='absolute top-[700px] w-[408px] h-[930px] left-[50%] -translate-x-[50%]'/>
       <WebHeader/>
       <Channel/>
       <Project/>

@@ -1,11 +1,10 @@
 import React from 'react'
-import Glow_2 from "../../images/Glowing2.svg";
 import Earth from "../../videos/Earth_rotate.mp4";
 
 export default function Power() {
   return (
     <div className='mb-[40px] sm:mb-[70px] xl:mb-[100px] relative w-full'>
-                <img src={Glow_2} alt='glow' className='absolute left-0 -top-[550px] z-[0] hidden sm:block' />
+                <img src="https://dz1x1c630cl14.cloudfront.net/webassets/Glowing2.svg" alt='glow' className='absolute left-0 -top-[550px] z-[0] hidden sm:block' />
                 <div className='sm:w-11/12 ml-auto grid text-center sm:text-start sm:grid-cols-2 gap-[20px] lg:gap-[100px]'>
                     <div className='my-auto'>
                         <h1 className='text-[#FFF] DarkerGrostesqueSemibold text-[30px] lg:text-[45px] xl:text-[60px] leading-7 hidden sm:flex'>Give your people </h1>
