@@ -8,16 +8,18 @@ import Privacy from './pages/privacy';
 import Terms from './pages/terms';
 import Home from './pages/home 2';
 import Navbar from './pages/navbar';
+import Main from './pages/main';
 
 export default function App() {
   return (
     <Router>
-      <Navbar/>
+      {/* <Navbar/> */}
       <Routes>
         <Route path="/*" element={<Landing />} />
-        <Route path='/home' element={<Home/>}/>
-        <Route path='/development' element={<Landing1/>}/>
-        <Route path='/ContactUs' element={<ContactUs/>}/>
+        {/* <Route path='/home' element={<Home/>}/> */}
+        {/* <Route path='/main' element={<Main/>}/> */}
+        {/* <Route path='/development' element={<Landing1/>}/> */}
+        {/* <Route path='/ContactUs' element={<ContactUs/>}/> */}
         <Route path='/RefundandCancellation' element={<Refund/>}/>
         <Route path='/PrivacyPolicy' element={<Privacy/>}/>
         <Route path='/TermsandConditions' element={<Terms/>}/>
