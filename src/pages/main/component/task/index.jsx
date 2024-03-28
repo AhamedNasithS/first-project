@@ -9,7 +9,7 @@ export default function Task() {
             <h4 className='mt-[10px] text-[#E4E8EB] font-normal text-[24px]'>personal And professional are set in specific timeframe which is assigned to yourself or any team member by the assignee manager </h4>
         </div>
         <div className='basis-1/2 flex justify-end'>
-            <img src="https://dz1x1c630cl14.cloudfront.net/webassets/taskcopy.svg" alt='channel' />
+            <img src="https://dz1x1c630cl14.cloudfront.net/webassets/Task.gif" alt='channel' />
         </div>
     </div>
   )

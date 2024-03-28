@@ -16,6 +16,7 @@ export default function Migration() {
                     <img src="https://dz1x1c630cl14.cloudfront.net/webassets/circle_5.svg" alt="circle" className='absolute left-[49%] -translate-x-[50%] top-[49%] -translate-y-[50%]' />
                 </div>
                 <img src="https://dz1x1c630cl14.cloudfront.net/webassets/icon.svg" alt='logo' className='absolute left-[49%] -translate-x-[50%] top-[49%] -translate-y-[50%] scale2' />
+                {/* <img src='https://dz1x1c630cl14.cloudfront.net/webassets/integration.gif' alt='gif'/> */}
             </div>
         </div>
     )
