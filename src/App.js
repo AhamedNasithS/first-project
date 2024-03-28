@@ -1,26 +1,28 @@
 import React from 'react'
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Landing from './pages/landing';
-import Landing1 from './pages/landing1';
+// import Landing1 from './pages/landing1';
 import ContactUs from './pages/contact';
 import Refund from './pages/refund';
 import Privacy from './pages/privacy';
 import Terms from './pages/terms';
 import Home from './pages/home 2';
 import Navbar from './pages/navbar';
+import Main from './pages/main';
 
 export default function App() {
   return (
     <Router>
-      <Navbar/>
+      {/* <Navbar/> */}
       <Routes>
         <Route path="/*" element={<Landing />} />
-        <Route path='/home' element={<Home/>}/>
-        <Route path='/development' element={<Landing1/>}/>
-        <Route path='/ContactUs' element={<ContactUs/>}/>
-        <Route path='/RefundandCancellation' element={<Refund/>}/>
-        <Route path='/PrivacyPolicy' element={<Privacy/>}/>
-        <Route path='/TermsandConditions' element={<Terms/>}/>
+        {/* <Route path='/home' element={<Home/>}/> */}
+        <Route path='/main' element={<Main/>}/>
+        {/* <Route path='/development' element={<Landing1/>}/> */}
+        {/* <Route path='/ContactUs' element={<ContactUs/>}/> */}
+        <Route path='/refund' element={<Refund/>}/>
+        <Route path='/privacy' element={<Privacy/>}/>
+        <Route path='/terms' element={<Terms/>}/>
       </Routes>
     </Router>
   )

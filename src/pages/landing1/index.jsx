@@ -1,11 +1,11 @@
 import React from 'react'
-import Glow_1 from "../../images/Glowing1.svg";
 import Footer from '../footer';
 import Banner from '../banner';
 import Resources from '../resource';
 import BeforeAfter from '../before&after';
 import Power from '../earth';
 import Revolution from '../revolution';
+
 
 export default function Landing1() {
     return (
@@ -16,7 +16,7 @@ export default function Landing1() {
             <Power />
             <Revolution />
             <Footer />
-            <img src={Glow_1} alt='glow' className='absolute bottom-0' />
+            <img src="https://dz1x1c630cl14.cloudfront.net/webassets/Glowing1.svg" alt='glow' className='absolute bottom-0' />
         </div>
     )
 }

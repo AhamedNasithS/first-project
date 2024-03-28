@@ -1,7 +1,4 @@
 import React from "react";
-import Preview from "../../../../images/projectimg.svg";
-import previewone from "../../../../images/channel.svg"
-import Elliped from "../../../../images/Ellipsed.svg"
 
 export default function Project() {
     return(
@@ -15,15 +12,15 @@ export default function Project() {
             <p className="text-[#E4E8EB] capitalize text-center bg-yellowlinear mt-[10px] font-[600px] md:mt-[25px] md:text-[18px] lg:text-[20px] lg:mt-[30px] xl:text-[26px] xl:mt-[35px] 2xl:text-[30px] 2xl:mt-[40px]">A Space to Carefully Plan and Achieve a collection aim.</p>
             <p className="text-white text-center w-10/12 mx-auto capitalize text-[10px] md:text-[13px] mt-[13px] lg:text-[15px] xl:text-[24px] 2xl:text-[26px]">for example sales and maeketing projects, web and app development projects,hr and administrative <br></br> projects or customer and client satisfaction projects etc</p>
          </div>
-         <img src={Elliped} alt="ellipsed" className="z-[0] hidden sm:block md:absolute md:top-[1000px] md:w-[500px] md:left-[50px] lg:absolute lg:top-[1300px] lg:w-[600px] lg:left-[60px] xl:absolute xl:w-[600px] xl:top-[2000px] xl:left-[300px]  2xl:absolute 2xl:w-[1200px] 2xl:top-[2300px] 2xl:left-[500px]"/>
+         <img src="https://dz1x1c630cl14.cloudfront.net/webassets/Ellipsed.svg" alt="ellipsed" className="z-[0] hidden sm:block md:absolute md:top-[1000px] md:w-[500px] md:left-[50px] lg:absolute lg:top-[1300px] lg:w-[600px] lg:left-[60px] xl:absolute xl:w-[600px] xl:top-[2000px] xl:left-[300px]  2xl:absolute 2xl:w-[1200px] 2xl:top-[2300px] 2xl:left-[500px]"/>
          <div className="grid grid-cols-1 mt-[20px] mx-auto md:grid-cols-3 md:w-10/12 md:mx-auto lg:mt-[30px] lg:w-12/12  2xl:w-10/12 2xl:mx-auto">
             <div className="mt-[20px] col-span-1">
-              <img src={previewone} className="w-fit h-[300px] mx-auto md:w-fit md:h-[250px] lg:w-fit lg:h-[320px] xl:w-full xl:h-[450px]" alt="noimg" />
+              <img src="https://dz1x1c630cl14.cloudfront.net/webassets/channel.svg" className="w-fit h-[300px] mx-auto md:w-fit md:h-[250px] lg:w-fit lg:h-[320px] xl:w-full xl:h-[450px]" alt="noimg" />
             </div>
 
            
             <div className="mt-[20px] col-span-2">
-              <img src={Preview} className="" alt="noimg" />
+              <img src="https://dz1x1c630cl14.cloudfront.net/webassets/projectimg.svg" className="" alt="noimg" />
             </div>
           </div>
         </section>
