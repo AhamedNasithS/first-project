@@ -16,12 +16,12 @@ if (mode === "DEV") {
 
 if (mode === "STAGE") {
   API["HOST"] =
-    "https://devarus.aftergen.in/dev/API/oneAppWorkspace/dev/register_mail.php";
+    "https://devarus.aftergen.in/dev/API/oneAppWorkspace/uat/register_mail.php";
 }
 
 if (mode === "UAT") {
   API["HOST"] =
-    "https://devarus.aftergen.in/dev/API/oneAppWorkspace/uat/register_mail.php";
+    "https://devarus.aftergen.in/dev/API/oneAppWorkspace/live/register_mail.php";
 }
 
 if (mode === "LIVE") {

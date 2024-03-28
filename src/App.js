@@ -17,12 +17,12 @@ export default function App() {
       <Routes>
         <Route path="/*" element={<Landing />} />
         {/* <Route path='/home' element={<Home/>}/> */}
-        {/* <Route path='/main' element={<Main/>}/> */}
+        <Route path='/main' element={<Main/>}/>
         {/* <Route path='/development' element={<Landing1/>}/> */}
         {/* <Route path='/ContactUs' element={<ContactUs/>}/> */}
-        <Route path='/RefundandCancellation' element={<Refund/>}/>
-        <Route path='/PrivacyPolicy' element={<Privacy/>}/>
-        <Route path='/TermsandConditions' element={<Terms/>}/>
+        <Route path='/refund' element={<Refund/>}/>
+        <Route path='/privacy' element={<Privacy/>}/>
+        <Route path='/terms' element={<Terms/>}/>
       </Routes>
     </Router>
   )

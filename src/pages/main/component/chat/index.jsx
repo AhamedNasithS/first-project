@@ -4,7 +4,7 @@ export default function Chat() {
   return (
     <div className='w-11/12 mx-auto relative flex gap-[20px] items-center my-[100px]'>
          <div className='basis-1/2 flex justify-start'>
-            <img src= "https://dz1x1c630cl14.cloudfront.net/webassets/chat1.svg" alt='channel' />
+            <img src= "https://dz1x1c630cl14.cloudfront.net/webassets/Chat.gif" alt='channel' />
         </div>
         <div className='basis-1/2 ml-[160px]'>
             <h2 className='text-[#FFDD09] text-[60px] font-semibold'>Chat</h2>
