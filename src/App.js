@@ -9,6 +9,7 @@ import Terms from './pages/terms';
 import Home from './pages/home 2';
 import Navbar from './pages/navbar';
 import Main from './pages/main';
+import Main1 from './pages/main1';
 
 export default function App() {
   return (
@@ -18,6 +19,7 @@ export default function App() {
         <Route path="/*" element={<Landing />} />
         {/* <Route path='/home' element={<Home/>}/> */}
         <Route path='/main' element={<Main/>}/>
+        <Route path='/main1' element={<Main1/>}/>
         {/* <Route path='/development' element={<Landing1/>}/> */}
         {/* <Route path='/ContactUs' element={<ContactUs/>}/> */}
         <Route path='/refund' element={<Refund/>}/>
