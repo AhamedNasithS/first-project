@@ -270,6 +270,12 @@ body {
   z-index: 1;
 }
 
+@media (max-width:782px) {
+  .animate::after {
+    border-radius: 6px;
+  }
+}
+
 @keyframes rotateAnimate {
   from {
     --a: 0deg;
@@ -428,7 +434,6 @@ body {
 .testimonialSlider .slick-prev {
   animation: prevArrow 4s infinite;
   left: 150px;
-  /* left: auto; */
 }
 
 
@@ -464,5 +469,117 @@ body {
 
   75% {
       transform: translateX(10px);
+  }
+}
+
+@media (max-width:1024px) { 
+  
+  .testimonialSlider .slick-dots li {
+    left: 10px;
+  }
+  
+  .testimonialSlider .slick-next,
+  .testimonialSlider .slick-prev {
+    top: 259px;
+  }
+  
+  .testimonialSlider .slick-next {
+    left:  332px;
+  }
+  
+  .testimonialSlider .slick-prev {
+    left: 84px;
+  }
+}
+
+@media (max-width:1023px) { 
+  .testimonialSlider .slick-dots li button {
+    width: 8px;
+    height: 8px;
+  }
+  
+  .testimonialSlider .slick-dots li button:before {
+    font-size: 8px;
+    line-height: 8px;
+    width: 8px;
+    height: 8px;
+  }
+  .testimonialSlider .slick-dots .slick-active button:before {
+    opacity: 100;
+    font-size: 7px;
+    line-height: 7px;
+    width: 7px;
+    height: 7px;
+  }
+  
+  
+  .testimonialSlider .slick-dots li {
+    width: 8px;
+    height: 8px;
+    margin: 0 2px;
+    left: 60%;
+    translate: -50%;
+  }
+  
+  .testimonialSlider .slick-next,
+  .testimonialSlider .slick-prev {
+    width: 25px;
+    height: 25px;
+    top: 209px;
+  }
+  
+  .testimonialSlider .slick-next {
+    right:  232px;
+    left: auto;
+  }
+  
+  .testimonialSlider .slick-prev {
+    left: 214px;
+  }
+}
+
+@media (max-width:767px) {
+  .testimonialSlider .slick-dots li button {
+    width: 5px;
+    height: 5px;
+  }
+  
+  .testimonialSlider .slick-dots li button:before {
+    font-size: 5px;
+    line-height: 5px;
+    width: 5px;
+    height: 5px;
+  }
+  .testimonialSlider .slick-dots .slick-active button:before {
+    opacity: 100;
+    font-size: 4px;
+    line-height: 4px;
+    width: 4px;
+    height: 4px;
+  }
+  
+  
+  .testimonialSlider .slick-dots li {
+    width: 5px;
+    height: 5px;
+    margin: 0 2px;
+    left: 50%;
+    translate: -50%;
+  }
+  
+  .testimonialSlider .slick-next,
+  .testimonialSlider .slick-prev {
+    width: 20px;
+    height: 20px;
+    top: 199px;
+  }
+  
+  .testimonialSlider .slick-next {
+    right:  132px;
+    left: auto;
+  }
+  
+  .testimonialSlider .slick-prev {
+    left: 114px;
   }
 }

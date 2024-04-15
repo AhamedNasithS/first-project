@@ -18,18 +18,18 @@ import Access from './component/access';
 
 export default function Main1() {
   return (
-    <div className='flex flex-col justify-start items-center w-full h-full bg-[#010306] relative overflow-hidden px-[20px] sm:px-0'>
+    <div className='flex flex-col justify-start items-center w-full h-full bg-[#010306] relative overflow-hidden px-0'>
       <Header/>
       <Intro/>
       <Features/>
-      <img src='https://dz1x1c630cl14.cloudfront.net/webassets/mobiles.svg' alt='mobileView'  className='my-[100px]'/>
+      <img src='https://dz1x1c630cl14.cloudfront.net/webassets/mobiles.svg' alt='mobileView'  className='my-[20px] lg:my-[100px] p-[20px]'/>
       <Channel/>
       <Project/>
       <Task/>
       <Chat/>
       <Ai/>
       <Availbles/>
-      <img src='https://dz1x1c630cl14.cloudfront.net/webassets/avaliables.svg' alt='availble' className='mt-[50px]'/>
+      <img src='https://dz1x1c630cl14.cloudfront.net/webassets/avaliables.svg' alt='availble' className='mt-[10px] lg:mt-[50px] p-[20px]'/>
       <Pricing/>
       <IpadView/>
       <Support/>
