@@ -42,12 +42,12 @@ export default function Testimonial() {
     ];
 
     return (
-        <div className="flex flex-col relative items-start w-11/12 ml-auto mt-[100px]">
-            <div className='absolute bg-gradient-to-br from-[#10192C29] via-[#101B2E8F] to-[#29457B00] w-[600px] h-[400px] rounded-l-[20px] border-[#1F44C5CC] border-l-[1px] border-t-[1px] border-b-[1px] right-0 top-[68%] -translate-y-[50%] z-0'></div>
-            <h3 className='text-[45px] font-medium bg-gradient-to-l from-[#FDD220] to-[#FFFFFF] bg-clip-text text-transparent'>Whats Clients Says</h3>
-            <h4 className='text-[18px] font-normal text-[#FFFBEC] mt-[10px] w-4/12'>Harmony of Happiness: Cherished Tales from Our Valued Customers</h4>
+        <div className="flex flex-col relative items-center lg:items-start w-full lg:w-11/12 lg:ml-auto my-[20px] lg:my-[100px]">
+            <div className='absolute bg-gradient-to-br from-[#10192C29] via-[#101B2E8F] to-[#29457B00] w-[200px] lg:w-[300px] xl:w-[600px] h-[200px] lg:h-[300px] xl:h-[400px] rounded-l-[20px] border-[#1F44C5CC] border-l-[1px] border-t-[1px] border-b-[1px] right-0 top-[69%] lg:top-[68%] -translate-y-[50%] z-0'></div>
+            <h3 className='text-[24px] sm:text-[35px] lg:text-[45px] font-semibold bg-gradient-to-l from-[#FDD220] to-[#FFFFFF] bg-clip-text text-transparent'>Whats Clients Says</h3>
+            <h4 className='text-[12px] sm:text-[16px] lg:text-[18px] text-center lg:text-start font-normal text-[#FFFBEC] mt-[10px] w-full lg:w-8/12 xl:w-4/12 px-[20px] lg:px-0'>Harmony of Happiness: Cherished Tales from Our Valued Customers</h4>
 
-            <Slider {...settings} className='w-full relative testimonialSlider mt-[50px]'>
+            <Slider {...settings} className='w-full relative testimonialSlider mt-[30px] lg:mt-[50px] px-[20px] lg:px-0'>
                 {Testimonials.map((item, index) => (
                     <div key={index} className='focus:outline-none relative pr-[10px]'>
                         <img src={item.image} alt='profile' />
