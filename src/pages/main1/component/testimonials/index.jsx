@@ -2,9 +2,9 @@ import React from 'react'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import Arrow from "../../../../images/rightArrow.svg"
+import Arrow from "../../../../images/rightArrow.svg";
 
-export default function Testimonial() {
+export default function Testimonial({setIsVideo, setVideoIndex}) {
     var settings = {
         dots: true,
         infinite: false,
@@ -49,7 +49,7 @@ export default function Testimonial() {
 
             <Slider {...settings} className='w-full relative testimonialSlider mt-[30px] lg:mt-[50px] px-[20px] lg:px-0'>
                 {Testimonials.map((item, index) => (
-                    <div key={index} className='focus:outline-none relative pr-[10px]'>
+                    <div key={index} className='focus:outline-none relative pr-[10px]' onClick={() => {setIsVideo(true); setVideoIndex(index)}}>
                         <img src={item.image} alt='profile' />
                     </div>
                 ))}
