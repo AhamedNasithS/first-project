@@ -1,82 +1,78 @@
-import React from 'react'
-import axios from 'axios';
+import React from "react";
+import axios from "axios";
 import { IoMdMail } from "react-icons/io";
 // import Logo from "https://dz1x1c630cl14.cloudfront.net/webassets/one.ai_Logo.svg";
 import Main from "../../videos/logoBackground.mp4";
 import Swal from 'sweetalert2'
 // import Glow from "https://dz1x1c630cl14.cloudfront.net/webassets/Glowing.svg";
+import API from "../../utils/API";
+
 
 export default function Landing() {
-    const [email, setEmail] = React.useState('');
-    const textArray = ["Changers", "Dreamers", "Doers", "Rebels", "Makers"];
-    const [currentIndex, setCurrentIndex] = React.useState(0);
-    const [btnLoad, setBtnLoad] = React.useState(false);
-    const [emailError, setEmailError] = React.useState('')
+  const [email, setEmail] = React.useState("");
+  const textArray = ["Changers", "Dreamers", "Doers", "Rebels", "Makers"];
+  const [currentIndex, setCurrentIndex] = React.useState(0);
+  const [btnLoad, setBtnLoad] = React.useState(false);
+  const [emailError, setEmailError] = React.useState("");
 
-
-
-    const handleSubmit = async (e) => {
-        e.preventDefault();
-        setBtnLoad(true);
-        const { data } = await axios.post(
-            'https://devarus.aftergen.in/dev/API/release_v43/register_mail.php',
-            { email: email },
-        );
-        if (data.message) {
-            setEmail('');
-            setBtnLoad(false);
-            // alert(data.message);
-            if (data.status_code === 500) {
-                Swal.fire({
-                    title: "Error!",
-                    text: data.message,
-                    icon: "error"
-                });
-            } else {
-                Swal.fire({
-                    title: "Success!",
-                    text: data.message,
-                    icon: "success"
-                });
-            }
-        } else {
-            setEmail('');
-            setBtnLoad(false);
-            Swal.fire({
-                title: "Success!",
-                text: 'Registration successful',
-                icon: "success"
-            });
-        }
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setBtnLoad(true);
+    const { data } = await axios.post(API.HOST, { email: email });
+    if (data.message) {
+      setEmail("");
+      setBtnLoad(false);
+      // alert(data.message);
+      if (data.status_code === 500) {
+        Swal.fire({
+          title: "Error!",
+          text: data.message,
+          icon: "error",
+        });
+      } else {
+        Swal.fire({
+          title: "Success!",
+          text: data.message,
+          icon: "success",
+        });
+      }
+    } else {
+      setEmail("");
+      setBtnLoad(false);
+      Swal.fire({
+        title: "Success!",
+        text: "Registration successful",
+        icon: "success",
+      });
     }
+  };
 
-    const handleEmail = (e) => {
-        const email = e.target.value;
-        const gmailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        setEmail(email);
-        if (email === "") {
-            setEmailError('');
-        }
-        else if (!gmailRegex.test(email)) {
-            setEmailError("Invalid Email");
-        } else {
-            setEmailError('');
-        }
-    };
+  const handleEmail = (e) => {
+    const email = e.target.value;
+    const gmailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    setEmail(email);
+    if (email === "") {
+      setEmailError("");
+    } else if (!gmailRegex.test(email)) {
+      setEmailError("Invalid Email");
+    } else {
+      setEmailError("");
+    }
+  };
 
-    React.useEffect(() => {
+  React.useEffect(() => {
+    const intervalId = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % textArray.length);
+    }, 1800);
+    return () => clearInterval(intervalId);
+  }, [currentIndex, textArray.length]);
 
-        const intervalId = setInterval(() => {
-            setCurrentIndex((prevIndex) => (prevIndex + 1) % textArray.length);
-        }, 1800);
-        return () => clearInterval(intervalId);
-    }, [currentIndex, textArray.length]);
+  const currentYear = new Date().getFullYear();
 
-    const currentYear = new Date().getFullYear();
-
-    const handleEmailClick = () => {
-        window.location.href = 'https://mail.google.com/mail/?view=cm&fs=1&to=hello@get1.ai';
-    };
+  const handleEmailClick = () => {
+    window.location.href =
+      "https://mail.google.com/mail/?view=cm&fs=1&to=hello@get1.ai";
+  };
 
     return (
         <div className='flex flex-col justify-start items-center w-full h-full bg-[#010306] relative overflow-hidden px-[20px] sm:px-0'>
@@ -129,8 +125,7 @@ export default function Landing() {
                 <a href='/RefundandCancellation'><p className='text-[#858585] text-[14px] lg:text-[16px] font-medium'>Refund Policy </p></a>
                 <a href='/PrivacyPolicy'><p className='text-[#858585] text-[14px] lg:text-[16px] font-medium'>Privacy Policy </p></a>
                 <a href='/TermsandConditions'><p className='text-[#858585] text-[14px] lg:text-[16px] font-medium'>Terms and Conditions </p></a>
-            </div>
-        </div>
-    )
+      </div>
+    </div>
+  );
 }
-
