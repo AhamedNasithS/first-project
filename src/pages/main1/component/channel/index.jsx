@@ -23,7 +23,9 @@ export default function Channel() {
         </div>
         <h3 className='mt-[10px] text-[#E4E8EB] font-medium text-[14px] lg:text-[28px]'>A Space to Communicate and get aligned with your team on Projects and tasks </h3>
       </div>
-      <div className='lg:basis-1/2 flex justify-end mt-[20px] lg:mt-0' data-aos="zoom-in-left" data-aos-duration="4000">
+      <div className='lg:basis-1/2 flex justify-end mt-[20px] lg:mt-0' 
+      // data-aos="zoom-in-left" data-aos-duration="4000"
+      >
         <img src="https://dz1x1c630cl14.cloudfront.net/webassets/channel.webp" alt='channel' />
       </div>
     </div>

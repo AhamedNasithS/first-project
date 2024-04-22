@@ -18,7 +18,9 @@ export default function Chat() {
         </div>
       </div>
       <div className='lg:basis-1/2 flex justify-start'>
-        <img src="https://dz1x1c630cl14.cloudfront.net/webassets/chats.webp" alt='channel' data-aos="zoom-in-right" data-aos-duration="1000"/>
+        <img src="https://dz1x1c630cl14.cloudfront.net/webassets/chats.webp" alt='channel' 
+        // data-aos="zoom-in-right" data-aos-duration="1000"
+        />
       </div>
       <div className='lg:basis-1/2 lg:ml-[160px]'>
         <div className='flex gap-2'>
