@@ -104,16 +104,18 @@ export default function Main1() {
       <Header setIsForm={setIsForm} />
       <Intro setIsForm={setIsForm} email={email} setEmail={setEmail} />
       <Features />
-      <img src='https://dz1x1c630cl14.cloudfront.net/webassets/mobiles.webp' alt='mobileView' 
-      // data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="10000" 
-      className='my-[20px] lg:my-[100px] p-[20px] w-[80%]' />
+      <img src='https://dz1x1c630cl14.cloudfront.net/webassets/mobiles.webp' alt='mobileView'
+        // data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="10000" 
+        className='my-[20px] lg:my-[100px] p-[20px] w-[80%]' />
       <Channel />
       <Project />
       <Task />
       <Chat />
       <Ai />
       <Availbles />
-      <img src='https://dz1x1c630cl14.cloudfront.net/webassets/Devicemockup.webp' alt='availble' className='mt-[10px] lg:mt-[50px] p-[20px] w-[80%]' data-aos="zoom-in" data-aos-duration="2000" />
+      <img src='https://dz1x1c630cl14.cloudfront.net/webassets/Devicemockup.webp' alt='availble' className='mt-[10px] lg:mt-[50px] p-[20px] w-[80%]'
+      // data-aos="zoom-in" data-aos-duration="2000" 
+      />
       {/* <Pricing setIsForm={setIsForm} /> */}
       <IpadView />
       <Support />
