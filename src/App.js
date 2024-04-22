@@ -16,10 +16,10 @@ export default function App() {
     <Router>
       {/* <Navbar/> */}
       <Routes>
-        <Route path="/*" element={<Landing />} />
+        <Route path="/page" element={<Landing />} />
         <Route path='/home' element={<Home/>}/>
         <Route path='/main' element={<Main/>}/>
-        <Route path='/main1' element={<Main1/>}/>
+        <Route path='/*' element={<Main1/>}/>
         <Route path='/development' element={<NewLanding/>}/>
         {/* <Route path='/ContactUs' element={<ContactUs/>}/> */}
         <Route path='/refund' element={<Refund/>}/>
