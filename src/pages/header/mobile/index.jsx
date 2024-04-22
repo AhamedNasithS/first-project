@@ -34,9 +34,9 @@ export default function Mobile({setIsForm}) {
                         <div className={`mr-[40px] text-[#E2E8FF] py-[10px] mb-6 cursor-pointer rounded-[5px]`} onClick={() => {setIsOpen(false); handleFeatureClick()}}>
                             <h1 className="font-medium text-1xl">Features</h1>
                         </div>
-                        <div className={`mr-[40px] text-[#E2E8FF] py-[10px] mb-6 cursor-pointer rounded-[5px]`} onClick={() => {setIsOpen(false); handlePricingClick()}}>
+                        {/* <div className={`mr-[40px] text-[#E2E8FF] py-[10px] mb-6 cursor-pointer rounded-[5px]`} onClick={() => {setIsOpen(false); handlePricingClick()}}>
                             <h1 className="font-medium text-1xl">Pricing</h1>
-                        </div>
+                        </div> */}
                         <div className={`mr-[40px] text-[#E2E8FF] py-[10px] mb-6 cursor-pointer rounded-[5px]`} onClick={() => {setIsForm(true)}}>
                             <h1 className="font-medium text-1xl">Enterprise</h1>
                         </div>
