@@ -22,7 +22,7 @@ export default function Task() {
         </div>
         <h3 className='mt-[10px] text-[#E4E8EB] font-medium text-[14px] lg:text-[28px]'>Tasks are to-do-list which often completed in a specific time frame </h3>
       </div>
-      <div className='lg:basis-1/2 flex justify-end'>
+      <div className='lg:basis-1/2 flex justify-end mt-[15px] sm:mt-0'>
         <img src="https://dz1x1c630cl14.cloudfront.net/webassets/task.webp" alt='channel' data-aos="zoom-in-left" data-aos-duration="1000"/>
       </div>
     </div>

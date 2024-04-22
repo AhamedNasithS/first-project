@@ -23,11 +23,14 @@ import phone from "../../images/phoneicon.svg";
 import company from "../../images/companyicon.svg";
 import API from '../../utils/API';
 import axios from 'axios';
+import LoadLottie from '../loadLottie';
+import sucess from "../../sucess.json";
 
 export default function Main1() {
   const [isVideo, setIsVideo] = React.useState(false);
   const [videoIndex, setVideoIndex] = React.useState(null);
   const [isForm, setIsForm] = React.useState(false);
+  const [isSucess, setIsSucess] = React.useState(false);
   const [name, setName] = React.useState('');
   const [email, setEmail] = React.useState('');
   const [emailError, setEmailError] = React.useState(false);
@@ -81,14 +84,15 @@ export default function Main1() {
         phone: phoneNumber,
         company_name: companyName
       });
-      if(data?.statusCode === 200) {
-        setName('');
-        setEmail('');
-        setPhoneNumber('');
-        setCompanyName('');
-        setIsForm(false)
-      }
-    
+    if (data?.statusCode === 200) {
+      setName('');
+      setEmail('');
+      setPhoneNumber('');
+      setCompanyName('');
+      setIsForm(false);
+      setIsSucess(true);
+    }
+
   };
 
   React.useEffect(() => {
@@ -164,8 +168,7 @@ export default function Main1() {
       )}
       {isForm && (
         <div className="flex justify-center items-center text-center fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-full bg-[#121825] bg-opacity-60 z-[100]">
-          <div className='w-[300px] md:w-[630px] md:h-[370px] bg-[#121825] rounded-[16px] p-[32px] relative z-[10]'>
-            <h2 className='text-[16px] md:text-[25px] font-semibold text-[#FFFFFF]'>Need personal assistance in <span className='bg-gradient-to-l from-[#FDD220] to-[#FFFFFF] bg-clip-text text-transparent'>1.ai?</span></h2>
+          <div className='w-[300px] md:w-[630px] md:h-[330px] bg-[#121825] rounded-[16px] p-[32px] relative z-[10]'>
             <div
               className="absolute top-0 right-0 md:top-[20px] md:right-[20px] cursor-pointer border-[#FFFFFF] p-2 rounded-lg"
               onClick={() => {
@@ -216,7 +219,27 @@ export default function Main1() {
                 </div>
               </div>
             </div>
-            <button className={`w-full h-[38px] md:h-[44px] rounded-[8px] border-[1px] border-[#995900] bg-[#FDD01F] text-[#2A2200] text-[16px] font-medium mt-[30px] ${name === "" || email === "" || emailError || phoneNumber === "" || phoneNumberError || companyName === "" ? "opacity-30" : ""}`} disabled={name === "" || email === "" || emailError || phoneNumber === "" || phoneNumberError || companyName === ""} onClick={(e) => { handleSubmit(e) }}>Book a Demo</button>
+            <button className={`w-full h-[38px] md:h-[44px] rounded-[8px] border-[1px] border-[#995900] bg-[#FDD01F] text-[#2A2200] text-[16px] font-medium sm:mt-[30px] ${name === "" || email === "" || emailError || phoneNumber === "" || phoneNumberError || companyName === "" ? "opacity-30" : ""}`} disabled={name === "" || email === "" || emailError || phoneNumber === "" || phoneNumberError || companyName === ""} onClick={(e) => { handleSubmit(e) }}>Book a Demo</button>
+          </div>
+        </div>
+      )}
+      {isSucess && (
+        <div className="flex justify-center items-center text-center fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-full bg-[#121825] bg-opacity-60 z-[100]">
+          <div className='w-[300px] md:w-[630px] md:h-[200px] bg-[#121825] rounded-[16px] p-[32px] relative z-[10]'>
+            <div
+              className="absolute top-0 right-0 md:top-[20px] md:right-[20px] cursor-pointer border-[#FFFFFF] p-2 rounded-lg"
+              onClick={() => {
+                setIsSucess(false);
+              }}
+            >
+              <IoCloseSharp className='text-[#FFF] w-[20px] h-[20px] md:w-[30px] md:h-[30px]' />
+            </div>
+            <div className='w-full flex  justify-center'>
+              <div className="w-[100px] flex justify-center">
+                <LoadLottie animationData={sucess} loop={true} />
+              </div>
+            </div>
+            <h3 className='text-[14px] font-medium text-[#FFF] '>Thank you for your interest! Our team will be reaching out to you shortly.</h3>
           </div>
         </div>
       )}

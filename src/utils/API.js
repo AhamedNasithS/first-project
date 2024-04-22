@@ -1,5 +1,4 @@
-const mode = process.env.REACT_APP_MODE ?? "LOCAL"; // DEV STAGE UAT LIVE
-
+const mode = process.env.REACT_APP_MODE ?? "STAGE"; // DEV STAGE UAT LIVE
 
 const API = {};
 

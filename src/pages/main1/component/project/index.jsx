@@ -1,5 +1,4 @@
 import React from 'react'
-// import Cave1 from "../../../../images/caves1.svg"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -17,7 +16,7 @@ export default function Project() {
           </div>
         </div>
       </div>
-      <div className='lg:basis-1/2 flex justify-start'>
+      <div className='lg:basis-1/2 flex justify-start mt-[15px] sm:mt-0'>
         <img src="https://dz1x1c630cl14.cloudfront.net/webassets/projectview.webp" alt='channel' data-aos="zoom-in-right" data-aos-duration="1000"/>
       </div>
       <div className='lg:basis-1/2 lg:ml-[160px]'>

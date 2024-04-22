@@ -28,7 +28,7 @@ export default function Pricing({ setIsForm }) {
             </div>
             {toggleValue === "Month" ? (
                 <div className='flex sm:grid grid-cols-2 xl:flex flex-col lg:flex-row gap-[30px] mt-[20px] lg:mt-[40px]'>
-                    <div className={`p-5 w-full lg:w-[320px] border-[1px] border-[#FFFFFF1A] rounded-[10px] lg:rounded-[30px] hover:scale-[1.1] transition-all duration-700 relative overflow-hidden ${knowMoreB1M ? "h-[490px] lg:h-[650px]" : "h-[380px] lg:h-[500px]"}`}>
+                    <div className={`p-5 w-full lg:w-[320px] border-[1px] border-[#FFFFFF1A] rounded-[10px] lg:rounded-[30px] sm:hover:scale-[1.1] transition-all duration-700 relative overflow-hidden ${knowMoreB1M ? "h-[490px] lg:h-[650px]" : "h-[380px] lg:h-[500px]"}`}>
                         <div className='bg-[#355D86] w-[200px] h-[200px] rounded-full absolute blur-[67px] top-[50%] -translate-y-[59%] z-0 -left-[40%]'></div>
                         <div className='bg-[#355D86] w-[100px] h-[100px] rounded-full absolute blur-[55px] top-[20px] z-0 -right-[0]'></div>
                         <h2 className='text-[#FFFFFF] text-[20px] lg:text-[36px] font-bold lg:mt-[10px] lg:ml-[20px] relative z-[1]'>$8 <span className='text-[#BCBCBC] text-[10px] lg:text-[16px] font-medium'>User/month</span></h2>
@@ -83,7 +83,7 @@ export default function Pricing({ setIsForm }) {
                             </>)}
                         <button className='w-10/12 lg:w-[170px] h-[45px] absolute bottom-4 z-[1] left-[50%] -translate-x-[50%] bg-gradient-to-bl from-[#FDD01F] via-[#FDD320] via-[#F8C240] to-[#F8861B] rounded-[5px] lg:rounded-[10px] text-[#2A2200] font-medium text-[16px] border-[1px] border-[#FFE784]' onClick={() => { setIsForm(true) }}>Get Started</button>
                     </div>
-                    <div className={`p-5 w-full lg:w-[320px] border-[1px] border-[#FFFFFF1A] rounded-[10px] lg:rounded-[30px] hover:scale-[1.1] transition-all duration-700 relative overflow-hidden ${knowMoreB2M ? "h-[830px] lg:h-[1050px]" : "h-[380px] lg:h-[500px]"}`}>
+                    <div className={`p-5 w-full lg:w-[320px] border-[1px] border-[#FFFFFF1A] rounded-[10px] lg:rounded-[30px] sm:hover:scale-[1.1] transition-all duration-700 relative overflow-hidden ${knowMoreB2M ? "h-[830px] lg:h-[1050px]" : "h-[380px] lg:h-[500px]"}`}>
                         <div className='bg-[#355D86] w-[200px] h-[200px] rounded-full absolute blur-[67px] top-[50%] -translate-y-[59%] z-0 -left-[40%]'></div>
                         <div className='bg-[#355D86] w-[100px] h-[100px] rounded-full absolute blur-[55px] top-[20px] z-0 -right-[0]'></div>
                         <div className='p-0.5 lg:p-1 rounded-[10px] bg-[#303018] w-6/12 ml-auto text-center absolute top-4 right-6 z-[1]'>
@@ -186,7 +186,7 @@ export default function Pricing({ setIsForm }) {
                         )}
                         <button className='w-10/12 lg:w-[170px] h-[45px] absolute z-[1] bottom-4 left-[50%] -translate-x-[50%] bg-gradient-to-bl from-[#FDD01F] via-[#FDD320] via-[#F8C240] to-[#F8861B] rounded-[5px] lg:rounded-[10px] text-[#2A2200] font-medium text-[16px] border-[1px] border-[#FFE784]' onClick={() => { setIsForm(true) }}>Get Started</button>
                     </div>
-                    <div className={`p-5 w-full lg:w-[320px] border-[1px] border-[#FFFFFF1A] rounded-[10px] lg:rounded-[30px] hover:scale-[1.1] transition-all duration-700 relative overflow-hidden ${knowMoreB3M ? "h-[810px] lg:h-[1050px]" : "h-[380px] lg:h-[500px]"}`}>
+                    <div className={`p-5 w-full lg:w-[320px] border-[1px] border-[#FFFFFF1A] rounded-[10px] lg:rounded-[30px] sm:hover:scale-[1.1] transition-all duration-700 relative overflow-hidden ${knowMoreB3M ? "h-[810px] lg:h-[1050px]" : "h-[380px] lg:h-[500px]"}`}>
                         <div className='bg-[#355D86] w-[200px] h-[200px] rounded-full absolute blur-[67px] top-[50%] -translate-y-[59%] z-0 -left-[40%]'></div>
                         <div className='bg-[#355D86] w-[100px] h-[100px] rounded-full absolute blur-[55px] top-[20px] z-0 -right-[0]'></div>
                         <h2 className='text-[#FFFFFF] text-[20px] lg:text-[36px] font-bold lg:mt-[10px] lg:ml-[20px] relative z-[1]'>$25 <span className='text-[#BCBCBC] text-[10px] lg:text-[16px] font-medium'>User/month</span></h2>
@@ -274,11 +274,11 @@ export default function Pricing({ setIsForm }) {
                                 </div>
                                 <div className='flex gap-2 items-center lg:ml-[20px] my-[10px] lg:my-[15px] relative z-[1]'>
                                     <img src={tik} alt='tik' className='w-[15px] lg:w-[17px]' />
-                                    <h3 className='text-[#F0F0F0] text-[13px] lg:text-[15px] font-medium'>Suitable for medium enterprises</h3>
+                                    <h3 className='text-[#F0F0F0] text-[13px] lg:text-[15px] font-medium'>Suitable for Large enterprises</h3>
                                 </div>
                                 <div className='flex gap-2 items-center lg:ml-[20px] my-[10px] lg:my-[15px] relative z-[1]'>
                                     <img src={tik} alt='tik' className='w-[15px] lg:w-[17px]' />
-                                    <h3 className='text-[#F0F0F0] text-[13px] lg:text-[15px] font-medium'>Can retrive last 12 months data</h3>
+                                    <h3 className='text-[#F0F0F0] text-[13px] lg:text-[15px] font-medium'>Can retrive all years data</h3>
                                 </div>
                                 <h3 className='text-[#FFDD09] text-[11px] lg:text-[13px] font-medium lg:ml-[20px] my-[10px] lg:my-[15px] cursor-pointer relative z-[1]' onClick={() => { setKnowMoreB3M(false) }}>less...</h3>
                                 <div className='bg-[#355D86] w-[100px] h-[100px] rounded-full absolute blur-[55px] bottom-[20px] z-0 -right-[0]'></div>
@@ -286,7 +286,7 @@ export default function Pricing({ setIsForm }) {
                         )}
                         <button className='w-10/12 lg:w-[170px] h-[45px] absolute z-[1] bottom-4 left-[50%] -translate-x-[50%] bg-gradient-to-bl from-[#FDD01F] via-[#FDD320] via-[#F8C240] to-[#F8861B] rounded-[5px] lg:rounded-[10px] text-[#2A2200] font-medium text-[16px] border-[1px] border-[#FFE784]' onClick={() => { setIsForm(true) }}>Get Started</button>
                     </div>
-                    <div className={`p-5 w-full lg:w-[320px] border-[1px] border-[#FFFFFF1A] rounded-[10px] lg:rounded-[30px] hover:scale-[1.1] transition-all duration-700 relative overflow-hidden ${knowMoreB4M ? "h-[860px] lg:h-[1100px]" : "h-[380px] lg:h-[500px]"}`}>
+                    <div className={`p-5 w-full lg:w-[320px] border-[1px] border-[#FFFFFF1A] rounded-[10px] lg:rounded-[30px] sm:hover:scale-[1.1] transition-all duration-700 relative overflow-hidden ${knowMoreB4M ? "h-[860px] lg:h-[1100px]" : "h-[380px] lg:h-[500px]"}`}>
                         <div className='bg-[#355D86] w-[200px] h-[200px] rounded-full absolute blur-[67px] top-[50%] -translate-y-[59%] z-0 -left-[40%]'></div>
                         <div className='bg-[#355D86] w-[100px] h-[100px] rounded-full absolute blur-[55px] top-[20px] z-0 -right-[0]'></div>
                         <h2 className='text-[#FFFFFF] text-[20px] lg:text-[36px] font-bold lg:mt-[10px] lg:ml-[20px] relative z-[1]'>$49 <span className='text-[#BCBCBC] text-[10px] lg:text-[16px] font-medium'>User/month</span></h2>
@@ -380,10 +380,10 @@ export default function Pricing({ setIsForm }) {
                                     <img src={tik} alt='tik' className='w-[15px] lg:w-[17px]' />
                                     <h3 className='text-[#F0F0F0] text-[13px] lg:text-[15px] font-medium'>Can retrive all years data</h3>
                                 </div>
-                                <div className='flex gap-2 items-center lg:ml-[20px] my-[10px] lg:my-[15px] relative z-[1]'>
+                                {/* <div className='flex gap-2 items-center lg:ml-[20px] my-[10px] lg:my-[15px] relative z-[1]'>
                                     <img src={tik} alt='tik' className='w-[15px] lg:w-[17px]' />
                                     <h3 className='text-[#F0F0F0] text-[13px] lg:text-[15px] font-medium'>Custom Pricing</h3>
-                                </div>
+                                </div> */}
                                 <div className='flex gap-2 items-center lg:ml-[20px] my-[10px] lg:my-[15px] relative z-[1]'>
                                     <img src={tik} alt='tik' className='w-[15px] lg:w-[17px]' />
                                     <h3 className='text-[#F0F0F0] text-[13px] lg:text-[15px] font-medium'>24/7 Support</h3>
@@ -397,7 +397,7 @@ export default function Pricing({ setIsForm }) {
                 </div>
             ) : toggleValue === "Year" && (
                 <div className='flex sm:grid grid-cols-2 xl:flex flex-col lg:flex-row gap-[30px] mt-[20px] lg:mt-[40px]'>
-                    <div className={`p-5 w-full lg:w-[320px] border-[1px] border-[#FFFFFF1A] rounded-[10px] lg:rounded-[30px] hover:scale-[1.1] transition-all duration-700 relative overflow-hidden ${knowMoreB1Y ? "h-[490px] lg:h-[650px]" : "h-[380px] lg:h-[500px]"}`}>
+                    <div className={`p-5 w-full lg:w-[320px] border-[1px] border-[#FFFFFF1A] rounded-[10px] lg:rounded-[30px] sm:hover:scale-[1.1] transition-all duration-700 relative overflow-hidden ${knowMoreB1Y ? "h-[490px] lg:h-[650px]" : "h-[380px] lg:h-[500px]"}`}>
                         <div className='bg-[#355D86] w-[200px] h-[200px] rounded-full absolute blur-[67px] top-[50%] -translate-y-[59%] z-0 -left-[40%]'></div>
                         <div className='bg-[#355D86] w-[100px] h-[100px] rounded-full absolute blur-[55px] top-[20px] z-0 -right-[0]'></div>
                         <h2 className='text-[#FFFFFF] text-[20px] lg:text-[36px] font-bold lg:mt-[10px] lg:ml-[20px] relative z-[1]'>$7 <span className='text-[#BCBCBC] text-[10px] lg:text-[16px] font-medium'>User/month</span></h2>
@@ -452,7 +452,7 @@ export default function Pricing({ setIsForm }) {
                             </>)}
                         <button className='w-10/12 lg:w-[170px] h-[45px] absolute bottom-4 z-[1] left-[50%] -translate-x-[50%] bg-gradient-to-bl from-[#FDD01F] via-[#FDD320] via-[#F8C240] to-[#F8861B] rounded-[5px] lg:rounded-[10px] text-[#2A2200] font-medium text-[16px] border-[1px] border-[#FFE784]' onClick={() => { setIsForm(true) }}>Get Started</button>
                     </div>
-                    <div className={`p-5 w-full lg:w-[320px] border-[1px] border-[#FFFFFF1A] rounded-[10px] lg:rounded-[30px] hover:scale-[1.1] transition-all duration-700 relative overflow-hidden ${knowMoreB2Y ? "h-[830px] lg:h-[1050px]" : "h-[380px] lg:h-[500px]"}`}>
+                    <div className={`p-5 w-full lg:w-[320px] border-[1px] border-[#FFFFFF1A] rounded-[10px] lg:rounded-[30px] sm:hover:scale-[1.1] transition-all duration-700 relative overflow-hidden ${knowMoreB2Y ? "h-[830px] lg:h-[1050px]" : "h-[380px] lg:h-[500px]"}`}>
                         <div className='bg-[#355D86] w-[200px] h-[200px] rounded-full absolute blur-[67px] top-[50%] -translate-y-[59%] z-0 -left-[40%]'></div>
                         <div className='bg-[#355D86] w-[100px] h-[100px] rounded-full absolute blur-[55px] top-[20px] z-0 -right-[0]'></div>
                         <div className='p-0.5 lg:p-1 rounded-[10px] bg-[#303018] w-6/12 ml-auto text-center absolute top-4 right-6 z-[1]'>
@@ -555,7 +555,7 @@ export default function Pricing({ setIsForm }) {
                         )}
                         <button className='w-10/12 lg:w-[170px] h-[45px] absolute z-[1] bottom-4 left-[50%] -translate-x-[50%] bg-gradient-to-bl from-[#FDD01F] via-[#FDD320] via-[#F8C240] to-[#F8861B] rounded-[5px] lg:rounded-[10px] text-[#2A2200] font-medium text-[16px] border-[1px] border-[#FFE784]' onClick={() => { setIsForm(true) }}>Get Started</button>
                     </div>
-                    <div className={`p-5 w-full lg:w-[320px] border-[1px] border-[#FFFFFF1A] rounded-[10px] lg:rounded-[30px] hover:scale-[1.1] transition-all duration-700 relative overflow-hidden ${knowMoreB3Y ? "h-[810px] lg:h-[1050px]" : "h-[380px] lg:h-[500px]"}`}>
+                    <div className={`p-5 w-full lg:w-[320px] border-[1px] border-[#FFFFFF1A] rounded-[10px] lg:rounded-[30px] sm:hover:scale-[1.1] transition-all duration-700 relative overflow-hidden ${knowMoreB3Y ? "h-[810px] lg:h-[1050px]" : "h-[380px] lg:h-[500px]"}`}>
                         <div className='bg-[#355D86] w-[200px] h-[200px] rounded-full absolute blur-[67px] top-[50%] -translate-y-[59%] z-0 -left-[40%]'></div>
                         <div className='bg-[#355D86] w-[100px] h-[100px] rounded-full absolute blur-[55px] top-[20px] z-0 -right-[0]'></div>
                         <h2 className='text-[#FFFFFF] text-[20px] lg:text-[36px] font-bold lg:mt-[10px] lg:ml-[20px] relative z-[1]'>$25 <span className='text-[#BCBCBC] text-[10px] lg:text-[16px] font-medium'>User/month</span></h2>
@@ -643,11 +643,11 @@ export default function Pricing({ setIsForm }) {
                                 </div>
                                 <div className='flex gap-2 items-center lg:ml-[20px] my-[10px] lg:my-[15px] relative z-[1]'>
                                     <img src={tik} alt='tik' className='w-[15px] lg:w-[17px]' />
-                                    <h3 className='text-[#F0F0F0] text-[13px] lg:text-[15px] font-medium'>Suitable for medium enterprises</h3>
+                                    <h3 className='text-[#F0F0F0] text-[13px] lg:text-[15px] font-medium'>Suitable for Large enterprises</h3>
                                 </div>
                                 <div className='flex gap-2 items-center lg:ml-[20px] my-[10px] lg:my-[15px] relative z-[1]'>
                                     <img src={tik} alt='tik' className='w-[15px] lg:w-[17px]' />
-                                    <h3 className='text-[#F0F0F0] text-[13px] lg:text-[15px] font-medium'>Can retrive last 12 months data</h3>
+                                    <h3 className='text-[#F0F0F0] text-[13px] lg:text-[15px] font-medium'>Can retrive all years data</h3>
                                 </div>
                                 <h3 className='text-[#FFDD09] text-[11px] lg:text-[13px] font-medium lg:ml-[20px] my-[10px] lg:my-[15px] cursor-pointer relative z-[1]' onClick={() => { setKnowMoreB3Y(false) }}>less...</h3>
                                 <div className='bg-[#355D86] w-[100px] h-[100px] rounded-full absolute blur-[55px] bottom-[20px] z-0 -right-[0]'></div>
@@ -655,7 +655,7 @@ export default function Pricing({ setIsForm }) {
                         )}
                         <button className='w-10/12 lg:w-[170px] h-[45px] absolute z-[1] bottom-4 left-[50%] -translate-x-[50%] bg-gradient-to-bl from-[#FDD01F] via-[#FDD320] via-[#F8C240] to-[#F8861B] rounded-[5px] lg:rounded-[10px] text-[#2A2200] font-medium text-[16px] border-[1px] border-[#FFE784]' onClick={() => { setIsForm(true) }}>Get Started</button>
                     </div>
-                    <div className={`p-5 w-full lg:w-[320px] border-[1px] border-[#FFFFFF1A] rounded-[10px] lg:rounded-[30px] hover:scale-[1.1] transition-all duration-700 relative overflow-hidden ${knowMoreB4Y ? "h-[860px] lg:h-[1100px]" : "h-[380px] lg:h-[500px]"}`}>
+                    <div className={`p-5 w-full lg:w-[320px] border-[1px] border-[#FFFFFF1A] rounded-[10px] lg:rounded-[30px] sm:hover:scale-[1.1] transition-all duration-700 relative overflow-hidden ${knowMoreB4Y ? "h-[860px] lg:h-[1100px]" : "h-[380px] lg:h-[500px]"}`}>
                         <div className='bg-[#355D86] w-[200px] h-[200px] rounded-full absolute blur-[67px] top-[50%] -translate-y-[59%] z-0 -left-[40%]'></div>
                         <div className='bg-[#355D86] w-[100px] h-[100px] rounded-full absolute blur-[55px] top-[20px] z-0 -right-[0]'></div>
                         <h2 className='text-[#FFFFFF] text-[20px] lg:text-[36px] font-bold lg:mt-[10px] lg:ml-[20px] relative z-[1]'>$49 <span className='text-[#BCBCBC] text-[10px] lg:text-[16px] font-medium'>User/month</span></h2>
@@ -749,10 +749,10 @@ export default function Pricing({ setIsForm }) {
                                     <img src={tik} alt='tik' className='w-[15px] lg:w-[17px]' />
                                     <h3 className='text-[#F0F0F0] text-[13px] lg:text-[15px] font-medium'>Can retrive all years data</h3>
                                 </div>
-                                <div className='flex gap-2 items-center lg:ml-[20px] my-[10px] lg:my-[15px] relative z-[1]'>
+                                {/* <div className='flex gap-2 items-center lg:ml-[20px] my-[10px] lg:my-[15px] relative z-[1]'>
                                     <img src={tik} alt='tik' className='w-[15px] lg:w-[17px]' />
                                     <h3 className='text-[#F0F0F0] text-[13px] lg:text-[15px] font-medium'>Custom Pricing</h3>
-                                </div>
+                                </div> */}
                                 <div className='flex gap-2 items-center lg:ml-[20px] my-[10px] lg:my-[15px] relative z-[1]'>
                                     <img src={tik} alt='tik' className='w-[15px] lg:w-[17px]' />
                                     <h3 className='text-[#F0F0F0] text-[13px] lg:text-[15px] font-medium'>24/7 Support</h3>

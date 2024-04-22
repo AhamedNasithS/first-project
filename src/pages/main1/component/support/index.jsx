@@ -62,22 +62,22 @@ export default function Support() {
         </div>
       </div>
       <div className='grid grid-cols-2 lg:flex w-full gap-6 lg:gap-16 items-center justify-center mt-[20px] lg:mt-[50px]'>
-        <div className='bg-[#FFFFFF14] size-full lg:size-[210px] border-[1px] border-[#FFFFFF0A] rounded-[20px] lg:rounded-[40px] flex flex-col justify-center items-center p-3 hover:scale-[1.1] transition-all duration-500' style={{ boxShadow: '0px 2.63px 0px 0px #FFFFFF14 inset' }}>
+        <div className='bg-[#FFFFFF14] size-[210px] m-auto border-[1px] border-[#FFFFFF0A] rounded-[20px] lg:rounded-[40px] flex flex-col justify-center items-center p-3 hover:scale-[1.1] transition-all duration-500' style={{ boxShadow: '0px 2.63px 0px 0px #FFFFFF14 inset' }}>
           <img src='https://dz1x1c630cl14.cloudfront.net/webassets/supports.svg' alt='support' className='w-[50px] lg:w-auto' />
           <h2 className='font-semibold text-[18px] lg:text-[28px] text-[#FFF] my-[10px] lg:my-[15px]'>24/7</h2>
           <h3 className='font-medium text-[12px] lg:text-[18px] text-[#FFFFFF]'>Support</h3>
         </div>
-        <div className='bg-[#FFFFFF14] size-full lg:size-[210px] border-[1px] border-[#FFFFFF0A] rounded-[20px] lg:rounded-[40px] flex flex-col justify-center items-center p-3 hover:scale-[1.1] transition-all duration-500' style={{ boxShadow: '0px 2.63px 0px 0px #FFFFFF14 inset' }}>
+        <div className='bg-[#FFFFFF14] size-[210px] m-auto border-[1px] border-[#FFFFFF0A] rounded-[20px] lg:rounded-[40px] flex flex-col justify-center items-center p-3 hover:scale-[1.1] transition-all duration-500' style={{ boxShadow: '0px 2.63px 0px 0px #FFFFFF14 inset' }}>
           <img src='https://dz1x1c630cl14.cloudfront.net/webassets/response.svg' alt='response' className='w-[50px] lg:w-auto' />
           <h2 className='font-semibold text-[18px] lg:text-[28px] text-[#FFF] my-[10px] lg:my-[15px]'>{"<1h"}</h2>
           <h3 className='font-medium text-[12px] lg:text-[18px] text-[#FFFFFF]'>Response</h3>
         </div>
-        <div className='bg-[#FFFFFF14] size-full lg:size-[210px] border-[1px] border-[#FFFFFF0A] rounded-[20px] lg:rounded-[40px] flex flex-col justify-center items-center p-3 hover:scale-[1.1] transition-all duration-500' style={{ boxShadow: '0px 2.63px 0px 0px #FFFFFF14 inset' }}>
+        <div className='bg-[#FFFFFF14] size-[210px] m-auto border-[1px] border-[#FFFFFF0A] rounded-[20px] lg:rounded-[40px] flex flex-col justify-center items-center p-3 hover:scale-[1.1] transition-all duration-500' style={{ boxShadow: '0px 2.63px 0px 0px #FFFFFF14 inset' }}>
           <img src='https://dz1x1c630cl14.cloudfront.net/webassets/statisfiction.svg' alt='statisfiction' className='w-[50px] lg:w-auto' />
           <h2 className='font-semibold text-[18px] lg:text-[28px] text-[#FFF] my-[10px] lg:my-[15px]'>95%</h2>
           <h3 className='font-medium text-[12px] lg:text-[18px] text-[#FFFFFF]'>Satisfaction</h3>
         </div>
-        <div className='bg-[#FFFFFF14] size-full lg:size-[210px] border-[1px] border-[#FFFFFF0A] rounded-[20px] lg:rounded-[40px] flex flex-col justify-center items-center p-3 hover:scale-[1.1] transition-all duration-500' style={{ boxShadow: '0px 2.63px 0px 0px #FFFFFF14 inset' }}>
+        <div className='bg-[#FFFFFF14] size-[210px] m-auto border-[1px] border-[#FFFFFF0A] rounded-[20px] lg:rounded-[40px] flex flex-col justify-center items-center p-3 hover:scale-[1.1] transition-all duration-500' style={{ boxShadow: '0px 2.63px 0px 0px #FFFFFF14 inset' }}>
           <img src='https://dz1x1c630cl14.cloudfront.net/webassets/uptime.svg' alt='uptime' className='w-[50px] lg:w-auto' />
           <h2 className='font-semibold text-[18px] lg:text-[28px] text-[#FFF] my-[10px] lg:my-[15px]'>99.99%</h2>
           <h3 className='font-medium text-[12px] lg:text-[18px] text-[#FFFFFF]'>Uptime</h3>
