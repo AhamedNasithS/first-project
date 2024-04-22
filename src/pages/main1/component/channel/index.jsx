@@ -9,9 +9,8 @@ export default function Channel() {
   }, []);
 
   return (
-    <div className='w-11/12 mx-auto relative lg:flex gap-[20px] items-center my-[20px] lg:my-[100px]'>
-      {/* <img src={Cave} alt='cave' className='absolute -top-[100px] -right-[20px] hidden lg:block' /> */}
-      <div className='absolute -top-[80px] -right-[0px] hidden lg:block w-[100px] lg:w-[340px] h-[40px] lg:h-[55px]'>
+    <div className='w-11/12 mx-auto relative lg:flex gap-[20px] items-center mb-[20px] lg:mb-[100px]'>
+      <div className='absolute -top-[80px] -right-[30px] hidden lg:block w-[100px] lg:w-[340px] h-[40px] lg:h-[55px]'>
         <div className='w-full h-full animationBorder bg-[#3E3E3E] pt-[1px] pr-[1px] relative z-[1] lg:rounded-tr-[50px]'>
           <div className='w-full h-full p-[2px] lg:p-[6px] bg-[#000] relative z-[5] rounded-tr-[50px]'>
           </div>
@@ -25,7 +24,7 @@ export default function Channel() {
         <h3 className='mt-[10px] text-[#E4E8EB] font-medium text-[14px] lg:text-[28px]'>A Space to Communicate and get aligned with your team on Projects and tasks </h3>
       </div>
       <div className='lg:basis-1/2 flex justify-end mt-[20px] lg:mt-0' data-aos="zoom-in-left" data-aos-duration="4000">
-        <img src="https://dz1x1c630cl14.cloudfront.net/webassets/channels.webp" alt='channel' />
+        <img src="https://dz1x1c630cl14.cloudfront.net/webassets/channel.webp" alt='channel' />
       </div>
     </div>
   )

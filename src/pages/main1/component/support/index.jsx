@@ -46,7 +46,7 @@ export default function Support() {
 }, []);
 
   return (
-    <div className="flex flex-col items-center relative px-[20px] lg:px-0 w-full lg:w-10/12 mx-auto my-[20px] lg:my-[100px]">
+    <div className="flex flex-col items-center relative px-[20px] lg:px-0 w-full lg:w-10/12 mx-auto mb-[20px] lg:mb-[100px]">
       <h3 className='text-[24px] sm:text-[40px] lg:text-[65px] font-semibold bg-gradient-to-l from-[#FDD220] to-[#FFFFFF] bg-clip-text text-transparent'>World-Class Support Team</h3>
       <div ref={buttonRef} className='border-[1px] border-[#FDD220] bg-transparent rounded-[5px] lg:rounded-[20px] mt-[10px] glow-button'>
         <h1 className='text-[#FFFFFF] font-medium text-[14px] lg:text-[22px] span'>Contact</h1>

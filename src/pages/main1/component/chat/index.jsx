@@ -9,7 +9,7 @@ export default function Chat() {
   }, []);
 
   return (
-    <div className='w-11/12 mx-auto relative flex flex-col-reverse lg:flex-row gap-[20px] items-center sm:items-start lg:items-center my-[20px] lg:my-[100px]'>
+    <div className='w-11/12 mx-auto relative flex flex-col-reverse lg:flex-row gap-[20px] items-center sm:items-start lg:items-center mb-[20px] lg:mb-[100px]'>
       {/* <img src={Cave1} alt='cave' className='absolute -top-[90px] -left-[20px] hidden lg:block'/> */}
       <div className='absolute -top-[80px] -left-[0px] hidden lg:block w-[100px] lg:w-[340px] h-[40px] lg:h-[55px]'>
         <div className='w-full h-full animationBorderLeft bg-[#3E3E3E] pt-[1px] pl-[1px] relative z-[1] lg:rounded-tl-[50px]'>

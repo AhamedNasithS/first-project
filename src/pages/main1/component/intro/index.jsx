@@ -2,8 +2,8 @@ import React from 'react'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-export default function Intro({setIsForm}) {
-    const [email, setEmail] = React.useState('');
+export default function Intro({setIsForm, email, setEmail}) {
+    // const [email, setEmail] = React.useState('');
 
     const handleEmail = (e) => {
         const email = e.target.value;
