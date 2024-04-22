@@ -4,7 +4,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import Arrow from "../../../../images/rightArrow.svg";
 
-export default function Testimonial({setIsVideo, setVideoIndex}) {
+export default function Testimonial({ setIsVideo, setVideoIndex }) {
     var settings = {
         dots: false,
         infinite: false,
@@ -15,8 +15,8 @@ export default function Testimonial({setIsVideo, setVideoIndex}) {
         swipe: false,
         arrows: false,
         centerMode: false,
-        prevArrow: <img src={Arrow} alt='arrow'/>,
-        nextArrow: <img src={Arrow} alt='arrow'/>,
+        prevArrow: <img src={Arrow} alt='arrow' />,
+        nextArrow: <img src={Arrow} alt='arrow' />,
         responsive: [
             {
                 breakpoint: 1440,
@@ -28,6 +28,9 @@ export default function Testimonial({setIsVideo, setVideoIndex}) {
             {
                 breakpoint: 426,
                 settings: {
+                    dots: true,
+                    swipe: true,
+                    arrows: true,
                     slidesToShow: 1,
                     centerMode: false
                 }
@@ -48,7 +51,7 @@ export default function Testimonial({setIsVideo, setVideoIndex}) {
 
             <Slider {...settings} className='w-full relative testimonialSlider mt-[30px] lg:mt-[50px] px-[20px] lg:px-0'>
                 {Testimonials.map((item, index) => (
-                    <div key={index} className='focus:outline-none relative pr-[10px]' onClick={() => {setIsVideo(true); setVideoIndex(index)}}>
+                    <div key={index} className='focus:outline-none relative pr-[10px]' onClick={() => { setIsVideo(true); setVideoIndex(index) }}>
                         <img src={item.image} alt='profile' />
                     </div>
                 ))}
