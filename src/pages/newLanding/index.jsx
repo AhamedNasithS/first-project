@@ -7,7 +7,7 @@ import Power from '../earth';
 import Revolution from '../revolution';
 
 
-export default function Landing1() {
+export default function NewLanding() {
     return (
         <div className='flex flex-col justify-start items-center w-full h-full bg-[#010306] relative overflow-hidden px-[20px] sm:px-0'>
             <Banner />
