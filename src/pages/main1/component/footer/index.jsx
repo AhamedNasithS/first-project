@@ -35,12 +35,12 @@ export default function Footer() {
                         {/* <h3 className='text-[#E2E8FF8C] text-[14px] font-normal mt-[10px]'>About Us</h3> */}
                         <a href='/privacy'><h3 className='text-[#E2E8FF8C] text-[14px] font-normal cursor-pointer'>Privacy Policy</h3></a>
                         <a href='/terms'><h3 className='text-[#E2E8FF8C] text-[14px] font-normal cursor-pointer'>Terms And Condition</h3></a>
-                        <a href='/refund'><h3 className='text-[#E2E8FF8C] text-[14px] font-normal cursor-pointer'>Refund Policy</h3></a>
+                        {/* <a href='/refund'><h3 className='text-[#E2E8FF8C] text-[14px] font-normal cursor-pointer'>Refund Policy</h3></a> */}
                     </div>
             </div>
             <div className='mt-[100px] w-11/12 mx-auto pb-8'>
                 <div className='col-span-2'>
-                    <p className='text-[#E2E8FF59] text-[12px] font-normal'>Copyright © 2023 Realm Software Inc. All rights reserved.</p>
+                    <p className='text-[#E2E8FF59] text-[12px] font-normal'>Copyright © 2024. All rights reserved.</p>
                 </div>
                 {/* <div className='flex items-center gap-[50px]'>
                     <p className='text-[#E2E8FF59] text-[12px] font-normal'>Privacy Policy</p>

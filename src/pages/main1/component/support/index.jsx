@@ -7,7 +7,7 @@ export default function Support() {
   const buttonRef = React.useRef(null);
 
   const handleEmailClick = () => {
-    window.location.href = 'https://mail.google.com/mail/?view=cm&fs=1&to=hello@100startups.com';
+    window.location.href = 'https://mail.google.com/mail/?view=cm&fs=1&to=hello@get1.ai';
   };
   React.useEffect(() => {
     const button = buttonRef.current;
