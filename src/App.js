@@ -1,7 +1,7 @@
 import React from 'react'
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Landing from './pages/landing';
-// import Landing1 from './pages/landing1';
+import NewLanding from './pages/newLanding';
 // import ContactUs from './pages/contact';
 import Refund from './pages/refund';
 import Privacy from './pages/privacy';
@@ -20,7 +20,7 @@ export default function App() {
         <Route path='/home' element={<Home/>}/>
         <Route path='/main' element={<Main/>}/>
         <Route path='/main1' element={<Main1/>}/>
-        {/* <Route path='/development' element={<Landing1/>}/> */}
+        <Route path='/development' element={<NewLanding/>}/>
         {/* <Route path='/ContactUs' element={<ContactUs/>}/> */}
         <Route path='/refund' element={<Refund/>}/>
         <Route path='/privacy' element={<Privacy/>}/>
