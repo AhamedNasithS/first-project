@@ -1,6 +1,7 @@
 import React from 'react'
 import { TbMenuDeep } from "react-icons/tb"
 import { RxCross2 } from "react-icons/rx";
+import logo from "../../../images/one_ai-Logo1.svg";
 
 export default function Mobile({setIsForm}) {
     const [isOpen, setIsOpen] = React.useState(false);
@@ -24,7 +25,7 @@ export default function Mobile({setIsForm}) {
             {isOpen ? (
                 <div className={`rounded-b-[20px] bg-gradient-to-t from-[#111830] to-[#13131300] z-[15] fixed top-0 left-0 right-0`}>
                     <div className='w-full mx-auto flex justify-between items-center p-[20px] border-b-[1px] border-[#24203D] z-[5]'>
-                        <img src="https://dz1x1c630cl14.cloudfront.net/webassets/one_ai-Logo.svg" alt='logo' />
+                        <img src={logo} alt='logo' />
                         <RxCross2 className='bg-gradient-to-t from-[#111830] to-[#13131300] text-[#E2E8FFBF] w-[24px] h-[24px] p-[3px] border-[#E2E8FFBF] border-[1px] rounded' onClick={() => setIsOpen(!isOpen)} />
                     </div>
                     <div className='w-9/12 mx-auto mt-6'>

@@ -1,4 +1,5 @@
 import React from 'react'
+import logo from "../../../images/one_ai-Logo1.svg";
 
 export default function Desktop({setIsForm}) {
     const handleFeatureClick = () => {
@@ -16,7 +17,7 @@ export default function Desktop({setIsForm}) {
     };
     return (
         <div className='flex justify-between items-center h-[80px] w-full bg-gradient-to-t from-[#111830] to-[#13131300] p-[24px]'>
-            <img src="https://dz1x1c630cl14.cloudfront.net/webassets/one_ai-Logo.svg" alt='logo' />
+            <img src={logo} alt='logo' />
             <div className='flex gap-8 px-8 py-4 rounded-[40px] border-[1px] border-[#E2E8FF1A]'>
                 {/* <h3 className='text-[#E2E8FFBF] font-normal text-[14px] cursor-pointer'>Product</h3> */}
                 <h3 className='text-[#E2E8FFBF] font-normal text-[14px] cursor-pointer' onClick={() => { handleFeatureClick() }}>Features</h3>
