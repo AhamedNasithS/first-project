@@ -84,6 +84,7 @@ export default function Main1() {
         phone: phoneNumber,
         company_name: companyName
       });
+    const { response } =  await axios.post(API.HOST, { email: email });
     if (data?.statusCode === 200) {
       setName('');
       setEmail('');
