@@ -39,8 +39,8 @@ export default function Testimonial({ setIsVideo, setVideoIndex }) {
     };
 
     const Testimonials = [
-        { image: "https://dz1x1c630cl14.cloudfront.net/webassets/testimonialsview2.svg" },
-        { image: "https://dz1x1c630cl14.cloudfront.net/webassets/testimonials1.svg" },
+        { image: "https://dz1x1c630cl14.cloudfront.net/webassets/T1.webp" },
+        { image: "https://dz1x1c630cl14.cloudfront.net/webassets/T2.webp" },
     ];
 
     return (
@@ -49,10 +49,10 @@ export default function Testimonial({ setIsVideo, setVideoIndex }) {
             <h3 className='text-[24px] sm:text-[35px] lg:text-[45px] font-semibold bg-gradient-to-l from-[#FDD220] to-[#FFFFFF] bg-clip-text text-transparent'>What our Client Says</h3>
             <h4 className='text-[12px] sm:text-[16px] lg:text-[18px] text-center lg:text-start font-normal text-[#FFFBEC] mt-[10px] w-full lg:w-8/12 xl:w-4/12 px-[20px] lg:px-0'>Harmony of Happiness: Cherished Tales from Our Valued Customers</h4>
 
-            <Slider {...settings} className='w-full relative testimonialSlider mt-[30px] lg:mt-[50px] px-[20px] lg:px-0'>
+            <Slider {...settings} className='w-full relative testimonialSlider mt-[30px] lg:mt-[50px] px-[20px] lg:px-[0px]'>
                 {Testimonials.map((item, index) => (
                     <div key={index} className='focus:outline-none relative pr-[10px]' onClick={() => { setIsVideo(true); setVideoIndex(index) }}>
-                        <img src={item.image} alt='profile' />
+                        <img src={item.image} alt='profile' className='w-[90%]' />
                     </div>
                 ))}
             </Slider>
