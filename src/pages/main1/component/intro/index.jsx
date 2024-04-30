@@ -43,7 +43,7 @@ export default function Intro({ setIsForm, email, setEmail }) {
                     </div> */}
                 </div>
             </div>
-            <img src='https://dz1x1c630cl14.cloudfront.net/webassets/intro.webp' alt='intro'
+            <img src='https://dz1x1c630cl14.cloudfront.net/webassets/Mainscreen.webp' alt='intro'
                 // data-aos="zoom-in-up" data-aos-duration="1500" 
                 className='mt-[15px] lg:mt-[25px] xl:mt-[50px] w-[80%]' />
         </div>
