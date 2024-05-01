@@ -8,8 +8,9 @@ import Privacy from './pages/privacy';
 import Terms from './pages/terms';
 import Home from './pages/home 2';
 // import Navbar from './pages/navbar';
-import Main from './pages/main';
+// import Main from './pages/main';
 import Main1 from './pages/main1';
+// import Blog from './pages/blog';
 
 export default function App() {
   return (
@@ -20,6 +21,7 @@ export default function App() {
         <Route path='/home' element={<Home/>}/>
         <Route path='/main' element={<Main1/>}/>
         <Route path='/*' element={<Main1/>}/>
+        {/* <Route path='/blog' element={<Blog/>}/> */}
         <Route path='/development' element={<NewLanding/>}/>
         {/* <Route path='/ContactUs' element={<ContactUs/>}/> */}
         <Route path='/refund' element={<Refund/>}/>
