@@ -162,12 +162,9 @@ body {
   background-size: cover;
 }
 
-
-
 .nav {
   background: linear-gradient(360deg, #111830 -57.05%, rgba(19, 19, 19, 0) 435.9%);
 }
-
 
 @layer utilities {
   .border-gradient:before {
@@ -294,34 +291,6 @@ body {
   }
 }
 
-/* @keyframes scaleUp {
-  from {
-    transform: translate(-50%, -50%) scale(1);
-  }
-  to {
-    transform: translate(-50%, -50%) scale(2.5);
-  }
-}
-
-@keyframes scaleDown {
-  from {
-    transform: scale(1);
-  }
-  to {
-    transform: scale(0);
-  }
-}
-
-.scale1{
-  z-index: 0;
-  animation: scaleDown 8s infinite alternate;
-}
-
-.scale2{
-  z-index: 1;
-  animation: scaleUp 8s infinite alternate;
-} */
-
 .borderFooter {
   border-top: 1px solid;
   border-image-source: linear-gradient(90deg, rgba(226, 232, 255, 0) 7.15%, rgba(226, 232, 255, 0.8) 47.31%, rgba(226, 232, 255, 0) 90.49%);
@@ -380,7 +349,6 @@ body {
   color: #27AE60;
 }
 
-
 .testimonialSlider .slick-dots li button {
   width: 10px;
   height: 10px;
@@ -407,7 +375,6 @@ body {
   background: linear-gradient(248.4deg, #FDD220 -106.9%, #FFFFFF 67.63%);
   border-radius: 100%;
 }
-
 
 .testimonialSlider .slick-dots li {
   width: 10px;
@@ -439,9 +406,6 @@ body {
   animation: prevArrow 4s infinite;
   left: 150px;
 }
-
-
-
 
 @keyframes nextArrow {
 
@@ -589,7 +553,6 @@ body {
     left: 114px;
   }
 }
-
 
 .h2 {
   font-size: 22px;
@@ -874,6 +837,7 @@ button.b1.active .shimmer::after {
   opacity: 0.3;
   animation:shines 1.5s ease infinite;
 }
+
 @keyframes shines{
   from{
     transform:  skew(-45deg);;
@@ -881,4 +845,21 @@ button.b1.active .shimmer::after {
   to{
     transform: skew(-45deg) translateX(1000px);
   }
+}
+
+.comparative .slick-next,
+.comparative .slick-prev {
+  width: 40px;
+  height: 40px;
+  z-index: 1;
+  top: 460px;
+  bottom: auto;
+}
+
+.comparative .slick-next {
+  right: 130px;
+}
+
+.comparative .slick-prev {
+  right: 200px; left: auto;
 }
