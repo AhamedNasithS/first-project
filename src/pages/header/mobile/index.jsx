@@ -38,9 +38,9 @@ export default function Mobile({setIsForm}) {
                         {/* <div className={`mr-[40px] text-[#E2E8FF] py-[10px] mb-6 cursor-pointer rounded-[5px]`} onClick={() => {setIsOpen(false); handlePricingClick()}}>
                             <h1 className="font-medium text-1xl">Pricing</h1>
                         </div> */}
-                        {/* <div className={`mr-[40px] text-[#E2E8FF] py-[10px] mb-6 cursor-pointer rounded-[5px]`} onClick={() => {setIsOpen(false); handleFeatureClick()}}>
+                        <div className={`mr-[40px] text-[#E2E8FF] py-[10px] mb-6 cursor-pointer rounded-[5px]`} onClick={() => {setIsOpen(false); handleFeatureClick()}}>
                             <h1 className="font-medium text-1xl">Blog</h1>
-                        </div> */}
+                        </div>
                         <div className={`mr-[40px] text-[#E2E8FF] py-[10px] mb-6 cursor-pointer rounded-[5px]`} onClick={() => {setIsForm(true)}}>
                             <h1 className="font-medium text-1xl">Enterprise</h1>
                         </div>
@@ -49,7 +49,7 @@ export default function Mobile({setIsForm}) {
                 </div>
             ) : (
                 <div className='w-full flex justify-between items-center p-[20px]  border-b-[1px] border-[#24203D] z-[5]'>
-                    <img src="https://dz1x1c630cl14.cloudfront.net/webassets/one_ai-Logo.svg" alt='logo' />
+                    <img src={logo} alt='logo' />
                     <TbMenuDeep className='bg-gradient-to-t from-[#111830] to-[#13131300] text-[#E2E8FFBF] w-[24px] h-[24px] p-[3px] border-[#E2E8FFBF] border-[1px] rounded' onClick={() => setIsOpen(!isOpen)} />
                 </div>
             )}
