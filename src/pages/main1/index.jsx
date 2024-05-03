@@ -40,7 +40,9 @@ export default function Main1() {
 
 
   const handleNameChange = (e) => {
-    setName(e.target.value)
+    if (/^[\x20-\x7E]*$/.test(e.target.value)) {
+      setName(e.target.value)
+    }
   }
 
   const handleEmailChange = (e) => {
@@ -58,17 +60,19 @@ export default function Main1() {
   }
 
   const handleCompanyNameChange = (e) => {
-    setCompanyName(e.target.value);
+    if (/^[\x20-\x7E]*$/.test(e.target.value)) {
+      setCompanyName(e.target.value);
+    }
   }
 
   const handlePhoneNumberChange = (e) => {
-    setPhoneNumber(e.target.value)
-    const phoneNumber = e.target.value;
+    const phoneNumbers = e.target.value.replace(/\D/g, '');
+    setPhoneNumber(phoneNumbers)
     const isValidPhoneNumber = /^\d{10}$/;
-    if (phoneNumber === "") {
+    if (phoneNumbers === "") {
       setPhoneNumberError(false);
     }
-    else if (!isValidPhoneNumber.test(phoneNumber)) {
+    else if (!isValidPhoneNumber.test(phoneNumbers)) {
       setPhoneNumberError(true);
     } else {
       setPhoneNumberError(false);
