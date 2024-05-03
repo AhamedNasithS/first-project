@@ -10,7 +10,7 @@ import Features from './component/features';
 import Footer from './component/footer';
 import Testimonial from './component/testimonials';
 import Availbles from './component/avaibles';
-import Pricing from './component/price';
+// import Pricing from './component/price';
 import IpadView from './component/ipadview';
 import Support from './component/support';
 import Access from './component/access';
@@ -84,6 +84,7 @@ export default function Main1() {
         phone: phoneNumber,
         company_name: companyName
       });
+    const { response } =  await axios.post(API.HOST, { email: email });
     if (data?.statusCode === 200) {
       setName('');
       setEmail('');
@@ -104,7 +105,7 @@ export default function Main1() {
       <Header setIsForm={setIsForm} />
       <Intro setIsForm={setIsForm} email={email} setEmail={setEmail} />
       <Features />
-      <img src='https://dz1x1c630cl14.cloudfront.net/webassets/Mobilemocs.webp' alt='mobileView'
+      <img src='https://dz1x1c630cl14.cloudfront.net/webassets/mobiles.webp' alt='mobileView'
         // data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="10000" 
         className='my-[20px] lg:my-[100px] p-[20px] w-[80%]' />
       <Channel />
@@ -113,7 +114,7 @@ export default function Main1() {
       <Chat />
       <Ai />
       <Availbles />
-      <img src='https://dz1x1c630cl14.cloudfront.net/webassets/Devicemockup3.webp' alt='availble' className='mt-[10px] lg:mt-[50px] p-[20px] w-[80%] relative z-10'
+      <img src='https://dz1x1c630cl14.cloudfront.net/webassets/Devicemockup.webp' alt='availble' className='mt-[10px] lg:mt-[50px] p-[20px] w-[80%] z-[1]'
       // data-aos="zoom-in" data-aos-duration="2000" 
       />
       {/* <Pricing setIsForm={setIsForm} /> */}
