@@ -17,12 +17,12 @@ import prevBtn from "../../../../images/prevbtn.svg";
 export default function Comparative() {
     var settings = {
         dots: false,
-        infinite: false,
+        infinite: true,
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplaySpeed: 1000,
-        swipe: false,
+        swipe: true,
         arrows: true,
         autoplay: true,
         centerMode: false,
@@ -39,25 +39,25 @@ export default function Comparative() {
     ]
     return (
         <div className='flex flex-col justify-center items-center w-10/12 relative z-[1] mx-auto'>
-            <h2 className='text-[40px] bg-gradient-to-r from-[#FFFFFF] to-[#FDD220] bg-clip-text text-transparent inter-bold relative z-[1] w-9/12'>How Workfast.ai is most efficient software tool comparatively ?</h2>
-            <Slider {...settings} className='w-full relative mt-[100px] mb-[50px] comparative'>
+            <h2 className='text-[20px] md:text-[26px] lg:text-[32px] xl:text-[40px] bg-gradient-to-r from-[#FFFFFF] to-[#FDD220] bg-clip-text text-transparent inter-bold relative z-[1] w-10/12 lg:w-9/12'>How Workfast.ai is most efficient software tool comparatively ?</h2>
+            <Slider {...settings} className='w-full relative mt-[30px] md:mt-[60px] lg:mt-[100px] mb-[50px] comparative'>
                 {slides.map((each, index) => (
                     <div key={index} className='focus:outline-none relative'>
                         <div className='flex flex-col items-center justify-center'>
-                            <img src={each?.image} alt='ai' className={`${index === 2 ? "w-[20%]" :"w-[50%]"}`} />
-                            <div className={`w-[80%] mx-auto ${index === 0 ? "mt-[100px]" : index === 1 ? "mt-[168px]" : index === 2 ? "mt-[105px]" : index === 3 ? "mt-[123px]" : index === 4 ? "mt-[160px]" : "mt-[77px]"}`}>
-                                <h2 className={`text-[40px] bg-gradient-to-r from-[#FFFFFF] to-[#FDD220] bg-clip-text text-transparent inter-bold ${index === 0 ? "w-[4%]" : index === 1 || index === 2 ? "w-[25%]" : index === 3 ? "w-[38%]" : index === 4 ? "w-[62%]" : "w-[43%]" }`}>{each?.title}</h2>
-                                <p className='text-[#E4E8EB] font-normal text-[26px] mt-[20px]'>{each?.description}</p>
+                            <img src={each?.image} alt='ai' className=" md:w-[80%]" />
+                            <div className="w-[80%] mx-auto mt-[30px] md:mt-[60px] lg:mt-[100px]">
+                                <h2 className={`text-[20px] md:text-[26px] lg:text-[32px] xl:text-[40px] bg-gradient-to-r from-[#FFFFFF] to-[#FDD220] bg-clip-text text-transparent inter-bold ${index === 0 ? "w-[12%] md:w-[5%] xl:w-[4%]" : index === 1 || index === 2 ? "w-[60%] md:w-[30%] xl:w-[25%]" : index === 3 ? "w-[70%] md:w-[50%] xl:w-[38%]" : index === 4 ? "w-full md:w-[80%] lg:w-[70%] xl:w-[62%]" : "w-full md:w-[60%] lg:w-[50%] xl:w-[43%]" }`}>{each?.title}</h2>
+                                <p className='text-[#E4E8EB] font-normal text-[12px] md:text-[16px] lg:text-[20px] xl:text-[26px] mt-[20px]'>{each?.description}</p>
                                 {each?.description1 !== "" && (
-                                    <p className='text-[#E4E8EB] font-normal text-[26px] mt-[10px]'>{each?.description1}</p>
+                                    <p className='text-[#E4E8EB] font-normal text-[12px] md:text-[16px] lg:text-[20px] xl:text-[26px] mt-[10px]'>{each?.description1}</p>
                                 )}
                             </div>
                         </div>
                     </div>
                 ))}
             </Slider>
-            <div className='bg-[#18599F] w-9/12 mx-auto h-[1px] rounded-sm'></div>
-            <p className='text-[#E4E8EB] font-normal text-[26px] mt-[40px] text-center w-10/12'>As we conclude , it is not about the tool rather it is about the efficiency which delivers best for the product development and management. Workfast.ai gives the best all-in features where one does not to find a replacement. Since product managers need to connect all dots , it is very important for them to find a workable software to work productively.</p>
+            <div className='w-9/12 mx-auto h-[1px] rounded-sm' style={{background: 'radial-gradient(6488.24% 804% at -355.73% -23.71%, #18599F 0%, rgba(53, 45, 10, 0) 100%)'}}></div>
+            <p className='text-[#E4E8EB] font-normal text-[12px] md:text-[16px] lg:text-[20px] xl:ext-[26px] mt-[40px] text-center w-10/12'>As we conclude , it is not about the tool rather it is about the efficiency which delivers best for the product development and management. Workfast.ai gives the best all-in features where one does not to find a replacement. Since product managers need to connect all dots , it is very important for them to find a workable software to work productively.</p>
         </div>
     )
 }

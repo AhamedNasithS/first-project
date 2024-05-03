@@ -15,7 +15,14 @@ export default function Intro({ setIsForm, email, setEmail }) {
     }, []);
 
     return (
-        <div className="bg-cover bg-center h-full w-full flex flex-col items-center relative mb-[20px] lg:mb-[60px] xl:mb-[100px]" style={{ backgroundImage: `url(https://dz1x1c630cl14.cloudfront.net/webassets/background.svg)` }}>
+        <div className="bg-cover bg-center h-full w-full flex flex-col items-center relative mb-[20px] lg:mb-[60px] xl:mb-[100px] overflow-hidden" 
+        // style={{ backgroundImage: `url(https://dz1x1c630cl14.cloudfront.net/webassets/background.svg)` }}
+        >
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
+            <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+            <div id='stars'></div>
+            <div id='stars2'></div>
+            <div id='stars3'></div>
             <div
                 // data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1500" 
                 className='text-center'>
@@ -45,7 +52,7 @@ export default function Intro({ setIsForm, email, setEmail }) {
             </div>
             <img src='https://dz1x1c630cl14.cloudfront.net/webassets/Mainscreen.webp' alt='intro'
                 // data-aos="zoom-in-up" data-aos-duration="1500" 
-                className='mt-[15px] lg:mt-[25px] xl:mt-[50px] w-[80%]' />
+                className='mt-[15px] lg:mt-[25px] xl:mt-[50px] w-[80%] relative' />
         </div>
     )
 }
