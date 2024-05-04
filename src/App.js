@@ -11,6 +11,7 @@ import Home from './pages/home 2';
 // import Main from './pages/main';
 import Main1 from './pages/main1';
 import Blog from './pages/blog';
+import Calender from './pages/calender';
 
 export default function App() {
   return (
@@ -27,6 +28,7 @@ export default function App() {
         <Route path='/refund' element={<Refund/>}/>
         <Route path='/privacy' element={<Privacy/>}/>
         <Route path='/terms' element={<Terms/>}/>
+        <Route path='/calendly' element={<Calender/>}/>
       </Routes>
     </Router>
   )
