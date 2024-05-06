@@ -109,7 +109,7 @@ export default function Main1() {
       <Header setIsForm={setIsForm} />
       <Intro setIsForm={setIsForm} email={email} setEmail={setEmail} />
       <Features />
-      <img src='https://dz1x1c630cl14.cloudfront.net/webassets/mobiles.webp' alt='mobileView'
+      <img src='https://dz1x1c630cl14.cloudfront.net/webassets/Mobilemocs.webp' alt='mobileView'
         // data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="10000" 
         className='my-[20px] lg:my-[100px] p-[20px] w-[80%]' />
       <Channel />

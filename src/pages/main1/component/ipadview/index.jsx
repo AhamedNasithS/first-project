@@ -40,7 +40,7 @@ export default function IpadView() {
                 <img src='https://dz1x1c630cl14.cloudfront.net/webassets/ipadview.webp' alt='tab' className='absolute w-[50%] bottom-[60px] md:bottom-[140px] left-[50%] -translate-x-[50%]'/>
             </div>
             {/* <img src='https://dz1x1c630cl14.cloudfront.net/webassets/icontab.webp' alt='ipad' data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" className='w-[80%]'/> */}
-            <h3 className='mt-[10px] bg-gradient-to-l from-[#FDD220] to-[#FFFFFF] bg-clip-text text-transparent font-semibold text-[22px] lg:text-[45px] lg:w-[99%] text-center'>When you can manage complex task easily with 1.ai, why would you still prefer  multiple tools to run your business?</h3>
+            <h3 className='mt-[10px] bg-gradient-to-l from-[#FDD220] to-[#FFFFFF] bg-clip-text text-transparent font-semibold text-[22px] lg:text-[45px] lg:w-[99%] text-center'>When you can manage complex task easily with workfast.ai, why would you still prefer  multiple tools to run your business?</h3>
             <div className='w-full sm:w-10/12 mt-[10px] lg:mt-[80px] mx-auto bg-[#0F162F80] border-[1px] border-[#E2E8FF1A] rounded-[4px] lg:rounded-[10px] p-4'>
                 <h2 className={`font-normal text-[22px] lg:text-[50px] text-[#FEF9F1] text-center h2 ${activeIndex === 0 ? 'block active' : 'hidden'}`}>No More <span className='text-[#FDD220]'>Excel Sheets</span></h2>
                 <h2 className={`font-normal text-[22px] lg:text-[50px] text-[#FEF9F1] text-center h2 ${activeIndex === 1 ? 'block active' : 'hidden'}`}>No More <span className='text-[#FDD220]'>Word Docs</span></h2>
