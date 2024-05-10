@@ -89,7 +89,7 @@ export default function LandingPage() {
     return (
         <div className='flex flex-col w-full h-full bg-[#010306] relative overflow-hidden'>
             <Header  setIsForm={setIsForm}/>
-            <img src={yellowGlow} alt='yellowGlow' className='absolute top-[80px] z-[0] ' />
+            <img src={yellowGlow} alt='yellowGlow' className='absolute top-[73px] md:top-[80px] z-[0] ' />
             <Main setIsForm={setIsForm} email={email} setEmail={setEmail}/>
             <Price />
             <Choose setIsForm={setIsForm} email={email} setEmail={setEmail}/>
