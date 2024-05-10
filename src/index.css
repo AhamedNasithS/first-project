@@ -1236,3 +1236,106 @@ button.b2.active .shimmer1::after {
     left: 0px;
   }
 }
+
+.shooting-stars {
+  z-index: 10;
+  width: 2px;
+  height: 85px; /* initial size + 80px as per mixin */
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(255,255,255,0), rgba(255,255,255,1));
+  animation: animShootingStar 20s linear infinite;
+}
+
+@keyframes animShootingStar {
+  from {
+    transform: translateY(0px) translateX(0px) rotate(-45deg);
+    opacity: 1;
+    height: 5px;
+  }
+  to {
+    transform: translateY(-560px) translateX(-560px) rotate(-45deg);
+    opacity: 0; /* Adjust for fade out */
+    height: 400px;
+  }
+}
+
+.shooting-stars1 {
+  z-index: 10;
+  width: 2px;
+  height: 85px; /* initial size + 80px as per mixin */
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  position: absolute;
+  bottom: 50%;
+  left: 0;
+  background: linear-gradient(to top, rgba(255,255,255,0), rgba(255,255,255,1));
+  animation: animShootingStar1 10s linear infinite;
+}
+
+@keyframes animShootingStar1 {
+  from {
+    transform: translateY(0px) translateX(0px) rotate(45deg);
+    opacity: 1;
+    height: 10px;
+  }
+  to {
+    transform: translateY(-460px) translateX(460px) rotate(45deg);
+    opacity: 0; /* Adjust for fade out */
+    height: 800px;
+  }
+}
+
+/* .glitter-text {
+  position: relative;
+  display: inline-block;
+}
+
+.glitter-text::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 20%;
+  background: white;
+  top: 0;
+  left: -10%;
+  transform: skew(-45deg);
+  opacity: 0.3;
+  animation: shines 1.5s ease infinite;
+}
+
+@keyframes shines {
+  from {
+    transform: skew(-45deg);
+  }
+  to {
+    transform: skew(-45deg) translateX(1000px);
+  }
+} */
+
+.glitter-text{
+	position: relative;
+	color: #FFDD09;
+	overflow:hidden;
+	background: linear-gradient(90deg,#000,#fff,#000);
+	background-repeat: no-repeat;
+	background-size: 80%;
+	animation: animate 3s linear infinite;
+	-webkit-background-clip:text;
+	-webkit-text-fill-color: #FFDD09;
+}
+
+@keyframes animate
+{
+	0%
+	{
+		background-position: -500%;
+	}
+	100%
+	{
+		background-position: 500%
+	}
+}
