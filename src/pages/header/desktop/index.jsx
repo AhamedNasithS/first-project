@@ -25,7 +25,7 @@ export default function Desktop({ setIsForm }) {
                 <a href='/blog'><h3 className='text-[#E2E8FFBF] font-normal text-[14px] cursor-pointer'>Blog</h3></a>
                 <h3 className='text-[#E2E8FFBF] font-normal text-[14px] cursor-pointer' onClick={() => { setIsForm(true) }}>Enterprise</h3>
             </div>
-            <button className='py-[8px] px-[12px] text-[#1B1600] text-[14px] font-semibold rounded-[8px] bg-gradient-to-bl from-[#FDD01F] via-[#FDD320] via-[#F8C240] to-[#F8861B]' onClick={() => { setIsForm(true) }}>Book a demo</button>
+            <a href='https://pepul.workfast.ai/'><button className='py-[8px] px-[12px] text-[#1B1600] text-[14px] font-semibold rounded-[8px] bg-gradient-to-bl from-[#FDD01F] via-[#FDD320] via-[#F8C240] to-[#F8861B]'>Sign up for free</button></a>
         </div>
     )
 }
