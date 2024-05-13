@@ -1,5 +1,6 @@
 import React from 'react'
 import yellowGlow from "../../images/yellowglow.png";
+import logo from "../../images/workfast.svg";
 import Header from '../header'
 import Main from './main'
 import Price from './pricing';
@@ -96,7 +97,7 @@ export default function LandingPage() {
             <Footer />
             {isForm && (
                 <div className="flex justify-center items-center text-center fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-full bg-[#121825] bg-opacity-60 z-[100]">
-                    <div className='w-[300px] md:w-[630px] md:h-[330px] bg-[#121825] rounded-[16px] p-[32px] relative z-[10]'>
+                    <div className='w-[300px] md:w-[630px] bg-[#121825] rounded-[16px] p-[32px] relative z-[10]'>
                         <div
                             className="absolute top-0 right-0 md:top-[20px] md:right-[20px] cursor-pointer border-[#FFFFFF] p-2 rounded-lg"
                             onClick={() => {
@@ -109,6 +110,7 @@ export default function LandingPage() {
                         >
                             <IoCloseSharp className='text-[#FFF] w-[20px] h-[20px] md:w-[30px] md:h-[30px]' />
                         </div>
+                        <h2 className='text-[#FFFFFF] font-semibold text-[20px]'>Start your 14-Day free trail with <span className='bg-clip-text text-transparent bg-gradient-to-l from-[#FDD220] to-[#FFFFFF]'>Workfast.ai?</span></h2>
                         <div className='grid md:grid-cols-2 gap-5 items-center mt-[15px] md:mt-[30px] w-full'>
                             <div className='w-full'>
                                 <div className='flex items-center gap-1'>
