@@ -1,6 +1,7 @@
 import React from 'react'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import ChannelImg from "../../../../images/channel1.webp";
 
 export default function Channel() {
 
@@ -26,7 +27,7 @@ export default function Channel() {
       <div className='lg:basis-1/2 flex justify-end mt-[20px] lg:mt-0' 
       // data-aos="zoom-in-left" data-aos-duration="4000"
       >
-        <img src="https://dz1x1c630cl14.cloudfront.net/webassets/channel.webp" alt='channel' />
+        <img src={ChannelImg} alt='channel' />
       </div>
     </div>
   )

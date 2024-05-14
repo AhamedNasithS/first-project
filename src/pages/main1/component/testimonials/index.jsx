@@ -39,7 +39,7 @@ export default function Testimonial({ setIsVideo, setVideoIndex }) {
     };
 
     const Testimonials = [
-        { image: "https://dz1x1c630cl14.cloudfront.net/webassets/T1.webp" },
+        // { image: "https://dz1x1c630cl14.cloudfront.net/webassets/T1.webp" },
         { image: "https://dz1x1c630cl14.cloudfront.net/webassets/T2.webp" },
     ];
 
