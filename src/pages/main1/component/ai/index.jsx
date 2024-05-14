@@ -1,6 +1,7 @@
 import React from 'react'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import AiImg from "../../../../images/ai1.webp";
 
 export default function Ai() {
 
@@ -26,7 +27,7 @@ export default function Ai() {
             <h3 className='mt-[10px] text-[#E4E8EB] font-medium text-[14px] lg:text-[28px]'>Get Intelligence response from workfast.ai of any data, information, report or summary  </h3>
         </div>
         <div className='lg:basis-1/2 flex justify-end'>
-            <img src="https://dz1x1c630cl14.cloudfront.net/webassets/Ai.webp" alt='channel' 
+            <img src={AiImg} alt='channel' 
             // data-aos="zoom-in-left" data-aos-duration="1000" 
             />
         </div>

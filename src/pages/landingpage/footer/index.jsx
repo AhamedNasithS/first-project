@@ -1,9 +1,9 @@
 import React from 'react'
-import logo from "../../../../images/one_ai-Logo1.svg"
+import logo from "../../../images/one_ai-Logo1.svg"
 
 export default function Footer() {
     return (
-        <div className='w-full'>
+        <div className='w-full mt-[100px]'>
             <div className='flex justify-between gap-[20px] lg:gap-[60px] lg:w-11/12 mx-auto borderFooter py-8 px-[20px]'>
             <img src={logo} alt='logo' className='w-[110px]' />
             <div className="flex flex-col gap-[10px] lg:ml-[40px] w-[110px] sm:w-auto">
@@ -11,10 +11,7 @@ export default function Footer() {
                         {/* <h3 className='text-[#E2E8FF8C] text-[14px] font-normal mt-[10px]'>About Us</h3> */}
                         <a href='/privacy'><h3 className='text-[#E2E8FF8C] text-[14px] font-normal cursor-pointer'>Privacy Policy</h3></a>
                         <a href='/terms'><h3 className='text-[#E2E8FF8C] text-[14px] font-normal cursor-pointer'>Terms And Condition</h3></a>
-
-
-                        <a href='/refund'><h3 className='text-[#E2E8FF8C] text-[14px] font-normal cursor-pointer'>Refund Policy </h3></a>
-
+                        <a href='/refund'><h3 className='text-[#E2E8FF8C] text-[14px] font-normal cursor-pointer'>Refund Policy</h3></a>
                         {/* <a href='/refund'><h3 className='text-[#E2E8FF8C] text-[14px] font-normal cursor-pointer'>Refund Policy</h3></a> */}
                     </div>
             </div>
