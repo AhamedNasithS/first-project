@@ -6,7 +6,7 @@ import NewLanding from './pages/newLanding';
 import Refund from './pages/refund';
 import Privacy from './pages/privacy';
 import Terms from './pages/terms';
-import Home from './pages/home 2';
+// import Home from './pages/home 2';
 // import Navbar from './pages/navbar';
 // import Main from './pages/main';
 import Main1 from './pages/main1';

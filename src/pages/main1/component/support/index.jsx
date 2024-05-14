@@ -7,7 +7,7 @@ export default function Support() {
   const buttonRef = React.useRef(null);
 
   const handleEmailClick = () => {
-    window.location.href = 'https://mail.google.com/mail/?view=cm&fs=1&to=hello@get1.ai';
+    window.open('https://mail.google.com/mail/?view=cm&fs=1&to=hello@get1.ai');
   };
   React.useEffect(() => {
     const button = buttonRef.current;
@@ -49,9 +49,9 @@ export default function Support() {
     <div className="flex flex-col items-center relative px-[20px] lg:px-0 w-full lg:w-10/12 mx-auto mb-[20px] lg:mb-[100px]">
       <h3 className='text-[24px] sm:text-[40px] lg:text-[65px] font-semibold bg-gradient-to-l from-[#FDD220] to-[#FFFFFF] bg-clip-text text-transparent'>World-Class Support Team</h3>
       <div ref={buttonRef} className='border-[1px] border-[#FDD220] bg-transparent rounded-[5px] lg:rounded-[20px] mt-[10px] glow-button'>
-        <h1 className='text-[#FFFFFF] font-medium text-[14px] lg:text-[22px] span'>Contact</h1>
+        <h1 className='text-[#FFFFFF] font-medium text-[14px] lg:text-[22px] span' onClick={() => { handleEmailClick() }}>Contact</h1>
       </div>
-      <div className='flex gap-4 items-center justify-center mt-[20px]'>
+      {/* <div className='flex gap-4 items-center justify-center mt-[20px]'>
         <div className='flex gap-1 items-center' onClick={() => { handleEmailClick() }}>
           <img src='https://dz1x1c630cl14.cloudfront.net/webassets/email.svg' alt='email' className='w-[20px]' />
           <h2 className='text-[#FFFFFF] text-[18px] font-medium'>Email</h2>
@@ -60,7 +60,7 @@ export default function Support() {
           <img src='https://dz1x1c630cl14.cloudfront.net/webassets/mobile.svg' alt='mobile' />
           <h2 className='text-[#FFFFFF] text-[18px] font-medium'>Phone</h2>
         </div>
-      </div>
+      </div> */}
       <div className='grid grid-cols-2 lg:flex w-full gap-6 lg:gap-16 items-center justify-center mt-[20px] lg:mt-[50px]'>
         <div className='bg-[#FFFFFF14] size-[150px] sm:size-[210px] m-auto border-[1px] border-[#FFFFFF0A] rounded-[20px] lg:rounded-[40px] flex flex-col justify-center items-center p-3 hover:scale-[1.1] transition-all duration-500' style={{ boxShadow: '0px 2.63px 0px 0px #FFFFFF14 inset' }}>
           <img src='https://dz1x1c630cl14.cloudfront.net/webassets/supports.svg' alt='support' className='w-[50px] lg:w-auto' />
