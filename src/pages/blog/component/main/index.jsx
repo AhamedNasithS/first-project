@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from "../../../../images/one.ai_Logo.svg";
+import logo from "../../../../images/workfast.svg";
 
 export default function MainScreen({ setIsForm }) {
   return (

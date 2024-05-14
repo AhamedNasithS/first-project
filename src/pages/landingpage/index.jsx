@@ -1,7 +1,6 @@
 import React from 'react'
 import yellowGlow from "../../images/yellowglow.png";
-import logo from "../../images/workfast.svg";
-import Header from '../header'
+// import logo from "../../images/workfast.svg";
 import Main from './main'
 import Price from './pricing';
 import Choose from './choose';
@@ -15,6 +14,7 @@ import user from "../../images/profileicon.svg";
 import emailIcon from "../../images/emailicon.svg";
 import phone from "../../images/phoneicon.svg";
 import company from "../../images/companyicon.svg";
+import Header from './header';
 
 export default function LandingPage() {
     const [isForm, setIsForm] = React.useState(false);

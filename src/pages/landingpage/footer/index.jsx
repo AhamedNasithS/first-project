@@ -3,7 +3,7 @@ import logo from "../../../images/one_ai-Logo1.svg"
 
 export default function Footer() {
     return (
-        <div className='w-full mt-[100px]'>
+        <div className='w-full mt-[30px] lg:mt-[60px] xl:mt-[100px]'>
             <div className='flex justify-between gap-[20px] lg:gap-[60px] lg:w-11/12 mx-auto borderFooter py-8 px-[20px]'>
             <img src={logo} alt='logo' className='w-[110px]' />
             <div className="flex flex-col gap-[10px] lg:ml-[40px] w-[110px] sm:w-auto">
