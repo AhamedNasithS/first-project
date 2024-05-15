@@ -5,7 +5,7 @@ export default function Choose({ setIsForm, setEmail, email }) {
     const navigate = useNavigate();
 
     return (
-        <div className='relative px-[20px] md:px-0 w-full md:w-11/12 mx-auto flex flex-col justify-center items-center gap-[20px] lg:gap-[45px] overflow-hidden mt-[30px] md:mt-[60px] lg:mt-[100px]'>
+        <div className='  relative px-[20px] md:px-0 w-full md:w-11/12 mx-auto flex flex-col justify-center items-center gap-[20px] lg:gap-[45px] overflow-hidden mt-[30px] md:mt-[60px] lg:mt-[100px]'>
             <div className='bg-[#0F162F80] border-[1px] border-[#E2E8FF66] rounded-[10px] md:rounded-[20px] lg:rounded-[30px] px-[30px] py-[18px]'>
                 <h3 className='text-[#FEF9F1] text-[14px] md:text-[20px] lg:text-[26px] xl:text-[32px] sen-normal text-center'>Choose <a href='https://workfast.ai'><span class="sen-bold text-[#FFDD09] ">workfast.ai</span></a> with just <span className='text-[#FFDD09] sen-bold'>$7</span> and increase your productivity</h3>
             </div>
