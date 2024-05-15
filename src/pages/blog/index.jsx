@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from '../header';
+import Header from './component/header';
 import MainScreen from './component/main';
 import Guide from './component/guide';
 import ProductManagement from './component/productmanagement';
