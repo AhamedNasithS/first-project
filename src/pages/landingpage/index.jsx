@@ -15,6 +15,7 @@ import emailIcon from "../../images/emailicon.svg";
 import phone from "../../images/phoneicon.svg";
 import company from "../../images/companyicon.svg";
 import Header from './header';
+import { Helmet } from 'react-helmet';
 
 export default function LandingPage() {
     const [isForm, setIsForm] = React.useState(false);
@@ -89,11 +90,24 @@ export default function LandingPage() {
     };
     return (
         <div className='flex flex-col w-full h-full bg-[#010306] relative overflow-hidden'>
-            <Header  setIsForm={setIsForm}/>
+            <Helmet>
+                {/* Google tag (gtag.js) */}
+                <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16567153004"></script>
+                <script>
+                    {`
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+        
+                    gtag('config', 'AW-16567153004');
+                    `}
+                </script>
+            </Helmet>
+            <Header setIsForm={setIsForm} />
             <img src={yellowGlow} alt='yellowGlow' className='absolute top-[73px] md:top-[80px] z-[0] ' />
-            <Main setIsForm={setIsForm} email={email} setEmail={setEmail}/>
+            <Main setIsForm={setIsForm} email={email} setEmail={setEmail} />
             <Price />
-            <Choose setIsForm={setIsForm} email={email} setEmail={setEmail}/>
+            <Choose setIsForm={setIsForm} email={email} setEmail={setEmail} />
             <Footer />
             {isForm && (
                 <div className="flex justify-center items-center text-center fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-full bg-[#121825] bg-opacity-60 z-[100]">
