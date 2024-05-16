@@ -102,6 +102,15 @@ export default function LandingPage() {
                     gtag('config', 'AW-16567153004');
                     `}
                 </script>
+                {/* <!-- Google tag (gtag.js) --> */}
+                <script async src="https://www.googletagmanager.com/gtag/js?id=G-WFR8HYW6H1"></script>
+                <script>
+                    {`window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+
+                    gtag('config', 'G-WFR8HYW6H1');`}
+                </script>
             </Helmet>
             <Header setIsForm={setIsForm} />
             <img src={yellowGlow} alt='yellowGlow' className='absolute top-[73px] md:top-[80px] z-[0] ' />
