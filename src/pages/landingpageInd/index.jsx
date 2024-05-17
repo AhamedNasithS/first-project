@@ -102,14 +102,16 @@ export default function LandingPageInd() {
                     gtag('config', 'AW-16567153004');
                     `}
                 </script>
-                {/* <!-- Google tag (gtag.js) --> */}
-                <script async src="https://www.googletagmanager.com/gtag/js?id=G-WFR8HYW6H1"></script>
+                <!-- Google tag (gtag.js) -->
+                <script async src="https://www.googletagmanager.com/gtag/js?id=G-FN35QYKKBB"></script>
                 <script>
-                    {`window.dataLayer = window.dataLayer || [];
-                    function gtag(){dataLayer.push(arguments);}
-                    gtag('js', new Date());
+                {`    
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
 
-                    gtag('config', 'G-WFR8HYW6H1');`}
+                gtag('config', 'G-FN35QYKKBB');
+                `}
                 </script>
             </Helmet>
             <Header setIsForm={setIsForm} />
