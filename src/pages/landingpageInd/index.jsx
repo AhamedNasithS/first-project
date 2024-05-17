@@ -17,7 +17,7 @@ import company from "../../images/companyicon.svg";
 import Header from './header';
 import { Helmet } from 'react-helmet';
 
-export default function LandingPage() {
+export default function LandingPageInd() {
     const [isForm, setIsForm] = React.useState(false);
     const [isSucess, setIsSucess] = React.useState(false);
     const [name, setName] = React.useState('');
