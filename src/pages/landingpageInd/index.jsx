@@ -102,7 +102,7 @@ export default function LandingPageInd() {
                     gtag('config', 'AW-16567153004');
                     `}
                 </script>
-                <!-- Google tag (gtag.js) -->
+                {/*<!-- Google tag (gtag.js) -->*/}
                 <script async src="https://www.googletagmanager.com/gtag/js?id=G-FN35QYKKBB"></script>
                 <script>
                 {`    
