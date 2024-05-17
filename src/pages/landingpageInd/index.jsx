@@ -133,7 +133,7 @@ export default function LandingPageInd() {
                         >
                             <IoCloseSharp className='text-[#FFF] w-[20px] h-[20px] md:w-[30px] md:h-[30px]' />
                         </div>
-                        <h2 className='text-[#FFFFFF] font-semibold text-[20px]'>Start your 14-Day free trail with <span className='bg-clip-text text-transparent bg-gradient-to-l from-[#FDD220] to-[#FFFFFF]'>Workfast.ai?</span></h2>
+                        <h2 className='text-[#FFFFFF] font-semibold text-[20px]'>Start your free trail with <span className='bg-clip-text text-transparent bg-gradient-to-l from-[#FDD220] to-[#FFFFFF]'>Workfast.ai</span></h2>
                         <div className='grid md:grid-cols-2 gap-5 items-center mt-[15px] md:mt-[30px] w-full'>
                             <div className='w-full'>
                                 <div className='flex items-center gap-1'>
