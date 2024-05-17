@@ -49,7 +49,7 @@ export default function Mobile({ setIsForm }) {
                         <div className={`mr-[40px] text-[#E2E8FF] py-[10px] mb-6 cursor-pointer rounded-[5px]`} onClick={() => { setIsForm(true) }}>
                             <h1 className="font-medium text-1xl">Enterprise</h1>
                         </div>
-                        <button className='py-[8px] px-[12px] text-[#1B1600] text-[14px] font-semibold rounded-[8px] bg-gradient-to-bl from-[#FDD01F] via-[#FDD320] via-[#F8C240] to-[#F8861B] mb-6' onClick={() => { setIsForm(true) }}>Book a demo</button>
+                        <button className='py-[8px] px-[12px] text-[#1B1600] text-[14px] sen-bold rounded-[8px] bg-gradient-to-bl from-[#FDD01F] via-[#FDD320] via-[#F8C240] to-[#F8861B] mb-6' onClick={() => { setIsForm(true) }}>Book a demo</button>
                         {/* <div className='w-[128px] h-[38px] rounded-[10px] bg-gradient-to-bl from-[#FDD01F] via-[#FDD320] to-[#F8861B] p-[0.5px] md:p-[1px] cursor-pointer' onClick={() => { navigate('/calendly') }}>
                             <div className='w-full h-full rounded-[10px] bg-[#010306] flex justify-center'>
                                 <h3 className='text-[#FFFFFF] text-[14px] font-semibold my-auto'>Request Demo</h3>
