@@ -13,6 +13,7 @@ import Main1 from './pages/main1';
 import Blog from './pages/blog';
 import Calender from './pages/calender';
 import LandingPage from './pages/landingpage';
+import LandingPageInd from './pages/landingpageInd';
 
 export default function App() {
   return (
@@ -25,6 +26,7 @@ export default function App() {
         <Route path='/*' element={<Main1/>}/>
         <Route path='/blog' element={<Blog/>}/>
         <Route path='/landing' element={<LandingPage/>}/>
+        <Route path='/landingin' element={<LandingPageInd/>}/>
         <Route path='/development' element={<NewLanding/>}/>
         {/* <Route path='/ContactUs' element={<ContactUs/>}/> */}
         <Route path='/refund' element={<Refund/>}/>
