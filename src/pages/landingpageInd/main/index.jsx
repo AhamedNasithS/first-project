@@ -7,7 +7,7 @@ import icons from "../../../images/competitiveLogos.svg";
 
 
 
-export default function Main({ setIsForm, setEmail, email }) {
+export default function Main({ setEmail, email }) {
 
     return (
         <div className='relative px-[20px] md:px-0 w-full md:w-11/12 mx-auto flex flex-col justify-center items-center gap-[30px] lg:gap-[60px] overflow-hidden'>
@@ -47,24 +47,26 @@ export default function Main({ setIsForm, setEmail, email }) {
                     </div>
                 </div>
             </div> */}
-            <img src={icons} alt='icons' className='md:w-[60%] xl:w-auto'/>
+            <img src={icons} alt='icons' className='md:w-[60%] xl:w-auto' />
             <div>
                 <h3 className='text-[#FFFFFF] text-[22px] lg:text-[30px]  xl:text-[38px] sen-normal text-center'>If your answer is <span className='text-[#FDD220] text-[22px] md:text-[30px] xl:text-[38px] sen-bold'>Yes,</span> We are here to help you out </h3>
                 <h2 className='text-[#FFFFFF] text-[22px] lg:text-[36px] xl:text-[42px] sen-bold mt-[12px] text-center'>With <span className='text-[#FDD220]'>Workfast.ai</span></h2>
             </div>
             <div className='flex gap-[20px] items-center mb-[20px]'>
-                <div className='w-[180px] sm:w-[250px] lg:w-[278px] h-[40px] lg:h-[54px] animate bg-[#3E3E3E] p-[1px] relative z-[1] rounded-[6px] lg:rounded-[8px]'>
+                {/* <div className='w-[180px] sm:w-[250px] lg:w-[278px] h-[40px] lg:h-[54px] animate bg-[#3E3E3E] p-[1px] relative z-[1] rounded-[6px] lg:rounded-[8px]'>
                     <div className='w-full h-full bg-[#000] relative z-[5] rounded-[6px] lg:rounded-[8px]'>
                         <div className='w-full h-full bg-[#E2E8FF12] lg:py-[10px]'>
-                            <input type='email' className='w-full text-[#E2E8FF] placeholder:text-[#E2E8FF] h-full text-[12px] lg:text-[18px] placeholder:text-[12px] lg:placeholder:text-[18px] bg-transparent focus:outline-none ml-[18px]' value={email} placeholder='Enter your work email' onChange={(e) => {setEmail(e?.target?.value)}} />
+                            <input type='email' className='w-full text-[#E2E8FF] placeholder:text-[#E2E8FF] h-full text-[12px] lg:text-[18px] placeholder:text-[12px] lg:placeholder:text-[18px] bg-transparent focus:outline-none ml-[18px]' value={email} placeholder='Enter your work email' onChange={(e) => { setEmail(e?.target?.value) }} />
                         </div>
                     </div>
-                </div>
+                </div> */}
                 <div className='w-[100px] lg:w-[150px] h-[40px] lg:h-[54px]'>
-                    <button className='w-full h-full rounded-[14px] bg-gradient-to-bl from-[#FDD01F] via-[#F8C240] to-[#F8861B] border-[1px] border-[#995900] b1 relative' onClick={() =>{setIsForm(true)}}>
-                        <span className='text text-[#2A2200] text-[12px] lg:text-[18px] sen-bold'>Book a Demo</span>
-                        <span class="shimmer"></span>
-                    </button>
+                    <a href='/form'>
+                        <button className='w-full h-full rounded-[14px] bg-gradient-to-bl from-[#FDD01F] via-[#F8C240] to-[#F8861B] border-[1px] border-[#995900] b1 relative'>
+                            <span className='text text-[#2A2200] text-[12px] lg:text-[18px] sen-bold'>Book a Demo</span>
+                            <span class="shimmer"></span>
+                        </button>
+                    </a>
                 </div>
             </div>
         </div>

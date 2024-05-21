@@ -2,7 +2,7 @@ import React from 'react'
 import Desktop from './desktop';
 import Mobile from './mobile';
 
-export default function Header() {
+export default function Header({setIsForm}) {
   const [position, setPosition] = React.useState(window.innerWidth <= 640);
     
     React.useEffect(() => {
@@ -11,6 +11,6 @@ export default function Header() {
         };
     }, []);
   return (
-    position ? (<Mobile/>) : (<Desktop/>)
+    position ? (<Mobile setIsForm={setIsForm}/>) : (<Desktop setIsForm={setIsForm}/>)
   )
 }
