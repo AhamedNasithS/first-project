@@ -3,6 +3,8 @@ import { TbMenuDeep } from "react-icons/tb"
 import { RxCross2 } from "react-icons/rx";
 import logo from "../../../../images/one_ai-Logo1.svg";
 import { useNavigate } from 'react-router-dom';
+import API from '../../../../utils/API';
+import axios from 'axios';
 
 
 export default function Mobile({ setIsForm }) {
@@ -22,6 +24,18 @@ export default function Mobile({ setIsForm }) {
     //         element.scrollIntoView({ behavior: 'smooth' });
     //     }
     // };
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        const response = await axios.post(API.BUTTON,
+            {
+                "eventName":"BOOK_DEMO_BUTTON"
+            }
+        );
+        if(response.data.statusCode === 200) {
+            navigate('/form')
+        }  
+    };
 
     return (
         <>
@@ -47,9 +61,9 @@ export default function Mobile({ setIsForm }) {
                             </div>
                         </a>
                         <div className={`mr-[40px] text-[#E2E8FF] py-[10px] mb-6 cursor-pointer rounded-[5px]`}>
-                            <a href='/form'><h1 className="font-medium text-1xl">Enterprise</h1></a>
+                            <h1 className="font-medium text-1xl" onClick={(e) => {handleSubmit(e)}}>Enterprise</h1>
                         </div>
-                        <a href='/form'><button className='py-[8px] px-[12px] text-[#1B1600] text-[14px] sen-bold rounded-[8px] bg-gradient-to-bl from-[#FDD01F] via-[#F8C240] to-[#F8861B] mb-6'>Book a demo</button></a>
+                        <button className='py-[8px] px-[12px] text-[#1B1600] text-[14px] sen-bold rounded-[8px] bg-gradient-to-bl from-[#FDD01F] via-[#F8C240] to-[#F8861B] mb-6' onClick={(e) => {handleSubmit(e)}}>Book a demo</button>
                         {/* <div className='w-[128px] h-[38px] rounded-[10px] bg-gradient-to-bl from-[#FDD01F] via-[#FDD320] to-[#F8861B] p-[0.5px] md:p-[1px] cursor-pointer' onClick={() => { navigate('/calendly') }}>
                             <div className='w-full h-full rounded-[10px] bg-[#010306] flex justify-center'>
                                 <h3 className='text-[#FFFFFF] text-[14px] font-semibold my-auto'>Request Demo</h3>

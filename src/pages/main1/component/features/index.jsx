@@ -16,7 +16,6 @@ export default function Features() {
       <div className='w-full mt-[20px] lg:mt-[60px] relative'>
         <div className='absolute hidden xl:block -top-[51.5px] left-[20%] -translate-x-[50%] z-[1] w-[10px] h-[10px] rounded-full p-[3px] bg-[#010306]'><div className='w-full h-full rounded-full bg-[#FFF]'></div></div>
         <div className='absolute hidden xl:block -top-[51.5px] left-[80%] -translate-x-[50%] z-[1] w-[10px] h-[10px] rounded-full p-[3px] bg-[#010306]'><div className='w-full h-full rounded-full bg-[#FFF]'></div></div>
-
         <div className='border-x-[1px] border-t-[1px] hidden xl:block absolute -top-[47px] -inset-x-[0px] border-[#FFF] w-[100%] h-[106px] 2xl:h-[77px] rounded-[14px]'></div>
         <div className='border-r-[1px] border-b-[1px]  absolute hidden xl:block -top-[21px] -right-[0px] border-[#FFF] w-[42px] h-[80px] 2xl:h-[52px] rounded-br-[14px]'></div>
         <div className='border-l-[1px] border-b-[1px]  absolute hidden xl:block -top-[21px] -left-[0px] border-[#FFF] w-[42px] h-[80px]  2xl:h-[52px] rounded-bl-[14px]'></div>

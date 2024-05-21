@@ -93,18 +93,7 @@ export default function Form() {
                 <div className='shooting-stars1'></div>
                 <div className='shooting-stars'></div>
                 <div className='w-[300px] md:w-[630px] bg-[#121825] rounded-[16px] p-[32px] relative z-[10] mt-[100px]'>
-                    <div
-                        className="absolute top-0 right-0 md:top-[20px] md:right-[20px] cursor-pointer border-[#FFFFFF] p-2 rounded-lg"
-                        onClick={() => {
-                            setName("");
-                            setEmail("");
-                            setCompanyName("");
-                            setPhoneNumber("");
-                        }}
-                    >
-                        <IoCloseSharp className='text-[#FFF] w-[20px] h-[20px] md:w-[30px] md:h-[30px]' />
-                    </div>
-                    <h2 className='text-[#FFFFFF] font-semibold text-[20px]'>Start your 14-Day free trail with <span className='bg-clip-text text-transparent bg-gradient-to-l from-[#FDD220] to-[#FFFFFF]'>Workfast.ai?</span></h2>
+                    <h2 className='text-[#FFFFFF] font-semibold text-[20px] text-center'>Start your 14-Day free trail with <span className='bg-clip-text text-transparent bg-gradient-to-l from-[#FDD220] to-[#FFFFFF]'>Workfast.ai?</span></h2>
                     <div className='grid md:grid-cols-2 gap-5 items-center mt-[15px] md:mt-[30px] w-full'>
                         <div className='w-full'>
                             <div className='flex items-center gap-1'>
