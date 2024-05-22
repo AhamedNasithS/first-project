@@ -4,10 +4,26 @@ import React from 'react'
 // import Asana from "../../../images/asana1.svg";
 // import iconGroup from "../../../images/workfast.svg";
 import icons from "../../../images/competitiveLogos.svg";
+import { useNavigate } from 'react-router-dom';
+import API from '../../../utils/API';
+import axios from 'axios';
 
 
 
-export default function Main({ setEmail, email }) {
+export default function Main() {
+    const navigate = useNavigate();
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        const response = await axios.post(API.BUTTON,
+            {
+                "eventName": "BOOK_DEMO_BUTTON"
+            }
+        );
+        if (response.data.statusCode === 200) {
+            navigate('/landingin/form')
+        }
+    };
 
     return (
         <div className='relative px-[20px] md:px-0 w-full md:w-11/12 mx-auto flex flex-col justify-center items-center gap-[30px] lg:gap-[60px] overflow-hidden'>
@@ -61,12 +77,10 @@ export default function Main({ setEmail, email }) {
                     </div>
                 </div> */}
                 <div className='w-[100px] lg:w-[150px] h-[40px] lg:h-[54px]'>
-                    <a href='/form'>
-                        <button className='w-full h-full rounded-[14px] bg-gradient-to-bl from-[#FDD01F] via-[#F8C240] to-[#F8861B] border-[1px] border-[#995900] b1 relative'>
-                            <span className='text text-[#2A2200] text-[12px] lg:text-[18px] sen-bold'>Book a Demo</span>
-                            <span class="shimmer"></span>
-                        </button>
-                    </a>
+                    <button className='w-full h-full rounded-[14px] bg-gradient-to-bl from-[#FDD01F] via-[#F8C240] to-[#F8861B] border-[1px] border-[#995900] b1 relative' onClick={(e) => { handleSubmit(e) }}>
+                        <span className='text text-[#2A2200] text-[12px] lg:text-[18px] sen-bold'>Book a Demo</span>
+                        <span class="shimmer"></span>
+                    </button>
                 </div>
             </div>
         </div>

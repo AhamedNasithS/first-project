@@ -4,15 +4,20 @@ const API = {};
 
 API.HOST = "";
 API.DETAILS = "";
+API.BUTTON = "";
 
 if (mode === "LOCAL") {
   API["HOST"] =
     "https://devarus.aftergen.in/dev/API/oneAppWorkspace/dev/register_mail.php";
+
+  API["BUTTON"] = "https://oneappbackend.hifrnds.in/api/v1/website/addLog";
 }
 
 if (mode === "DEV") {
   API["HOST"] =
     "https://devarus.aftergen.in/dev/API/oneAppWorkspace/dev/register_mail.php";
+
+  API["BUTTON"] = "https://oneappbackend.hifrnds.in/api/v1/website/addLog";
 }
 
 if (mode === "STAGE") {
@@ -21,6 +26,8 @@ if (mode === "STAGE") {
 
   API["DETAILS"] =
     "https://devarus.aftergen.in/dev/API/oneAppWorkspace/uat/personal_assistence_details.php";
+
+  API["BUTTON"] = "https://oneappbackend.hifrnds.in/api/v1/website/addLog";
 }
 
 if (mode === "UAT") {
@@ -34,6 +41,8 @@ if (mode === "LIVE") {
 
   API["DETAILS"] =
     "https://devarus.aftergen.in/dev/API/oneAppWorkspace/live/personal_assistence_details.php";
+    
+  API["BUTTON"] = "https://onebackendstage.hifrnds.in/api/v1/website/addLog";
 }
 
 module.exports = API;

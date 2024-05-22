@@ -38,9 +38,9 @@ export default function LandingPageInd({email, setEmail}) {
             </Helmet>
             <Header />
             <img src={yellowGlow} alt='yellowGlow' className='absolute top-[73px] md:top-[80px] z-[0] ' />
-            <Main email={email} setEmail={setEmail} />
+            <Main />
             <Price />
-            <Choose email={email} setEmail={setEmail} />
+            <Choose/>
             <Footer />
         </div>
     )
