@@ -7,7 +7,7 @@ import API from '../../../../utils/API';
 import axios from 'axios';
 
 
-export default function Mobile({ setIsForm }) {
+export default function Mobile() {
     const [isOpen, setIsOpen] = React.useState(false);
     const navigate = useNavigate();
 

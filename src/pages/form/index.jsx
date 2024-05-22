@@ -75,7 +75,7 @@ export default function Form() {
             setEmail('');
             setPhoneNumber('');
             setCompanyName('');
-            navigate('/success')
+            navigate('/landingin/success')
         }
 
     };
