@@ -36,8 +36,8 @@ export default function App() {
         <Route path='/privacy' element={<Privacy/>}/>
         <Route path='/terms' element={<Terms/>}/>
         <Route path='/calendly' element={<Calender/>}/>
-        <Route path='/form' element={<Form/>}/>
-        <Route path='/success' element={<Success/>}/>
+        <Route path='/landingin/form' element={<Form/>}/>
+        <Route path='/landingin/success' element={<Success/>}/>
       </Routes>
     </Router>
   )

@@ -33,7 +33,7 @@ export default function Mobile({ setIsForm }) {
             }
         );
         if(response.data.statusCode === 200) {
-            navigate('/form')
+            navigate('/landingin/form')
         }  
     };
 

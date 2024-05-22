@@ -27,7 +27,7 @@ export default function Desktop({ setIsForm }) {
             }
         );
         if(response.data.statusCode === 200) {
-            navigate('/form')
+            navigate('/landingin/form')
         }
     };
     return (

@@ -21,7 +21,7 @@ export default function Main() {
             }
         );
         if (response.data.statusCode === 200) {
-            navigate('/form')
+            navigate('/landingin/form')
         }
     };
 
