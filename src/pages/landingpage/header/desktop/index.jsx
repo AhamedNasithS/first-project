@@ -31,6 +31,18 @@ export default function Desktop({ setIsForm }) {
         }  
     };
 
+    const handleBlog = async (e) => {
+        e.preventDefault();
+        const response = await axios.post(API.BUTTON,
+            {
+                "eventName":"BLOG"
+            }
+        );
+        if(response.data.statusCode === 200) {
+            navigate('/blog')
+        }  
+    };
+
     const handleClick = async (e) => {
         e.preventDefault();
         const response = await axios.post(API.BUTTON,
@@ -49,7 +61,7 @@ export default function Desktop({ setIsForm }) {
                 {/* <h3 className='text-[#E2E8FFBF] font-normal text-[14px] cursor-pointer'>Product</h3> */}
                 {/* <h3 className='text-[#E2E8FFBF] font-normal text-[14px] cursor-pointer' onClick={() => { handleFeatureClick() }}>Features</h3> */}
                 {/* <h3 className='text-[#E2E8FFBF] font-normal text-[14px] cursor-pointer' onClick={() => { handlePricingClick() }}>Pricing</h3> */}
-                <a href='/blog'><h3 className='text-[#E2E8FFBF] font-normal text-[14px] cursor-pointer'>Blog</h3></a>
+                <h3 className='text-[#E2E8FFBF] font-normal text-[14px] cursor-pointer' onClick={(e) => {handleBlog(e)}}>Blog</h3>
                 <h3 className='text-[#E2E8FFBF] font-normal text-[14px] cursor-pointer' onClick={() => { setIsForm(true) }}>Enterprise</h3>
             </div>
             <div className='flex gap-[14px]'>
