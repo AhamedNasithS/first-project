@@ -29,12 +29,24 @@ export default function Mobile() {
         e.preventDefault();
         const response = await axios.post(API.BUTTON,
             {
-                "eventName":"BOOK_DEMO_BUTTON"
+                "eventName": "BOOK_DEMO_BUTTON"
             }
         );
-        if(response.data.statusCode === 200) {
+        if (response.data.statusCode === 200) {
             navigate('/landingin/form')
-        }  
+        }
+    };
+
+    const handleBlog = async (e) => {
+        e.preventDefault();
+        const response = await axios.post(API.BUTTON,
+            {
+                "eventName": "BLOG_IND"
+            }
+        );
+        if (response.data.statusCode === 200) {
+            navigate('/blog')
+        }
     };
 
     return (
@@ -55,15 +67,13 @@ export default function Mobile() {
                         {/* <div className={`mr-[40px] text-[#E2E8FF] py-[10px] mb-6 cursor-pointer rounded-[5px]`} onClick={() => {setIsOpen(false); handlePricingClick()}}>
                             <h1 className="font-medium text-1xl">Pricing</h1>
                         </div> */}
-                        <a href='/blog'>
-                            <div className={`mr-[40px] text-[#E2E8FF] py-[10px] mb-6 cursor-pointer rounded-[5px]`}>
-                                <h1 className="font-medium text-1xl">Blog</h1>
-                            </div>
-                        </a>
-                        <div className={`mr-[40px] text-[#E2E8FF] py-[10px] mb-6 cursor-pointer rounded-[5px]`}>
-                            <h1 className="font-medium text-1xl" onClick={(e) => {handleSubmit(e)}}>Enterprise</h1>
+                        <div className={`mr-[40px] text-[#E2E8FF] py-[10px] mb-6 cursor-pointer rounded-[5px]`} onClick={(e) => {handleBlog(e)}}>
+                            <h1 className="font-medium text-1xl">Blog</h1>
                         </div>
-                        <button className='py-[8px] px-[12px] text-[#1B1600] text-[14px] sen-bold rounded-[8px] bg-gradient-to-bl from-[#FDD01F] via-[#F8C240] to-[#F8861B] mb-6' onClick={(e) => {handleSubmit(e)}}>Book a demo</button>
+                        <div className={`mr-[40px] text-[#E2E8FF] py-[10px] mb-6 cursor-pointer rounded-[5px]`}>
+                            <h1 className="font-medium text-1xl" onClick={(e) => { handleSubmit(e) }}>Enterprise</h1>
+                        </div>
+                        <button className='py-[8px] px-[12px] text-[#1B1600] text-[14px] sen-bold rounded-[8px] bg-gradient-to-bl from-[#FDD01F] via-[#F8C240] to-[#F8861B] mb-6' onClick={(e) => { handleSubmit(e) }}>Book a demo</button>
                         {/* <div className='w-[128px] h-[38px] rounded-[10px] bg-gradient-to-bl from-[#FDD01F] via-[#FDD320] to-[#F8861B] p-[0.5px] md:p-[1px] cursor-pointer' onClick={() => { navigate('/calendly') }}>
                             <div className='w-full h-full rounded-[10px] bg-[#010306] flex justify-center'>
                                 <h3 className='text-[#FFFFFF] text-[14px] font-semibold my-auto'>Request Demo</h3>

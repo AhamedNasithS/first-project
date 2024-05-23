@@ -3,7 +3,6 @@ import yellowGlow from "../../images/yellowglow.png"
 import Header from './header'
 import API from '../../utils/API';
 import axios from 'axios';
-import { IoCloseSharp } from 'react-icons/io5';
 import user from "../../images/profileicon.svg";
 import emailIcon from "../../images/emailicon.svg";
 import phone from "../../images/phoneicon.svg";

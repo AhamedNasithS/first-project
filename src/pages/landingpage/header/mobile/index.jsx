@@ -29,24 +29,36 @@ export default function Mobile({ setIsForm }) {
         e.preventDefault();
         const response = await axios.post(API.BUTTON,
             {
-                "eventName":"REQUEST_DEMO"
+                "eventName": "REQUEST_DEMO"
             }
         );
-        if(response.data.statusCode === 200) {
+        if (response.data.statusCode === 200) {
             navigate('/calendly')
-        }  
+        }
     };
 
     const handleClick = async (e) => {
         e.preventDefault();
         const response = await axios.post(API.BUTTON,
             {
-                "eventName":"SIGN_UP_FOR_FREE"
+                "eventName": "SIGN_UP_FOR_FREE"
             }
         );
-        if(response.data.statusCode === 200) {
+        if (response.data.statusCode === 200) {
             window.location.href = 'https://app.workfast.ai/';
-        }  
+        }
+    };
+
+    const handleBlog = async (e) => {
+        e.preventDefault();
+        const response = await axios.post(API.BUTTON,
+            {
+                "eventName": "BLOG"
+            }
+        );
+        if (response.data.statusCode === 200) {
+            navigate('/blog')
+        }
     };
 
     return (
@@ -67,16 +79,14 @@ export default function Mobile({ setIsForm }) {
                         {/* <div className={`mr-[40px] text-[#E2E8FF] py-[10px] mb-6 cursor-pointer rounded-[5px]`} onClick={() => {setIsOpen(false); handlePricingClick()}}>
                             <h1 className="font-medium text-1xl">Pricing</h1>
                         </div> */}
-                        <a href='/blog'>
-                            <div className={`mr-[40px] text-[#E2E8FF] py-[10px] mb-6 cursor-pointer rounded-[5px]`}>
-                                <h1 className="font-medium text-1xl">Blog</h1>
-                            </div>
-                        </a>
+                        <div className={`mr-[40px] text-[#E2E8FF] py-[10px] mb-6 cursor-pointer rounded-[5px]`} onClick={(e) => {handleBlog(e)}}>
+                            <h1 className="font-medium text-1xl">Blog</h1>
+                        </div>
                         <div className={`mr-[40px] text-[#E2E8FF] py-[10px] mb-6 cursor-pointer rounded-[5px]`} onClick={() => { setIsForm(true) }}>
                             <h1 className="font-medium text-1xl">Enterprise</h1>
                         </div>
-                        <button className='py-[8px] px-[12px] text-[#1B1600] text-[14px] font-semibold rounded-[8px] bg-gradient-to-bl from-[#FDD01F] via-[#FDD320] to-[#F8861B] mb-6' onClick={(e) => {handleClick(e)}}>Sign up for free</button>
-                        <div className='w-[128px] h-[38px] rounded-[10px] bg-gradient-to-bl from-[#FDD01F] via-[#FDD320] to-[#F8861B] p-[0.5px] md:p-[1px] cursor-pointer' onClick={(e) => {handleSubmit(e)}}>
+                        <button className='py-[8px] px-[12px] text-[#1B1600] text-[14px] font-semibold rounded-[8px] bg-gradient-to-bl from-[#FDD01F] via-[#FDD320] to-[#F8861B] mb-6' onClick={(e) => { handleClick(e) }}>Sign up for free</button>
+                        <div className='w-[128px] h-[38px] rounded-[10px] bg-gradient-to-bl from-[#FDD01F] via-[#FDD320] to-[#F8861B] p-[0.5px] md:p-[1px] cursor-pointer' onClick={(e) => { handleSubmit(e) }}>
                             <div className='w-full h-full rounded-[10px] bg-[#010306] flex justify-center'>
                                 <h3 className='text-[#FFFFFF] text-[14px] font-semibold my-auto'>Request Demo</h3>
                             </div>
