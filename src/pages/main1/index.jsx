@@ -143,7 +143,7 @@ export default function Main1() {
                   autoPlay
                 >
                   <source
-                    src={`https://dz1x1c630cl14.cloudfront.net/webassets/testimonial1.mp4`}
+                    src={`https://dz1x1c630cl14.cloudfront.net/webassets/testimonial2.mp4`}
                     type="video/mp4"
                   />
                   Your browser does not support the video tag.
