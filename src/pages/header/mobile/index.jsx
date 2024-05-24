@@ -2,9 +2,13 @@ import React from 'react'
 import { TbMenuDeep } from "react-icons/tb"
 import { RxCross2 } from "react-icons/rx";
 import logo from "../../../images/one_ai-Logo1.svg";
+import API from '../../../utils/API';
+import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 
 export default function Mobile({setIsForm}) {
     const [isOpen, setIsOpen] = React.useState(false);
+    const navigate = useNavigate();
 
     const handleFeatureClick = () => {
         const element = document.getElementById('features');
@@ -13,10 +17,34 @@ export default function Mobile({setIsForm}) {
         }
     };
 
-    const handlePricingClick = () => {
-        const element = document.getElementById('pricing');
-        if (element) {
-            element.scrollIntoView({ behavior: 'smooth' });
+    // const handlePricingClick = () => {
+    //     const element = document.getElementById('pricing');
+    //     if (element) {
+    //         element.scrollIntoView({ behavior: 'smooth' });
+    //     }
+    // };
+
+    const handleClick = async (e) => {
+        e.preventDefault();
+        const response = await axios.post(API.BUTTON,
+            {
+                "eventName": "SIGN_UP_FOR_FREE_MAIN"
+            }
+        );
+        if (response.data.statusCode === 200) {
+            window.location.href = 'https://app.workfast.ai/';
+        }
+    };
+
+    const handleBlog = async (e) => {
+        e.preventDefault();
+        const response = await axios.post(API.BUTTON,
+            {
+                "eventName": "BLOG_MAIN"
+            }
+        );
+        if (response.data.statusCode === 200) {
+            navigate('/blog')
         }
     };
 
@@ -38,15 +66,13 @@ export default function Mobile({setIsForm}) {
                         {/* <div className={`mr-[40px] text-[#E2E8FF] py-[10px] mb-6 cursor-pointer rounded-[5px]`} onClick={() => {setIsOpen(false); handlePricingClick()}}>
                             <h1 className="font-medium text-1xl">Pricing</h1>
                         </div> */}
-                        <a href='/blog'>
-                        <div className={`mr-[40px] text-[#E2E8FF] py-[10px] mb-6 cursor-pointer rounded-[5px]`}>
+                        <div className={`mr-[40px] text-[#E2E8FF] py-[10px] mb-6 cursor-pointer rounded-[5px]`} onClick={(e) => {handleBlog(e)}}>
                             <h1 className="font-medium text-1xl">Blog</h1>
                         </div>
-                        </a>
                         <div className={`mr-[40px] text-[#E2E8FF] py-[10px] mb-6 cursor-pointer rounded-[5px]`} onClick={() => {setIsForm(true)}}>
                             <h1 className="font-medium text-1xl">Enterprise</h1>
                         </div>
-                        <a href='https://app.workfast.ai/'><button className='py-[8px] px-[12px] text-[#1B1600] text-[14px] font-semibold rounded-[8px] bg-gradient-to-bl from-[#FDD01F] via-[#FDD320] via-[#F8C240] to-[#F8861B]'>Sign up for free</button></a>
+                        <button className='py-[8px] px-[12px] text-[#1B1600] text-[14px] font-semibold rounded-[8px] bg-gradient-to-bl from-[#FDD01F] via-[#FDD320] to-[#F8861B]' onClick={(e) => {handleClick(e)}}>Sign up for free</button>
                     </div>
                 </div>
             ) : (
