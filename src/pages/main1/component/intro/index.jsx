@@ -3,25 +3,27 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import API from '../../../../utils/API';
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 
 export default function Intro({ setIsForm, email, setEmail }) {
+    const navigate = useNavigate();
     // const [email, setEmail] = React.useState('');
 
     // const handleEmail = (e) => {
     //     const email = e.target.value;
     //     setEmail(email);
     // };
-    const handleSubmit = async (e) => {
-        e.preventDefault();
-        const response = await axios.post(API.BUTTON,
-            {
-                "eventName": "REQUEST_DEMO_MAIN"
-            }
-        );
-        if (response.data.statusCode === 200) {
-            setIsForm(true)
-        }
-    };
+    // const handleSubmit = async (e) => {
+    //     e.preventDefault();
+    //     const response = await axios.post(API.BUTTON,
+    //         {
+    //             "eventName": "REQUEST_DEMO_MAIN"
+    //         }
+    //     );
+    //     if (response.data.statusCode === 200) {
+    //         setIsForm(true)
+    //     }
+    // };
 
     const handleClick = async (e) => {
         e.preventDefault();
@@ -31,7 +33,8 @@ export default function Intro({ setIsForm, email, setEmail }) {
             }
         );
         if (response.data.statusCode === 200) {
-            window.location.href = 'https://app.workfast.ai/';
+            // window.location.href = 'https://app.workfast.ai/';
+            navigate('/signup')
         }
     };
 
@@ -75,13 +78,17 @@ export default function Intro({ setIsForm, email, setEmail }) {
                     </div>
                 </div>
             </div> */}
-            <div className='flex gap-[22px] items-center'>
-               <button className='py-[8px] px-[12px] w-[150px] lg:w-[173px] h-[44px] lg:h-[54px] text-[#2A2200] text-[16px] lg:text-[18px] font-semibold rounded-[10px] bg-gradient-to-bl from-[#FDD01F] via-[#FDD320] to-[#F8861B] relative cursor-pointer' onClick={(e) => {handleClick(e)}}>Sign up for free</button>
-                <div className='w-[150px] lg:w-[173px] h-[44px] lg:h-[54px] rounded-[10px] bg-gradient-to-bl from-[#FDD01F] via-[#FDD320] to-[#F8861B] p-[0.5px] md:p-[1px] cursor-pointer' onClick={(e) => { handleSubmit(e) }}>
+            <div className='flex gap-[22px] items-center mt-[50px]'>
+                <button className='py-[8px] px-[12px] w-[150px] lg:w-[173px] h-[44px] lg:h-[54px] rounded-[8px] bg-gradient-to-bl from-[#FDD01F] via-[#F8C240] to-[#F8861B] border-[1px] border-[#995900] b1 relative' onClick={(e) => {handleClick(e)}}>
+                    <span className='text text-[#2A2200] text-[16px] lg:text-[18px] font-semibold'>Sign up for free</span>
+                    <span class="shimmer"></span>
+                </button>
+                {/* <button className='py-[8px] px-[12px] w-[150px] lg:w-[173px] h-[44px] lg:h-[54px] text-[#2A2200] text-[16px] lg:text-[18px] font-semibold rounded-[10px] bg-gradient-to-bl from-[#FDD01F] via-[#FDD320] to-[#F8861B] relative cursor-pointer' onClick={(e) => {handleClick(e)}}>Sign up for free</button> */}
+                {/* <div className='w-[150px] lg:w-[173px] h-[44px] lg:h-[54px] rounded-[10px] bg-gradient-to-bl from-[#FDD01F] via-[#FDD320] to-[#F8861B] p-[0.5px] md:p-[1px] cursor-pointer' onClick={(e) => { handleSubmit(e) }}>
                     <div className='w-full h-full rounded-[10px] bg-[#010306] flex justify-center'>
                         <h3 className='text-[#FFFFFF] text-[16px] lg:text-[18px] font-semibold my-auto'>Request Demo</h3>
                     </div>
-                </div>
+                </div> */}
             </div>
             <img src='https://dz1x1c630cl14.cloudfront.net/webassets/Mainscreen.webp' alt='intro'
                 // data-aos="zoom-in-up" data-aos-duration="1500" 
