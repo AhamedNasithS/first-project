@@ -37,7 +37,7 @@ export default function Access({ setIsForm }) {
       <div className='flex gap-[22px] items-center'>
         {/* <button className='py-[8px] px-[12px] w-[150px] lg:w-[173px] h-[44px] lg:h-[54px] text-[#2A2200] text-[16px] lg:text-[18px] font-semibold rounded-[10px] bg-gradient-to-bl from-[#FDD01F] via-[#FDD320] to-[#F8861B] relative' onClick={(e) => {handleClick(e)}}><span>Sign up for free</span><span class="shimmer"></span></button> */}
         <button className='py-[8px] px-[12px] w-[150px] lg:w-[173px] h-[44px] lg:h-[54px] rounded-[8px] bg-gradient-to-bl from-[#FDD01F] via-[#F8C240] to-[#F8861B] border-[1px] border-[#995900] b1 relative' onClick={(e) => { handleClick(e) }}>
-          <span className='text text-[#2A2200] text-[16px] lg:text-[18px] font-semibold'>Sign up for free</span>
+          <span className='text text-[#2A2200] text-[16px] lg:text-[18px] font-semibold'>Free Trail</span>
           <span class="shimmer"></span>
         </button>
         {/* <div className='w-[150px] lg:w-[173px] h-[44px] lg:h-[54px] rounded-[10px] bg-gradient-to-bl from-[#FDD01F] via-[#FDD320] to-[#F8861B] p-[0.5px] md:p-[1px] cursor-pointer' onClick={(e) => { handleSubmit(e) }}>

@@ -51,7 +51,7 @@ export default function Desktop({ setIsForm }) {
             }
         );
         if(response.data.statusCode === 200) {
-            window.location.href = 'https://app.workfast.ai/';
+            navigate('/signup')
         }  
     };
     return (

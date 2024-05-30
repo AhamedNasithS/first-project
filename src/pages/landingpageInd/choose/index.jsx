@@ -43,7 +43,7 @@ export default function Choose() {
                 </div> */}
                 <div className='w-[100px] lg:w-[150px] h-[40px] lg:h-[54px]'>
                     <button className='w-full h-full rounded-[14px] bg-gradient-to-bl from-[#FDD01F] via-[#F8C240] to-[#F8861B] border-[1px] border-[#995900] b1 relative' onClick={(e) => { handleSubmit(e) }}>
-                        <span className='text text-[#2A2200] text-[12px] lg:text-[18px] sen-bold'>Book a Demo</span>
+                        <span className='text text-[#2A2200] text-[12px] lg:text-[18px] sen-bold'>Free Trail</span>
                         <span class="shimmer"></span>
                     </button>
                 </div>
