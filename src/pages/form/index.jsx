@@ -8,6 +8,7 @@ import emailIcon from "../../images/emailicon.svg";
 import phone from "../../images/phoneicon.svg";
 import company from "../../images/companyicon.svg";
 import { useNavigate } from 'react-router-dom';
+import { FaArrowRightLong } from "react-icons/fa6";
 
 export default function Form() {
     const [name, setName] = React.useState('');
@@ -131,7 +132,7 @@ export default function Form() {
                             </div>
                         </div>
                     </div>
-                    <button className={`w-full h-[38px] md:h-[44px] rounded-[8px] border-[1px] border-[#995900] bg-[#FDD01F] text-[#2A2200] text-[16px] font-medium mt-[30px] ${name === "" || email === "" || emailError || phoneNumber === "" || phoneNumberError || companyName === "" ? "opacity-30" : ""}`} disabled={name === "" || email === "" || emailError || phoneNumber === "" || phoneNumberError || companyName === ""} onClick={(e) => { handleSubmit(e) }}>Book a Demo</button>
+                    <button className={`w-full h-[38px] md:h-[44px] rounded-[8px] border-[1px] border-[#995900] bg-[#FDD01F] text-[#2A2200] text-[16px] font-medium mt-[30px] flex justify-center items-center gap-[10px] ${name === "" || email === "" || emailError || phoneNumber === "" || phoneNumberError || companyName === "" ? "opacity-30" : ""}`} disabled={name === "" || email === "" || emailError || phoneNumber === "" || phoneNumberError || companyName === ""} onClick={(e) => { handleSubmit(e) }}>Get Started. Free Trial <FaArrowRightLong/></button>
                 </div>
             </div>
         </div>

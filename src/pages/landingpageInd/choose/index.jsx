@@ -2,6 +2,7 @@ import React from 'react'
 import { useNavigate } from 'react-router-dom';
 import API from '../../../utils/API';
 import axios from 'axios';
+import { FaArrowRightLong } from "react-icons/fa6";
 
 export default function Choose() {
     const navigate = useNavigate();
@@ -41,9 +42,9 @@ export default function Choose() {
                         </div>
                     </div>
                 </div> */}
-                <div className='w-[100px] lg:w-[150px] h-[40px] lg:h-[54px]'>
+                <div className='w-[220px] lg:w-[253px] h-[40px] lg:h-[54px]'>
                     <button className='w-full h-full rounded-[14px] bg-gradient-to-bl from-[#FDD01F] via-[#F8C240] to-[#F8861B] border-[1px] border-[#995900] b1 relative' onClick={(e) => { handleSubmit(e) }}>
-                        <span className='text text-[#2A2200] text-[12px] lg:text-[18px] sen-bold'>Free Trail</span>
+                        <span className='text text-[#2A2200] text-[12px] lg:text-[18px] sen-bold flex gap-[10px] items-center justify-center'>Get Started. Free Trial <FaArrowRightLong/></span>
                         <span class="shimmer"></span>
                     </button>
                 </div>
