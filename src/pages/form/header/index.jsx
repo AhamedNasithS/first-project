@@ -11,6 +11,6 @@ export default function Header({setIsForm}) {
         };
     }, []);
   return (
-    position ? (<Mobile setIsForm={setIsForm}/>) : (<Desktop setIsForm={setIsForm}/>)
+    position ? (<Desktop setIsForm={setIsForm}/>) : (<Desktop setIsForm={setIsForm}/>)
   )
 }

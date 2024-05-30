@@ -4,6 +4,7 @@ import 'aos/dist/aos.css';
 import API from '../../../../utils/API';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
+import { FaArrowRightLong } from "react-icons/fa6";
 
 export default function Intro({ setIsForm, email, setEmail }) {
     const navigate = useNavigate();
@@ -79,8 +80,8 @@ export default function Intro({ setIsForm, email, setEmail }) {
                 </div>
             </div> */}
             <div className='flex gap-[22px] items-center mt-[50px]'>
-                <button className='py-[8px] px-[12px] w-[150px] lg:w-[173px] h-[44px] lg:h-[54px] rounded-[8px] bg-gradient-to-bl from-[#FDD01F] via-[#F8C240] to-[#F8861B] border-[1px] border-[#995900] b1 relative' onClick={(e) => {handleClick(e)}}>
-                    <span className='text text-[#2A2200] text-[16px] lg:text-[18px] font-semibold'>Free Trail</span>
+                <button className='py-[8px] px-[12px] w-[220px] lg:w-[253px] h-[44px] lg:h-[54px] rounded-[8px] bg-gradient-to-bl from-[#FDD01F] via-[#F8C240] to-[#F8861B] border-[1px] border-[#995900] b1 relative' onClick={(e) => {handleClick(e)}}>
+                    <span className='text text-[#2A2200] text-[16px] lg:text-[18px] font-semibold flex gap-[10px] items-center justify-center'>Get Started. Free Trial <FaArrowRightLong/></span>
                     <span class="shimmer"></span>
                 </button>
                 {/* <button className='py-[8px] px-[12px] w-[150px] lg:w-[173px] h-[44px] lg:h-[54px] text-[#2A2200] text-[16px] lg:text-[18px] font-semibold rounded-[10px] bg-gradient-to-bl from-[#FDD01F] via-[#FDD320] to-[#F8861B] relative cursor-pointer' onClick={(e) => {handleClick(e)}}>Sign up for free</button> */}

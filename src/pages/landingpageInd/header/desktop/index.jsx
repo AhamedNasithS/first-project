@@ -54,7 +54,7 @@ export default function Desktop({ setIsForm }) {
                 <a href='/form'><h3 className='text-[#E2E8FFBF] font-normal text-[14px] cursor-pointer'>Enterprise</h3></a>
             </div>
             <div className='flex gap-[14px]'>
-                <button className='py-[8px] px-[12px] w-[128px] h-[38px] lg:w-auto lg:h-auto text-[#1B1600] text-[14px] sen-bold rounded-[8px] bg-gradient-to-bl from-[#FDD01F] via-[#F8C240] to-[#F8861B]' onClick={(e) => {handleSubmit(e)}}>Free Trail</button>
+                <button className='py-[8px] px-[12px] w-[128px] h-[38px] lg:w-auto lg:h-auto text-[#1B1600] text-[14px] sen-bold rounded-[8px] bg-gradient-to-bl from-[#FDD01F] via-[#F8C240] to-[#F8861B]' onClick={(e) => {handleSubmit(e)}}>Sign up for free</button>
                 {/* <div className='w-[128px] h-[38px] rounded-[10px] bg-gradient-to-bl from-[#FDD01F] via-[#FDD320] to-[#F8861B] p-[0.5px] md:p-[1px] cursor-pointer' onClick={() => { navigate('/calendly') }}>
                     <div className='w-full h-full rounded-[10px] bg-[#010306] flex justify-center'>
                         <h3 className='text-[#FFFFFF] text-[14px] font-semibold my-auto'>Request Demo</h3>
