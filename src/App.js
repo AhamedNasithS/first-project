@@ -16,6 +16,9 @@ import LandingPage from './pages/landingpage';
 import LandingPageInd from './pages/landingpageInd';
 import Form from './pages/form';
 import Success from './pages/success';
+import Signup from './pages/signup';
+import MainSuccess from './pages/mainsuccess';
+// import MainForm from './pages/mainfrom';
 
 export default function App() {
   const [email, setEmail] = React.useState('');
@@ -38,6 +41,8 @@ export default function App() {
         <Route path='/calendly' element={<Calender/>}/>
         <Route path='/landingin/form' element={<Form/>}/>
         <Route path='/landingin/success' element={<Success/>}/>
+        <Route path='/success' element={<MainSuccess/>}/>
+        <Route path='/signup' element={<Signup/>}/>
       </Routes>
     </Router>
   )

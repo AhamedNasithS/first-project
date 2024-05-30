@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from '../header';
+import Header from './component/header';
 import Intro from './component/intro';
 import Channel from './component/channel';
 import Project from './component/project';
