@@ -26,7 +26,7 @@ export default function Choose({ setIsForm, setEmail, email }) {
             }
         );
         if(response.data.statusCode === 200) {
-            window.open('https://app.workfast.ai/', '_blank');
+            navigate('/signup')
         }  
     };
 

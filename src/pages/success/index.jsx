@@ -3,8 +3,17 @@ import yellowGlow from "../../images/yellowglow.png"
 import Header from './header'
 import LoadLottie from '../loadLottie';
 import sucess from "../../sucess.json";
+import { useNavigate } from 'react-router-dom';
 
 export default function Success() {
+  const navigate = useNavigate();
+
+  React.useEffect(()=>{
+    setTimeout(() => {
+      navigate('/signup')
+    }, 2000);
+  },[])
+
   return (
     <div className='flex flex-col w-full h-full bg-[#010306] relative overflow-hidden'>
       <Header />
@@ -23,7 +32,7 @@ export default function Success() {
               <LoadLottie animationData={sucess} loop={true} />
             </div>
           </div>
-          <h3 className='text-[14px] sen-bold text-[#FFF] text-center'>Thank you for your interest! Our team will be reaching out to you shortly.</h3>
+          <h3 className='text-[14px] sen-bold text-[#FFF] text-center'>Thank you You can create your workspace now.</h3>
         </div>
       </div>
     </div>

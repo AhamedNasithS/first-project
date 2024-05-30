@@ -45,7 +45,7 @@ export default function MainSuccess() {
               <LoadLottie animationData={sucess} loop={true} />
             </div>
           </div>
-          <h3 className='text-[14px] sen-bold text-[#FFF] text-center'>Thank you for your interest! Our team will be reaching out to you shortly.</h3>
+          <h3 className='text-[14px] sen-bold text-[#FFF] text-center'>Congratulations. Your workspace setup has been completed successfully!</h3>
         </div>
       </div>
     </div>
