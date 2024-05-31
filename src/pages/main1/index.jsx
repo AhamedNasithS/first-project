@@ -26,6 +26,7 @@ import axios from 'axios';
 import LoadLottie from '../loadLottie';
 import sucess from "../../sucess.json";
 import Mobile from "../../images/mobile.webp";
+import Avalaible from '../../images/Devicemockup1.webp'
 
 export default function Main1() {
   const [isVideo, setIsVideo] = React.useState(false);
@@ -119,7 +120,7 @@ export default function Main1() {
       <Chat />
       <Ai />
       <Availbles />
-      <img src='https://dz1x1c630cl14.cloudfront.net/webassets/Devicemockup3.webp' alt='availble' className='mt-[10px] lg:mt-[50px] p-[20px] w-[80%] z-[1]'
+      <img src={Avalaible} alt='availble' className='mt-[10px] lg:mt-[50px] p-[20px] w-[80%] z-[1]'
       // data-aos="zoom-in" data-aos-duration="2000" 
       />
       {/* <Pricing setIsForm={setIsForm} /> */}
