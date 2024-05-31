@@ -5,6 +5,8 @@ import API from '../../../../utils/API';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import { FaArrowRightLong } from "react-icons/fa6";
+import introImg from "../../../../images/introimg.webp";
+
 
 export default function Intro({ setIsForm, email, setEmail }) {
     const navigate = useNavigate();
@@ -79,7 +81,7 @@ export default function Intro({ setIsForm, email, setEmail }) {
                     </div>
                 </div>
             </div> */}
-            <div className='flex gap-[22px] items-center mt-[50px]'>
+            <div className='flex gap-[22px] items-center mt-[40px]'>
                 <button className='py-[8px] px-[12px] w-[220px] lg:w-[253px] h-[44px] lg:h-[54px] rounded-[8px] bg-gradient-to-bl from-[#FDD01F] via-[#F8C240] to-[#F8861B] border-[1px] border-[#995900] b1 relative' onClick={(e) => {handleClick(e)}}>
                     <span className='text text-[#2A2200] text-[16px] lg:text-[18px] font-semibold flex gap-[10px] items-center justify-center'>Get Started. Free Trial <FaArrowRightLong/></span>
                     <span class="shimmer"></span>
@@ -91,9 +93,9 @@ export default function Intro({ setIsForm, email, setEmail }) {
                     </div>
                 </div> */}
             </div>
-            <img src='https://dz1x1c630cl14.cloudfront.net/webassets/Mainscreen.webp' alt='intro'
+            <img src={introImg} alt='intro'
                 // data-aos="zoom-in-up" data-aos-duration="1500" 
-                className='mt-[15px] lg:mt-[25px] xl:mt-[50px] w-[80%] relative' />
+                className='mt-[15px] lg:mt-[25px] xl:mt-[40px] w-[80%] relative' />
         </div>
     )
 }
