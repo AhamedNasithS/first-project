@@ -6,7 +6,7 @@ import React from 'react'
 // import Choose from './choose';
 // import Footer from './footer';
 // import Header from './header';
-// import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet';
 import Header from './component/header';
 import Intro from './component/intro';
 import Channel from './component/channel';
@@ -33,40 +33,40 @@ export default function LandingPageInd({ email, setEmail }) {
 
     return (
         // <div className='flex flex-col w-full h-full bg-[#010306] relative overflow-hidden'>
-        //     <Helmet>
-        //         {/* Google tag (gtag.js) */}
-        //         <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16567153004"></script>
-        //         <script>
-        //             {`
-        //             window.dataLayer = window.dataLayer || [];
-        //             function gtag(){dataLayer.push(arguments);}
-        //             gtag('js', new Date());
+            // <Helmet>
+            //     {/* Google tag (gtag.js) */}
+            //     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16567153004"></script>
+            //     <script>
+            //         {`
+            //         window.dataLayer = window.dataLayer || [];
+            //         function gtag(){dataLayer.push(arguments);}
+            //         gtag('js', new Date());
         
-        //             gtag('config', 'AW-16567153004');
-        //             `}
-        //         </script>
-        //         {/* <!-- Google tag (gtag.js) --> */}
-        //         <script async src="https://www.googletagmanager.com/gtag/js?id=G-WFR8HYW6H1"></script>
-        //         <script>
-        //             {`window.dataLayer = window.dataLayer || [];
-        //             function gtag(){dataLayer.push(arguments);}
-        //             gtag('js', new Date());
+            //         gtag('config', 'AW-16567153004');
+            //         `}
+            //     </script>
+            //     {/* <!-- Google tag (gtag.js) --> */}
+            //     <script async src="https://www.googletagmanager.com/gtag/js?id=G-WFR8HYW6H1"></script>
+            //     <script>
+            //         {`window.dataLayer = window.dataLayer || [];
+            //         function gtag(){dataLayer.push(arguments);}
+            //         gtag('js', new Date());
 
-        //             gtag('config', 'G-WFR8HYW6H1');`}
-        //         </script>
-        //         {/* <!-- Hotjar Tracking Code for https://www.workfast.ai/landingin --> */}
-        //         <script>
-        //             {`
-        //             (function(h,o,t,j,a,r){
-        //                 h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-        //                 h._hjSettings={hjid:4994407,hjsv:6};
-        //                 a=o.getElementsByTagName('head')[0];
-        //                 r=o.createElement('script');r.async=1;
-        //                 r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-        //                 a.appendChild(r);
-        //             })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');`}
-        //         </script>
-        //     </Helmet>
+            //         gtag('config', 'G-WFR8HYW6H1');`}
+            //     </script>
+            //     {/* <!-- Hotjar Tracking Code for https://www.workfast.ai/landingin --> */}
+            //     <script>
+            //         {`
+            //         (function(h,o,t,j,a,r){
+            //             h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+            //             h._hjSettings={hjid:4994407,hjsv:6};
+            //             a=o.getElementsByTagName('head')[0];
+            //             r=o.createElement('script');r.async=1;
+            //             r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+            //             a.appendChild(r);
+            //         })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');`}
+            //     </script>
+            // </Helmet>
         //     <Header />
         //     <img src={yellowGlow} alt='yellowGlow' className='absolute top-[73px] md:top-[80px] z-[0] ' />
         //     <Main />
@@ -75,6 +75,40 @@ export default function LandingPageInd({ email, setEmail }) {
         //     <Footer />
         // </div>
         <div className='flex flex-col justify-start items-center w-full h-full bg-[#010306] relative overflow-hidden px-0'>
+             <Helmet>
+                {/* Google tag (gtag.js) */}
+                <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16567153004"></script>
+                <script>
+                    {`
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+        
+                    gtag('config', 'AW-16567153004');
+                    `}
+                </script>
+                {/* <!-- Google tag (gtag.js) --> */}
+                <script async src="https://www.googletagmanager.com/gtag/js?id=G-WFR8HYW6H1"></script>
+                <script>
+                    {`window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+
+                    gtag('config', 'G-WFR8HYW6H1');`}
+                </script>
+                {/* <!-- Hotjar Tracking Code for https://www.workfast.ai/landingin --> */}
+                <script>
+                    {`
+                    (function(h,o,t,j,a,r){
+                        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+                        h._hjSettings={hjid:4994407,hjsv:6};
+                        a=o.getElementsByTagName('head')[0];
+                        r=o.createElement('script');r.async=1;
+                        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+                        a.appendChild(r);
+                    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');`}
+                </script>
+            </Helmet>
         <Header/>
         <Intro email={email} setEmail={setEmail} />
         <Features />
