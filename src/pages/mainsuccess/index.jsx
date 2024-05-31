@@ -4,11 +4,12 @@ import Header from './header'
 import LoadLottie from '../loadLottie';
 import sucess from "../../sucess.json";
 import userDetailsStorage from "../../utils/store/userDetails";
+import { Helmet } from 'react-helmet';
 
 export default function MainSuccess() {
-  const { userId, userToken,userName,userImage,userEmail,userDesignation, companyId,companyName, workSpaceUrl,deviceId } = userDetailsStorage();
+  const { userId, userToken, userName, userImage, userEmail, userDesignation, companyId, companyName, workSpaceUrl, deviceId } = userDetailsStorage();
 
-  useEffect(()=>{
+  useEffect(() => {
     setTimeout(() => {
       const data = [
         userToken,
@@ -23,12 +24,25 @@ export default function MainSuccess() {
         deviceId,
         true
       ].join(',');
-      console.log("data",data);
+      console.log("data", data);
       window.location.href = `https://${workSpaceUrl}/loading?data=${data}`;
     }, 2000);
-  },[])
+  }, [])
   return (
     <div className='flex flex-col w-full h-full bg-[#010306] relative overflow-hidden'>
+      <Helmet>
+        {/* <!-- Google tag (gtag.js) --> */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16567153004"></script>
+        <script>
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'AW-16567153004');
+          `}
+        </script>
+      </Helmet>
       <Header />
       <img src={yellowGlow} alt='yellowGlow' className='absolute top-[73px] md:top-[80px] z-[0] ' />
       <div className='relative px-[20px] md:px-0 w-full md:w-11/12 mx-auto flex flex-col justify-center items-center gap-[30px] lg:gap-[60px] overflow-hidden'>
