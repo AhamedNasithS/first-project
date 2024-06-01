@@ -113,7 +113,7 @@ export default function Form() {
                                 <input type='email' className='w-full text-[#E2E8FF] placeholder:text-[#E2E8FF]/[40%] h-full text-[12px] lg:text-[16px] placeholder:text-[12px] lg:placeholder:text-[16px] bg-transparent focus:outline-none ml-[18px]' placeholder='Enter your email' value={email} onChange={(e) => { handleEmailChange(e) }} />
                             </div>
                         </div>
-                        <div className='w-full'>
+                        {/* <div className='w-full'>
                             <div className='flex items-center gap-1'>
                                 <img src={phone} alt='user' className='w-[19px] md:w-[23x]' />
                                 <h3 className='text-[#FFFFFF] text-[12px] md:text-[14px] font-medium'>Phone Number*</h3>
@@ -121,7 +121,7 @@ export default function Form() {
                             <div className={`w-full h-[38px] md:h-[44px] bg-[#1C2437] lg:py-[10px] mt-[10px] rounded-[8px] ${phoneNumberError ? "border-[1px] border-[#F92A4B]" : ""}`}>
                                 <input type='text' className='w-full text-[#E2E8FF] placeholder:text-[#E2E8FF]/[40%] h-full text-[12px] lg:text-[16px] placeholder:text-[12px] lg:placeholder:text-[16px] bg-transparent focus:outline-none ml-[18px]' placeholder='Enter your Phone number' value={phoneNumber} onChange={(e) => { handlePhoneNumberChange(e) }} />
                             </div>
-                        </div>
+                        </div> */}
                         <div className='w-full'>
                             <div className='flex items-center gap-1'>
                                 <img src={company} alt='user' className='w-[19px] md:w-[23x]' />
