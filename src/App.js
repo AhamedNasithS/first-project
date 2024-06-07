@@ -20,6 +20,7 @@ import Signup from './pages/signup';
 import MainSuccess from './pages/mainsuccess';
 import Home from './pages/home';
 import Error from './pages/error';
+import Help from './pages/help';
 // import MainForm from './pages/mainfrom';
 
 export default function App() {
@@ -47,6 +48,7 @@ export default function App() {
         <Route path='/landingin/success' element={<Success/>}/>
         <Route path='/success' element={<MainSuccess/>}/>
         <Route path='/signup' element={<Signup/>}/>
+        <Route path='/help' element={<Help/>}/>
       </Routes>
     </Router>
   )
