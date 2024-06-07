@@ -9,6 +9,7 @@ import emailIcon from "../../images/emailicon.svg";
 import company from "../../images/companyicon.svg";
 import { useNavigate } from 'react-router-dom';
 import { FaArrowRightLong } from "react-icons/fa6";
+import { Helmet } from 'react-helmet';
 
 export default function Form() {
     const [name, setName] = React.useState('');
@@ -70,7 +71,7 @@ export default function Form() {
                 company_name: companyName
             });
         const response = await axios.post(API.HOST, { email: email });
-        if(response.data) {
+        if (response.data) {
             console.log("sucess")
         }
         if (data?.statusCode === 200) {
@@ -85,6 +86,25 @@ export default function Form() {
 
     return (
         <div className='flex flex-col w-full h-full bg-[#010306] relative overflow-hidden'>
+            <Helmet>
+                {/* <!-- Google Tag Manager --> */}
+                <script>
+                    {`
+                        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+                            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+                            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+                        })(window,document,'script','dataLayer','GTM-N743ZL57');
+                    `}
+                </script>
+                {/* <!-- End Google Tag Manager --> */}
+                <body>
+                    {/* <!-- Google Tag Manager (noscript) --> */}
+                    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N743ZL57" title='googletag'
+                        height="0" width="0" style={{ display: "none", visibility: "hidden" }}></iframe></noscript>
+                    {/* <!-- End Google Tag Manager (noscript) --> */}
+                </body>
+            </Helmet>
             <Header />
             <img src={yellowGlow} alt='yellowGlow' className='absolute top-[73px] md:top-[80px] z-[0] ' />
             <div className='relative px-[20px] md:px-0 w-full md:w-11/12 mx-auto flex flex-col justify-center items-center gap-[30px] lg:gap-[60px] overflow-hidden'>
@@ -135,7 +155,7 @@ export default function Form() {
                             </div>
                         </div>
                     </div>
-                    <button className={`w-full h-[38px] md:h-[44px] rounded-[8px] border-[1px] border-[#995900] bg-[#FDD01F] text-[#2A2200] text-[16px] font-medium mt-[30px] flex justify-center items-center gap-[10px] ${name === "" || email === "" || emailError || companyName === "" ? "opacity-30" : ""}`} disabled={name === "" || email === "" || emailError  || companyName === ""} onClick={(e) => { handleSubmit(e) }}>Get Started. Free Trial <FaArrowRightLong/></button>
+                    <button className={`w-full h-[38px] md:h-[44px] rounded-[8px] border-[1px] border-[#995900] bg-[#FDD01F] text-[#2A2200] text-[16px] font-medium mt-[30px] flex justify-center items-center gap-[10px] ${name === "" || email === "" || emailError || companyName === "" ? "opacity-30" : ""}`} disabled={name === "" || email === "" || emailError || companyName === ""} onClick={(e) => { handleSubmit(e) }}>Get Started. Free Trial <FaArrowRightLong /></button>
                 </div>
             </div>
         </div>
