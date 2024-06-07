@@ -400,7 +400,7 @@ export default function Pricing({ setIsForm }) {
                     <div className={`p-5 w-full lg:w-[320px] border-[1px] border-[#FFFFFF1A] rounded-[10px] lg:rounded-[30px] sm:hover:scale-[1.1] transition-all duration-700 relative overflow-hidden ${knowMoreB1Y ? "h-[490px] lg:h-[650px]" : "h-[380px] lg:h-[500px]"}`}>
                         <div className='bg-[#355D86] w-[200px] h-[200px] rounded-full absolute blur-[67px] top-[50%] -translate-y-[59%] z-0 -left-[40%]'></div>
                         <div className='bg-[#355D86] w-[100px] h-[100px] rounded-full absolute blur-[55px] top-[20px] z-0 -right-[0]'></div>
-                        <h2 className='text-[#FFFFFF] text-[20px] lg:text-[36px] font-bold lg:mt-[10px] lg:ml-[20px] relative z-[1]'>$589 <span className='text-[#BCBCBC] text-[10px] lg:text-[16px] font-medium'>User/month</span></h2>
+                        <h2 className='text-[#FFFFFF] text-[20px] lg:text-[36px] font-bold lg:mt-[10px] lg:ml-[20px] relative z-[1]'>₹589 <span className='text-[#BCBCBC] text-[10px] lg:text-[16px] font-medium'>User/month</span></h2>
                         <h3 className='text-[#FFFFFF] text-[18px] lg:text-[30px] font-medium my-[5px] lg:my-[10px] lg:ml-[20px] relative z-[1]'>Basecamp 1</h3>
                         <div className='flex gap-2 items-center lg:ml-[20px] my-[10px] lg:my-[15px] relative z-[1]'>
                             <img src={tik} alt='tik' className='w-[15px] lg:w-[17px]' />
@@ -458,7 +458,7 @@ export default function Pricing({ setIsForm }) {
                         <div className='p-0.5 lg:p-1 rounded-[10px] bg-[#303018] w-6/12 ml-auto text-center absolute top-4 right-6 z-[1]'>
                             <h3 className='font-bold text-[#FFDD09] text-[8px] lg:text-[10px]'>MOST POPULAR</h3>
                         </div>
-                        <h2 className='text-[#FFFFFF] text-[20px] lg:text-[36px] font-bold lg:mt-[10px] lg:ml-[20px] relative z-[1]'>$999 <span className='text-[#BCBCBC] text-[10px] lg:text-[16px] font-medium'>User/month</span></h2>
+                        <h2 className='text-[#FFFFFF] text-[20px] lg:text-[36px] font-bold lg:mt-[10px] lg:ml-[20px] relative z-[1]'>₹999 <span className='text-[#BCBCBC] text-[10px] lg:text-[16px] font-medium'>User/month</span></h2>
                         <h3 className='text-[#FFFFFF] text-[18px] lg:text-[30px] font-medium my-[5px] lg:my-[10px] lg:ml-[20px] relative z-[1]'>Basecamp 2</h3>
                         <div className='flex gap-2 items-center lg:ml-[20px] my-[10px] lg:my-[15px] relative z-[1]'>
                             <img src={tik} alt='tik' className='w-[15px] lg:w-[17px]' />
@@ -558,7 +558,7 @@ export default function Pricing({ setIsForm }) {
                     <div className={`p-5 w-full lg:w-[320px] border-[1px] border-[#FFFFFF1A] rounded-[10px] lg:rounded-[30px] sm:hover:scale-[1.1] transition-all duration-700 relative overflow-hidden ${knowMoreB3Y ? "h-[810px] lg:h-[1050px]" : "h-[380px] lg:h-[500px]"}`}>
                         <div className='bg-[#355D86] w-[200px] h-[200px] rounded-full absolute blur-[67px] top-[50%] -translate-y-[59%] z-0 -left-[40%]'></div>
                         <div className='bg-[#355D86] w-[100px] h-[100px] rounded-full absolute blur-[55px] top-[20px] z-0 -right-[0]'></div>
-                        <h2 className='text-[#FFFFFF] text-[20px] lg:text-[36px] font-bold lg:mt-[10px] lg:ml-[20px] relative z-[1]'>$2099 <span className='text-[#BCBCBC] text-[10px] lg:text-[16px] font-medium'>User/month</span></h2>
+                        <h2 className='text-[#FFFFFF] text-[20px] lg:text-[36px] font-bold lg:mt-[10px] lg:ml-[20px] relative z-[1]'>₹2099 <span className='text-[#BCBCBC] text-[10px] lg:text-[16px] font-medium'>User/month</span></h2>
                         <h3 className='text-[#FFFFFF] text-[18px] lg:text-[30px] font-medium my-[5px] lg:my-[10px] lg:ml-[20px] relative z-[1]'>Basecamp 3</h3>
                         <div className='flex gap-2 items-center lg:ml-[20px] my-[10px] lg:my-[15px] relative z-[1]'>
                             <img src={tik} alt='tik' className='w-[15px] lg:w-[17px]' />
@@ -658,7 +658,7 @@ export default function Pricing({ setIsForm }) {
                     <div className={`p-5 w-full lg:w-[320px] border-[1px] border-[#FFFFFF1A] rounded-[10px] lg:rounded-[30px] sm:hover:scale-[1.1] transition-all duration-700 relative overflow-hidden ${knowMoreB4Y ? "h-[860px] lg:h-[1100px]" : "h-[380px] lg:h-[500px]"}`}>
                         <div className='bg-[#355D86] w-[200px] h-[200px] rounded-full absolute blur-[67px] top-[50%] -translate-y-[59%] z-0 -left-[40%]'></div>
                         <div className='bg-[#355D86] w-[100px] h-[100px] rounded-full absolute blur-[55px] top-[20px] z-0 -right-[0]'></div>
-                        <h2 className='text-[#FFFFFF] text-[20px] lg:text-[36px] font-bold lg:mt-[10px] lg:ml-[20px] relative z-[1]'>$4099 <span className='text-[#BCBCBC] text-[10px] lg:text-[16px] font-medium'>User/month</span></h2>
+                        <h2 className='text-[#FFFFFF] text-[20px] lg:text-[36px] font-bold lg:mt-[10px] lg:ml-[20px] relative z-[1]'>₹4099 <span className='text-[#BCBCBC] text-[10px] lg:text-[16px] font-medium'>User/month</span></h2>
                         <h3 className='text-[#FFFFFF] text-[18px] lg:text-[30px] font-medium my-[5px] lg:my-[10px] lg:ml-[20px] relative z-[1]'>Summit</h3>
                         <div className='flex gap-2 items-center lg:ml-[20px] my-[10px] lg:my-[15px] relative z-[1]'>
                             <img src={tik} alt='tik' className='w-[15px] lg:w-[17px]' />

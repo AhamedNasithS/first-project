@@ -5,7 +5,7 @@ import API from '../../utils/API';
 import axios from 'axios';
 import user from "../../images/profileicon.svg";
 import emailIcon from "../../images/emailicon.svg";
-import phone from "../../images/phoneicon.svg";
+// import phone from "../../images/phoneicon.svg";
 import company from "../../images/companyicon.svg";
 import { useNavigate } from 'react-router-dom';
 import { FaArrowRightLong } from "react-icons/fa6";
@@ -14,8 +14,8 @@ export default function Form() {
     const [name, setName] = React.useState('');
     const [email, setEmail] = React.useState('');
     const [emailError, setEmailError] = React.useState(false);
-    const [phoneNumber, setPhoneNumber] = React.useState('');
-    const [phoneNumberError, setPhoneNumberError] = React.useState(false);
+    // const [phoneNumber, setPhoneNumber] = React.useState('');
+    // const [phoneNumberError, setPhoneNumberError] = React.useState(false);
     const [companyName, setCompanyName] = React.useState('');
     const navigate = useNavigate();
 
@@ -46,19 +46,19 @@ export default function Form() {
         }
     }
 
-    const handlePhoneNumberChange = (e) => {
-        const phoneNumbers = e.target.value.replace(/\D/g, '');
-        setPhoneNumber(phoneNumbers)
-        const isValidPhoneNumber = /^\d{10}$/;
-        if (phoneNumbers === "") {
-            setPhoneNumberError(false);
-        }
-        else if (!isValidPhoneNumber.test(phoneNumbers)) {
-            setPhoneNumberError(true);
-        } else {
-            setPhoneNumberError(false);
-        }
-    }
+    // const handlePhoneNumberChange = (e) => {
+    //     const phoneNumbers = e.target.value.replace(/\D/g, '');
+    //     setPhoneNumber(phoneNumbers)
+    //     const isValidPhoneNumber = /^\d{10}$/;
+    //     if (phoneNumbers === "") {
+    //         setPhoneNumberError(false);
+    //     }
+    //     else if (!isValidPhoneNumber.test(phoneNumbers)) {
+    //         setPhoneNumberError(true);
+    //     } else {
+    //         setPhoneNumberError(false);
+    //     }
+    // }
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -66,14 +66,17 @@ export default function Form() {
             {
                 name: name,
                 email: email,
-                phone: phoneNumber,
+                phone: "",
                 company_name: companyName
             });
         const { response } = await axios.post(API.HOST, { email: email });
+        if(response.data) {
+            console.log("sucess")
+        }
         if (data?.statusCode === 200) {
             setName('');
             setEmail('');
-            setPhoneNumber('');
+            // setPhoneNumber('');
             setCompanyName('');
             navigate('/landingin/success')
         }
@@ -132,7 +135,7 @@ export default function Form() {
                             </div>
                         </div>
                     </div>
-                    <button className={`w-full h-[38px] md:h-[44px] rounded-[8px] border-[1px] border-[#995900] bg-[#FDD01F] text-[#2A2200] text-[16px] font-medium mt-[30px] flex justify-center items-center gap-[10px] ${name === "" || email === "" || emailError || phoneNumber === "" || phoneNumberError || companyName === "" ? "opacity-30" : ""}`} disabled={name === "" || email === "" || emailError || phoneNumber === "" || phoneNumberError || companyName === ""} onClick={(e) => { handleSubmit(e) }}>Get Started. Free Trial <FaArrowRightLong/></button>
+                    <button className={`w-full h-[38px] md:h-[44px] rounded-[8px] border-[1px] border-[#995900] bg-[#FDD01F] text-[#2A2200] text-[16px] font-medium mt-[30px] flex justify-center items-center gap-[10px] ${name === "" || email === "" || emailError || companyName === "" ? "opacity-30" : ""}`} disabled={name === "" || email === "" || emailError  || companyName === ""} onClick={(e) => { handleSubmit(e) }}>Get Started. Free Trial <FaArrowRightLong/></button>
                 </div>
             </div>
         </div>
