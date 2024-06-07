@@ -69,7 +69,7 @@ export default function Form() {
                 phone: "",
                 company_name: companyName
             });
-        const { response } = await axios.post(API.HOST, { email: email });
+        const response = await axios.post(API.HOST, { email: email });
         if(response.data) {
             console.log("sucess")
         }
