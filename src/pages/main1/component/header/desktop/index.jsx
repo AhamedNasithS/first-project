@@ -54,6 +54,7 @@ export default function Desktop({ setIsForm }) {
                 <h3 className='text-[#E2E8FFBF] font-normal text-[14px] cursor-pointer' onClick={() => { handleFeatureClick() }}>Features</h3>
                 {/* <h3 className='text-[#E2E8FFBF] font-normal text-[14px] cursor-pointer' onClick={() => { handlePricingClick() }}>Pricing</h3> */}
                 <h3 className='text-[#E2E8FFBF] font-normal text-[14px] cursor-pointer' onClick={(e) => {handleBlog(e)}}>Blog</h3>
+                <h3 className='text-[#E2E8FFBF] font-normal text-[14px] cursor-pointer' onClick={(e) => {navigate('/investor')}}>Investor</h3>
                 <h3 className='text-[#E2E8FFBF] font-normal text-[14px] cursor-pointer' onClick={() => { setIsForm(true) }}>Enterprise</h3>
             </div>
             <button className='py-[8px] px-[12px] text-[#1B1600] text-[14px] font-semibold rounded-[8px] bg-gradient-to-bl from-[#FDD01F] via-[#FDD320] to-[#F8861B]' onClick={(e) => {handleClick(e)}}>Sign up for free</button>
