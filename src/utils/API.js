@@ -12,6 +12,7 @@ API.CHANGEJOINSTATUS = "";
 API.UPDATECOMPANYURL = "";
 API.INVITEUSERTOWORKSPACE = "";
 API.CREATECHANNEL = "";
+API.INVESTORS = "";
 
 
 
@@ -35,6 +36,8 @@ if (mode === "LOCAL") {
   API["INVITEUSERTOWORKSPACE"] = "https://oneappstage.hifrds.com/api/v1/inviteUsersToWorkspace";
 
   API["CREATECHANNEL"] = "https://oneappstage.hifrds.com/api/v1/createChannel";
+
+  API["INVESTORS"] = "https://devarus.aftergen.in/dev/API/release_v45/investor.php"
 }
 
 if (mode === "DEV") {
@@ -55,6 +58,8 @@ if (mode === "DEV") {
   API["INVITEUSERTOWORKSPACE"] = "https://oneappstage.hifrds.com/api/v1/inviteUsersToWorkspace";
 
   API["CREATECHANNEL"] = "https://oneappstage.hifrds.com/api/v1/createChannel";
+
+  API["INVESTORS"] = "https://devarus.aftergen.in/dev/API/release_v45/investor.php"
 }
 
 if (mode === "STAGE") {
@@ -77,6 +82,8 @@ if (mode === "STAGE") {
   API["INVITEUSERTOWORKSPACE"] = "https://oneappuat.hifrnds.in/api/v1/inviteUsersToWorkspace";
 
   API["CREATECHANNEL"] = "https://oneappuat.hifrnds.in/api/v1/createChannel";
+
+  API["INVESTORS"] = "https://devarus.aftergen.in/dev/API/release_v45/investor.php"
 }
 
 if (mode === "UAT") {
@@ -95,6 +102,8 @@ if (mode === "UAT") {
   API["INVITEUSERTOWORKSPACE"] = "https://oneappstage.hifrds.com/v2/api/v1/inviteUsersToWorkspace";
 
   API["CREATECHANNEL"] = "https://oneappstage.hifrds.com/v2/api/v1/createChannel";
+
+  API["INVESTORS"] = "https://devarus.aftergen.in/dev/API/release_v45/investor.php"
 }
 
 if (mode === "LIVE") {
@@ -118,6 +127,7 @@ if (mode === "LIVE") {
 
   API["CREATECHANNEL"] = "https://k8s.onlyapp.in/oneapp/v2/api/v1/createChannel";
 
+  API["INVESTORS"] = "https://backend.hifrds.com/pepul/addInvestor.php"
 }
 
 module.exports = API;

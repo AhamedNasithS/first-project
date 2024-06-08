@@ -21,6 +21,8 @@ import MainSuccess from './pages/mainsuccess';
 import Home from './pages/home';
 import Error from './pages/error';
 import Help from './pages/help';
+import Investors from './pages/investor';
+import InvestorFrom from './pages/investorForm';
 // import MainForm from './pages/mainfrom';
 
 export default function App() {
@@ -49,6 +51,8 @@ export default function App() {
         <Route path='/success' element={<MainSuccess/>}/>
         <Route path='/signup' element={<Signup/>}/>
         <Route path='/help' element={<Help/>}/>
+        <Route path='/investor' element={<Investors/>}/>
+        <Route path='/investor/form' element={<InvestorFrom/>}/>
       </Routes>
     </Router>
   )
