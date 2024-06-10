@@ -1649,3 +1649,27 @@ input[type="radio"] {
   -moz-appearance: none;
   /* Remove default focus style */
 }
+
+/* For WebKit browsers (Chrome, Safari) */
+.element-with-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* For Firefox */
+.element-with-scrollbar {
+  /* scrollbar-width: none; */
+  scrollbar-width: none;
+}
+
+/* For IE and Edge */
+.element-with-scrollbar {
+  -ms-overflow-style: none;
+}
+
+.right-menu-wrapper {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  height: 100vh; /* Adjust according to your layout */
+  overflow-y: auto; /* Enable scrolling if content exceeds viewport height */
+}

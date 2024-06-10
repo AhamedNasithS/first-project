@@ -23,6 +23,8 @@ import Error from './pages/error';
 import Help from './pages/help';
 import Investors from './pages/investor';
 import InvestorFrom from './pages/investorForm';
+import Articles1 from './pages/articles/articles1';
+import About from './pages/about';
 // import MainForm from './pages/mainfrom';
 
 export default function App() {
@@ -38,11 +40,13 @@ export default function App() {
         <Route path='/' element={<Main1/>}/>
         <Route path='/*' element={<Error/>}/>
         <Route path='/blog' element={<Blog/>}/>
+        <Route path='/blog/breaking-barriers-in-communication' element={<Articles1/>}/>
         <Route path='/landing' element={<LandingPage/>}/>
         <Route path='/landingin' element={<LandingPageInd email={email} setEmail={setEmail}/>}/>
         <Route path='/development' element={<NewLanding/>}/>
         {/* <Route path='/ContactUs' element={<ContactUs/>}/> */}
         <Route path='/refund' element={<Refund/>}/>
+        <Route path='/about' element={<About/>}/>
         <Route path='/privacy' element={<Privacy/>}/>
         <Route path='/terms' element={<Terms/>}/>
         <Route path='/calendly' element={<Calender/>}/>
