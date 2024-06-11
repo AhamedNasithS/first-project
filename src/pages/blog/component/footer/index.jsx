@@ -14,6 +14,8 @@ export default function Footer() {
 
 
                         <a href='/refund'><h3 className='text-[#E2E8FF8C] text-[14px] font-normal cursor-pointer'>Refund Policy </h3></a>
+                        <a href='/about'><h3 className='text-[#E2E8FF8C] text-[14px] font-normal cursor-pointer'>About us </h3></a>
+
 
                         {/* <a href='/refund'><h3 className='text-[#E2E8FF8C] text-[14px] font-normal cursor-pointer'>Refund Policy</h3></a> */}
                     </div>

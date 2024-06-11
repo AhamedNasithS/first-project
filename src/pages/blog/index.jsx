@@ -21,6 +21,7 @@ import user from "../../images/profileicon.svg";
 import emailIcon from "../../images/emailicon.svg";
 import phone from "../../images/phoneicon.svg";
 import company from "../../images/companyicon.svg";
+import Articles from './component/articles';
 
 export default function Blog() {
   const [isForm, setIsForm] = React.useState(false);
@@ -106,6 +107,7 @@ export default function Blog() {
       <BestTools />
       <WorkFastAi />
       <Comparative />
+      {/* <Articles/> */}
       <Footer />
       {isForm && (
         <div className="flex justify-center items-center text-center fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-full bg-[#121825] bg-opacity-60 z-[100]">
