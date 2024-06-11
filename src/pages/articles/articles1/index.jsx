@@ -22,7 +22,7 @@ import { useNavigate } from 'react-router-dom';
 export default function Articles1() {
   const navigate = useNavigate();
   return (
-    <div className='flex flex-col justify-start items-center w-full h-full bg-[#010306] relative overflow-hidden gap-[30px] md:gap-[60px] lg:gap-[100px]'>
+    <div className='flex flex-col justify-start items-center w-full bg-[#010306] relative overflow-hidden gap-[30px] md:gap-[60px] lg:gap-[100px]'>
       <Header />
       <Banner />
       <div className='flex gap-[40px] justify-center mx-auto w-[88%] relative'>
@@ -37,7 +37,7 @@ export default function Articles1() {
           <Workflow />
           <GoalProject />
         </div>
-        <div className='flex flex-col gap-[15px] overflow-auto w-[40%] sticky top-0 h-screen right-menu-wrapper element-with-scrollbar'>
+        <div className='flex flex-col gap-[15px] overflow-auto w-[40%] right-menu-wrapper element-with-scrollbar'>
           <h3 className='text-[#FFFFFF] text-[26px] font-medium pl-[9px]'>Table of contents</h3>
           <div className='flex gap-[17px] items-center p-[9px] cursor-pointer'>
             <img src={arrow} alt='arrow' />

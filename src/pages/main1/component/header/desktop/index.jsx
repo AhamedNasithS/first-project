@@ -34,6 +34,19 @@ export default function Desktop({ setIsForm }) {
         }
     };
 
+    const handleLiginClick = async (e) => {
+        e.preventDefault();
+        const response = await axios.post(API.BUTTON,
+            {
+                "eventName": "LOG_IN_FOR_FREE_MAIN"
+            }
+        );
+        if (response.data.statusCode === 200) {
+            window.location.href = 'https://app.workfast.ai/';
+            // navigate('/signup')
+        }
+    };
+
     const handleBlog = async (e) => {
         e.preventDefault();
         const response = await axios.post(API.BUTTON,
@@ -53,11 +66,17 @@ export default function Desktop({ setIsForm }) {
                 {/* <h3 className='text-[#E2E8FFBF] font-normal text-[14px] cursor-pointer'>Product</h3> */}
                 <h3 className='text-[#E2E8FFBF] font-normal text-[14px] cursor-pointer' onClick={() => { handleFeatureClick() }}>Features</h3>
                 {/* <h3 className='text-[#E2E8FFBF] font-normal text-[14px] cursor-pointer' onClick={() => { handlePricingClick() }}>Pricing</h3> */}
-                <h3 className='text-[#E2E8FFBF] font-normal text-[14px] cursor-pointer' onClick={(e) => {handleBlog(e)}}>Blog</h3>
-                <h3 className='text-[#E2E8FFBF] font-normal text-[14px] cursor-pointer' onClick={(e) => {navigate('/investor')}}>Investor</h3>
+                <h3 className='text-[#E2E8FFBF] font-normal text-[14px] cursor-pointer' onClick={(e) => { handleBlog(e) }}>Blog</h3>
+                <h3 className='text-[#E2E8FFBF] font-normal text-[14px] cursor-pointer' onClick={(e) => { navigate('/investor') }}>Investor</h3>
                 <h3 className='text-[#E2E8FFBF] font-normal text-[14px] cursor-pointer' onClick={() => { setIsForm(true) }}>Enterprise</h3>
             </div>
-            <button className='py-[8px] px-[12px] text-[#1B1600] text-[14px] font-semibold rounded-[8px] bg-gradient-to-bl from-[#FDD01F] via-[#FDD320] to-[#F8861B]' onClick={(e) => {handleClick(e)}}>Sign up for free</button>
+            {/* <button className='py-[8px] px-[12px] text-[#1B1600] text-[14px] font-semibold rounded-[8px] bg-gradient-to-bl from-[#FDD01F] via-[#FDD320] to-[#F8861B]' onClick={(e) => { handleClick(e) }}>Sign up for free</button> */}
+            <div className='p-[1px] bg-gradient-to-bl from-[#FDD01F] via-[#FDD320] to-[#F8861B] rounded-[12px]'>
+                <div className='p-[3px] lg:p-[6px] rounded-[12px] flex gap-[10px] items-center bg-[#111830]'>
+                    <button className='py-[8px] px-[12px] text-[#FFFFFF] hover:text-[#000] text-[14px] font-semibold rounded-[8px] bg-transparent hover:bg-[#E2E8FFBF]' onClick={(e) => { handleLiginClick(e) }}>Log in</button>
+                    <button className='py-[8px] px-[12px] text-[#1B1600] text-[14px] font-semibold rounded-[8px] bg-gradient-to-bl from-[#FDD01F] via-[#FDD320] to-[#F8861B]' onClick={(e) => { handleClick(e) }}>Sign up</button>
+                </div>
+            </div>
         </div>
     )
 }
