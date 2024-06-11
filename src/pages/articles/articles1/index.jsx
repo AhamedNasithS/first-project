@@ -19,67 +19,61 @@ import peter from "../../../images/peter.svg";
 import { FaRegClock } from "react-icons/fa6";
 import { useNavigate } from 'react-router-dom';
 
+const tocData = [
+  { title: 'What is Breaking Barriers', id: 'breaking-barriers' },
+  { title: 'All-in-one workbase', id: 'all-in-one' },
+  { title: 'Automation makes work easier', id: 'automation' },
+  { title: 'AI intelligence', id: 'ai-intelligence' },
+  { title: 'Email - calendar duo', id: 'email-calendar' },
+  { title: 'Organisation chart and reporting', id: 'organisation' },
+  { title: 'Daily report generation', id: 'daily-report' },
+  { title: 'Integration and personalisation', id: 'integration' },
+  { title: 'Workflow Setting', id: 'workflow' },
+  { title: 'Goal - Project - Task linkage', id: 'goal-project' },
+];
+
 export default function Articles1() {
   const navigate = useNavigate();
+  const [items, setItems] = React.useState('');
+
+  const scrollToSection = (id) => {
+    setItems(id)
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <div className='flex flex-col justify-start items-center w-full bg-[#010306] relative overflow-hidden gap-[30px] md:gap-[60px] lg:gap-[100px]'>
       <Header />
       <Banner />
-      <div className='flex gap-[40px] justify-center mx-auto w-[88%] relative'>
-        <div className='flex flex-col h-full relative gap-[15px] md:gap-[30px] lg:gap-[50px] w-[60%] element-with-scrollbar'>
-          <BreakinBarriers />
-          <AllInOne />
-          <AiInteligence />
-          <EmailCalender />
-          <Organisation />
-          <DailyReport />
-          <Integration />
-          <Workflow />
-          <GoalProject />
+      <div className='flex w-[88%] mx-auto gap-[40px]'>
+        <div className='flex flex-col gap-[15px] md:gap-[30px] lg:gap-[50px] w-[60%] h-screen overflow-y-auto'>
+          <div id='breaking-barriers'><BreakinBarriers /></div>
+          <div id='all-in-one'><AllInOne /></div>
+          <div id='automation'><AiInteligence /></div>
+          <div id='ai-intelligence'><AiInteligence /></div>
+          <div id='email-calendar'><EmailCalender /></div>
+          <div id='organisation'><Organisation /></div>
+          <div id='daily-report'><DailyReport /></div>
+          <div id='integration'><Integration /></div>
+          <div id='workflow'><Workflow /></div>
+          <div id='goal-project'><GoalProject /></div>
         </div>
-        <div className='flex flex-col gap-[15px] overflow-auto w-[40%] right-menu-wrapper element-with-scrollbar'>
+        <aside className='sticky top-10 self-start w-[40%] p-[20px] rounded-[8px]'>
           <h3 className='text-[#FFFFFF] text-[26px] font-medium pl-[9px]'>Table of contents</h3>
-          <div className='flex gap-[17px] items-center p-[9px] cursor-pointer'>
-            <img src={arrow} alt='arrow' />
-            <h3 className='text-[#FFFFFF] text-[26px] font-medium'>What is Breaking Barriers</h3>
-          </div>
-          <div className='flex gap-[17px] items-center p-[9px] cursor-pointer'>
-            <img src={arrow} alt='arrow' />
-            <h3 className='text-[#FFFFFF] text-[26px] font-medium'>All-in-one workbase</h3>
-          </div>
-          <div className='flex gap-[17px] items-center p-[9px] cursor-pointer'>
-            <img src={arrow} alt='arrow' />
-            <h3 className='text-[#FFFFFF] text-[26px] font-medium'>Automation makes work easier</h3>
-          </div>
-          <div className='flex gap-[17px] items-center p-[9px] cursor-pointer'>
-            <img src={arrow} alt='arrow' />
-            <h3 className='text-[#FFFFFF] text-[26px] font-medium'>AI intelligence</h3>
-          </div>
-          <div className='flex gap-[17px] items-center p-[9px] cursor-pointer'>
-            <img src={arrow} alt='arrow' />
-            <h3 className='text-[#FFFFFF] text-[26px] font-medium'>Email - calendar duo</h3>
-          </div>
-          <div className='flex gap-[17px] items-center p-[9px] cursor-pointer'>
-            <img src={arrow} alt='arrow' />
-            <h3 className='text-[#FFFFFF] text-[26px] font-medium'>Organisation chart and reporting</h3>
-          </div>
-          <div className='flex gap-[17px] items-center p-[9px] cursor-pointer'>
-            <img src={arrow} alt='arrow' />
-            <h3 className='text-[#FFFFFF] text-[26px] font-medium'>Daily report generation</h3>
-          </div>
-          <div className='flex gap-[17px] items-center p-[9px] cursor-pointer'>
-            <img src={arrow} alt='arrow' />
-            <h3 className='text-[#FFFFFF] text-[26px] font-medium'>Integration and personalisation</h3>
-          </div>
-          <div className='flex gap-[17px] items-center p-[9px] cursor-pointer'>
-            <img src={arrow} alt='arrow' />
-            <h3 className='text-[#FFFFFF] text-[26px] font-medium'>Workflow Setting</h3>
-          </div>
-          <div className='flex gap-[17px] items-center p-[9px] cursor-pointer'>
-            <img src={arrow} alt='arrow' />
-            <h3 className='text-[#FFFFFF] text-[26px] font-medium'>Goal - Project - Task linkage</h3>
-          </div>
-        </div>
+          {tocData.map((item) => (
+            <div
+              key={item.id}
+              className={`flex gap-[17px] items-center p-[9px] cursor-pointer ${item.id === items ? "bg-[#0F162F99]" : "bg-transparent" }`}
+              onClick={() => scrollToSection(item.id)}
+            >
+              <img src={arrow} alt='arrow' />
+              <h3 className='text-[#FFFFFF] text-[26px] font-medium'>{item.title}</h3>
+            </div>
+          ))}
+        </aside>
       </div>
       <div className='flex flex-col gap-[48px] w-[88%] relative z-[1] mx-auto'>
         <div className='flex gap-[14px] items-center'>
@@ -122,7 +116,7 @@ export default function Articles1() {
           <div className='rounded-[8px] max-w-[378px] flex flex-col shrink-0 cursor-pointer'>
             <img src={articles4} alt='articles' />
             <div className='bg-[#121A2F] px-[20px] py-[14px] rounded-b-[8px] flex flex-col gap-[14px]'>
-              <h2 className='text-[#FFFFFF] text-[24px] font-semibold'>Looking for a new platform for project management ? Discover Workfast.ai</h2>
+              <h2 className='text-[#FFFFFF] text-[24px] font-semibold'>Looking for a new platform for project management? Discover Workfast.ai</h2>
               <div className='flex justify-between items-center'>
                 <div className='flex gap-[4px] items-center'>
                   <img src={peter} alt='articles' />
