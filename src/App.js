@@ -23,8 +23,11 @@ import Error from './pages/error';
 import Help from './pages/help';
 import Investors from './pages/investor';
 import InvestorFrom from './pages/investorForm';
-import Articles1 from './pages/articles/articles1';
 import About from './pages/about';
+import Articles1 from './pages/articles/articles1';
+import Articles2 from './pages/articles/articles2';
+import Articles3 from './pages/articles/articles3';
+import Articles4 from './pages/articles/articles4';
 // import MainForm from './pages/mainfrom';
 
 export default function App() {
@@ -40,7 +43,10 @@ export default function App() {
         <Route path='/' element={<Main1/>}/>
         <Route path='/*' element={<Error/>}/>
         <Route path='/blog' element={<Blog/>}/>
-        <Route path='/blog/breaking-barriers-in-communication' element={<Articles1/>}/>
+        <Route path='/blog/breaking-barriers-in-communication-collaboration-with-workfast.ai' element={<Articles1/>}/>
+        <Route path='/blog/top-7-ways-workfast.ai-can-revolutionise-your-project-management' element={<Articles2/>}/>
+        <Route path='/blog/beginner-guide-to-product-management' element={<Articles3/>}/>
+        <Route path='/blog/looking-for-a-new-platform-for-project-management' element={<Articles4/>}/>
         <Route path='/landing' element={<LandingPage/>}/>
         <Route path='/landingin' element={<LandingPageInd email={email} setEmail={setEmail}/>}/>
         <Route path='/development' element={<NewLanding/>}/>

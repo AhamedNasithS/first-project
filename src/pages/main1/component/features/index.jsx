@@ -12,7 +12,7 @@ export default function Features() {
   return (
     <div className="flex flex-col items-center relative w-11/12 mx-auto mb-[20px] lg:mb-[40px] xl:mb-[100px]" id='features'>
       <img src="https://dz1x1c630cl14.cloudfront.net/webassets/glow3.svg" alt='glow' className='absolute -top-[50px] sm:-top-[200px] lg:-top-[350px]' />
-      <h3 className='text-[22px] sm:text-[38px] lg:text-[55px] font-semibold bg-gradient-to-l from-[#FDD220] to-[#FFFFFF] bg-clip-text text-transparent'>Prime Features</h3>
+      <h3 className='text-[22px] sm:text-[38px] lg:text-[55px] font-semibold bg-gradient-to-l from-[#FDD220] to-[#FFFFFF] bg-clip-text text-transparent'>Features</h3>
       <div className='w-full mt-[20px] lg:mt-[60px] relative'>
         <div className='absolute hidden xl:block -top-[51.5px] left-[20%] -translate-x-[50%] z-[1] w-[10px] h-[10px] rounded-full p-[3px] bg-[#010306]'><div className='w-full h-full rounded-full bg-[#FFF]'></div></div>
         <div className='absolute hidden xl:block -top-[51.5px] left-[80%] -translate-x-[50%] z-[1] w-[10px] h-[10px] rounded-full p-[3px] bg-[#010306]'><div className='w-full h-full rounded-full bg-[#FFF]'></div></div>

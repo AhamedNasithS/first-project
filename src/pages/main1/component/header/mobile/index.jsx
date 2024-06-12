@@ -86,9 +86,9 @@ export default function Mobile({ setIsForm }) {
                         <div className={`mr-[40px] text-[#E2E8FF] py-[10px] mb-6 cursor-pointer rounded-[5px]`} onClick={(e) => { navigate('/investor') }}>
                             <h1 className="font-medium text-1xl">Investor</h1>
                         </div>
-                        <div className={`mr-[40px] text-[#E2E8FF] py-[10px] mb-6 cursor-pointer rounded-[5px]`} onClick={() => { setIsForm(true) }}>
+                        {/* <div className={`mr-[40px] text-[#E2E8FF] py-[10px] mb-6 cursor-pointer rounded-[5px]`} onClick={() => { setIsForm(true) }}>
                             <h1 className="font-medium text-1xl">Enterprise</h1>
-                        </div>
+                        </div> */}
                         <button className='py-[8px] px-[12px] text-[#1B1600] mb-6 text-[14px] font-semibold rounded-[8px] bg-gradient-to-bl from-[#FDD01F] via-[#FDD320] to-[#F8861B] w-full' onClick={(e) => { handleClick(e) }}>Sign up</button>
                         <div>
                             <button className='py-[10px] px-[12px] bg-[#FFF] text-[14px] font-semibold rounded-[8px] text-[#1B1600] w-full' onClick={(e) => { handleLiginClick(e) }}>Log in</button>
