@@ -20,7 +20,7 @@ export default function Articles() {
                 <h3 className='text-[#FFFFFF] font-semibold text-[21px]'>Articles</h3>
             </div>
             <div className='flex gap-[28px] overflow-x-scroll w-full'>
-                <div className='rounded-[8px] max-w-[378px] flex flex-col shrink-0 cursor-pointer' onClick={() => {navigate('/blog/breaking-barriers-in-communication')}}>
+                <div className='rounded-[8px] max-w-[378px] flex flex-col shrink-0 cursor-pointer' onClick={() => {navigate('/blog/breaking-barriers-in-communication-collaboration-with-workfast.ai')}}>
                     <img src={articles1} alt='articles' />
                     <div className='bg-[#121A2F] px-[20px] py-[14px] rounded-b-[8px] flex flex-col gap-[14px]'>
                         <h2 className='text-[#FFFFFF] text-[24px] font-semibold'>Breaking Barriers in Communication and Collaboration with Workfast.ai</h2>
@@ -36,7 +36,7 @@ export default function Articles() {
                         </div>
                     </div>
                 </div>
-                <div className='rounded-[8px] max-w-[378px] flex flex-col shrink-0 cursor-pointer'>
+                <div className='rounded-[8px] max-w-[378px] flex flex-col shrink-0 cursor-pointer' onClick={() => {navigate('/blog/top-7-ways-workfast.ai-can-revolutionise-your-project-management')}}>
                     <img src={articles2} alt='articles' />
                     <div className='bg-[#121A2F] px-[20px] py-[14px] rounded-b-[8px] flex flex-col gap-[14px]'>
                         <h2 className='text-[#FFFFFF] text-[24px] font-semibold'>Top 7 ways Workfast.ai can Revolutionise your project management</h2>
@@ -52,7 +52,7 @@ export default function Articles() {
                         </div>
                     </div>
                 </div>
-                <div className='rounded-[8px] max-w-[378px] flex flex-col shrink-0 cursor-pointer'>
+                <div className='rounded-[8px] max-w-[378px] flex flex-col shrink-0 cursor-pointer' onClick={() => {navigate('/blog/beginner-guide-to-product-management')}}>
                     <img src={articles3} alt='articles' />
                     <div className='bg-[#121A2F] px-[20px] py-[14px] rounded-b-[8px] flex flex-col gap-[14px]'>
                         <h2 className='text-[#FFFFFF] text-[24px] font-semibold'>Beginner's Guide to Product Management: Everything You Need to Know</h2>
@@ -68,7 +68,7 @@ export default function Articles() {
                         </div>
                     </div>
                 </div>
-                <div className='rounded-[8px] max-w-[378px] flex flex-col shrink-0 cursor-pointer'>
+                <div className='rounded-[8px] max-w-[378px] flex flex-col shrink-0 cursor-pointer' onClick={() => {navigate('/blog/looking-for-a-new-platform-for-project-management')}}>
                     <img src={articles4} alt='articles' />
                     <div className='bg-[#121A2F] px-[20px] py-[14px] rounded-b-[8px] flex flex-col gap-[14px]'>
                         <h2 className='text-[#FFFFFF] text-[24px] font-semibold'>Looking for a new platform for project management ? Discover Workfast.ai</h2>
