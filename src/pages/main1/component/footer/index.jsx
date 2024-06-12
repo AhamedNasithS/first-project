@@ -34,6 +34,7 @@ export default function Footer() {
             <div className="flex flex-col gap-[10px] lg:ml-[40px] w-[110px] sm:w-auto">
                         <h2 className='text-[#E2E8FFBF] text-[14px] font-medium'>Company</h2>
                         {/* <h3 className='text-[#E2E8FF8C] text-[14px] font-normal mt-[10px]'>About Us</h3> */}
+                        <a href='/blog'><h3 className='text-[#E2E8FF8C] text-[14px] font-normal cursor-pointer'>Blog</h3></a>
                         <a href='/privacy'><h3 className='text-[#E2E8FF8C] text-[14px] font-normal cursor-pointer'>Privacy Policy</h3></a>
                         <a href='/terms'><h3 className='text-[#E2E8FF8C] text-[14px] font-normal cursor-pointer'>Terms And Condition</h3></a>
 

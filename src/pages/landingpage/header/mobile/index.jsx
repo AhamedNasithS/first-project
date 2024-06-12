@@ -79,12 +79,12 @@ export default function Mobile({ setIsForm }) {
                         {/* <div className={`mr-[40px] text-[#E2E8FF] py-[10px] mb-6 cursor-pointer rounded-[5px]`} onClick={() => {setIsOpen(false); handlePricingClick()}}>
                             <h1 className="font-medium text-1xl">Pricing</h1>
                         </div> */}
-                        <div className={`mr-[40px] text-[#E2E8FF] py-[10px] mb-6 cursor-pointer rounded-[5px]`} onClick={(e) => {handleBlog(e)}}>
+                        {/* <div className={`mr-[40px] text-[#E2E8FF] py-[10px] mb-6 cursor-pointer rounded-[5px]`} onClick={(e) => {handleBlog(e)}}>
                             <h1 className="font-medium text-1xl">Blog</h1>
                         </div>
                         <div className={`mr-[40px] text-[#E2E8FF] py-[10px] mb-6 cursor-pointer rounded-[5px]`} onClick={() => { setIsForm(true) }}>
                             <h1 className="font-medium text-1xl">Enterprise</h1>
-                        </div>
+                        </div> */}
                         <button className='py-[8px] px-[12px] text-[#1B1600] text-[14px] font-semibold rounded-[8px] bg-gradient-to-bl from-[#FDD01F] via-[#FDD320] to-[#F8861B] mb-6' onClick={(e) => { handleClick(e) }}>Sign up for free</button>
                         <div className='w-[128px] h-[38px] rounded-[10px] bg-gradient-to-bl from-[#FDD01F] via-[#FDD320] to-[#F8861B] p-[0.5px] md:p-[1px] cursor-pointer' onClick={(e) => { handleSubmit(e) }}>
                             <div className='w-full h-full rounded-[10px] bg-[#010306] flex justify-center'>
