@@ -1,11 +1,6 @@
 import React from 'react';
 import Header from './header';
 import Banner from './banner';
-import articlesImg from "../../../images/articles.svg";
-import articles2 from "../../../images/articles1.svg";
-import articles3 from "../../../images/articles3.svg";
-import articles4 from "../../../images/articles4.svg";
-import peter from "../../../images/peter.svg";
 import { FaRegClock } from "react-icons/fa6";
 import { useNavigate } from 'react-router-dom';
 import Content from './content';
@@ -33,24 +28,24 @@ export default function Articles2() {
     }
   };
 
-  // React.useEffect(() => {
-  //   const handleScroll = () => {
-  //     const sectionTops = tocData.map(item => {
-  //       const element = document.getElementById(item.id);
-  //       return { id: item.id, top: element.getBoundingClientRect().top };
-  //     });
-  //     const visibleSection = sectionTops.find(section => section.top >= 0);
-  //     if (visibleSection) {
-  //       setItems(visibleSection.id);
-  //     }
-  //   };
+  React.useEffect(() => {
+    const handleScroll = () => {
+      const sectionTops = tocData.map(item => {
+        const element = document.getElementById(item.id);
+        return { id: item.id, top: element.getBoundingClientRect().top };
+      });
+      const visibleSection = sectionTops.find(section => section.top >= 0);
+      if (visibleSection) {
+        setItems(visibleSection.id);
+      }
+    };
 
-  //   window.addEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', handleScroll);
 
-  //   return () => {
-  //     window.removeEventListener('scroll', handleScroll);
-  //   };
-  // }, []);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   return (
     <div className='flex flex-col justify-start items-center w-full bg-[#010306] relative overflow-hidden gap-[30px] md:gap-[60px] lg:gap-[100px]'>
@@ -84,19 +79,20 @@ export default function Articles2() {
         </aside>
       </div> */}
       <Content tocData={tocData} items={items} scrollToSection={scrollToSection} />
+      <p className='text-[#E4E8EB] text-[26px] font-normal w-[88%] text-center'>The above Top 7 ways will be a saviour for many companies , project managers , CEO’s etc who are struggling to manage work and experiencing low productivity . This blog gave you a outlook of how it will be if you use Workfast.ai . if you really want to experience it , no other way use Workfast.ai , one platform which make you work faster and easier .</p>
       <div className='flex flex-col gap-[48px] w-[88%] relative z-[1] mx-auto' id="footer">
         <div className='flex gap-[14px] items-center'>
-          <img src={articlesImg} alt='article' />
+          <img src='https://dz1x1c630cl14.cloudfront.net/webassets/articles.svg' alt='article' />
           <h3 className='text-[#FFFFFF] font-semibold text-[21px]'>Articles</h3>
         </div>
         <div className='flex gap-[28px] justify-between w-full'>
           <div className='rounded-[8px] max-w-[378px] flex flex-col shrink-0 cursor-pointer' onClick={() => { navigate('/blog/breaking-barriers-in-communication-collaboration-with-workfast.ai') }}>
-            <img src={articles2} alt='articles' />
+            <img src='https://dz1x1c630cl14.cloudfront.net/webassets/articles1.svg' alt='articles' />
             <div className='bg-[#121A2F] px-[20px] py-[14px] rounded-b-[8px] flex flex-col gap-[14px]'>
               <h2 className='text-[#FFFFFF] text-[24px] font-semibold'>Breaking Barriers in Communication and Collaboration with Workfast.ai</h2>
               <div className='flex justify-between items-center'>
                 <div className='flex gap-[4px] items-center'>
-                  <img src={peter} alt='articles' />
+                  <img src='https://dz1x1c630cl14.cloudfront.net/webassets/peter.svg' alt='articles' />
                   <h2 className='text-[#7C828D] text-[17px] font-medium'>Peter Elk</h2>
                 </div>
                 <div className='flex gap-[4px] items-center'>
@@ -107,12 +103,12 @@ export default function Articles2() {
             </div>
           </div>
           <div className='rounded-[8px] max-w-[378px] flex flex-col shrink-0 cursor-pointer' onClick={() => { navigate('/blog/beginner-guide-to-product-management') }}>
-            <img src={articles3} alt='articles' />
+            <img src='https://dz1x1c630cl14.cloudfront.net/webassets/articles3.svg' alt='articles' />
             <div className='bg-[#121A2F] px-[20px] py-[14px] rounded-b-[8px] flex flex-col gap-[14px]'>
               <h2 className='text-[#FFFFFF] text-[24px] font-semibold'>Beginner's Guide to Product Management: Everything You Need to Know</h2>
               <div className='flex justify-between items-center'>
                 <div className='flex gap-[4px] items-center'>
-                  <img src={peter} alt='articles' />
+                  <img src='https://dz1x1c630cl14.cloudfront.net/webassets/peter.svg' alt='articles' />
                   <h2 className='text-[#7C828D] text-[17px] font-medium'>Peter Elk</h2>
                 </div>
                 <div className='flex gap-[4px] items-center'>
@@ -123,12 +119,12 @@ export default function Articles2() {
             </div>
           </div>
           <div className='rounded-[8px] max-w-[378px] flex flex-col shrink-0 cursor-pointer' onClick={() => { navigate('/blog/looking-for-a-new-platform-for-project-management') }}>
-            <img src={articles4} alt='articles' />
+            <img src='https://dz1x1c630cl14.cloudfront.net/webassets/articles4.svg' alt='articles' />
             <div className='bg-[#121A2F] px-[20px] py-[14px] rounded-b-[8px] flex flex-col gap-[14px]'>
               <h2 className='text-[#FFFFFF] text-[24px] font-semibold'>Looking for a new platform for project management? Discover Workfast.ai</h2>
               <div className='flex justify-between items-center'>
                 <div className='flex gap-[4px] items-center'>
-                  <img src={peter} alt='articles' />
+                  <img src='https://dz1x1c630cl14.cloudfront.net/webassets/peter.svg' alt='articles' />
                   <h2 className='text-[#7C828D] text-[17px] font-medium'>Peter Elk</h2>
                 </div>
                 <div className='flex gap-[4px] items-center'>

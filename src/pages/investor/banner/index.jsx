@@ -1,7 +1,4 @@
 import React from 'react'
-import girish from "../../../images/girish.svg"
-import guns from "../../../images/guns.svg"
-import paytm from "../../../images/paytm.svg"
 import { useNavigate } from 'react-router-dom';
 
 
@@ -32,7 +29,7 @@ export default function Banner() {
                 <h2 className='text-[24px]  sm:text-[40px] xl:text-[55px] bg-gradient-to-l from-[#FDD220] to-[#FFFFFF] bg-clip-text text-transparent font-semibold'>Our seed funding investors</h2>
                 <div className='sm:w-11/12 xl:w-10/12 mx-auto grid grid-cols-1 sm:flex justify-between items-center'>
                     <div className='flex flex-col gap-[12px] items-center'>
-                        <img src={girish} alt='girish' />
+                        <img src='https://dz1x1c630cl14.cloudfront.net/webassets/girish.svg' alt='girish' />
                         <h2 className='text-[#FFDD09] text-[20px] lg:text-[26px] font-semibold text-center'>Girish Mathrubootham</h2>
                         <div className='text-[#FFFFFF] text-[18px] lg:text-[25px] font-medium text-center'>
                             <h2>CEO & Founder of</h2>
@@ -40,7 +37,7 @@ export default function Banner() {
                         </div>
                     </div>
                     <div className='flex flex-col gap-[12px] items-center'>
-                        <img src={guns} alt='guns' />
+                        <img src='https://dz1x1c630cl14.cloudfront.net/webassets/guns.svg' alt='guns' />
                         <h2 className='text-[#FFDD09] text-[20px] lg:text-[26px] font-semibold text-center'>Gans Subramaniam</h2>
                         <div className='text-[#FFFFFF] text-[18px] lg:text-[25px] font-medium text-center'>
                             <h2>Founder & Managing Partner</h2>
@@ -48,7 +45,7 @@ export default function Banner() {
                         </div>
                     </div>
                     <div className='flex flex-col gap-[12px] items-center'>
-                        <img src={paytm} alt='paytm' />
+                        <img src='https://dz1x1c630cl14.cloudfront.net/webassets/paytm.svg' alt='paytm' />
                         <h2 className='text-[#FFDD09] text-[20px] lg:text-[26px] font-semibold text-center'>Vijay Shekhar Sharma</h2>
                         <div className='text-[#FFFFFF] text-[18px] lg:text-[25px] font-medium text-center'>
                             <h2>Founder & CEO of</h2>

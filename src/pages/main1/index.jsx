@@ -17,16 +17,10 @@ import Access from './component/access';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { IoCloseSharp } from "react-icons/io5";
-import user from "../../images/profileicon.svg";
-import emailIcon from "../../images/emailicon.svg";
-import phone from "../../images/phoneicon.svg";
-import company from "../../images/companyicon.svg";
 import API from '../../utils/API';
 import axios from 'axios';
 import LoadLottie from '../loadLottie';
 import sucess from "../../sucess.json";
-import Mobile from "../../images/mobile.webp";
-import Avalaible from '../../images/Devicemockup1.webp'
 
 export default function Main1() {
   const [isVideo, setIsVideo] = React.useState(false);
@@ -90,7 +84,10 @@ export default function Main1() {
         phone: phoneNumber,
         company_name: companyName
       });
-    const { response } =  await axios.post(API.HOST, { email: email });
+    const response =  await axios.post(API.HOST, { email: email });
+    if(response.data) {
+      console.log("success")
+    }
     if (data?.statusCode === 200) {
       setName('');
       setEmail('');
@@ -111,7 +108,7 @@ export default function Main1() {
       <Header setIsForm={setIsForm} />
       <Intro setIsForm={setIsForm} email={email} setEmail={setEmail} />
       <Features />
-      <img src={Mobile} alt='mobileView'
+      <img src="https://dz1x1c630cl14.cloudfront.net/webassets/mobile.webp" alt='mobileView'
         // data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="10000" 
         className='my-[20px] lg:my-[100px] p-[20px] w-[80%]' />
       <Channel />
@@ -120,7 +117,7 @@ export default function Main1() {
       <Chat />
       <Ai />
       <Availbles />
-      <img src={Avalaible} alt='availble' className='mt-[10px] lg:mt-[50px] p-[20px] w-[80%] z-[1]'
+      <img src="https://dz1x1c630cl14.cloudfront.net/webassets/Devicemockup1.webp" alt='availble' className='mt-[10px] lg:mt-[50px] p-[20px] w-[80%] z-[1]'
       // data-aos="zoom-in" data-aos-duration="2000" 
       />
       {/* <Pricing setIsForm={setIsForm} /> */}
@@ -195,7 +192,7 @@ export default function Main1() {
             <div className='grid md:grid-cols-2 gap-5 items-center mt-[15px] md:mt-[30px] w-full'>
               <div className='w-full'>
                 <div className='flex items-center gap-1'>
-                  <img src={user} alt='user' className='w-[19px] md:w-[23x]' />
+                  <img src="https://dz1x1c630cl14.cloudfront.net/webassets/profileicon.svg" alt='user' className='w-[19px] md:w-[23x]' />
                   <h3 className='text-[#FFFFFF] text-[12px] md:text-[14px] font-medium'>Name*</h3>
                 </div>
                 <div className={`w-full h-[38px] md:h-[44px] bg-[#1C2437] lg:py-[10px] mt-[10px] rounded-[8px]`}>
@@ -204,7 +201,7 @@ export default function Main1() {
               </div>
               <div className='w-full'>
                 <div className='flex items-center gap-1'>
-                  <img src={emailIcon} alt='user' className='w-[19px] md:w-[23x]' />
+                  <img src="https://dz1x1c630cl14.cloudfront.net/webassets/emailicon.svg" alt='user' className='w-[19px] md:w-[23x]' />
                   <h3 className='text-[#FFFFFF] text-[12px] md:text-[14px] font-medium'>Email*</h3>
                 </div>
                 <div className={`w-full h-[38px] md:h-[44px] bg-[#1C2437] lg:py-[10px] mt-[10px] rounded-[8px] ${emailError ? "border-[1px] border-[#F92A4B]" : ""}`}>
@@ -213,7 +210,7 @@ export default function Main1() {
               </div>
               <div className='w-full'>
                 <div className='flex items-center gap-1'>
-                  <img src={phone} alt='user' className='w-[19px] md:w-[23x]' />
+                  <img src="https://dz1x1c630cl14.cloudfront.net/webassets/phoneicon.svg" alt='user' className='w-[19px] md:w-[23x]' />
                   <h3 className='text-[#FFFFFF] text-[12px] md:text-[14px] font-medium'>Phone Number*</h3>
                 </div>
                 <div className={`w-full h-[38px] md:h-[44px] bg-[#1C2437] lg:py-[10px] mt-[10px] rounded-[8px] ${phoneNumberError ? "border-[1px] border-[#F92A4B]" : ""}`}>
@@ -222,7 +219,7 @@ export default function Main1() {
               </div>
               <div className='w-full'>
                 <div className='flex items-center gap-1'>
-                  <img src={company} alt='user' className='w-[19px] md:w-[23x]' />
+                  <img src="https://dz1x1c630cl14.cloudfront.net/webassets/companyicon.svg" alt='user' className='w-[19px] md:w-[23x]' />
                   <h3 className='text-[#FFFFFF] text-[12px] md:text-[14px] font-medium'>Company name*</h3>
                 </div>
                 <div className={`w-full h-[38px] md:h-[44px] bg-[#1C2437] lg:py-[10px] mt-[10px] rounded-[8px]`}>

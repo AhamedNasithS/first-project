@@ -1,6 +1,6 @@
 import React from 'react'
 import Desktop from './desktop';
-import Mobile from './mobile';
+// import Mobile from './mobile';
 
 export default function Header({setIsForm}) {
   const [position, setPosition] = React.useState(window.innerWidth <= 640);

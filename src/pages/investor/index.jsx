@@ -13,7 +13,6 @@ export default function Investors() {
       <HighRisk/>
       <Principles/>
       <LastSection/>
-      
     </div>
   )
 }

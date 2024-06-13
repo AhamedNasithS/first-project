@@ -6,17 +6,17 @@ import { FaArrowRightLong } from "react-icons/fa6";
 
 export default function Access({ setIsForm }) {
   const navigate = useNavigate();
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    const response = await axios.post(API.BUTTON,
-      {
-        "eventName": "REQUEST_DEMO_MAIN"
-      }
-    );
-    if (response.data.statusCode === 200) {
-      setIsForm(true)
-    }
-  };
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
+  //   const response = await axios.post(API.BUTTON,
+  //     {
+  //       "eventName": "REQUEST_DEMO_MAIN"
+  //     }
+  //   );
+  //   if (response.data.statusCode === 200) {
+  //     setIsForm(true)
+  //   }
+  // };
 
   const handleClick = async (e) => {
     e.preventDefault();

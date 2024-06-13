@@ -1,5 +1,4 @@
 import React from 'react'
-import tik from "../../../../images/right.svg";
 
 export default function Roles() {
     return (
@@ -12,23 +11,23 @@ export default function Roles() {
                     <div className='w-full h-full rounded-[34px] bg-[#010306] p-[10px]'>
                         <div className='w-full h-full rounded-[30px] bg-gradient-to-bl from-[#10192C29] via-[#101B2E8F] to-[#29457B00] p-[20px] border-[1px] border-[#1F44C5]/[40%] flex flex-col gap-[20px]'>
                             <div className='flex gap-2 items-center'>
-                                <img src={tik} alt='tik' className='w-[14px] md:w-auto'/>
+                                <img src='https://dz1x1c630cl14.cloudfront.net/webassets/right.svg' alt='tik' className='w-[14px] md:w-auto'/>
                                 <p className='text-[#E4E8EB] text-[14px] md:text-[20px] lg:text-[24px] font-normal'>Chief product officer</p>
                             </div>
                             <div className='flex gap-2 items-center'>
-                                <img src={tik} alt='tik' className='w-[14px] md:w-auto'/>
+                                <img src='https://dz1x1c630cl14.cloudfront.net/webassets/right.svg' alt='tik' className='w-[14px] md:w-auto'/>
                                 <p className='text-[#E4E8EB] text-[14px] md:text-[20px] lg:text-[24px] font-normal'>Director of product management </p>
                             </div>
                             <div className='flex gap-2 items-center'>
-                                <img src={tik} alt='tik' className='w-[14px] md:w-auto'/>
+                                <img src='https://dz1x1c630cl14.cloudfront.net/webassets/right.svg' alt='tik' className='w-[14px] md:w-auto'/>
                                 <p className='text-[#E4E8EB] text-[14px] md:text-[20px] lg:text-[24px] font-normal'>Product manager</p>
                             </div>
                             <div className='flex gap-2 items-center'>
-                                <img src={tik} alt='tik' className='w-[14px] md:w-auto'/>
+                                <img src='https://dz1x1c630cl14.cloudfront.net/webassets/right.svg' alt='tik' className='w-[14px] md:w-auto'/>
                                 <p className='text-[#E4E8EB] text-[14px] md:text-[20px] lg:text-[24px] font-normal'>Product owner</p>
                             </div>
                             <div className='flex gap-2 items-center'>
-                                <img src={tik} alt='tik' className='w-[14px] md:w-auto'/>
+                                <img src='https://dz1x1c630cl14.cloudfront.net/webassets/right.svg' alt='tik' className='w-[14px] md:w-auto'/>
                                 <p className='text-[#E4E8EB] text-[14px] md:text-[20px] lg:text-[24px] font-normal'>Product marketing manager</p>
                             </div>
                         </div>

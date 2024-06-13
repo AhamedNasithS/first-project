@@ -28,10 +28,13 @@ import Articles1 from './pages/articles/articles1';
 import Articles2 from './pages/articles/articles2';
 import Articles3 from './pages/articles/articles3';
 import Articles4 from './pages/articles/articles4';
+// import Payment from './pages/payment';
 // import MainForm from './pages/mainfrom';
 
 export default function App() {
   const [email, setEmail] = React.useState('');
+  const [priceIndex, setPriceIndex] = React.useState(null);
+
   return (
     <Router>
       {/* <Navbar/> */}
@@ -39,7 +42,7 @@ export default function App() {
         <Route path="/page" element={<Landing />} />
         {/* <Route path='/home' element={<Home/>}/> */}
         <Route path='/main' element={<Main1/>}/>
-        <Route path='/home' element={<Home/>}/>
+        <Route path='/home' element={<Home setPriceIndex={setPriceIndex}/>}/>
         <Route path='/' element={<Main1/>}/>
         <Route path='/*' element={<Error/>}/>
         <Route path='/blog' element={<Blog/>}/>
@@ -63,6 +66,7 @@ export default function App() {
         <Route path='/help' element={<Help/>}/>
         <Route path='/investor' element={<Investors/>}/>
         <Route path='/investor/form' element={<InvestorFrom/>}/>
+        {/* <Route path='/payment' element={<Payment priceIndex={priceIndex}/>}/> */}
       </Routes>
     </Router>
   )

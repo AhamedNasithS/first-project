@@ -39,21 +39,13 @@ export default function Availbles() {
           )}
           <h2 className='text-[#FFF] font-semibold text-[18px] lg:text-[32px]'>Mac</h2>
         </div>
-        <div className='flex gap-1.5 items-center sm:justify-center lg:justify-end' onMouseEnter={() => { setWindowsHover(true) }} onMouseLeave={() => { setWindowsHover(false) }}>
-          {windowsHover ? (
-            <img src='https://dz1x1c630cl14.cloudfront.net/webassets/windows.svg' alt='apple' className='w-[30px] lg:w-auto' />
+        <div className='flex gap-1.5 items-center ml-0 sm:ml-[40px] xl:ml-0 xl:justify-end' onMouseEnter={() => { setIosHover(true) }} onMouseLeave={() => { setIosHover(false) }}>
+          {IosHover ? (
+            <img src='https://dz1x1c630cl14.cloudfront.net/webassets/apple.svg' alt='apple' className='w-[30px] lg:w-auto' />
           ) : (
-            <img src='https://dz1x1c630cl14.cloudfront.net/webassets/windows1.svg' alt='apple' className='w-[30px] lg:w-auto' />
+            <img src='https://dz1x1c630cl14.cloudfront.net/webassets/apple1.svg' alt='apple' className='w-[30px] lg:w-auto' />
           )}
-          <h2 className='text-[#FFF] font-semibold text-[18px] lg:text-[32px]'>Windows</h2>
-        </div>
-        <div className='flex gap-1.5 items-center ml-0 sm:ml-[80px] lg:ml-0' onMouseEnter={() => { setAndroidHover(true) }} onMouseLeave={() => { setAndroidHover(false) }}>
-          {androidHover ? (
-            <img src='https://dz1x1c630cl14.cloudfront.net/webassets/android.svg' alt='apple' className='w-[30px] lg:w-auto' />
-          ) : (
-            <img src='https://dz1x1c630cl14.cloudfront.net/webassets/android1.svg' alt='apple' className='w-[30px] lg:w-auto' />
-          )}
-          <h2 className='text-[#FFF] font-semibold text-[18px] lg:text-[32px]'>Android</h2>
+          <h2 className='text-[#FFF] font-semibold text-[18px] lg:text-[32px]'>iOS</h2>
         </div>
         <div className='flex gap-1.5 items-center' onMouseEnter={() => { setWearablesHover(true) }} onMouseLeave={() => { setWearablesHover(false) }}>
           {wearablesHover ? (
@@ -63,13 +55,21 @@ export default function Availbles() {
           )}
           <h2 className='text-[#FFF] font-semibold text-[18px] lg:text-[32px]'>Wearables</h2>
         </div>
-        <div className='flex gap-1.5 items-center ml-0 sm:ml-[40px] xl:ml-0 xl:justify-end' onMouseEnter={() => { setIosHover(true) }} onMouseLeave={() => { setIosHover(false) }}>
-          {IosHover ? (
-            <img src='https://dz1x1c630cl14.cloudfront.net/webassets/apple.svg' alt='apple' className='w-[30px] lg:w-auto' />
+        <div className='flex gap-1.5 items-center ml-0 sm:ml-[80px] lg:ml-0' onMouseEnter={() => { setAndroidHover(true) }} onMouseLeave={() => { setAndroidHover(false) }}>
+          {androidHover ? (
+            <img src='https://dz1x1c630cl14.cloudfront.net/webassets/android.svg' alt='apple' className='w-[30px] lg:w-auto' />
           ) : (
-            <img src='https://dz1x1c630cl14.cloudfront.net/webassets/apple1.svg' alt='apple' className='w-[30px] lg:w-auto' />
+            <img src='https://dz1x1c630cl14.cloudfront.net/webassets/android1.svg' alt='apple' className='w-[30px] lg:w-auto' />
           )}
-          <h2 className='text-[#FFF] font-semibold text-[18px] lg:text-[32px]'>IOS</h2>
+          <h2 className='text-[#FFF] font-semibold text-[18px] lg:text-[32px]'>Android</h2>
+        </div>
+        <div className='flex gap-1.5 items-center sm:justify-center lg:justify-end' onMouseEnter={() => { setWindowsHover(true) }} onMouseLeave={() => { setWindowsHover(false) }}>
+          {windowsHover ? (
+            <img src='https://dz1x1c630cl14.cloudfront.net/webassets/windows.svg' alt='apple' className='w-[30px] lg:w-auto' />
+          ) : (
+            <img src='https://dz1x1c630cl14.cloudfront.net/webassets/windows1.svg' alt='apple' className='w-[30px] lg:w-auto' />
+          )}
+          <h2 className='text-[#FFF] font-semibold text-[18px] lg:text-[32px]'>Windows</h2>
         </div>
         <div className='flex gap-1.5 items-center xl:justify-end ml-0 sm:ml-[80px] lg:ml-0' onMouseEnter={() => { setWebHover(true) }} onMouseLeave={() => { setWebHover(false) }}>
           {webHover ? (

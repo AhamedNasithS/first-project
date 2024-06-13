@@ -1,5 +1,4 @@
 import React from 'react'
-import yellowGlow from "../../images/yellowglow.png"
 import Header from './header'
 import LoadLottie from '../loadLottie';
 import sucess from "../../sucess.json";
@@ -40,15 +39,15 @@ export default function Success() {
           `}
         </script>
         {/* <!-- End Google Tag Manager --> */}
-        <body>
-          {/* <!-- Google Tag Manager (noscript) --> */}
-          <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N743ZL57" title='googletag'
-            height="0" width="0" style={{ display: "none", visibility: "hidden" }}></iframe></noscript>
-          {/* <!-- End Google Tag Manager (noscript) --> */}
-        </body>
       </Helmet>
+      <body>
+        {/* <!-- Google Tag Manager (noscript) --> */}
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N743ZL57" title='googletag'
+          height="0" width="0" style={{ display: "none", visibility: "hidden" }}></iframe></noscript>
+        {/* <!-- End Google Tag Manager (noscript) --> */}
+      </body>
       <Header />
-      <img src={yellowGlow} alt='yellowGlow' className='absolute top-[73px] md:top-[80px] z-[0] ' />
+      <img src="https://dz1x1c630cl14.cloudfront.net/webassets/yellowglow.png" alt='yellowGlow' className='absolute top-[73px] md:top-[80px] z-[0] ' />
       <div className='relative px-[20px] md:px-0 w-full md:w-11/12 mx-auto flex flex-col justify-center items-center gap-[30px] lg:gap-[60px] overflow-hidden'>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>

@@ -20,7 +20,7 @@ export default function Intro() {
                 <div className='w-[140px] h-[55px]'>
                     <div className='w-full h-full animate bg-transparent p-[1px] relative z-[1] border-[#3E3E3E] border-[1px] rounded-[8px]'>
                         <div className='w-full h-full p-[6px] bg-[#000] relative z-[5] rounded-[8px]'>
-                            <button className='w-full h-full rounded-[8px] bg-gradient-to-bl from-[#FDD01F] via-[#FDD320] via-[#F8C240] to-[#F8861B] border-[1px] border-[#995900] text-[#2A2200] text-[16px] inter-medium'>Book a Demo</button>
+                            <button className='w-full h-full rounded-[8px] bg-gradient-to-bl from-[#FDD01F] via-[#FDD320] to-[#F8861B] border-[1px] border-[#995900] text-[#2A2200] text-[16px] inter-medium'>Book a Demo</button>
                         </div>
                     </div>
                 </div>
