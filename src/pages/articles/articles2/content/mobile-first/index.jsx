@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function AllInOne() {
+export default function MobileFirst() {
     return (
         <div className='flex flex-col gap-[50px]'>
             <h2 className='bg-gradient-to-r from-[#FFFFFF] to-[#FDD220] bg-clip-text text-transparent text-[22px] md:text-[28px] lg:text-[36px] xl:text-[45px] font-semibold relative z-[1]'>Mobile first:</h2>

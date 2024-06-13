@@ -33,24 +33,24 @@ export default function Articles2() {
     }
   };
 
-  // React.useEffect(() => {
-  //   const handleScroll = () => {
-  //     const sectionTops = tocData.map(item => {
-  //       const element = document.getElementById(item.id);
-  //       return { id: item.id, top: element.getBoundingClientRect().top };
-  //     });
-  //     const visibleSection = sectionTops.find(section => section.top >= 0);
-  //     if (visibleSection) {
-  //       setItems(visibleSection.id);
-  //     }
-  //   };
+  React.useEffect(() => {
+    const handleScroll = () => {
+      const sectionTops = tocData.map(item => {
+        const element = document.getElementById(item.id);
+        return { id: item.id, top: element.getBoundingClientRect().top };
+      });
+      const visibleSection = sectionTops.find(section => section.top >= 0);
+      if (visibleSection) {
+        setItems(visibleSection.id);
+      }
+    };
 
-  //   window.addEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', handleScroll);
 
-  //   return () => {
-  //     window.removeEventListener('scroll', handleScroll);
-  //   };
-  // }, []);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   return (
     <div className='flex flex-col justify-start items-center w-full bg-[#010306] relative overflow-hidden gap-[30px] md:gap-[60px] lg:gap-[100px]'>
@@ -84,6 +84,7 @@ export default function Articles2() {
         </aside>
       </div> */}
       <Content tocData={tocData} items={items} scrollToSection={scrollToSection} />
+      <p className='text-[#E4E8EB] text-[26px] font-normal w-[88%] text-center'>The above Top 7 ways will be a saviour for many companies , project managers , CEO’s etc who are struggling to manage work and experiencing low productivity . This blog gave you a outlook of how it will be if you use Workfast.ai . if you really want to experience it , no other way use Workfast.ai , one platform which make you work faster and easier .</p>
       <div className='flex flex-col gap-[48px] w-[88%] relative z-[1] mx-auto' id="footer">
         <div className='flex gap-[14px] items-center'>
           <img src={articlesImg} alt='article' />

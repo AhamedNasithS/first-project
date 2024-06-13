@@ -28,7 +28,7 @@ import sucess from "../../sucess.json";
 import Mobile from "../../images/mobile.webp";
 import Avalaible from '../../images/Devicemockup1.webp'
 
-export default function Home() {
+export default function Home({setPriceIndex}) {
   const [isVideo, setIsVideo] = React.useState(false);
   const [videoIndex, setVideoIndex] = React.useState(null);
   const [isForm, setIsForm] = React.useState(false);
@@ -39,6 +39,7 @@ export default function Home() {
   const [phoneNumber, setPhoneNumber] = React.useState('');
   const [phoneNumberError, setPhoneNumberError] = React.useState(false);
   const [companyName, setCompanyName] = React.useState('');
+  
 
 
   const handleNameChange = (e) => {
@@ -126,7 +127,7 @@ export default function Home() {
       <img src={Avalaible} alt='availble' className='mt-[10px] lg:mt-[50px] p-[20px] w-[80%] z-[1]'
       // data-aos="zoom-in" data-aos-duration="2000" 
       />
-      <Pricing/>
+      <Pricing setPriceIndex={setPriceIndex}/>
       <IpadView />
       <Support />
       <Testimonial setIsVideo={setIsVideo} setVideoIndex={setVideoIndex} />

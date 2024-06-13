@@ -5,6 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Sen:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 *,
 ::after,
@@ -1672,4 +1673,31 @@ input[type="radio"] {
   top: 0;
   height: 100vh; /* Adjust according to your layout */
   overflow-y: auto; /* Enable scrolling if content exceeds viewport height */
+}
+
+.nunito-bold {
+  font-family: 'Nunito';
+  font-weight: 700;
+}
+
+.nunito-semibold {
+  font-family: 'Nunito';
+  font-weight: 600;
+}
+
+.nunito-medium {
+  font-family: 'Nunito';
+  font-weight: 500;
+}
+
+.nunito-normal {
+  font-family: 'Nunito';
+  font-weight: 400;
+}
+
+.country{
+  border: #000000 1px;
+  padding: 12px;
+  border-radius: 8px;
+  width: 100%;
 }
