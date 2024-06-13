@@ -1,8 +1,4 @@
 import React from 'react'
-// import Pricing from "../../../images/pricingicons.svg";
-import oneAi from "../../../images/oneaipricing.svg";
-import rate from "../../../images/rate.svg";
-import three2one from "../../../images/three2one.svg";
 
 
 
@@ -12,9 +8,9 @@ export default function Price() {
             <h2 className='text-[20px] lg:text-[26px] xl:text-[36px] sen-bold bg-clip-text text-transparent bg-gradient-to-l from-[#A9A9B2] to-[#FFFFFF] mt-[62px] text-center hidden md:block'>Introducing Our All-in-One Intelligent Platform, where you can manage</h2>
             <h2 className='text-[20px] lg:text-[26px] xl:text-[36px] sen-bold text-[#FDD220] text-center hidden md:block mt-[20px]'>Communication, Collaboration and Productivity</h2>
             <h2 className='text-[20px] fsen-bold text-[#FFFFFF] mt-[30px] text-center md:hidden'>Introducing Our All-in-One Intelligent Platform, where you can manage <span className='text-[#FDD220]'>Communication, Collaboration and Productivity</span></h2>
-            <img src={oneAi} alt='oneAi' className='mt-[20px] md:mt-[40px] lg:mt-[80px] md:w-[70%] lg:w-[80%] xl:w-auto' />
+            <img src='https://dz1x1c630cl14.cloudfront.net/webassets/oneaipricing.svg' alt='oneAi' className='mt-[20px] md:mt-[40px] lg:mt-[80px] md:w-[70%] lg:w-[80%] xl:w-auto' />
             <h3 className='text-[#E1E1E1] text-[18px] md:text-[22px] lg:text-[28px] xl:text-[38px] sen-bold text-center mt-[20px] md:mt-[40px] lg:mt-[80px] w-10/12 mx-a'>Average <span className='text-[#FDD220]'>Spending by compaines</span> on communication, Project, Task management & Collaboration software </h3> 
-            <img src={rate} alt='oneAi' className='mt-[20px] md:mt-[40px] lg:mt-[80px]' />
+            <img src='https://dz1x1c630cl14.cloudfront.net/webassets/rate.svg' alt='oneAi' className='mt-[20px] md:mt-[40px] lg:mt-[80px]' />
             <div className='bg-[#0B1017] py-[40px] px-[36px] lg:py-[53px] rounded-[47px] border-[1px] border-[#FFDD0980] justify-between w-[500px] lg:w-[720px] hidden md:flex'>
                 <div className='flex flex-col gap-[40px] justify-between'>
                     <h3 className='text-[18px] md:text-[22px] lg:text-[26px] text-[#FDD220] sen-bold'>Monthly / <span className='text-[12px] md:text-[16px] lg:text-[20px] text-[#FFFFFFCC] sen-bold'>Per user </span></h3>
@@ -42,7 +38,7 @@ export default function Price() {
                 </div>
             </div>
             <div className='mt-[20px] md:mt-[40px] lg:mt-[80px] md:flex justify-between items-center w-[80%] mx-auto'>
-                <img src={three2one} alt='one' className='md:w-[55%] xl:w-auto mx-auto md:mx-0'/>
+                <img src='https://dz1x1c630cl14.cloudfront.net/webassets/three2one.svg' alt='one' className='md:w-[55%] xl:w-auto mx-auto md:mx-0'/>
                 <div className='sen-bold text-[20px] lg:text-[26px] xl:text-[32px] text-center mt-[30px]'>
                     <h3 className='text-[#FFFFFF]'>We replace 3 tools with</h3>
                     <h3 className='text-[#FDD220]'>One Tool & One Price</h3>

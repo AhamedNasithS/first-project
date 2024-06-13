@@ -8,7 +8,6 @@ import DailyReport from './daily_report';
 import Integration from './integration';
 import Workflow from './workflow';
 import GoalProject from './goal';
-import arrow from "../../../../images/arrow_left.svg";
 import Automation from './automation';
 
 export default function Content({ tocData, items, scrollToSection }) {
@@ -34,7 +33,7 @@ export default function Content({ tocData, items, scrollToSection }) {
                         className={`flex gap-[17px] items-center p-[9px] cursor-pointer ${item.id === items ? "bg-[#0F162F99]" : "bg-transparent"}`}
                         onClick={() => scrollToSection(item.id)}
                     >
-                        <img src={arrow} alt='arrow' />
+                        <img src='https://dz1x1c630cl14.cloudfront.net/webassets/arrow_left.svg' alt='arrow' />
                         <h3 className='text-[#FFFFFF] text-[18px] lg:text-[22px] xl:text-[26px] font-medium'>{item.title}</h3>
                     </div>
                 ))}

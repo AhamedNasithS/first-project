@@ -1,5 +1,4 @@
 import React from 'react'
-import arrow from "../../../../images/arrow_left.svg";
 import BeginnerGuideProductManagement from './beginner-guide';
 import ProductManagement from './product-management';
 import ProductVsProject from './product-vs-project';
@@ -32,7 +31,7 @@ export default function Content({ tocData, items, scrollToSection }) {
                         className={`flex gap-[17px] p-[9px] cursor-pointer ${item.id === items ? "bg-[#0F162F99]" : "bg-transparent"} ${index === 0 || index === 2 ? "items-start" : "items-center"}`}
                         onClick={() => scrollToSection(item.id)}
                     >
-                        <img src={arrow} alt='arrow' className={`${index === 0 || index === 2 ? "mt-[7px]" : ""}`} />
+                        <img src='https://dz1x1c630cl14.cloudfront.net/webassets/arrow_left.svg' alt='arrow' className={`${index === 0 || index === 2 ? "mt-[7px]" : ""}`} />
                         <h3 className='text-[#FFFFFF] text-[26px] font-medium'>{item.title}</h3>
                     </div>
                 ))}

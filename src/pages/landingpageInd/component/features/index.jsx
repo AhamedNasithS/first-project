@@ -1,11 +1,4 @@
 import React from 'react'
-import Channel from "../../../../images/channelIcon.svg";
-import Project from "../../../../images/projectIcon.svg";
-import Task from "../../../../images/taskIcon.svg";
-import Chat from "../../../../images/chatIcon.svg";
-import Personalization from "../../../../images/personalizationIcon.svg";
-import Ai from "../../../../images/aiIcon.svg";
-
 
 
 export default function Features() {
@@ -28,7 +21,7 @@ export default function Features() {
               <div className='flex gap-2 items-center'>
                 {/* <img src="https://dz1x1c630cl14.cloudfront.net/webassets/channel_icon.svg" alt='channel'  className='w-[35px]'/> */}
                 <div className='w-[35px] h-[35px] bg-[#FCFCFC17] border-[1px] border-[#FFFFFF0A] flex justify-center items-center relative rounded-[10px] overflow-hidden'>
-                  <img src={Channel} alt='channel' className='relative z-[1]' />
+                  <img src='https://dz1x1c630cl14.cloudfront.net/webassets/channelIcon.svg' alt='channel' className='relative z-[1]' />
                   <div id='starsGlow'></div>
                   <div id='starsGlow2'></div>
                   <div className='absolute -bottom-[38%] -translate-y-[50%] w-[13px] h-[10px] rounded-full bg-[#F78C9F] blur-[3px] glow z-0'></div>
@@ -45,7 +38,7 @@ export default function Features() {
               <div className='flex gap-2 items-center'>
                 {/* <img src="https://dz1x1c630cl14.cloudfront.net/webassets/project_icon.svg" alt='channel' className='w-[35px]'/> */}
                 <div className='w-[35px] h-[35px] bg-[#FCFCFC17] border-[1px] border-[#FFFFFF0A] flex justify-center items-center relative rounded-[10px] overflow-hidden'>
-                  <img src={Project} alt='project' className='relative z-[1]' />
+                  <img src='https://dz1x1c630cl14.cloudfront.net/webassets/projectIcon.svg' alt='project' className='relative z-[1]' />
                   <div id='starsGlow'></div>
                   <div id='starsGlow2'></div>
                   <div className='absolute -bottom-[38%] -translate-y-[50%] w-[13px] h-[10px] rounded-full bg-[#69E3B0] blur-[3px] glowProject z-0'></div>
@@ -62,7 +55,7 @@ export default function Features() {
               <div className='flex gap-2 items-center'>
                 {/* <img src="https://dz1x1c630cl14.cloudfront.net/webassets/task_icon.svg" alt='channel' className='w-[35px]'/> */}
                 <div className='w-[35px] h-[35px] bg-[#FCFCFC17] border-[1px] border-[#FFFFFF0A] flex justify-center items-center relative rounded-[10px] overflow-hidden'>
-                  <img src={Task} alt='task' className='relative z-[1]' />
+                  <img src='https://dz1x1c630cl14.cloudfront.net/webassets/taskIcon.svg' alt='task' className='relative z-[1]' />
                   <div id='starsGlow'></div>
                   <div id='starsGlow2'></div>
                   <div className='absolute -bottom-[38%] -translate-y-[50%] w-[13px] h-[10px] rounded-full bg-[#FCE05E] blur-[3px] glowTask'></div>
@@ -79,7 +72,7 @@ export default function Features() {
               <div className='flex gap-2 items-center'>
                 {/* <img src="https://dz1x1c630cl14.cloudfront.net/webassets/chat_icon.svg" alt='channel' className='w-[35px]'/> */}
                 <div className='w-[35px] h-[35px] bg-[#FCFCFC17] border-[1px] border-[#FFFFFF0A] flex justify-center items-center relative rounded-[10px] overflow-hidden'>
-                  <img src={Chat} alt='chat' className='relative z-[1]' />
+                  <img src='https://dz1x1c630cl14.cloudfront.net/webassets/chatIcon.svg' alt='chat' className='relative z-[1]' />
                   <div id='starsGlow'></div>
                   <div id='starsGlow2'></div>
                   <div className='absolute -bottom-[38%] -translate-y-[50%] w-[13px] h-[10px] rounded-full bg-[#255DCA] blur-[3px] glowChat'></div>
@@ -95,7 +88,7 @@ export default function Features() {
             <div className='ml-[30px] mr-[50px] hover:scale-[1.1] transition-all duration-500 hover:ml-[40px]'>
               <div className='flex gap-2 items-center'>
                 <div className='w-[35px] h-[35px] bg-[#FCFCFC17] border-[1px] border-[#FFFFFF0A] flex justify-center items-center relative rounded-[10px] overflow-hidden'>
-                  <img src={Ai} alt='Ai' className='relative z-[1]' />
+                  <img src='https://dz1x1c630cl14.cloudfront.net/webassets/aiIcon.svg' alt='Ai' className='relative z-[1]' />
                   <div id='starsGlow'></div>
                   <div id='starsGlow2'></div>
                   <div className='absolute -bottom-[38%] -translate-y-[50%] w-[13px] h-[10px] rounded-full bg-[#EA64D1] blur-[3px] glowAi'></div>
@@ -112,7 +105,7 @@ export default function Features() {
               <div className='flex gap-2 items-center'>
                 {/* <img src="https://dz1x1c630cl14.cloudfront.net/webassets/personalisation_icon.svg" alt='channel' className='w-[35px]'/> */}
                 <div className='w-[35px] h-[35px] bg-[#FCFCFC17] border-[1px] border-[#FFFFFF0A] flex justify-center items-center relative rounded-[10px] overflow-hidden'>
-                  <img src={Personalization} alt='Personalization' className='relative z-[1]' />
+                  <img src='https://dz1x1c630cl14.cloudfront.net/webassets/personalizationIcon.svg' alt='Personalization' className='relative z-[1]' />
                   <div id='starsGlow'></div>
                   <div id='starsGlow2'></div>
                   <div className='absolute -bottom-[38%] -translate-y-[50%] w-[13px] h-[10px] rounded-full bg-[#BC78F1] blur-[3px] glowPersonalization'></div>

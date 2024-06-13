@@ -1,21 +1,15 @@
 import React from 'react'
-import Articles1 from '../../../../images/articles_main3.svg';
-import peter from "../../../../images/peter.svg";
-import twitter from "../../../../images/twitter.svg";
-import share from "../../../../images/share_icon.svg";
-import linkedin from "../../../../images/linkedin_icon.svg";
-import facebook from "../../../../images/facebook_icon.svg";
 
 export default function Banner() {
     return (
         <div className='px-[20px] sm:p-0 w-full sm:w-[97%] xl:w-[93%] mx-auto sm:flex gap-[40px] items-center relative xl:max-h-[350px]'>
-            <img src={Articles1} alt='articles' className='relative z-[1] sm:w-[50%] xl:w-auto' />
+            <img src="https://dz1x1c630cl14.cloudfront.net/webassets/articles_main3.svg" alt='articles' className='relative z-[1] sm:w-[50%] xl:w-auto' />
             <img src="https://dz1x1c630cl14.cloudfront.net/webassets/glow3.svg" alt='glow' className='absolute z-[0] top-[0px] sm:top-auto' />
             <div className='flex flex-col gap-[30px] justify-between mt-[40px] sm:mt-0 sm:h-[250px] lg:h-[330px] xl:h-[350px]'>
                 <h3 className='bg-gradient-to-r from-[#FFFFFF] to-[#FDD220] bg-clip-text text-transparent text-[18px] md:text-[22px] lg:text-[30px] xl:text-[40px] font-semibold relative z-[1] text-center sm:text-start'>Beginner's Guide to Product Management: Everything You Need to Know</h3>
                 <div className='flex gap-[20px] xl:gap-[40px] items-center relative z-[1]'>
                     <div className='flex gap-[8px] xl:gap-[12px] items-center'>
-                        <img src={peter} alt='articles' className='w-[20px] h-[20px] sm:w-[30px] sm:h-[30px] lg:w-[40px] lg:h-[40px] xl:w-[50px] xl:h-[50px]' />
+                        <img src='https://dz1x1c630cl14.cloudfront.net/webassets/peter.svg' alt='articles' className='w-[20px] h-[20px] sm:w-[30px] sm:h-[30px] lg:w-[40px] lg:h-[40px] xl:w-[50px] xl:h-[50px]' />
                         <h2 className='text-[#E4E8EB] text-[14px] lg:text-[20px] xl:text-[26px] font-medium'>Peter Elk</h2>
                     </div>
                     <div className='h-[24px] w-[1px] bg-[#FFFFFF] relative z-[1]'></div>
@@ -24,10 +18,10 @@ export default function Banner() {
                     <h3 className='text-[#FFFFFF] text-[14px] lg:text-[20px] xl:text-[26px] font-medium relative z-[1]'>18 min read</h3>
                 </div>
                 <div className='flex gap-[24px] xl:gap-[32px] justify-center sm:justify-start'>
-                    <img src={twitter} alt='articles' className='relative z-[1] cursor-pointer w-[30px] lg:w-[45px] xl:w-auto' />
-                    <img src={linkedin} alt='articles' className='relative z-[1] cursor-pointer w-[30px] lg:w-[45px] xl:w-auto' />
-                    <img src={facebook} alt='articles' className='relative z-[1] cursor-pointer w-[30px] lg:w-[45px] xl:w-auto' />
-                    <img src={share} alt='articles' className='relative z-[1] cursor-pointer w-[30px] lg:w-[45px] xl:w-auto' />
+                    <img src='https://dz1x1c630cl14.cloudfront.net/webassets/twitter.svg' alt='articles' className='relative z-[1] cursor-pointer w-[30px] lg:w-[45px] xl:w-auto' />
+                    <img src='https://dz1x1c630cl14.cloudfront.net/webassets/linkedin_icon.svg' alt='articles' className='relative z-[1] cursor-pointer w-[30px] lg:w-[45px] xl:w-auto' />
+                    <img src='https://dz1x1c630cl14.cloudfront.net/webassets/facebook_icon.svg' alt='articles' className='relative z-[1] cursor-pointer w-[30px] lg:w-[45px] xl:w-auto' />
+                    <img src='https://dz1x1c630cl14.cloudfront.net/webassets/share_icon.svg' alt='articles' className='relative z-[1] cursor-pointer w-[30px] lg:w-[45px] xl:w-auto' />
                 </div>
             </div>
         </div>

@@ -1,11 +1,6 @@
 import React from 'react';
 import Header from './header';
 import Banner from './banner';
-import articlesImg from "../../../images/articles.svg";
-import articles2 from "../../../images/articles1.svg";
-import articles3 from "../../../images/articles2.svg";
-import articles4 from "../../../images/articles4.svg";
-import peter from "../../../images/peter.svg";
 import { FaRegClock } from "react-icons/fa6";
 import { useNavigate } from 'react-router-dom';
 import Content from './content';
@@ -88,17 +83,17 @@ export default function Articles3() {
       <p className='text-[#E4E8EB] text-[26px] font-normal w-[88%] text-center'>As we conclude , it is not about the tool rather it is about the efficiency which delivers best for the product development and management. Workfast.ai gives the best all-in features where one does not to find a replacement. Since product managers need to connect all dots , it is very important for them to find a workable software to work productively.</p>
       <div className='flex flex-col gap-[48px] w-[88%] relative z-[1] mx-auto' id="footer">
         <div className='flex gap-[14px] items-center'>
-          <img src={articlesImg} alt='article' />
+          <img src="https://dz1x1c630cl14.cloudfront.net/webassets/articles.svg" alt='article' />
           <h3 className='text-[#FFFFFF] font-semibold text-[21px]'>Articles</h3>
         </div>
         <div className='flex gap-[28px] justify-between w-full'>
           <div className='rounded-[8px] max-w-[378px] flex flex-col shrink-0 cursor-pointer' onClick={() => { navigate('/blog/breaking-barriers-in-communication-collaboration-with-workfast.ai') }}>
-            <img src={articles2} alt='articles' />
+            <img src="https://dz1x1c630cl14.cloudfront.net/webassets/articles1.svg" alt='articles' />
             <div className='bg-[#121A2F] px-[20px] py-[14px] rounded-b-[8px] flex flex-col gap-[14px]'>
               <h2 className='text-[#FFFFFF] text-[24px] font-semibold'>Breaking Barriers in Communication and Collaboration with Workfast.ai</h2>
               <div className='flex justify-between items-center'>
                 <div className='flex gap-[4px] items-center'>
-                  <img src={peter} alt='articles' />
+                  <img src="https://dz1x1c630cl14.cloudfront.net/webassets/peter.svg" alt='articles' />
                   <h2 className='text-[#7C828D] text-[17px] font-medium'>Peter Elk</h2>
                 </div>
                 <div className='flex gap-[4px] items-center'>
@@ -109,12 +104,12 @@ export default function Articles3() {
             </div>
           </div>
           <div className='rounded-[8px] max-w-[378px] flex flex-col shrink-0 cursor-pointer' onClick={() => {navigate('/blog/top-7-ways-workfast.ai-can-revolutionise-your-project-management')}}>
-            <img src={articles3} alt='articles' />
+            <img src="https://dz1x1c630cl14.cloudfront.net/webassets/articles2.svg" alt='articles' />
             <div className='bg-[#121A2F] px-[20px] py-[14px] rounded-b-[8px] flex flex-col gap-[14px]'>
               <h2 className='text-[#FFFFFF] text-[24px] font-semibold'>Top 7 ways Workfast.ai can Revolutionise your project management</h2>
               <div className='flex justify-between items-center'>
                 <div className='flex gap-[4px] items-center'>
-                  <img src={peter} alt='articles' />
+                  <img src="https://dz1x1c630cl14.cloudfront.net/webassets/peter.svg" alt='articles' />
                   <h2 className='text-[#7C828D] text-[17px] font-medium'>Peter Elk</h2>
                 </div>
                 <div className='flex gap-[4px] items-center'>
@@ -125,12 +120,12 @@ export default function Articles3() {
             </div>
           </div>
           <div className='rounded-[8px] max-w-[378px] flex flex-col shrink-0 cursor-pointer' onClick={() => { navigate('/blog/looking-for-a-new-platform-for-project-management') }}>
-            <img src={articles4} alt='articles' />
+            <img src="https://dz1x1c630cl14.cloudfront.net/webassets/articles4.svg" alt='articles' />
             <div className='bg-[#121A2F] px-[20px] py-[14px] rounded-b-[8px] flex flex-col gap-[14px]'>
               <h2 className='text-[#FFFFFF] text-[24px] font-semibold'>Looking for a new platform for project management? Discover Workfast.ai</h2>
               <div className='flex justify-between items-center'>
                 <div className='flex gap-[4px] items-center'>
-                  <img src={peter} alt='articles' />
+                  <img src="https://dz1x1c630cl14.cloudfront.net/webassets/peter.svg" alt='articles' />
                   <h2 className='text-[#7C828D] text-[17px] font-medium'>Peter Elk</h2>
                 </div>
                 <div className='flex gap-[4px] items-center'>

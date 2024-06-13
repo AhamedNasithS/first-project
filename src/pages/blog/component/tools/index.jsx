@@ -1,6 +1,4 @@
 import React from 'react'
-import tik from "../../../../images/right.svg";
-import ilustrater from "../../../../images/ilustrater.webp";
 
 export default function Tools() {
     return (
@@ -12,37 +10,37 @@ export default function Tools() {
                     <div className='w-full h-full rounded-[34px] bg-[#010306] p-[10px]'>
                         <div className='w-full h-full rounded-[30px] bg-gradient-to-bl from-[#10192C29] via-[#101B2E8F] to-[#29457B00] p-[20px] border-[1px] border-[#1F44C5]/[40%] flex flex-col gap-[20px]'>
                             <div className='flex gap-1.5 lg:gap-1 items-center'>
-                                <img src={tik} alt='tik' className='w-[17px] md:w-[20px] lg:w-auto'/>
+                                <img src='https://dz1x1c630cl14.cloudfront.net/webassets/right.svg' alt='tik' className='w-[17px] md:w-[20px] lg:w-auto'/>
                                 <p className='text-[#E4E8EB] text-[16px] md:text-[20px] lg:text-[24px] font-normal'>Prototyping</p>
                             </div>
                             <div className='flex gap-1.5 lg:gap-1 items-center'>
-                                <img src={tik} alt='tik'  className='w-[17px] md:w-[20px] lg:w-auto'/>
+                                <img src='https://dz1x1c630cl14.cloudfront.net/webassets/right.svg' alt='tik'  className='w-[17px] md:w-[20px] lg:w-auto'/>
                                 <p className='text-[#E4E8EB] text-[16px] md:text-[20px] lg:text-[24px] font-normal'>Roadmapping</p>
                             </div>
                             <div className='flex gap-1.5 lg:gap-1 items-center'>
-                                <img src={tik} alt='tik' className='w-[17px] md:w-[20px] lg:w-auto'/>
+                                <img src='https://dz1x1c630cl14.cloudfront.net/webassets/right.svg' alt='tik' className='w-[17px] md:w-[20px] lg:w-auto'/>
                                 <p className='text-[#E4E8EB] text-[16px] md:text-[20px] lg:text-[24px] font-normal'>Task management</p>
                             </div>
                             <div className='flex gap-1.5 lg:gap-1 items-center'>
-                                <img src={tik} alt='tik' className='w-[17px] md:w-[20px] lg:w-auto'/>
+                                <img src='https://dz1x1c630cl14.cloudfront.net/webassets/right.svg' alt='tik' className='w-[17px] md:w-[20px] lg:w-auto'/>
                                 <p className='text-[#E4E8EB] text-[16px] md:text-[20px] lg:text-[24px] font-normal'>Data management</p>
                             </div>
                             <div className='flex gap-1.5 lg:gap-1 items-center'>
-                                <img src={tik} alt='tik' className='w-[17px] md:w-[20px] lg:w-auto'/>
+                                <img src='https://dz1x1c630cl14.cloudfront.net/webassets/right.svg' alt='tik' className='w-[17px] md:w-[20px] lg:w-auto'/>
                                 <p className='text-[#E4E8EB] text-[16px] md:text-[20px] lg:text-[24px] font-normal'>Communication</p>
                             </div>
                             <div className='flex gap-1.5 lg:gap-1 items-center'>
-                                <img src={tik} alt='tik' className='w-[17px] md:w-[20px] lg:w-auto'/>
+                                <img src='https://dz1x1c630cl14.cloudfront.net/webassets/right.svg' alt='tik' className='w-[17px] md:w-[20px] lg:w-auto'/>
                                 <p className='text-[#E4E8EB] text-[16px] md:text-[20px] lg:text-[24px] font-normal'>User tracking and analysis</p>
                             </div>
                             <div className='flex gap-1.5 lg:gap-1 items-center'>
-                                <img src={tik} alt='tik' className='w-[17px] md:w-[20px] lg:w-auto'/>
+                                <img src='https://dz1x1c630cl14.cloudfront.net/webassets/right.svg' alt='tik' className='w-[17px] md:w-[20px] lg:w-auto'/>
                                 <p className='text-[#E4E8EB] text-[16px] md:text-[20px] lg:text-[24px] font-normal'>Customer survey</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <img src={ilustrater} alt='ilustrater' className='w-[80%] xl:w-[70%] md:mt-[130px] lg:mt-[150px] xl:mt-0 mx-auto md:mx-[0px]'/>
+                <img src='https://dz1x1c630cl14.cloudfront.net/webassets/ilustrater.webp' alt='ilustrater' className='w-[80%] xl:w-[70%] md:mt-[130px] lg:mt-[150px] xl:mt-0 mx-auto md:mx-[0px]'/>
             </div>
         </div>
     )

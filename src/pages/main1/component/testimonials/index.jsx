@@ -2,7 +2,6 @@ import React from 'react'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import Arrow from "../../../../images/rightArrow.svg";
 
 export default function Testimonial({ setIsVideo, setVideoIndex }) {
     var settings = {
@@ -15,8 +14,8 @@ export default function Testimonial({ setIsVideo, setVideoIndex }) {
         swipe: false,
         arrows: false,
         centerMode: false,
-        prevArrow: <img src={Arrow} alt='arrow' />,
-        nextArrow: <img src={Arrow} alt='arrow' />,
+        prevArrow: <img src="https://dz1x1c630cl14.cloudfront.net/webassets/rightArrow.svg" alt='arrow' />,
+        nextArrow: <img src="https://dz1x1c630cl14.cloudfront.net/webassets/rightArrow.svg" alt='arrow' />,
         responsive: [
             {
                 breakpoint: 1440,

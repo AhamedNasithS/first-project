@@ -1,10 +1,8 @@
 import React from "react";
 import axios from "axios";
 import { IoMdMail } from "react-icons/io";
-// import Logo from "https://dz1x1c630cl14.cloudfront.net/webassets/one.ai_Logo.svg";
 import Main from "../../videos/logoBackground.mp4";
 import Swal from 'sweetalert2'
-// import Glow from "https://dz1x1c630cl14.cloudfront.net/webassets/Glowing.svg";
 import API from "../../utils/API";
 
 

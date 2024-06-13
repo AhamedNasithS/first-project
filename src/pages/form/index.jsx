@@ -1,12 +1,7 @@
 import React from 'react'
-import yellowGlow from "../../images/yellowglow.png"
 import Header from './header'
 import API from '../../utils/API';
 import axios from 'axios';
-import user from "../../images/profileicon.svg";
-import emailIcon from "../../images/emailicon.svg";
-import phone from "../../images/phoneicon.svg";
-import company from "../../images/companyicon.svg";
 import { useNavigate } from 'react-router-dom';
 import { FaArrowRightLong } from "react-icons/fa6";
 import { Helmet } from 'react-helmet';
@@ -98,15 +93,15 @@ export default function Form() {
                     `}
                 </script>
                 {/* <!-- End Google Tag Manager --> */}
-                <body>
-                    {/* <!-- Google Tag Manager (noscript) --> */}
-                    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N743ZL57" title='googletag'
-                        height="0" width="0" style={{ display: "none", visibility: "hidden" }}></iframe></noscript>
-                    {/* <!-- End Google Tag Manager (noscript) --> */}
-                </body>
             </Helmet>
+            <body>
+                {/* <!-- Google Tag Manager (noscript) --> */}
+                <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N743ZL57" title='googletag'
+                    height="0" width="0" style={{ display: "none", visibility: "hidden" }}></iframe></noscript>
+                {/* <!-- End Google Tag Manager (noscript) --> */}
+            </body>
             <Header />
-            <img src={yellowGlow} alt='yellowGlow' className='absolute top-[73px] md:top-[80px] z-[0] ' />
+            <img src='https://dz1x1c630cl14.cloudfront.net/webassets/yellowglow.png' alt='yellowGlow' className='absolute top-[73px] md:top-[80px] z-[0] ' />
             <div className='relative px-[20px] md:px-0 w-full md:w-11/12 mx-auto flex flex-col justify-center items-center gap-[30px] lg:gap-[60px] overflow-hidden'>
                 <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
                 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
@@ -120,7 +115,7 @@ export default function Form() {
                     <div className='grid md:grid-cols-2 gap-5 items-center mt-[15px] md:mt-[30px] w-full'>
                         <div className='w-full'>
                             <div className='flex items-center gap-1'>
-                                <img src={user} alt='user' className='w-[19px] md:w-[23x]' />
+                                <img src='https://dz1x1c630cl14.cloudfront.net/webassets/profileicon.svg' alt='user' className='w-[19px] md:w-[23x]' />
                                 <h3 className='text-[#FFFFFF] text-[12px] md:text-[14px] font-medium'>Name*</h3>
                             </div>
                             <div className={`w-full h-[38px] md:h-[44px] bg-[#1C2437] lg:py-[10px] mt-[10px] rounded-[8px]`}>
@@ -129,7 +124,7 @@ export default function Form() {
                         </div>
                         <div className='w-full'>
                             <div className='flex items-center gap-1'>
-                                <img src={emailIcon} alt='user' className='w-[19px] md:w-[23x]' />
+                                <img src='https://dz1x1c630cl14.cloudfront.net/webassets/emailicon.svg' alt='user' className='w-[19px] md:w-[23x]' />
                                 <h3 className='text-[#FFFFFF] text-[12px] md:text-[14px] font-medium'>Email*</h3>
                             </div>
                             <div className={`w-full h-[38px] md:h-[44px] bg-[#1C2437] lg:py-[10px] mt-[10px] rounded-[8px] ${emailError ? "border-[1px] border-[#F92A4B]" : ""}`}>
@@ -138,7 +133,7 @@ export default function Form() {
                         </div>
                         <div className='w-full'>
                             <div className='flex items-center gap-1'>
-                                <img src={phone} alt='user' className='w-[19px] md:w-[23x]' />
+                                <img src='https://dz1x1c630cl14.cloudfront.net/webassets/phoneicon.svg' alt='user' className='w-[19px] md:w-[23x]' />
                                 <h3 className='text-[#FFFFFF] text-[12px] md:text-[14px] font-medium'>Phone Number*</h3>
                             </div>
                             <div className={`w-full h-[38px] md:h-[44px] bg-[#1C2437] lg:py-[10px] mt-[10px] rounded-[8px] ${phoneNumberError ? "border-[1px] border-[#F92A4B]" : ""}`}>
@@ -147,7 +142,7 @@ export default function Form() {
                         </div>
                         <div className='w-full'>
                             <div className='flex items-center gap-1'>
-                                <img src={company} alt='user' className='w-[19px] md:w-[23x]' />
+                                <img src='https://dz1x1c630cl14.cloudfront.net/webassets/companyicon.svg' alt='user' className='w-[19px] md:w-[23x]' />
                                 <h3 className='text-[#FFFFFF] text-[12px] md:text-[14px] font-medium'>Company name*</h3>
                             </div>
                             <div className={`w-full h-[38px] md:h-[44px] bg-[#1C2437] lg:py-[10px] mt-[10px] rounded-[8px]`}>

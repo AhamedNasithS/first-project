@@ -5,7 +5,6 @@ import API from '../../../../utils/API';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import { FaArrowRightLong } from "react-icons/fa6";
-import introImg from "../../../../images/introimg.webp";
 
 
 export default function Intro({ setIsForm, email, setEmail }) {
@@ -105,7 +104,7 @@ export default function Intro({ setIsForm, email, setEmail }) {
                     </div>
                 </div> */}
             </div>
-            <img src={introImg} alt='intro'
+            <img src="https://dz1x1c630cl14.cloudfront.net/webassets/introimg.webp" alt='intro'
                 // data-aos="zoom-in-up" data-aos-duration="1500" 
                 className='mt-[15px] lg:mt-[25px] xl:mt-[40px] w-[80%] relative' />
         </div>

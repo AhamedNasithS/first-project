@@ -1,13 +1,4 @@
 import React from 'react'
-import logo from "../../images/payment_logo.svg";
-import check from "../../images/check.svg";
-import lock from "../../images/Lock.svg";
-import visa from "../../images/Visa.svg";
-import masterCard from "../../images/Mastercard.svg";
-import americanExpress from "../../images/Americanexpress.svg";
-import paypal from "../../images/Paypal.svg";
-import banContact from "../../images/Bancontact.svg";
-import cvv from "../../images/cvv.svg";
 import { useNavigate } from 'react-router-dom';
 import { CountryDropdown } from 'react-country-region-selector';
 
@@ -317,12 +308,10 @@ export default function Payment({ priceIndex }) {
         }
     }, [success]);
 
-    console.log(paymentMethod === "Pay By Card" && submit && !organisationNameError && !membersCountError && !streetNameError && !cityNameError && !postalCodeError && !cardNumberError && !expiryError && !cvvNumError)
-
     return (
         <div className='w-full h-full bg-[#FFFFFF]'>
             <div className='w-full bg-[#ffffff] py-[15px] px-[30px] relative' style={{ boxShadow: "0px 0px 4px 0px #00000040" }}>
-                <img src={logo} alt='logo' />
+                <img src="https://dz1x1c630cl14.cloudfront.net/webassets/payment_logo.svg" alt='logo' />
                 <h3 className='text-[#000000] text-[20px] nunito-semibold absolute top-[50%] -translate-x-1/2 left-[50%] -translate-y-1/2'>Upgrade <span className='nunito-bold'>workfast.ai workSpace</span> to pro </h3>
             </div>
             <div className='w-10/12 mx-auto py-[32px] grid grid-cols-3'>
@@ -368,7 +357,7 @@ export default function Payment({ priceIndex }) {
                             <div className='flex justify-between w-full'>
                                 <h3 className='text-[#000000] text-[20px] nunito-semibold'>2. Payment method</h3>
                                 <div className='flex items-center gap-[2px]'>
-                                    <img src={lock} alt='lock' />
+                                    <img src="https://dz1x1c630cl14.cloudfront.net/webassets/Lock.svg" alt='lock' />
                                     <h3 className='text-[#000000] text-[18px] nunito-semibold'>Secure form</h3>
                                 </div>
                             </div>
@@ -383,11 +372,11 @@ export default function Payment({ priceIndex }) {
                                         <div className={`px-[11px] py-[12px] max-w-full border-[1px] rounded-[8px] flex justify-between ${cardNumberError ? "border-[#F92A4B]" : "border-[#D9D9D9]"}`}>
                                             <input type='text' value={cardNumber} placeholder='1234 1234 1234 1234' className='bg-transparent max-w-full text-[15px] text-[#5C5C5C] placeholder:text-[#5C5C5C] placeholder:text-[15px] focus:outline-none' onChange={(e) => { handleCardNumber(e) }} />
                                             <div className='flex gap-[4px] items-center'>
-                                                <img src={visa} alt='visa' />
-                                                <img src={masterCard} alt='masterCard' />
-                                                <img src={americanExpress} alt='americanExpress' />
-                                                <img src={paypal} alt='paypal' />
-                                                <img src={banContact} alt='banContact' />
+                                                <img src="https://dz1x1c630cl14.cloudfront.net/webassets/Visa.svg" alt='visa' />
+                                                <img src="https://dz1x1c630cl14.cloudfront.net/webassets/Mastercard.svg" alt='masterCard' />
+                                                <img src="https://dz1x1c630cl14.cloudfront.net/webassets/Americanexpress.svg" alt='americanExpress' />
+                                                <img src="https://dz1x1c630cl14.cloudfront.net/webassets/Paypal.svg" alt='paypal' />
+                                                <img src="https://dz1x1c630cl14.cloudfront.net/webassets/Bancontact.svg" alt='banContact' />
                                             </div>
                                         </div>
                                     </div>
@@ -401,7 +390,7 @@ export default function Payment({ priceIndex }) {
                                             <div className={`px-[11px] py-[12px] max-w-full border-[1px] rounded-[8px] flex justify-between ${cvvNumError ? "border-[#F92A4B]" : "border-[#D9D9D9]"}`}>
                                                 <input type='text' value={cvvNum} placeholder='CVC' className='bg-transparent max-w-full text-[15px] text-[#5C5C5C] placeholder:text-[#5C5C5C] placeholder:text-[15px] focus:outline-none' onChange={(e) => { handleCvvNumber(e) }} />
                                                 <div className='flex gap-[4px] items-center'>
-                                                    <img src={cvv} alt='cvv' />
+                                                    <img src="https://dz1x1c630cl14.cloudfront.net/webassets/cvv.svg" alt='cvv' />
                                                 </div>
                                             </div>
                                         </div>
@@ -445,7 +434,7 @@ export default function Payment({ priceIndex }) {
                             <ul className='flex flex-col gap-[12px]'>
                                 {index1.slice(0, showAll ? index1.length : 4).map((item, index) => (
                                     <div className='flex gap-[2px]' key={index}>
-                                        <img src={check} alt='check' />
+                                        <img src="https://dz1x1c630cl14.cloudfront.net/webassets/check.svg" alt='check' />
                                         <li className='text-[#000000] nunito-normal text-[14px]'>{item.title}</li>
                                     </div>
                                 ))}

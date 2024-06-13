@@ -23,8 +23,6 @@ import IpadView from './component/ipadview';
 import Support from './component/support';
 import Access from './component/access';
 import { IoCloseSharp } from "react-icons/io5";
-import Mobile from "../../images/mobile.webp";
-import Avalaible1 from '../../images/Devicemockup1.webp'
 
 export default function LandingPageInd({ email, setEmail }) {
   const [isVideo, setIsVideo] = React.useState(false);
@@ -118,18 +116,24 @@ export default function LandingPageInd({ email, setEmail }) {
           `}
         </script>
         {/* <!-- End Google Tag Manager --> */}
-        <body>
-          {/* <!-- Google Tag Manager (noscript) --> */}
-          <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N743ZL57" title='googletag'
-            height="0" width="0" style={{display:"none", visibility:"hidden"}}></iframe></noscript>
-          {/* <!-- End Google Tag Manager (noscript) --> */}
-        </body>
+        {/* <body> */}
+        {/* <!-- Google Tag Manager (noscript) --> */}
+        {/* <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N743ZL57" title='googletag'
+            height="0" width="0" style={{display:"none", visibility:"hidden"}}></iframe></noscript> */}
+        {/* <!-- End Google Tag Manager (noscript) --> */}
+        {/* </body> */}
 
       </Helmet>
+      <body>
+        {/* <!-- Google Tag Manager (noscript) --> */}
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N743ZL57" title='googletag'
+          height="0" width="0" style={{ display: "none", visibility: "hidden" }}></iframe></noscript>
+        {/* <!-- End Google Tag Manager (noscript) --> */}
+      </body>
       <Header />
       <Intro email={email} setEmail={setEmail} />
       <Features />
-      <img src={Mobile} alt='mobileView'
+      <img src="https://dz1x1c630cl14.cloudfront.net/webassets/mobile.webp" alt='mobileView'
         // data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="10000" 
         className='my-[20px] lg:my-[100px] p-[20px] w-[80%]' />
       <Channel />
@@ -138,7 +142,7 @@ export default function LandingPageInd({ email, setEmail }) {
       <Chat />
       <Ai />
       <Availbles />
-      <img src={Avalaible1} alt='availble' className='mt-[10px] lg:mt-[50px] p-[20px] w-[80%] z-[1]'
+      <img src="https://dz1x1c630cl14.cloudfront.net/webassets/Devicemockup1.webp" alt='availble' className='mt-[10px] lg:mt-[50px] p-[20px] w-[80%] z-[1]'
       // data-aos="zoom-in" data-aos-duration="2000" 
       />
       {/* <Pricing setIsForm={setIsForm} /> */}

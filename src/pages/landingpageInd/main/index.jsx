@@ -1,9 +1,4 @@
 import React from 'react'
-// import Slack from "../../../images/slack1.svg";
-// import Jira from "../../../images/jira1.svg";
-// import Asana from "../../../images/asana1.svg";
-// import iconGroup from "../../../images/workfast.svg";
-import icons from "../../../images/competitiveLogos.svg";
 import { useNavigate } from 'react-router-dom';
 import API from '../../../utils/API';
 import axios from 'axios';
@@ -64,7 +59,7 @@ export default function Main() {
                     </div>
                 </div>
             </div> */}
-            <img src={icons} alt='icons' className='md:w-[60%] xl:w-auto' />
+            <img src="https://dz1x1c630cl14.cloudfront.net/webassets/competitiveLogos.svg" alt='icons' className='md:w-[60%] xl:w-auto' />
             <div>
                 <h3 className='text-[#FFFFFF] text-[22px] lg:text-[30px]  xl:text-[38px] sen-normal text-center'>If your answer is <span className='text-[#FDD220] text-[22px] md:text-[30px] xl:text-[38px] sen-bold'>Yes,</span> We are here to help you out </h3>
                 <h2 className='text-[#FFFFFF] text-[22px] lg:text-[36px] xl:text-[42px] sen-bold mt-[12px] text-center'>With <span className='text-[#FDD220]'>Workfast.ai</span></h2>
