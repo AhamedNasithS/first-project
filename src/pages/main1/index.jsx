@@ -21,6 +21,9 @@ import API from '../../utils/API';
 import axios from 'axios';
 import LoadLottie from '../loadLottie';
 import sucess from "../../sucess.json";
+import appStore from "../../images/appstore.svg";
+import playStore from "../../images/playstore.svg";
+
 
 export default function Main1() {
   const [isVideo, setIsVideo] = React.useState(false);
@@ -84,8 +87,8 @@ export default function Main1() {
         phone: phoneNumber,
         company_name: companyName
       });
-    const response =  await axios.post(API.HOST, { email: email });
-    if(response.data) {
+    const response = await axios.post(API.HOST, { email: email });
+    if (response.data) {
       console.log("success")
     }
     if (data?.statusCode === 200) {
@@ -117,9 +120,29 @@ export default function Main1() {
       <Chat />
       <Ai />
       <Availbles />
-      <img src="https://dz1x1c630cl14.cloudfront.net/webassets/Devicemockup1.webp" alt='availble' className='mt-[10px] lg:mt-[50px] p-[20px] w-[80%] z-[1]'
+      <img src="https://dz1x1c630cl14.cloudfront.net/webassets/Devicemockup1.webp" alt='availble' className='mt-[10px] lg:mt-[50px] p-[20px] w-[80%] relative z-[1]'
       // data-aos="zoom-in" data-aos-duration="2000" 
       />
+      <div className='mt-[10px] lg:mt-[50px] relative z-[1] flex flex-col md:flex-row justify-center items-center gap-[30px]'>
+        <a href="https://apps.apple.com/in/app/workfast-team-productivity/id6504078096" target="_blank" rel="noopener noreferrer">
+          <div className='px-[30px] py-[10px] border-[1px] border-[#004B9D] bg-[#0A0D1900] rounded-[20px] flex gap-[20px] items-center cursor-pointer'>
+            <img src={appStore} alt='appstore' />
+            <div className='flex flex-col justify-between'>
+              <h3 className='text-[#FFFFFF] text-[18px] font-medium'>Download on the</h3>
+              <h2 className='text-[#FFFFFF] text-[26px] font-semibold'>App Store</h2>
+            </div>
+          </div>
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=com.workfast.ai.app" target="_blank" rel="noopener noreferrer">
+          <div className='px-[30px] py-[10px] border-[1px] border-[#004B9D] bg-[#0A0D1900] rounded-[20px] flex gap-[20px] items-center cursor-pointer'>
+            <img src={playStore} alt='playstore' />
+            <div className='flex flex-col justify-between'>
+              <h3 className='text-[#FFFFFF] text-[18px] font-medium'>GET IT ON</h3>
+              <h2 className='text-[#FFFFFF] text-[26px] font-semibold'>Google Play</h2>
+            </div>
+          </div>
+        </a>
+      </div>
       {/* <Pricing setIsForm={setIsForm} /> */}
       <IpadView />
       <Support />
