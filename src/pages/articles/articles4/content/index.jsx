@@ -8,16 +8,16 @@ import WhyWorkfastAiIsCreated from './why-workfast.ai-is-created';
 
 export default function Content({ tocData, items, scrollToSection }) {
     return (
-        <div className='flex w-[88%] mx-auto gap-[40px] relative h-full'>
-            <div className='flex flex-col gap-[15px] md:gap-[30px] lg:gap-[50px] w-[60%] overflow-y-auto'>
+        <div className='flex px-[20px] md:px-0 md:w-[88%] mx-auto gap-[40px] relative h-full'>
+            <div className='flex flex-col gap-[15px] md:gap-[30px] lg:gap-[50px] w-full md:w-[62%] xl:w-[60%] overflow-y-auto'>
                 <div id='looking-for-a-new-platform'><LookingForANewPlatform /></div>
                 <div id='workfast.ai'><WorkfastAi/></div>
                 <div id='core-features-of-workfast.ai'><CoreFeaturesOfWorkfastAi /></div>
                 <div id='unique-features'><UniqueFeatures /></div>
                 <div id='why-workfast.ai-is-created'><WhyWorkfastAiIsCreated /></div>
             </div>
-            <aside className='sticky right-0 top-0 self-start w-[40%] rounded-[8px]'>
-                <h3 className='text-[#FFFFFF] text-[26px] font-medium pl-[9px]'>Table of contents</h3>
+            <aside className='sticky right-0 top-0 self-start w-[38%] xl:w-[40%] rounded-[8px] hidden md:block'>
+                <h3 className='text-[#FFFFFF] text-[18px] lg:text-[22px] xl:text-[26px] font-medium pl-[9px]'>Table of contents</h3>
                 {tocData.map((item,index) => (
                     <div
                         key={item.id}
@@ -25,7 +25,7 @@ export default function Content({ tocData, items, scrollToSection }) {
                         onClick={() => scrollToSection(item.id)}
                     >
                         <img src='https://dz1x1c630cl14.cloudfront.net/webassets/arrow_left.svg' alt='arrow' className={`${index === 0 || index === 2 ? "mt-[7px]" : ""}`} />
-                        <h3 className='text-[#FFFFFF] text-[26px] font-medium'>{item.title}</h3>
+                        <h3 className='text-[#FFFFFF] text-[18px] lg:text-[22px] xl:text-[26px] font-medium'>{item.title}</h3>
                     </div>
                 ))}
             </aside>

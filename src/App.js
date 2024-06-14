@@ -28,7 +28,7 @@ import Articles1 from './pages/articles/articles1';
 import Articles2 from './pages/articles/articles2';
 import Articles3 from './pages/articles/articles3';
 import Articles4 from './pages/articles/articles4';
-// import Payment from './pages/payment';
+import Payment from './pages/payment';
 // import MainForm from './pages/mainfrom';
 
 export default function App() {
@@ -66,7 +66,7 @@ export default function App() {
         <Route path='/help' element={<Help/>}/>
         <Route path='/investor' element={<Investors/>}/>
         <Route path='/investor/form' element={<InvestorFrom/>}/>
-        {/* <Route path='/payment' element={<Payment priceIndex={priceIndex}/>}/> */}
+        <Route path='/payment' element={<Payment priceIndex={priceIndex}/>}/>
       </Routes>
     </Router>
   )
