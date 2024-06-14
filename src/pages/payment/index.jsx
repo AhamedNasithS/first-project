@@ -36,15 +36,31 @@ export default function Payment({ priceIndex }) {
     const [accountHolderNameError, setAccountHolderNameError] = React.useState(false);
     const [submit, setSumbit] = React.useState(false);
     const [success, setSuccess] = React.useState(false);
+    const [selectedCurrency, setSelectedCurrency] = React.useState('USD');
     const navigate = useNavigate();
 
+    const handleChange = (event) => {
+        setSelectedCurrency(event.target.value);
+    };
 
     const handleSeeMore = () => {
         setShowAll(true);
     };
 
     React.useEffect(() => {
-        const total = 13 * membersCount;
+        let total;
+        if (selectedCurrency === "USD"){
+            total = 13 * membersCount;
+        }
+        else if (selectedCurrency === "INR"){
+                total = 999 * membersCount;
+        }
+        else if (selectedCurrency === "EURO"){
+            total = 12 * membersCount;
+        }
+        else if (selectedCurrency === "YEN"){
+            total = 19999 * membersCount;
+        }
         setTotalAmount(total)
     }, [membersCount])
 
@@ -292,7 +308,7 @@ export default function Payment({ priceIndex }) {
     React.useEffect(() => {
         if (paymentMethod === "Pay By Bank" && submit && !organisationNameError && !membersCountError && !streetNameError && !cityNameError && !postalCodeError && !accountNumberError && !ifscCodeError && !accountHolderNameError) {
             setSuccess(true)
-        } else if(paymentMethod === "Pay By Card" && submit && !organisationNameError && !membersCountError && !streetNameError && !cityNameError && !postalCodeError && !cardNumberError && !expiryError && !cvvNumError){
+        } else if (paymentMethod === "Pay By Card" && submit && !organisationNameError && !membersCountError && !streetNameError && !cityNameError && !postalCodeError && !cardNumberError && !expiryError && !cvvNumError) {
             console.log("object");
             setSuccess(true)
         } else {
@@ -421,11 +437,11 @@ export default function Payment({ priceIndex }) {
                             <h3 className='nunito-semibold text-[#000000] text-[20px]'>workfast.ai estimate</h3>
                             <h4 className='nunito-normal text-[#000000] text-[14px]'>Billed monthly</h4>
                         </div>
-                        <select id="countries" class="bg-[#FFC700] border border-[#3D3C41] text-[#000000] max-h-[32px] my-auto nunito-semibold text-[14px] rounded-lg  block px-[12px] py-[5px] focus:outline-none">
+                        <select id="countries" class="bg-[#FFC700] border border-[#3D3C41] text-[#000000] max-h-[32px] my-auto nunito-semibold text-[14px] rounded-lg  block px-[12px] py-[5px] focus:outline-none" value={selectedCurrency} onChange={handleChange}>
                             <option value="USD">USD</option>
-                            <option value="CA">INR</option>
-                            <option value="FR">EURO</option>
-                            <option value="DE">Yen</option>
+                            <option value="INR">INR</option>
+                            <option value="EURO">EURO</option>
+                            <option value="YEN">Yen</option>
                         </select>
                     </div>
                     <div className='rounded-b-[8px] py-[32px]'>
@@ -446,14 +462,14 @@ export default function Payment({ priceIndex }) {
                         <div className='pt-[32px] px-[24px] flex flex-col gap-[32px]'>
                             <div className='flex flex-col gap-[14px] text-[#000000] nunito-normal text-[16px]'>
                                 <div className='flex justify-between items-center'>
-                                    <h3>$13 × {membersCount === '' ? 0 : membersCount} members x 1 month</h3>
-                                    <h3>${totalAmount}</h3>
+                                    <h3>{selectedCurrency === "USD" ? '$13' : selectedCurrency === "INR" ? '₹999' : selectedCurrency === "EURO" ? "€12" : "¥1999"} × {membersCount === '' ? 0 : membersCount} members x 1 month</h3>
+                                    <h3>{selectedCurrency === "USD" ? '$' : selectedCurrency === "INR" ? '₹' : selectedCurrency === "EURO" ? "€" : "¥"}{totalAmount}</h3>
                                 </div>
                                 <h3 className='text-[14px]'>You're upgrading for every active member of your team. If new people join or inactive members become active, they'll be added to your next bill.</h3>
                             </div>
                             <div className='w-full py-[22px] border-y-[1px] border-dashed border-[#D9D9D9] flex justify-between text-[#000000] nunito-normal text-[16px]'>
                                 <h3>Sales tax</h3>
-                                <h3>$0</h3>
+                                <h3>{selectedCurrency === "USD" ? '$' : selectedCurrency === "INR" ? '₹' : selectedCurrency === "EURO" ? "€" : "¥"}0</h3>
                             </div>
                         </div>
                     </div>
