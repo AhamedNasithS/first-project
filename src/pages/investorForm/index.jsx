@@ -315,7 +315,7 @@ export default function InvestorFrom() {
                         <h1 className='text-[#FFF] text-[30px] font-bold'>Been <span className='text-[#FDD220]'>Successfully</span></h1>
                         <h1 className='text-[#FFF] text-[30px] font-bold'>Submitted</h1>
                         <FaThumbsUp className='text-[#FFF] text-[30px] font-bold' />
-                        <button className='bg-[#FDD220] p-3 mt-[70px] rounded-md text-[#FFF] text-[30px] font-semibold' onClick={() => window.location.href = 'https://www.workfast.ai/investors'}>Click Here</button>
+                        <button className='bg-[#FDD220] p-3 mt-[70px] rounded-md text-[#FFF] text-[30px] font-semibold' onClick={() => window.location.href = 'https://www.workfast.ai'}>Click Here</button>
                     </div>
                 </>
             )}
@@ -643,7 +643,7 @@ export default function InvestorFrom() {
                             </div>
                             <div className='text-[#e0d9d9]'>
                                 <h1 className='text-xl sm:text-2xl font-light'>Anything else you would like to tell us.</h1>
-                                <h2 className='text-md sm:text-xl font-light mt-1 sm:mt-2 text-[#e0d9d9b3]'>This detail will help us understand you more and give you quick access to Workfast.ai.</h2>
+                                <h2 className='text-md sm:text-xl font-light mt-1 sm:mt-2 text-[#e0d9d9b3]'>This detail will help us understand you more and give you quick access to Workfast.ai</h2>
                             </div>
                             <div className='mt-[20px] sm:mt-[32px] w-full max-w-[310px] sm:max-w-[550px] lg:max-w-[720px]'>
                                 <input type='text' value={anything} placeholder='Type your answer here...' className='max-w-full w-full bg-transparent border-none pb-2 placeholder:text-[24px] sm:placeholder:text-[30px] text-[24px] sm:text-[30px] text-[#e6e6e6] placeholder:text-[#4f4946] focus:outline-none focus:shadow-focus shadow-focus cursor-pointer' onChange={(e) => { setAnything(e.target.value); setAnythingError('') }} />
