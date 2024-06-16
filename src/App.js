@@ -2,7 +2,7 @@ import React from 'react'
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Landing from './pages/landing';
 import NewLanding from './pages/newLanding';
-// import ContactUs from './pages/contact';
+import ContactUs from './pages/contact';
 import Refund from './pages/refund';
 import Privacy from './pages/privacy';
 import Terms from './pages/terms';
@@ -53,7 +53,7 @@ export default function App() {
         <Route path='/landing' element={<LandingPage/>}/>
         <Route path='/landingin' element={<LandingPageInd email={email} setEmail={setEmail}/>}/>
         <Route path='/development' element={<NewLanding/>}/>
-        {/* <Route path='/ContactUs' element={<ContactUs/>}/> */}
+        <Route path='/contact' element={<ContactUs/>}/> */}
         <Route path='/refund' element={<Refund/>}/>
         <Route path='/about' element={<About/>}/>
         <Route path='/privacy' element={<Privacy/>}/>
