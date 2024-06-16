@@ -477,12 +477,12 @@ export default function InvestorFrom() {
                                         <IoMdCheckmark className='text-[#e6e6e6] my-auto text-end text-[20px] sm:text-[24px] mr-2' />
                                     )}
                                 </div>
-                                <div className={`mb-2 w-11/12 lg:w-[65%] xl:w-[68%] relative flex items-start sm:items-center rounded-[4px] bg-[#e6e6e61a] hover:bg-[#FFFFFF4d] text-[#e6e6e6] min-h-[40px] py-1 break-words cursor-pointer opacity-1 shadow-radio ${reason === "Just interested on Pepul’s idea & vision" ? "border-[1px]" : ""}`} onClick={() => { handleReason("Just interested on Pepul’s idea & vision"); setReasonError('') }}>
-                                    <div className={`my-1 mx-2 w-6 h-6 min-h-[22px] shrink-0 rounded-[2px] text-xs border-[#e6e6e699] border-[1px] flex justify-center items-center ${reason === "Just interested on Pepul’s idea & vision" ? "bg-[#e6e6e6] text-[#0d0601]" : "bg-[#0d0601] text-[#e6e6e6]"}`}>
+                                <div className={`mb-2 w-11/12 lg:w-[65%] xl:w-[68%] relative flex items-start sm:items-center rounded-[4px] bg-[#e6e6e61a] hover:bg-[#FFFFFF4d] text-[#e6e6e6] min-h-[40px] py-1 break-words cursor-pointer opacity-1 shadow-radio ${reason === "Just interested on Workfast.ai idea & vision" ? "border-[1px]" : ""}`} onClick={() => { handleReason("Just interested on Workfast.ai idea & vision"); setReasonError('') }}>
+                                    <div className={`my-1 mx-2 w-6 h-6 min-h-[22px] shrink-0 rounded-[2px] text-xs border-[#e6e6e699] border-[1px] flex justify-center items-center ${reason === "Just interested on Workfast.ai idea & vision" ? "bg-[#e6e6e6] text-[#0d0601]" : "bg-[#0d0601] text-[#e6e6e6]"}`}>
                                         <span className='font-bold'>B</span>
                                     </div>
-                                    <h1 className='w-full min-w-[100px] text-start break-word text-[16px] sm:text-[20px] text-[#e6e6e6] my-auto'>Just interested on Pepul's idea & vision</h1>
-                                    {reason === "Just interested on Pepul’s idea & vision" && (
+                                    <h1 className='w-full min-w-[100px] text-start break-word text-[16px] sm:text-[20px] text-[#e6e6e6] my-auto'>Just interested on Workfast.ai idea & vision</h1>
+                                    {reason === "Just interested on Workfast.ai idea & vision" && (
                                         <IoMdCheckmark className='text-[#e6e6e6] my-auto text-end text-[20px] sm:text-[24px] mr-2' />
                                     )}
                                 </div>
@@ -643,7 +643,7 @@ export default function InvestorFrom() {
                             </div>
                             <div className='text-[#e0d9d9]'>
                                 <h1 className='text-xl sm:text-2xl font-light'>Anything else you would like to tell us.</h1>
-                                <h2 className='text-md sm:text-xl font-light mt-1 sm:mt-2 text-[#e0d9d9b3]'>This detail will help us understand you more and give you quick access to pepul.</h2>
+                                <h2 className='text-md sm:text-xl font-light mt-1 sm:mt-2 text-[#e0d9d9b3]'>This detail will help us understand you more and give you quick access to Workfast.ai.</h2>
                             </div>
                             <div className='mt-[20px] sm:mt-[32px] w-full max-w-[310px] sm:max-w-[550px] lg:max-w-[720px]'>
                                 <input type='text' value={anything} placeholder='Type your answer here...' className='max-w-full w-full bg-transparent border-none pb-2 placeholder:text-[24px] sm:placeholder:text-[30px] text-[24px] sm:text-[30px] text-[#e6e6e6] placeholder:text-[#4f4946] focus:outline-none focus:shadow-focus shadow-focus cursor-pointer' onChange={(e) => { setAnything(e.target.value); setAnythingError('') }} />
