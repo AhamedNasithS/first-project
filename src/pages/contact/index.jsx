@@ -32,7 +32,7 @@ export default function ContactUs() {
 //         <h4 className='text-[14px] sm:text-[20px] lg:text-[28px] text-[#FFF] font-normal z-10 relative'><span className='text-[18px] sm:text-[24px] lg:text-[32px] text-[#FDD320] font-medium'> Registered Address: </span>PLOT No. 70, Gomathi Nagar, Velachery, Chennai,, Chennai, Tamil Nadu, PIN: 600042</h4>
 //         <h4 className='text-[14px] sm:text-[20px] lg:text-[28px] text-[#FFF] font-normal z-10 relative'><span className='text-[18px] sm:text-[24px] lg:text-[32px] text-[#FDD320] font-medium'> Operational Address: </span>PLOT No. 70, Gomathi Nagar, Velachery, Chennai,, Chennai, Tamil Nadu, PIN: 600042</h4>
 //         <h4 className='text-[14px] sm:text-[20px] lg:text-[28px] text-[#FFF] font-normal z-10 relative'><span className='text-[18px] sm:text-[24px] lg:text-[32px] text-[#FDD320] font-medium'> Telephone No: </span> 8925910212</h4>
-//         <h4 className='text-[14px] sm:text-[20px] lg:text-[28px] text-[#FFF] font-normal z-10 relative mb-[100px]'><span className='text-[18px] sm:text-[24px] lg:text-[32px] text-[#FDD320] font-medium'> E-Mail ID: </span>payments@get1.ai</h4>
+//         <h4 className='text-[14px] sm:text-[20px] lg:text-[28px] text-[#FFF] font-normal z-10 relative mb-[100px]'><span className='text-[18px] sm:text-[24px] lg:text-[32px] text-[#FDD320] font-medium'> E-Mail ID: </span>payments@workfast.ai</h4>
 //     </div>
 //   )
 // }

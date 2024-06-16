@@ -6,7 +6,7 @@ export default function Footer() {
     const currentYear = new Date().getFullYear();
 
     const handleEmailClick = () => {
-        window.location.href = 'https://mail.google.com/mail/?view=cm&fs=1&to=hello@get1.ai';
+        window.location.href = 'https://mail.google.com/mail/?view=cm&fs=1&to=hello@workfast.ai';
     };
 
     return (
@@ -19,7 +19,7 @@ export default function Footer() {
                             <h1 className='text-[#858585] text-[14px] lg:text-[16px] font-medium'>Contact: </h1>
                             <div className='text-center flex items-center justify-center gap-[5px]'>
                                 <IoMdMail className="stroke-[#FFFFFF] fill-[#FFF] w-[16px] h-[16px] lg:w-[20px] lg:h-[20px] flex shrink-0" />
-                                <h1 className='font-light text-[#FEF9F1] text-[13px] lg:text-[16px]' onClick={handleEmailClick}>hello@get1.ai</h1>
+                                <h1 className='font-light text-[#FEF9F1] text-[13px] lg:text-[16px]' onClick={handleEmailClick}>hello@workfast.ai</h1>
                             </div>
                         </div>
                         <div className='flex gap-[15px] mt-[20px]'>

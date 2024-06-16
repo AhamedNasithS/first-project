@@ -69,7 +69,7 @@ export default function Landing() {
 
   const handleEmailClick = () => {
     window.location.href =
-      "https://mail.google.com/mail/?view=cm&fs=1&to=hello@get1.ai";
+      "https://mail.google.com/mail/?view=cm&fs=1&to=hello@workfast.ai";
   };
 
     return (
@@ -113,7 +113,7 @@ export default function Landing() {
                         <p className='text-[#858585] text-[14px] lg:text-[16px] font-medium'>Contact: </p>
                         <div className='text-center flex items-center justify-center gap-[5px] cursor-pointer'>
                             <IoMdMail className="stroke-[#FFFFFF] fill-[#FFF] w-[16px] h-[16px] lg:w-[20px] lg:h-[20px] flex shrink-0" />
-                            <p className='font-light text-[#FEF9F1] text-[13px] lg:text-[16px]' onClick={handleEmailClick}>hello@get1.ai</p>
+                            <p className='font-light text-[#FEF9F1] text-[13px] lg:text-[16px]' onClick={handleEmailClick}>hello@workfast.ai</p>
                         </div>
                     </div>
                 </div>
