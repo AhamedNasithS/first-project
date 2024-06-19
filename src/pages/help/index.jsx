@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Help() {
     const handleEmailClick = () => {
-        window.open('https://mail.google.com/mail/?view=cm&fs=1&to=hello@workfast.ai');
+        window.open('https://mail.google.com/mail/?view=cm&fs=1&to=support@workfast.ai');
       };
     return (
         <div className='flex flex-col w-full h-screen justify-center items-center bg-[#010306] relative overflow-hidden p-[10px] md:p-[0px]'>
