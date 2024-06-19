@@ -76,11 +76,11 @@ export default function Mobile({ setIsForm }) {
                         <div className={`mr-[40px] text-[#E2E8FF] pb-[10px] mb-6 cursor-pointer rounded-[5px]`} onClick={() => { setIsOpen(false); handleFeatureClick() }}>
                             <h1 className="font-medium text-1xl">Features</h1>
                         </div>
-                        {/* <div className={`mr-[40px] text-[#E2E8FF] py-[10px] mb-6 cursor-pointer rounded-[5px]`} onClick={() => {setIsOpen(false); handlePricingClick()}}>
-                            <h1 className="font-medium text-1xl">Pricing</h1>
-                        </div> */}
                         <div className={`mr-[40px] text-[#E2E8FF] py-[10px] mb-6 cursor-pointer rounded-[5px]`} onClick={(e) => { handleBlog(e) }}>
                             <h1 className="font-medium text-1xl">Blog</h1>
+                        </div>
+                        <div className={`mr-[40px] text-[#E2E8FF] py-[10px] mb-6 cursor-pointer rounded-[5px]`} onClick={() => {navigate('/pricing')}}>
+                            <h1 className="font-medium text-1xl">Price</h1>
                         </div>
                         <div className={`mr-[40px] text-[#E2E8FF] py-[10px] mb-6 cursor-pointer rounded-[5px]`} onClick={(e) => { navigate('/investor') }}>
                             <h1 className="font-medium text-1xl">Investor</h1>
