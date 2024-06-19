@@ -45,7 +45,7 @@ export default function Footer() {
             </div>
             <div className='mt-[100px] w-11/12 mx-auto pb-8'>
                 <div className='col-span-2'>
-                    <p className='text-[#E2E8FF59] text-[12px] font-normal'>Copyright © 2024. All rights reserved.</p>
+                    <p className='text-[#E2E8FF59] text-[12px] font-normal'>Copyright © 2024, Pepul Tech Privated Limited. All rights reserved.</p>
                 </div>
                 {/* <div className='flex items-center gap-[50px]'>
                     <p className='text-[#E2E8FF59] text-[12px] font-normal'>Privacy Policy</p>

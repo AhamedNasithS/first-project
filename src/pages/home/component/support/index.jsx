@@ -7,7 +7,7 @@ export default function Support() {
   const buttonRef = React.useRef(null);
 
   const handleEmailClick = () => {
-    window.open('https://mail.google.com/mail/?view=cm&fs=1&to=hello@workfast.ai');
+    window.open('https://mail.google.com/mail/?view=cm&fs=1&to=support@workfast.ai');
   };
   React.useEffect(() => {
     const button = buttonRef.current;
