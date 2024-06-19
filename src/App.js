@@ -53,7 +53,7 @@ export default function App() {
         <Route path='/landing' element={<LandingPage/>}/>
         <Route path='/landingin' element={<LandingPageInd email={email} setEmail={setEmail}/>}/>
         <Route path='/development' element={<NewLanding/>}/>
-        <Route path='/contact' element={<ContactUs/>}/> */}
+        <Route path='/contact' element={<ContactUs/>}/> 
         <Route path='/refund' element={<Refund/>}/>
         <Route path='/about' element={<About/>}/>
         <Route path='/privacy' element={<Privacy/>}/>
