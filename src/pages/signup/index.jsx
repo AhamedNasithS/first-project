@@ -63,7 +63,7 @@ async function checkURL(url) {
   } 
 } 
 
-export default function Signup() {
+export default function Signup({setPricingPackage, pricingPackage}) {
   const navigate = useNavigate();
   const items = Array.from({ length: 10 }, (_, index) => index);
   const [buttonLoading, setButtonLoading] = useState(false);
@@ -555,6 +555,7 @@ export default function Signup() {
       formData.append("designation", designation);
       }
       formData.append("signupType", "EMAIL");
+      formData.append("selectedPlan", pricingPackage)
       try {
         const response = await axios.post(
           `${API.CREATEWORKSPACE}`,
@@ -579,6 +580,7 @@ export default function Signup() {
           } catch (err) {}
 
           setWorkPlaceDetails(response.data.data);
+          setPricingPackage('')
 
           const userResponse = response.data.data.userDetails;
           const workspaceResponse = response.data.data.workspaceDetails;

@@ -29,10 +29,12 @@ import Articles2 from './pages/articles/articles2';
 import Articles3 from './pages/articles/articles3';
 import Articles4 from './pages/articles/articles4';
 import Payment from './pages/payment';
+import Pricing from './pages/price';
 // import MainForm from './pages/mainfrom';
 
 export default function App() {
   const [email, setEmail] = React.useState('');
+  const [pricingPackage, setPricingPackage] = React.useState('');
   const [priceIndex, setPriceIndex] = React.useState(null);
 
   return (
@@ -62,11 +64,12 @@ export default function App() {
         <Route path='/landingin/form' element={<Form/>}/>
         <Route path='/landingin/success' element={<Success/>}/>
         <Route path='/success' element={<MainSuccess/>}/>
-        <Route path='/signup' element={<Signup/>}/>
+        <Route path='/signup' element={<Signup setPricingPackage={setPricingPackage} pricingPackage={pricingPackage}/>}/>
         <Route path='/help' element={<Help/>}/>
         <Route path='/investor' element={<Investors/>}/>
         <Route path='/investor/form' element={<InvestorFrom/>}/>
         <Route path='/payment' element={<Payment priceIndex={priceIndex}/>}/>
+        <Route path='/pricing' element={<Pricing setPricingPackage={setPricingPackage}/>}/>
       </Routes>
     </Router>
   )
