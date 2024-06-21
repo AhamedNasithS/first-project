@@ -32,9 +32,14 @@ export default function Pricing({ setPricingPackage }) {
     //     return () => tiltRef1.current.vanillaTilt.destroy();
     // }, []);
 
-    const [price, setPrice] = React.useState(199); // Base price in INR
-    const [originalPrice, setOriginalPrice] = React.useState(400); // Original price in INR
+    const [price, setPrice] = React.useState(null); // Base price in INR
+    const [originalPrice, setOriginalPrice] = React.useState(null); // Original price in INR
     const [currencySymbol, setCurrencySymbol] = React.useState('₹');
+
+    React.useEffect(() => {
+        setPrice(toggleValue === "Month" ? 199 : 1999);
+        setOriginalPrice(toggleValue === "Month" ? 400 : 5000);
+    }, [toggleValue]);
 
     React.useEffect(() => {
         const fetchLocationAndSetPrice = async () => {
@@ -95,8 +100,8 @@ export default function Pricing({ setPricingPackage }) {
             <div id='stars2'></div>
             <div id='stars3'></div>
             <div className='text-center mt-[20px] lg:mt-[60px] xl:mt-[100px] relative z-[10] px-[20px] sm:px-0'>
-                <h2 className='text-[24px] sm:text-[32px] lg:text-[40px] xl:text-[64px] text-[#F9F9F9] font-black'>Our Pricing Solutions</h2>
-                <h2 className='text-[14px] sm:text-[18px] lgtext-[22px] xl:text-[32px] text-[#F9F9F9] font-medium'>No hidden fees, just simple and affordable plans tailored to your needs</h2>
+                <h2 className='text-[24px] sm:text-[32px] lg:text-[40px] xl:text-[64px] text-[#F9F9F9] font-black'>Our Pricing</h2>
+                {/* <h2 className='text-[14px] sm:text-[18px] lgtext-[22px] xl:text-[32px] text-[#F9F9F9] font-medium'>No hidden fees, just simple and affordable plans tailored to your needs</h2> */}
             </div>
             <div className='p-[3px] lg:p-2 bg-[#2B2D37] rounded-[28px] flex items-center mt-[10px] lg:mt-[20px] relative z-[10]'>
                 <div className={`p-[3px] lg:p-2 ${toggleValue === "Month" ? " bg-gradient-to-bl from-[#FDD01F] via-[#F8C240] to-[#F8861B] text-[#2A2200]" : "bg-transparent text-[#F9F9F9]"} cursor-pointer rounded-[20px]`} onClick={() => { setToggleValue("Month") }}>
@@ -164,8 +169,8 @@ export default function Pricing({ setPricingPackage }) {
                             <div className='flex gap-[29px] items-center'>
                                 <h2 className='text-[#FFFFFF] text-[44px] font-bold relative z-[10]'>{currencySymbol}{price}<span className='text-[#545454] font-semibold text-[20px] line-through'>{currencySymbol}{originalPrice}</span></h2>
                                 <div>
-                                    <h2 className='text-[#818181] font-medium text-[16px] relative z-[10]'>Per member / month</h2>
-                                    <h2 className='text-[#818181] font-medium text-[16px] relative z-[10]'>billed annually</h2>
+                                    <h2 className='text-[#818181] font-medium text-[16px] relative z-[10]'>{toggleValue === "Month" ? "Per member / month" : "Per member / year" }</h2>
+                                    <h2 className='text-[#818181] font-medium text-[16px] relative z-[10]'>{toggleValue === "Month" ? "billed monthly" : "billed annually" }</h2>
                                 </div>
                             </div>
                             <button className='w-full py-[10px] border-[#FFDD09] border rounded-[11px] text-[#FFDD09] font-medium text-[16px] relative z-[10]' onClick={() => { setPricingPackage('STARTER'); navigate('/signup') }}>Get Started</button>
