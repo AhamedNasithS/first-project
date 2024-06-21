@@ -1701,21 +1701,3 @@ input[type="radio"] {
   border-radius: 8px;
   width: 100%;
 }
-
-.diagonal-strike {
-  position: relative;
-  display: inline-block;
-}
-
-.diagonal-strike::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -10px;
-  width: 90%;
-  height: 90%;
-  border-bottom: 2px solid #545454; /* Adjust color to match your design */
-  transform: rotate(-45deg);
-  transform-origin: left top;
-}
-
