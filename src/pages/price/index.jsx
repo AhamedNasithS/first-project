@@ -4,6 +4,7 @@ import Header from './header'
 import { IoIosCheckmark } from "react-icons/io";
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
+import API from '../../utils/API';
 
 export default function Pricing({ setPricingPackage }) {
     const [toggleValue, setToggleValue] = React.useState('Month');
@@ -38,7 +39,7 @@ export default function Pricing({ setPricingPackage }) {
 
     React.useEffect(() => {
         setPrice(toggleValue === "Month" ? 199 : 1999);
-        setOriginalPrice(toggleValue === "Month" ? 400 : 5000);
+        setOriginalPrice(toggleValue === "Month" ? 400 : 4800);
     }, [toggleValue]);
 
     React.useEffect(() => {
@@ -62,6 +63,31 @@ export default function Pricing({ setPricingPackage }) {
         fetchLocationAndSetPrice();
     }, []);
 
+    const handleClick = async (e) => {
+        setPricingPackage('STARTER'); 
+        e.preventDefault();
+        const response = await axios.post(API.BUTTON,
+            {
+                "eventName": toggleValue === "Month" ? "MONTH_STARTER" : "YEAR_STARTER"
+            }
+        );
+        if (response.data.statusCode === 200) {
+            navigate('/signup')
+        }
+    };
+
+    const handleSubmit = async (e) => {
+        setPricingPackage('BASIC'); 
+        e.preventDefault();
+        const response = await axios.post(API.BUTTON,
+            {
+                "eventName": toggleValue === "Month" ? "MONTH_BASIC" : "YEAR_BASIC"
+            }
+        );
+        if (response.data.statusCode === 200) {
+            navigate('/signup')
+        }
+    };
 
     const pricing = [
         { content: "Price", free: "Free", $6: "$6" },
@@ -111,11 +137,11 @@ export default function Pricing({ setPricingPackage }) {
                     <h3 className='mx-[10px] font-normal text-[12px] lg:text-[16px]' onClick={() => { setToggleValue("Year") }}>Yearly</h3>
                 </div>
             </div>
-            <div className='flex gap-[7px] items-center justify-center relative z-[10] mt-[10px] lg:mt-[20px]'>
+            {/* <div className='flex gap-[7px] items-center justify-center relative z-[10] mt-[10px] lg:mt-[20px]'>
                 <h3 className='text-[#999999] font-semibold text-[14px]'>Monthly</h3>
                 <div className='w-[2px] bg-[#999999] h-[16px]'></div>
                 <h3 className='text-[#FFDD09] font-semibold text-[14px]'>Yearly - SAVE 20%</h3>
-            </div>
+            </div> */}
             <div className='grid sm:grid-cols-2 lg:flex gap-[31px] items-center justify-center relative z-[10] mt-[30px] lg:mt-[50px]'>
                 <div className="group">
                     <div className='bg-gradient-to-r from-[#3D444E] via-[#2F353F] to-[#0D111A] rounded-[10px] lg:rounded-[30px] transition-all duration-700 p-[1px]'>
@@ -129,7 +155,7 @@ export default function Pricing({ setPricingPackage }) {
                             <div>
                                 <h2 className='text-[#FFFFFF] text-[44px] font-bold relative z-[10]'>Free <span className='text-[#818181] font-normal text-[16px]'>Unlimited</span></h2>
                             </div>
-                            <button className='w-full py-[10px] border-[#FFDD09] border rounded-[11px] text-[#FFDD09] font-medium text-[16px] relative z-[10]' onClick={() => { setPricingPackage('BASIC'); navigate('/signup') }}>Get Started</button>
+                            <button className='w-full py-[10px] border-[#FFDD09] border rounded-[11px] text-[#FFDD09] font-medium text-[16px] relative z-[10]' onClick={(e) => { handleSubmit(e) }}>Get Started</button>
                             <div className='flex gap-[5px] items-center'>
                                 <IoIosCheckmark className='text-[#FFDD09] text-[27px]' />
                                 <h3 className='text-[#FFFFFF] font-medium text-[17px]'>1 workspace</h3>
@@ -173,7 +199,7 @@ export default function Pricing({ setPricingPackage }) {
                                     <h2 className='text-[#818181] font-medium text-[16px] relative z-[10]'>{toggleValue === "Month" ? "billed monthly" : "billed annually" }</h2>
                                 </div>
                             </div>
-                            <button className='w-full py-[10px] border-[#FFDD09] border rounded-[11px] text-[#FFDD09] font-medium text-[16px] relative z-[10]' onClick={() => { setPricingPackage('STARTER'); navigate('/signup') }}>Get Started</button>
+                            <button className='w-full py-[10px] border-[#FFDD09] border rounded-[11px] text-[#FFDD09] font-medium text-[16px] relative z-[10]' onClick={(e) => { handleClick(e) }}>Get Started</button>
                             <div className='flex gap-[5px] items-center'>
                                 <IoIosCheckmark className='text-[#FFDD09] text-[27px]' />
                                 <h3 className='text-[#FFFFFF] font-medium text-[17px]'>Upto 4 workspaces</h3>
