@@ -1,0 +1,11 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.workfast.ai.app",
+      "sha256_cert_fingerprints":
+        ["83:3C:3E:1A:9A:17:EC:B6:6B:13:FE:A2:4E:1D:A5:A9:B7:6D:A0:57:8D:4F:CB:A8:52:B8:12:C3:F2:15:B9:4B"]
+    }
+  }
+]
