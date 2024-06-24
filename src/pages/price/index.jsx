@@ -90,7 +90,7 @@ export default function Pricing({ setPricingPackage }) {
     };
 
     const pricing = [
-        { content: "Price", free: "Free", $6: "$6" },
+        { content: "Price", free: "Free", $6: `${currencySymbol}${price}` },
         { content: "No of users", free: "Unlimited 🚀", $6: "Unlimited 🚀" },
         { content: "File storage", free: "1 GB ", $6: "Unlimited 🚀" },
         { content: "Mobile Apps", free: "✅", $6: "✅" },
