@@ -36,7 +36,7 @@ export default function Footer() {
             </div>
             <div className='flex justify-between w-9/12 mx-auto mb-[40px] sm:mb-[70px] xl:mb-[100px]'>
                 <a href='/ContactUs'><p className='text-[#858585] text-[14px] lg:text-[16px] font-medium'>Contact us </p></a>
-                <a href='/RefundandCancellation'><p className='text-[#858585] text-[14px] lg:text-[16px] font-medium'>Refund Policy </p></a>
+                {/* <a href='/RefundandCancellation'><p className='text-[#858585] text-[14px] lg:text-[16px] font-medium'>Refund Policy </p></a> */}
                 <a href='/PrivacyPolicy'><p className='text-[#858585] text-[14px] lg:text-[16px] font-medium'>Privacy Policy </p></a>
                 <a href='/TermsandConditions'><p className='text-[#858585] text-[14px] lg:text-[16px] font-medium'>Terms and Conditions </p></a>
                 <a href='/about'><p className='text-[#858585] text-[14px] lg:text-[16px] font-medium'>About us </p></a>

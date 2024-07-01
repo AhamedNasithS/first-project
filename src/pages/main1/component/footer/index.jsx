@@ -37,7 +37,7 @@ export default function Footer() {
                         <a href='/privacy'><h3 className='text-[#E2E8FF8C] text-[14px] font-normal cursor-pointer'>Privacy Policy</h3></a>
                         <a href='/terms'><h3 className='text-[#E2E8FF8C] text-[14px] font-normal cursor-pointer'>Terms And Condition</h3></a>
 
-                        <a href='/refund'><h3 className='text-[#E2E8FF8C] text-[14px] font-normal cursor-pointer'>Refund Policy </h3></a>
+                        {/* <a href='/refund'><h3 className='text-[#E2E8FF8C] text-[14px] font-normal cursor-pointer'>Refund Policy </h3></a> */}
                         <a href='/about'><h3 className='text-[#E2E8FF8C] text-[14px] font-normal cursor-pointer'>About us</h3></a> 
                         <a href='/contact'><h3 className='text-[#E2E8FF8C] text-[14px] font-normal cursor-pointer'>Contact us</h3></a>
                         {/* <a href='/refund'><h3 className='text-[#E2E8FF8C] text-[14px] font-normal cursor-pointer'>Refund Policy</h3></a> */}
