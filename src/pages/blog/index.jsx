@@ -17,7 +17,7 @@ import axios from 'axios';
 import LoadLottie from '../loadLottie';
 import sucess from "../../sucess.json";
 import { IoCloseSharp } from 'react-icons/io5';
-import Articles from './component/articles';
+// import Articles from './component/articles';
 import { Helmet } from 'react-helmet';
 
 export default function Blog() {
@@ -110,7 +110,7 @@ export default function Blog() {
       <BestTools />
       <WorkFastAi />
       <Comparative />
-      <Articles />
+      {/* <Articles /> */}
       <Footer />
       {isForm && (
         <div className="flex justify-center items-center text-center fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-full bg-[#121825] bg-opacity-60 z-[100]">
