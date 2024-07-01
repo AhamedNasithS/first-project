@@ -18,6 +18,7 @@ import LoadLottie from '../loadLottie';
 import sucess from "../../sucess.json";
 import { IoCloseSharp } from 'react-icons/io5';
 import Articles from './component/articles';
+import { Helmet } from 'react-helmet';
 
 export default function Blog() {
   const [isForm, setIsForm] = React.useState(false);
@@ -79,7 +80,7 @@ export default function Blog() {
         company_name: companyName
       });
     const response = await axios.post(API.HOST, { email: email });
-    if(response.data) {
+    if (response.data) {
       console.log("success")
     }
     if (data?.statusCode === 200) {
@@ -94,6 +95,9 @@ export default function Blog() {
   };
   return (
     <div className='flex flex-col justify-start items-center w-full h-full bg-[#010306] relative overflow-hidden gap-[30px] md:gap-[60px] lg:gap-[100px]'>
+      <Helmet>
+        <meta name="description" content="An app that simplifies workflows with managing tasks and communication in one seamless platform." />
+      </Helmet>
       <Header setIsForm={setIsForm} />
       <MainScreen setIsForm={setIsForm} />
       <Guide />
@@ -106,7 +110,7 @@ export default function Blog() {
       <BestTools />
       <WorkFastAi />
       <Comparative />
-      <Articles/>
+      <Articles />
       <Footer />
       {isForm && (
         <div className="flex justify-center items-center text-center fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-full bg-[#121825] bg-opacity-60 z-[100]">
