@@ -17,10 +17,10 @@ export default function Task() {
       </div>
       <div className='lg:basis-1/2'>
         <div className='flex gap-2'>
-          <img src='https://dz1x1c630cl14.cloudfront.net/webassets/taskIcon.svg' alt='task' className='w-[40px] lg:w-auto'/>
+          <img src='https://dz1x1c630cl14.cloudfront.net/webassets/taskIcon.svg' alt='task' className='w-[20px] lg:w-[40px]'/>
           <h2 className='bg-gradient-to-r from-[#D5AA31] to-[#D56C31] bg-clip-text text-transparent text-[24px] lg:text-[60px] font-semibold'>Task</h2>
         </div>
-        <h3 className='mt-[10px] text-[#E4E8EB] font-medium text-[14px] lg:text-[28px]'>Tasks are to-do-list which often completed in a specific time frame </h3>
+        <h3 className='mt-[10px] text-[#E4E8EB] font-medium text-[14px] lg:text-[28px]'>Tasks are items on a to-do list that are often completed within a specific time frame.</h3>
       </div>
       <div className='lg:basis-1/2 flex justify-end mt-[15px] sm:mt-0'>
         <img src="https://dz1x1c630cl14.cloudfront.net/webassets/task.webp" alt='channel' 

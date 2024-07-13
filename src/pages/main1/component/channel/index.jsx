@@ -18,10 +18,10 @@ export default function Channel() {
       </div>
       <div className='lg:basis-1/2'>
         <div className='flex gap-2'>
-          <img src='https://dz1x1c630cl14.cloudfront.net/webassets/channelIcon.svg' alt='channel' className='w-[40px] lg:w-auto' />
+          <img src='https://dz1x1c630cl14.cloudfront.net/webassets/channelIcon.svg' alt='channel' className='w-[20px] lg:w-[40px]' />
           <h2 className='text-[24px] lg:text-[60px] font-semibold bg-gradient-to-r from-[#FFA3B4] to-[#FFA3EB] bg-clip-text text-transparent'>Channels</h2>
         </div>
-        <h3 className='mt-[10px] text-[#E4E8EB] font-medium text-[14px] lg:text-[28px]'>A Space to Communicate and get aligned with your team on Projects and tasks </h3>
+        <h3 className='mt-[10px] text-[#E4E8EB] font-medium text-[14px] lg:text-[28px]'>A space to communicate and align with your team on projects and tasks.</h3>
       </div>
       <div className='lg:basis-1/2 flex justify-end mt-[20px] lg:mt-0' 
       // data-aos="zoom-in-left" data-aos-duration="4000"

@@ -53,6 +53,8 @@ export default function Intro({ setIsForm, email, setEmail }) {
             <div id='stars'></div>
             <div id='stars2'></div>
             <div id='stars3'></div>
+            <div className='shooting-stars1'></div>
+            <div className='shooting-stars'></div>
             <div
                 // data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1500" 
                 className='text-center'>
@@ -81,8 +83,8 @@ export default function Intro({ setIsForm, email, setEmail }) {
                 </div>
             </div> */}
             <div className='flex gap-[22px] items-center mt-[40px]'>
-                <button className='py-[8px] px-[12px] w-[220px] lg:w-[253px] h-[44px] lg:h-[54px] rounded-[8px] bg-gradient-to-bl from-[#FDD01F] via-[#F8C240] to-[#F8861B] border-[1px] border-[#995900] b1 relative' onClick={(e) => {handleClick(e)}}>
-                    <span className='text text-[#2A2200] text-[16px] lg:text-[18px] font-semibold flex gap-[10px] items-center justify-center'>Get Started. Free Trial <FaArrowRightLong/></span>
+                <button className='py-[8px] px-[12px] w-[220px] lg:w-[253px] h-[44px] lg:h-[54px] rounded-[8px] bg-gradient-to-bl from-[#FDD01F] via-[#F8C240] to-[#F8861B] border-[1px] border-[#995900] b1 relative' onClick={(e) => { handleClick(e) }}>
+                    <span className='text text-[#2A2200] text-[16px] lg:text-[18px] font-semibold flex gap-[10px] items-center justify-center'>Get Started. Free Trial <FaArrowRightLong /></span>
                     <span class="shimmer"></span>
                 </button>
                 {/* <button className='py-[8px] px-[12px] w-[150px] lg:w-[173px] h-[44px] lg:h-[54px] text-[#2A2200] text-[16px] lg:text-[18px] font-semibold rounded-[10px] bg-gradient-to-bl from-[#FDD01F] via-[#FDD320] to-[#F8861B] relative cursor-pointer' onClick={(e) => {handleClick(e)}}>Sign up for free</button> */}
@@ -94,7 +96,13 @@ export default function Intro({ setIsForm, email, setEmail }) {
             </div>
             <img src="https://dz1x1c630cl14.cloudfront.net/webassets/introimg.webp" alt='intro'
                 // data-aos="zoom-in-up" data-aos-duration="1500" 
-                className='mt-[15px] lg:mt-[25px] xl:mt-[40px] w-[80%] relative' />
+                className='mt-[15px] lg:mt-[25px] xl:mt-[40px] w-[80%] relative z-[10]' />
+{/* 
+            <div className='mt-[100px] mb-[40px] text-center w-9/12 mx-auto'>
+                <h2 className='text-[24px] sm:text-[40px] xl:text-[64px] bg-gradient-to-l from-[#FDD220] to-[#FFFFFF] bg-clip-text text-transparent inter-bold w-[556px] mx-auto text-center'>Value proposition</h2>
+                <h3 className='text-[18px] sm:text-[30px] xl:text-[42px] text-[#FFFFFF] inter-medium mt-[40px]'>What does Workfast do ?</h3>
+                <p className='text-[12px] sm:text-[20px] xl:text-[26px] text-[#FFFFFF] inter-medium mt-[14px]'>Workfast will make your productivity life simple and get you more time so you can spend that time with your loved ones and families.</p>
+            </div> */}
         </div>
     )
 }
