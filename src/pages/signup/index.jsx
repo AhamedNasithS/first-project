@@ -801,13 +801,25 @@ export default function Signup({ setPricingPackage, pricingPackage }) {
     if (typeof window !== "undefined" && countdown > 0) {
       interval = setInterval(() => {
         setCountdown((prevCountdown) => prevCountdown - 1);
-      }, 1000);
+      }, 960);
     }
 
     return () => {
       clearInterval(interval);
     };
   }, [countdown]);
+
+  useEffect(()=>{
+    if(countdown===0){
+    setOtpError("");
+    setFocusIndex(null);
+    setOtpInputs(["", "", "", "", "", ""]);
+    setButtonLoading(false);
+    setTimeout(() => {
+    setFocusIndex(1);
+    }, 500);
+    }
+    },[countdown])
 
   // Format the countdown time as mm:ss
   const formatCountdown = () => {
@@ -856,6 +868,29 @@ export default function Signup({ setPricingPackage, pricingPackage }) {
       inputRefs.current[0].current.focus();
     }
   }, [focusIndex]);
+
+  useEffect(() => {
+    const handlePaste = (event) => {
+      const paste = (event.clipboardData || window.clipboardData).getData("text");
+      if (/^\d{6}$/.test(paste) && otpSectionVisible) {
+        const newOtpInputs = paste.split("");
+        setOtpInputs(newOtpInputs);
+        inputRefs.current.forEach((ref, i) => {
+          if (ref.current) {
+            ref.current.value = newOtpInputs[i];
+          }
+        });
+        event.preventDefault();
+      }
+    
+    };
+
+    window.addEventListener("paste", handlePaste);
+
+    return () => {
+      window.removeEventListener("paste", handlePaste);
+    };
+  }, [otpSectionVisible]);
 
   return (
     <div className="">
