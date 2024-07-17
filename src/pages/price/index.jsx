@@ -52,8 +52,8 @@ export default function Pricing({ setPricingPackage }) {
                 if (countryCode !== 'IN') {
                     // Set to USD without actual currency conversion
                     setCurrencySymbol('$');
-                    setPrice(6); // Set the fixed price in USD
-                    setOriginalPrice(7); // Set the fixed original price in USD
+                    setPrice(toggleValue === "Month" ? 3 : 36); // Set the fixed price in USD
+                    setOriginalPrice(toggleValue === "Month" ? 5 : 60); // Set the fixed original price in USD
                 }
             } catch (error) {
                 console.error('Error fetching location data', error);
@@ -94,11 +94,11 @@ export default function Pricing({ setPricingPackage }) {
         { content: "No of users", free: "Unlimited 🚀", $6: "Unlimited 🚀" },
         { content: "File storage", free: "1 GB ", $6: "Unlimited 🚀" },
         { content: "Mobile Apps", free: "✅", $6: "✅" },
-        { content: "Projects (Web Only)", free: "Upto 10 Projects", $6: "Unlimited 🚀" },
+        { content: "Projects (Web Only)", free: "Upto 20 Projects", $6: "Unlimited 🚀" },
         { content: "Chats", free: "Unlimited 🚀", $6: "Unlimited 🚀" },
         { content: "Collaboarators ", free: "Unlimited 🚀", $6: "Unlimited 🚀" },
         { content: "Workflow Stages", free: "Unlimited 🚀", $6: "Unlimited 🚀" },
-        { content: "Task Creation", free: "Monthly 40 tasks", $6: "Unlimited 🚀" },
+        { content: "Task Creation", free: "Monthly 200 tasks", $6: "Unlimited 🚀" },
         { content: "Sharing documents and media", free: "Unlimited 🚀", $6: "Unlimited 🚀" },
         { content: "Guest users", free: "Max 1 / Only in Specific channel", $6: "Free upto 3 (4 guests charged as 1 licence) Only in Specific channel" },
         { content: "Guest collabs", free: "Max 1", $6: "Free upto 3 ( 4 guests charged as 1 licence )" },
@@ -106,7 +106,7 @@ export default function Pricing({ setPricingPackage }) {
         { content: "Real time updates", free: "✅", $6: "✅" },
         { content: "Channel creation", free: "Unlimited 🚀", $6: "Unlimited 🚀" },
         { content: "Feedback Channel", free: "✅", $6: "✅" },
-        { content: "Chat - Add to task", free: "Upto 40 Tasks", $6: "Unlimited 🚀" },
+        { content: "Chat - Add to task", free: "Upto 200 Tasks", $6: "Unlimited 🚀" },
         { content: "Project view", free: "✅", $6: "✅" },
         { content: "People view", free: "✅", $6: "✅" },
         { content: "Date view", free: "✅", $6: "✅" },
@@ -166,7 +166,7 @@ export default function Pricing({ setPricingPackage }) {
                             </div>
                             <div className='flex gap-[5px] items-center'>
                                 <IoIosCheckmark className='text-[#FFDD09] text-[27px]' />
-                                <h3 className='text-[#FFFFFF] font-medium text-[17px]'>Upto 7 Projects</h3>
+                                <h3 className='text-[#FFFFFF] font-medium text-[17px]'>Upto 10 Projects</h3>
                             </div>
                             <div className='flex gap-[5px] items-center'>
                                 <IoIosCheckmark className='text-[#FFDD09] text-[27px]' />
@@ -174,7 +174,7 @@ export default function Pricing({ setPricingPackage }) {
                             </div>
                             <div className='flex gap-[5px] items-center'>
                                 <IoIosCheckmark className='text-[#FFDD09] text-[27px]' />
-                                <h3 className='text-[#FFFFFF] font-medium text-[17px]'>Monthly 40 tasks</h3>
+                                <h3 className='text-[#FFFFFF] font-medium text-[17px]'>Monthly 200 tasks</h3>
                             </div>
                             <div className='flex gap-[5px] items-center'>
                                 <IoIosCheckmark className='text-[#FFDD09] text-[27px]' />
@@ -193,8 +193,8 @@ export default function Pricing({ setPricingPackage }) {
                                 <h3 className='text-[#A5A5A5] text-[16px] font-medium relative z-[10]'>For advanced teams & businesses</h3>
                             </div>
                             <div className='flex gap-[29px] items-center'>
-                                <h2 className='text-[#FFFFFF] text-[44px] font-bold relative z-[10]'>{currencySymbol}{price}<span className='text-[#545454] font-semibold text-[20px] line-through'>{currencySymbol}{originalPrice}</span></h2>
-                                <div>
+                                <h2 className='text-[#FFFFFF] text-[44px] font-bold relative z-[10]'>{currencySymbol}{price} <span className={`text-[#545454] font-normal line-through decoration-4 ${currencySymbol === '₹' ? 'text-[20px]' : "text-[30px]"}`}>{currencySymbol}{originalPrice}</span></h2>
+                                <div> 
                                     <h2 className='text-[#818181] font-medium text-[16px] relative z-[10]'>{toggleValue === "Month" ? "Per member / month" : "Per member / year" }</h2>
                                     <h2 className='text-[#818181] font-medium text-[16px] relative z-[10]'>{toggleValue === "Month" ? "billed monthly" : "billed annually" }</h2>
                                 </div>
