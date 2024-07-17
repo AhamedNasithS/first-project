@@ -1,8 +1,8 @@
 import React from 'react'
-import BeforeWork from "../../videos/Before_work.mp4";
-import AfterLife from "../../videos/After_Life.mp4";
-import BeforeLife from "../../videos/Before_life.mp4";
-import AfterWork from "../../videos/After_Work.mp4";
+import BeforeWork from "../../../videos/Before_work.mp4";
+import AfterLife from "../../../videos/After_Life.mp4";
+import BeforeLife from "../../../videos/Before_life.mp4";
+import AfterWork from "../../../videos/After_Work.mp4";
 
 
 export default function BeforeAfter() {

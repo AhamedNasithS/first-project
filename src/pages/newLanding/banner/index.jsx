@@ -1,6 +1,6 @@
 import React from 'react'
 import axios from 'axios';
-import Main from "../../videos/logoBackground.mp4";
+import Main from "../../../videos/logoBackground.mp4";
 import Swal from 'sweetalert2'
 
 export default function Banner() {

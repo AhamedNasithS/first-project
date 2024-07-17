@@ -1,10 +1,10 @@
 import React from 'react'
-import Footer from '../footer';
-import Banner from '../banner';
-import Resources from '../resource';
-import BeforeAfter from '../before&after';
-import Power from '../earth';
-import Revolution from '../revolution';
+import Footer from './footer';
+import Banner from './banner';
+import Resources from './resource';
+import BeforeAfter from './before&after';
+import Power from './earth';
+import Revolution from './revolution';
 
 
 export default function NewLanding() {

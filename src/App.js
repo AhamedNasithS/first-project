@@ -39,10 +39,8 @@ export default function App() {
 
   return (
     <Router>
-      {/* <Navbar/> */}
       <Routes>
         <Route path="/page" element={<Landing />} />
-        {/* <Route path='/home' element={<Home/>}/> */}
         <Route path='/main' element={<Main1/>}/>
         <Route path='/home' element={<Home setPriceIndex={setPriceIndex}/>}/>
         <Route path='/' element={<Main1/>}/>
@@ -56,7 +54,6 @@ export default function App() {
         <Route path='/landingin' element={<LandingPageInd email={email} setEmail={setEmail}/>}/>
         <Route path='/development' element={<NewLanding/>}/>
         <Route path='/contact' element={<ContactUs/>}/> 
-        {/* <Route path='/refund' element={<Refund/>}/> */}
         <Route path='/about' element={<About/>}/>
         <Route path='/privacy' element={<Privacy/>}/>
         <Route path='/terms' element={<Terms/>}/>

@@ -120,25 +120,25 @@ export default function Main1() {
       <Chat />
       <Ai />
       <Availbles />
-      <img src="https://dz1x1c630cl14.cloudfront.net/webassets/Devicemockup1.webp" alt='availble' className='mt-[10px] lg:mt-[50px] p-[20px] w-[80%] relative z-[1]'
+      <img src="https://dz1x1c630cl14.cloudfront.net/webassets/Devicemockup1.webp" alt='availble' className='mt-[10px] lg:mt-[50px] p-[20px] sm:w-[80%] relative z-[1]'
       // data-aos="zoom-in" data-aos-duration="2000" 
       />
-      <div className='mt-[10px] lg:mt-[50px] relative z-[1] flex flex-col md:flex-row justify-center items-center gap-[30px]'>
+      <div className='mt-[10px] lg:mt-[50px] relative z-[1] grid sm:flex md:flex-row justify-center items-center gap-[30px]'>
         <a href="https://apps.apple.com/in/app/workfast-team-productivity/id6504078096" target="_blank" rel="noopener noreferrer">
-          <div className='px-[30px] py-[10px] border-[1px] border-[#004B9D] bg-[#0A0D1900] rounded-[20px] flex gap-[20px] items-center cursor-pointer'>
-            <img src={appStore} alt='appstore' />
+          <div className='px-[20px] lg:px-[30px] py-[10px] border-[1px] border-[#004B9D] bg-[#0A0D1900] rounded-[14px] sm:rounded-[20px] flex gap-[20px] items-center cursor-pointer'>
+            <img src={appStore} alt='appstore' className='w-[25px] sm:w-[30px] lg:w-auto'/>
             <div className='flex flex-col justify-between'>
-              <h3 className='text-[#FFFFFF] text-[18px] font-medium'>Download on the</h3>
-              <h2 className='text-[#FFFFFF] text-[26px] font-semibold'>App Store</h2>
+              <h3 className='text-[#FFFFFF] text-[12px] sm:text-[16px] lg:text-[18px] font-medium'>Download on the</h3>
+              <h2 className='text-[#FFFFFF] text-[16px] sm:text-[22px] lg:text-[26px] font-semibold'>App Store</h2>
             </div>
           </div>
         </a>
         <a href="https://play.google.com/store/apps/details?id=com.workfast.ai.app" target="_blank" rel="noopener noreferrer">
-          <div className='px-[30px] py-[10px] border-[1px] border-[#004B9D] bg-[#0A0D1900] rounded-[20px] flex gap-[20px] items-center cursor-pointer'>
-            <img src={playStore} alt='playstore' />
+          <div className='px-[20px] lg:px-[30px] py-[10px] border-[1px] border-[#004B9D] bg-[#0A0D1900] rounded-[14px] sm:rounded-[20px] flex gap-[20px] items-center cursor-pointer'>
+            <img src={playStore} alt='playstore' className='w-[25px] sm:w-[30px] lg:w-auto'/>
             <div className='flex flex-col justify-between'>
-              <h3 className='text-[#FFFFFF] text-[18px] font-medium'>GET IT ON</h3>
-              <h2 className='text-[#FFFFFF] text-[26px] font-semibold'>Google Play</h2>
+              <h3 className='text-[#FFFFFF] text-[12px] sm:text-[16px] lg:text-[18px] font-medium'>GET IT ON</h3>
+              <h2 className='text-[#FFFFFF] text-[16px] sm:text-[22px] lg:text-[26px] font-semibold'>Google Play</h2>
             </div>
           </div>
         </a>

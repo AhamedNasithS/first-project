@@ -5,6 +5,7 @@ import { IoIosCheckmark } from "react-icons/io";
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import API from '../../utils/API';
+import Footer from './footer';
 
 export default function Pricing({ setPricingPackage }) {
     const [toggleValue, setToggleValue] = React.useState('Month');
@@ -119,7 +120,7 @@ export default function Pricing({ setPricingPackage }) {
     return (
         <div className='flex flex-col justify-start items-center w-full h-screen bg-[#010306] relative px-0 mb-[50px]'>
             <img src="https://dz1x1c630cl14.cloudfront.net/webassets/Glowing.svg" alt='glow' className='absolute w-full h-full top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] z-0' />
-            <div className='relative z-[10] w-full'><Header /></div>
+            <div className='relative z-[20] w-full'><Header /></div>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
             <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
             <div id='stars'></div>
@@ -142,108 +143,108 @@ export default function Pricing({ setPricingPackage }) {
                 <div className='w-[2px] bg-[#999999] h-[16px]'></div>
                 <h3 className='text-[#FFDD09] font-semibold text-[14px]'>Yearly - SAVE 20%</h3>
             </div> */}
-            <div className='grid sm:grid-cols-2 lg:flex gap-[31px] items-center justify-center relative z-[10] mt-[30px] lg:mt-[50px]'>
+            <div className='grid sm:grid-cols-2 lg:flex gap-[31px] items-center justify-center relative z-[10] mt-[30px] lg:mt-[50px] px-[20px] lg:px-0'>
                 <div className="group">
                     <div className='bg-gradient-to-r from-[#3D444E] via-[#2F353F] to-[#0D111A] rounded-[10px] lg:rounded-[30px] transition-all duration-700 p-[1px]'>
-                        <div className={`px-[32px] py-[38px] w-full lg:w-[440px] rounded-[10px] lg:rounded-[30px] relative overflow-hidden bg-[#000000] flex flex-col gap-[14px]`}>
+                        <div className={`p-[20px] lg:px-[32px] lg:py-[38px] w-full lg:w-[440px] rounded-[10px] lg:rounded-[30px] relative overflow-hidden bg-[#000000] flex flex-col gap-[14px]`}>
                             <div className='bg-[#2b4762] w-[200px] h-[200px] rounded-full absolute blur-[67px] top-[50%] -translate-y-[59%] z-0 -left-[40%]'></div>
                             <div className='bg-[#2b4762] w-[100px] h-[100px] rounded-full absolute blur-[55px] top-[20px] z-0 -right-[0]'></div>
                             <div>
-                                <h2 className='text-[#FFFFFF] text-[28px] font-bold relative z-[10]'>Basic</h2>
-                                <h3 className='text-[#A5A5A5] text-[16px] font-medium relative z-[10]'>For small teams</h3>
+                                <h2 className='text-[#FFFFFF] text-[22px] sm:text-[25px] lg:text-[28px] font-bold relative z-[10]'>Basic</h2>
+                                <h3 className='text-[#A5A5A5] text-[12px] sm:text-[14px] lg:text-[16px] font-medium relative z-[10]'>For small teams</h3>
                             </div>
                             <div>
-                                <h2 className='text-[#FFFFFF] text-[44px] font-bold relative z-[10]'>Free <span className='text-[#818181] font-normal text-[16px]'>Unlimited</span></h2>
+                                <h2 className='text-[#FFFFFF] text-[36px] lg:text-[44px] font-bold relative z-[10]'>Free <span className='text-[#818181] font-normal text-[12px] sm:text-[14px] lg:text-[16px]'>Unlimited</span></h2>
                             </div>
                             <button className='w-full py-[10px] border-[#FFDD09] border rounded-[11px] text-[#FFDD09] font-medium text-[16px] relative z-[10]' onClick={(e) => { handleSubmit(e) }}>Get Started</button>
-                            <div className='flex gap-[5px] items-center'>
-                                <IoIosCheckmark className='text-[#FFDD09] text-[27px]' />
-                                <h3 className='text-[#FFFFFF] font-medium text-[17px]'>1 workspace</h3>
+                            <div className='flex gap-[5px] items-center relative z-[1]'>
+                                <IoIosCheckmark className='text-[#FFDD09] text-[22px] lg:text-[27px]' />
+                                <h3 className='text-[#FFFFFF] font-medium text-[15px] lg:text-[17px]'>1 workspace</h3>
                             </div>
-                            <div className='flex gap-[5px] items-center'>
-                                <IoIosCheckmark className='text-[#FFDD09] text-[27px]' />
-                                <h3 className='text-[#FFFFFF] font-medium text-[17px]'>Unlimited users</h3>
+                            <div className='flex gap-[5px] items-center relative z-[1]'>
+                                <IoIosCheckmark className='text-[#FFDD09] text-[22px] lg:text-[27px]' />
+                                <h3 className='text-[#FFFFFF] font-medium ttext-[15px] lg:ext-[17px]'>Unlimited users</h3>
                             </div>
-                            <div className='flex gap-[5px] items-center'>
-                                <IoIosCheckmark className='text-[#FFDD09] text-[27px]' />
-                                <h3 className='text-[#FFFFFF] font-medium text-[17px]'>Upto 10 Projects</h3>
+                            <div className='flex gap-[5px] items-center relative z-[1]'>
+                                <IoIosCheckmark className='text-[#FFDD09] text-[22px] lg:text-[27px]' />
+                                <h3 className='text-[#FFFFFF] font-medium text-[15px] lg:text-[17px]'>Upto 10 Projects</h3>
                             </div>
-                            <div className='flex gap-[5px] items-center'>
-                                <IoIosCheckmark className='text-[#FFDD09] text-[27px]' />
-                                <h3 className='text-[#FFFFFF] font-medium text-[17px]'>1 GB storage </h3>
+                            <div className='flex gap-[5px] items-center relative z-[1]'>
+                                <IoIosCheckmark className='text-[#FFDD09] text-[22px] lg:text-[27px]' />
+                                <h3 className='text-[#FFFFFF] font-medium text-[15px] lg:text-[17px]'>1 GB storage </h3>
                             </div>
-                            <div className='flex gap-[5px] items-center'>
-                                <IoIosCheckmark className='text-[#FFDD09] text-[27px]' />
-                                <h3 className='text-[#FFFFFF] font-medium text-[17px]'>Monthly 200 tasks</h3>
+                            <div className='flex gap-[5px] items-center relative z-[1]'>
+                                <IoIosCheckmark className='text-[#FFDD09] text-[22px] lg:text-[27px]' />
+                                <h3 className='text-[#FFFFFF] font-medium text-[15px] lg:text-[17px]'>Monthly 200 tasks</h3>
                             </div>
-                            <div className='flex gap-[5px] items-center'>
-                                <IoIosCheckmark className='text-[#FFDD09] text-[27px]' />
-                                <h3 className='text-[#FFFFFF] font-medium text-[17px]'>Mobile Apps</h3>
+                            <div className='flex gap-[5px] items-center relative z-[1]'>
+                                <IoIosCheckmark className='text-[#FFDD09] text-[22px] lg:text-[27px]' />
+                                <h3 className='text-[#FFFFFF] font-medium text-[15px] lg:text-[17px]'>Mobile Apps</h3>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div className="group">
                     <div className='bg-gradient-to-l from-[#3D444E] via-[#2F353F] to-[#0D111A] rounded-[10px] lg:rounded-[30px] transition-all duration-700 p-[1px]'>
-                        <div className={`px-[32px] py-[38px] w-full lg:w-[440px] rounded-[10px] lg:rounded-[30px] relative overflow-hidden bg-[#000000] flex flex-col gap-[14px]`}>
+                        <div className={`p-[20px] lg:px-[32px] lg:py-[38px] w-full lg:w-[440px] rounded-[10px] lg:rounded-[30px] relative overflow-hidden bg-[#000000] flex flex-col gap-[14px]`}>
                             <div className='bg-[#2b4762] w-[200px] h-[200px] rounded-full absolute blur-[67px] top-[50%] -translate-y-[59%] z-0 -left-[40%]'></div>
                             <div className='bg-[#2b4762] w-[100px] h-[100px] rounded-full absolute blur-[55px] top-[20px] z-0 -right-[0]'></div>
                             <div>
-                                <h2 className='text-[#FFFFFF] text-[28px] font-bold relative z-[10]'>Starter Pack</h2>
-                                <h3 className='text-[#A5A5A5] text-[16px] font-medium relative z-[10]'>For advanced teams & businesses</h3>
+                                <h2 className='text-[#FFFFFF] text-[22px] sm:text-[25px] lg:text-[28px] font-bold relative z-[10]'>Starter Pack</h2>
+                                <h3 className='text-[#A5A5A5] text-[12px] sm:text-[14px] lg:text-[16px] font-medium relative z-[10]'>For advanced teams & businesses</h3>
                             </div>
-                            <div className='flex gap-[29px] items-center'>
-                                <h2 className='text-[#FFFFFF] text-[44px] font-bold relative z-[10]'>{currencySymbol}{price} <span className={`text-[#545454] font-normal line-through decoration-4 ${currencySymbol === '₹' ? 'text-[20px]' : "text-[30px]"}`}>{currencySymbol}{originalPrice}</span></h2>
+                            <div className='flex gap-[15px] lg:gap-[29px] items-center'>
+                                <h2 className='text-[#FFFFFF] text-[30px] sm:text-[36px] lg:text-[44px] font-bold relative z-[10]'>{currencySymbol}{price} <span className={`text-[#545454] font-normal line-through decoration-2 lg:decoration-4 ${currencySymbol === '₹' ? 'text-[16px] lg:text-[20px]' : "text-[22px] sm:text-[26px] lg:text-[30px]"}`}>{currencySymbol}{originalPrice}</span></h2>
                                 <div> 
-                                    <h2 className='text-[#818181] font-medium text-[16px] relative z-[10]'>{toggleValue === "Month" ? "Per member / month" : "Per member / year" }</h2>
-                                    <h2 className='text-[#818181] font-medium text-[16px] relative z-[10]'>{toggleValue === "Month" ? "billed monthly" : "billed annually" }</h2>
+                                    <h2 className='text-[#818181] font-medium text-[12px] sm:text-[14px] lg:text-[16px] relative z-[10]'>{toggleValue === "Month" ? "Per member / month" : "Per member / year" }</h2>
+                                    <h2 className='text-[#818181] font-medium text-[12px] sm:text-[14px] lg:text-[16px] relative z-[10]'>{toggleValue === "Month" ? "billed monthly" : "billed annually" }</h2>
                                 </div>
                             </div>
                             <button className='w-full py-[10px] border-[#FFDD09] border rounded-[11px] text-[#FFDD09] font-medium text-[16px] relative z-[10]' onClick={(e) => { handleClick(e) }}>Get Started</button>
-                            <div className='flex gap-[5px] items-center'>
-                                <IoIosCheckmark className='text-[#FFDD09] text-[27px]' />
-                                <h3 className='text-[#FFFFFF] font-medium text-[17px]'>Upto 4 workspaces</h3>
+                            <div className='flex gap-[5px] items-center relative z-[1]'>
+                                <IoIosCheckmark className='text-[#FFDD09] text-[22px] lg:text-[27px]' />
+                                <h3 className='text-[#FFFFFF] font-medium text-[15px] lg:text-[17px]'>Upto 4 workspaces</h3>
                             </div>
-                            <div className='flex gap-[5px] items-center'>
-                                <IoIosCheckmark className='text-[#FFDD09] text-[27px]' />
-                                <h3 className='text-[#FFFFFF] font-medium text-[17px]'>Unlimited users</h3>
+                            <div className='flex gap-[5px] items-center relative z-[1]'>
+                                <IoIosCheckmark className='text-[#FFDD09] text-[22px] lg:text-[27px]' />
+                                <h3 className='text-[#FFFFFF] font-medium text-[15px] lg:text-[17px]'>Unlimited users</h3>
                             </div>
-                            <div className='flex gap-[5px] items-center'>
-                                <IoIosCheckmark className='text-[#FFDD09] text-[27px]' />
-                                <h3 className='text-[#FFFFFF] font-medium text-[17px]'>Unlimited Projects</h3>
+                            <div className='flex gap-[5px] items-center relative z-[1]'>
+                                <IoIosCheckmark className='text-[#FFDD09] text-[22px] lg:text-[27px]' />
+                                <h3 className='text-[#FFFFFF] font-medium text-[15px] lg:text-[17px]'>Unlimited Projects</h3>
                             </div>
-                            <div className='flex gap-[5px] items-center'>
-                                <IoIosCheckmark className='text-[#FFDD09] text-[27px]' />
-                                <h3 className='text-[#FFFFFF] font-medium text-[17px]'>Unlimited storage </h3>
+                            <div className='flex gap-[5px] items-center relative z-[1]'>
+                                <IoIosCheckmark className='text-[#FFDD09] text-[22px] lg:text-[27px]' />
+                                <h3 className='text-[#FFFFFF] font-medium text-[15px] lg:text-[17px]'>Unlimited storage </h3>
                             </div>
-                            <div className='flex gap-[5px] items-center'>
-                                <IoIosCheckmark className='text-[#FFDD09] text-[27px]' />
-                                <h3 className='text-[#FFFFFF] font-medium text-[17px]'>Unlimited Tasks Creation</h3>
+                            <div className='flex gap-[5px] items-center relative z-[1]'>
+                                <IoIosCheckmark className='text-[#FFDD09] text-[22px] lg:text-[27px]' />
+                                <h3 className='text-[#FFFFFF] font-medium text-[15px] lg:text-[17px]'>Unlimited Tasks Creation</h3>
                             </div>
-                            <div className='flex gap-[5px] items-center'>
-                                <IoIosCheckmark className='text-[#FFDD09] text-[27px]' />
-                                <h3 className='text-[#FFFFFF] font-medium text-[17px]'>Unlimited Add to tasks - Chat</h3>
+                            <div className='flex gap-[5px] items-center relative z-[1]'>
+                                <IoIosCheckmark className='text-[#FFDD09] text-[22px] lg:text-[27px]' />
+                                <h3 className='text-[#FFFFFF] font-medium text-[15px] lg:text-[17px]'>Unlimited Add to tasks - Chat</h3>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div className='w-11/12 bg-gradient-to-l from-[#4B6AE766] to-[#5F8AFA66] rounded-[10px] lg:rounded-[30px] p-[1px] my-[30px] lg:my-[50px]'>
-                <div className={`px-[22px] py-[18px] sm:px-[53px] sm:pt-[33px] pb-[12px] w-full overflow-x-auto mx-auto rounded-[10px] lg:rounded-[30px] relative overflow-hidden bg-[#000000]/[80%] flex flex-col gap-[14px]`}>
+                <div className={`px-[22px] py-[18px] sm:px-[30px] sm:py-[24px] lg:px-[53px] lg:pt-[33px] pb-[12px] w-full overflow-x-auto mx-auto rounded-[10px] lg:rounded-[30px] relative overflow-hidden bg-[#000000]/[80%] flex flex-col gap-[14px]`}>
                     <div className='bg-[#2b4762] w-[200px] h-[200px] rounded-full absolute blur-[67px] -top-[50%] -translate-y-[59%] z-0 left-[0%]'></div>
                     <div className='bg-[#2b4762] w-[100px] h-[100px] rounded-full absolute blur-[55px] bottom-[0px] z-0 -right-[0]'></div>
-                    <h2 className='text-center text-[#FFFFFF] text-[20px] sm:text-[36px] font-semibold relative z-[10]'>Plans and features</h2>
-                    <div className='mt-[15px] w-full'>
-                        <div className='py-[20px] grid grid-cols-3 justify-between items-center text-[#FFFFFF] text-[14px] sm:text-[24px] font-bold border-b-[1px] border-[#484848]/[60%]'>
+                    <h2 className='text-center text-[#FFFFFF] text-[20px] sm:text-[26px] lg:text-[36px] font-semibold relative z-[10]'>Plans and features</h2>
+                    <div className='lg:mt-[15px] w-full'>
+                        <div className='py-[20px] grid grid-cols-3 justify-between items-center text-[#FFFFFF] text-[14px] sm:text-[20px] lg:text-[24px] font-bold border-b-[1px] border-[#484848]/[60%]'>
                             <h2>Content</h2>
                             <h2 className='text-center'>Basic - Free</h2>
-                            <h2 className='text-end sm:ml-auto w-[100px] sm:w-[220px] sm:mr-[35px]'>Starter Pack</h2>
+                            <h2 className='text-center lg:text-end lg:ml-auto w-[100px] sm:w-[220px] lg:mr-[35px]'>Starter Pack</h2>
                         </div>
                         {pricing.map((each, index) => (
-                            <div key={index} className={`py-[20px] grid grid-cols-3 justify-between items-center text-[#C0C0C0] text-[14px] sm:text-[20px] font-medium border-[#484848]/[60%] ${index === pricing.length - 1 ? "" : "border-b-[1px]"}`}>
+                            <div key={index} className={`py-[20px] grid grid-cols-3 justify-between items-center text-[#C0C0C0] text-[14px] sm:text-[16px] lg:text-[20px] font-medium border-[#484848]/[60%] ${index === pricing.length - 1 ? "" : "border-b-[1px]"}`}>
                                 <h2 className='text-[#FFFFFF] font-semibold'>{each?.content}</h2>
-                                <h2 className='text-center text-[12px] sm:text-[20px]'>{each?.free}</h2>
-                                <h2 className={`text-center ml-auto w-[100px] sm:w-[220px] text-[12px] sm:text-[20px]`}>{each?.$6}</h2>
+                                <h2 className='text-center text-[12px] sm:text-[16px] lg:text-[20px]'>{each?.free}</h2>
+                                <h2 className={`text-center ml-auto w-[100px] sm:w-[220px] text-[12px] sm:text-[16px] lgtext-[20px]`}>{each?.$6}</h2>
                             </div>
                         ))}
                         {/* <div className='py-[20px] grid grid-cols-3 gap-[388px] justify-between items-center text-[#C0C0C0] text-[20px] font-medium border-b-[1px] border-[#484848]'>
@@ -259,6 +260,7 @@ export default function Pricing({ setPricingPackage }) {
                     </div>
                 </div>
             </div>
+            <Footer/>
         </div>
     )
 }

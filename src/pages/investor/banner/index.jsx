@@ -25,7 +25,7 @@ export default function Banner() {
                     <span class="shimmer2"></span>
                 </button>
             </div>
-            <div className='flex flex-col gap-[20px] lg:gap-[75px] text-center items-center relative z-[10] w-full mb-[40px]'>
+            <div className='flex flex-col gap-[20px] lg:gap-[75px] text-center items-center relative w-full mb-[40px]'>
                 <h2 className='text-[24px]  sm:text-[40px] xl:text-[55px] bg-gradient-to-l from-[#FDD220] to-[#FFFFFF] bg-clip-text text-transparent font-semibold'>Our seed funding investors</h2>
                 <div className='sm:w-11/12 xl:w-10/12 mx-auto grid grid-cols-1 sm:flex justify-between items-center'>
                     <div className='flex flex-col gap-[12px] items-center'>

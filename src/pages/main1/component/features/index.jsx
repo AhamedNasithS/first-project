@@ -85,7 +85,7 @@ export default function Features() {
           </div>
           <div className='flex justify-between items-center lg:mt-[40px] xl:mt-0'>
             <div className='h-[30px] w-[1px] bg-[#E2E8FF] block sm:hidden lg:block xl:hidden'></div>
-            <div className='ml-[30px] mr-[50px] hover:scale-[1.1] transition-all duration-500 hover:ml-[40px]'>
+            <div className='ml-[30px] mr-[50px] hover:scale-[1.1] transition-all duration-500'>
               <div className='flex gap-2 items-center'>
                 <div className='w-[35px] h-[35px] bg-[#FCFCFC17] border-[1px] border-[#FFFFFF0A] flex justify-center items-center relative rounded-[10px] overflow-hidden'>
                   <img src="https://dz1x1c630cl14.cloudfront.net/webassets/aiIcon.svg" alt='Ai' className='relative z-[1]' />

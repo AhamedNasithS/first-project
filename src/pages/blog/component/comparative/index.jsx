@@ -32,7 +32,7 @@ export default function Comparative() {
     ]
     return (
         <div className='flex flex-col justify-center items-center w-10/12 relative z-[1] mx-auto'>
-            <h2 className='text-[20px] md:text-[26px] lg:text-[32px] xl:text-[40px] bg-gradient-to-r from-[#FFFFFF] to-[#FDD220] bg-clip-text text-transparent inter-bold relative z-[1] w-10/12 lg:w-9/12'>How Workfast.ai is most efficient software tool comparatively ?</h2>
+            <h2 className='text-[20px] md:text-[26px] lg:text-[32px] xl:text-[40px] bg-gradient-to-r from-[#FFFFFF] to-[#FDD220] bg-clip-text text-transparent inter-bold relative z-[1] sm:w-10/12 lg:w-9/12'>How Workfast.ai is most efficient software tool comparatively ?</h2>
             <Slider {...settings} className='w-full relative mt-[30px] md:mt-[60px] lg:mt-[100px] mb-[50px] comparative'>
                 {slides.map((each, index) => (
                     <div key={index} className='focus:outline-none relative'>

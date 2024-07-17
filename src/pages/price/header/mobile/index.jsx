@@ -10,12 +10,12 @@ export default function Mobile({ setIsForm }) {
     const [isOpen, setIsOpen] = React.useState(false);
     const navigate = useNavigate();
 
-    const handleFeatureClick = () => {
-        const element = document.getElementById('features');
-        if (element) {
-            element.scrollIntoView({ behavior: 'smooth' });
-        }
-    };
+    // const handleFeatureClick = () => {
+    //     const element = document.getElementById('features');
+    //     if (element) {
+    //         element.scrollIntoView({ behavior: 'smooth' });
+    //     }
+    // };
 
     // const handlePricingClick = () => {
     //     const element = document.getElementById('pricing');
@@ -91,7 +91,7 @@ export default function Mobile({ setIsForm }) {
                         </div> */}
                         <button className='py-[8px] px-[12px] text-[#1B1600] mb-6 text-[14px] font-semibold rounded-[8px] bg-gradient-to-bl from-[#FDD01F] via-[#FDD320] to-[#F8861B] w-full' onClick={(e) => { handleClick(e) }}>Sign up</button>
                         <div>
-                            <button className='py-[10px] px-[12px] bg-[#FFF] text-[14px] font-semibold rounded-[8px] text-[#1B1600] w-full' onClick={(e) => { handleLiginClick(e) }}>Log in</button>
+                            <button className='py-[10px] px-[12px] border-[1px] border-[#FFDD09] text-[14px] font-semibold rounded-[8px] text-[#FFDD09] w-full' onClick={(e) => { handleLiginClick(e) }}>Log in</button>
                         </div>
                     </div>
                 </div>

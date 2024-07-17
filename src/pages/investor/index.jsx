@@ -4,6 +4,8 @@ import Banner from './banner'
 import HighRisk from './risk'
 import Principles from './principles'
 import LastSection from './lastsection'
+import Footer from './footer'
+
 
 export default function Investors() {
   return (
@@ -13,6 +15,7 @@ export default function Investors() {
       <HighRisk/>
       <Principles/>
       <LastSection/>
+      <Footer/>
     </div>
   )
 }

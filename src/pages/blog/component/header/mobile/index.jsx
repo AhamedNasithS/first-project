@@ -1,9 +1,11 @@
 import React from 'react'
 import { TbMenuDeep } from "react-icons/tb"
 import { RxCross2 } from "react-icons/rx";
+import { useNavigate } from 'react-router-dom';
 
-export default function Mobile({setIsForm}) {
+export default function Mobile({ setIsForm }) {
     const [isOpen, setIsOpen] = React.useState(false);
+    const navigate = useNavigate();
 
     // const handleFeatureClick = () => {
     //     const element = document.getElementById('features');
@@ -27,21 +29,22 @@ export default function Mobile({setIsForm}) {
                         <img src='https://dz1x1c630cl14.cloudfront.net/webassets/one_ai-Logo1.svg' alt='logo' />
                         <RxCross2 className='bg-gradient-to-t from-[#111830] to-[#13131300] text-[#E2E8FFBF] w-[24px] h-[24px] p-[3px] border-[#E2E8FFBF] border-[1px] rounded' onClick={() => setIsOpen(!isOpen)} />
                     </div>
-                    <div className='w-9/12 mx-auto mt-6'>
+                    <div className='w-9/12 mx-auto my-6'>
                         {/* <div className={`mr-[40px] text-[#E2E8FF] py-[10px] mb-6 cursor-pointer rounded-[5px]`}>
                             <h1 className="font-medium text-1xl">Product</h1>
                         </div> */}
                         {/* <div className={`mr-[40px] text-[#E2E8FF] py-[10px] mb-6 cursor-pointer rounded-[5px]`} onClick={() => {setIsOpen(false); handleFeatureClick()}}>
                             <h1 className="font-medium text-1xl">Features</h1>
                         </div> */}
-                        {/* <div className={`mr-[40px] text-[#E2E8FF] py-[10px] mb-6 cursor-pointer rounded-[5px]`} onClick={() => {setIsOpen(false); handlePricingClick()}}>
-                            <h1 className="font-medium text-1xl">Pricing</h1>
-                        </div> */}
-                        {/* <a href='/blog'>
-                        <div className={`mr-[40px] text-[#E2E8FF] py-[10px] mb-6 cursor-pointer rounded-[5px]`}>
+                        <div className={`mr-[40px] text-[#FFDD09] py-[10px] mb-6 cursor-pointer rounded-[5px]`}>
                             <h1 className="font-medium text-1xl">Blog</h1>
                         </div>
-                        </a> */}
+                        <div className={`mr-[40px] text-[#FFF] py-[10px] mb-6 cursor-pointer rounded-[5px]`} onClick={() => { navigate('/pricing') }}>
+                            <h1 className="font-medium text-1xl">Pricing</h1>
+                        </div>
+                        <div className={`mr-[40px] text-[#FFF] py-[10px] mb-6 cursor-pointer rounded-[5px]`} onClick={(e) => { navigate('/investor') }}>
+                            <h1 className="font-medium text-1xl">Investor</h1>
+                        </div>
                         {/* <div className={`mr-[40px] text-[#E2E8FF] py-[10px] mb-6 cursor-pointer rounded-[5px]`} onClick={() => {setIsForm(true)}}>
                             <h1 className="font-medium text-1xl">Enterprise</h1>
                         </div> */}
