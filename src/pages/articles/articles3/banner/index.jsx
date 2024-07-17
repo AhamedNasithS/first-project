@@ -4,7 +4,7 @@ export default function Banner() {
     return (
         <div className='px-[20px] sm:p-0 w-full sm:w-[97%] xl:w-[93%] mx-auto sm:flex gap-[40px] items-center relative xl:max-h-[350px]'>
             <img src="https://dz1x1c630cl14.cloudfront.net/webassets/articles_main3.svg" alt='articles' className='relative z-[1] sm:w-[50%] xl:w-auto' />
-            <img src="https://dz1x1c630cl14.cloudfront.net/webassets/glow3.svg" alt='glow' className='absolute z-[0] top-[0px] sm:top-auto' />
+            <img src="https://dz1x1c630cl14.cloudfront.net/webassets/glow3.svg" alt='glow' className='absolute z-[0] top-[100px] sm:top-auto w-[80%] sm:w-auto' />
             <div className='flex flex-col gap-[30px] justify-between mt-[40px] sm:mt-0 sm:h-[250px] lg:h-[330px] xl:h-[350px]'>
                 <h3 className='bg-gradient-to-r from-[#FFFFFF] to-[#FDD220] bg-clip-text text-transparent text-[18px] md:text-[22px] lg:text-[30px] xl:text-[40px] font-semibold relative z-[1] text-center sm:text-start'>Beginner's Guide to Product Management: Everything You Need to Know</h3>
                 <div className='flex gap-[20px] xl:gap-[40px] items-center relative z-[1]'>

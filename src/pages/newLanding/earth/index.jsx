@@ -1,5 +1,5 @@
 import React from 'react'
-import Earth from "../../videos/Earth_rotate.mp4";
+import Earth from "../../../videos/Earth_rotate.mp4";
 
 export default function Power() {
   return (

@@ -57,7 +57,7 @@ export default function Intro({ setIsForm, email, setEmail }) {
             <div className='shooting-stars'></div>
             <div
                 // data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1500" 
-                className='text-center'>
+                className='text-center relative z-[10]'>
                 <h2 className='text-[24px] sm:text-[40px] xl:text-[70px] text-[#FFFFFF] inter-bold mt-[40px]'>One intelligent Platform</h2>
                 <h2 className='text-[24px]  sm:text-[40px] xl:text-[70px] bg-gradient-to-l from-[#FDD220] to-[#FFFFFF] bg-clip-text text-transparent inter-bold'>for your team to work faster</h2>
             </div>
@@ -83,7 +83,7 @@ export default function Intro({ setIsForm, email, setEmail }) {
                 </div>
             </div> */}
             <div className='flex gap-[22px] items-center mt-[40px]'>
-                <button className='py-[8px] px-[12px] w-[220px] lg:w-[253px] h-[44px] lg:h-[54px] rounded-[8px] bg-gradient-to-bl from-[#FDD01F] via-[#F8C240] to-[#F8861B] border-[1px] border-[#995900] b1 relative' onClick={(e) => { handleClick(e) }}>
+                <button className='py-[8px] px-[12px] w-[220px] lg:w-[253px] h-[44px] lg:h-[54px] rounded-[8px] bg-gradient-to-bl from-[#FDD01F] via-[#F8C240] to-[#F8861B] border-[1px] border-[#995900] b1 relative z-[10]' onClick={(e) => { handleClick(e) }}>
                     <span className='text text-[#2A2200] text-[16px] lg:text-[18px] font-semibold flex gap-[10px] items-center justify-center'>Get Started. Free Trial <FaArrowRightLong /></span>
                     <span class="shimmer"></span>
                 </button>

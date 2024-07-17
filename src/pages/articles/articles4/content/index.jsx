@@ -4,30 +4,45 @@ import WorkfastAi from './workfast.ai';
 import CoreFeaturesOfWorkfastAi from './core-features-of-workfast.ai';
 import UniqueFeatures from './unique-features';
 import WhyWorkfastAiIsCreated from './why-workfast.ai-is-created';
+import { Link } from 'react-scroll';
 
 
-export default function Content({ tocData, items, scrollToSection }) {
+export default function Content({ tocData }) {
+    const [activeSection, setActiveSection] = React.useState(null);
+
+    // Update active section on scroll
+    const handleSetActive = (to) => {
+        setActiveSection(to);
+    };
     return (
         <div className='flex px-[20px] md:px-0 md:w-[88%] mx-auto gap-[40px] relative h-full'>
             <div className='flex flex-col gap-[15px] md:gap-[30px] lg:gap-[50px] w-full md:w-[62%] xl:w-[60%] overflow-y-auto'>
                 <div id='looking-for-a-new-platform'><LookingForANewPlatform /></div>
-                <div id='workfast.ai'><WorkfastAi/></div>
+                <div id='workfast.ai'><WorkfastAi /></div>
                 <div id='core-features-of-workfast.ai'><CoreFeaturesOfWorkfastAi /></div>
                 <div id='unique-features'><UniqueFeatures /></div>
                 <div id='why-workfast.ai-is-created'><WhyWorkfastAiIsCreated /></div>
             </div>
-            <aside className='sticky right-0 top-0 self-start w-[38%] xl:w-[40%] rounded-[8px] hidden md:block'>
+            <aside className='sticky right-0 top-[40px] self-start w-[38%] xl:w-[40%] rounded-[8px] hidden md:block'>
                 <h3 className='text-[#FFFFFF] text-[18px] lg:text-[22px] xl:text-[26px] font-medium pl-[9px]'>Table of contents</h3>
-                {tocData.map((item,index) => (
-                    <div
-                        key={item.id}
-                        className={`flex gap-[17px] p-[9px] cursor-pointer ${item.id === items ? "bg-[#0F162F99]" : "bg-transparent"} ${index === 0 || index === 2 ? "items-start" : "items-center"}`}
-                        onClick={() => scrollToSection(item.id)}
-                    >
-                        <img src='https://dz1x1c630cl14.cloudfront.net/webassets/arrow_left.svg' alt='arrow' className={`${index === 0 || index === 2 ? "mt-[7px]" : ""}`} />
-                        <h3 className='text-[#FFFFFF] text-[18px] lg:text-[22px] xl:text-[26px] font-medium'>{item.title}</h3>
-                    </div>
-                ))}
+                <ul className={`mt-[10px]`} data-hs-scrollspy="#scrollspy-2" data-hs-scrollspy-scrollable-parent="#scrollspy-scrollable-parent-2">
+                    {tocData.map((section, index) => (
+                        <li key={section.id}>
+                            <Link
+                                activeClass="" // Active link style
+                                to={section.id}
+                                spy={true}
+                                smooth={true}
+                                duration={100}
+                                className={`flex gap-[10px] lg:gap-[17px] items-start p-[9px] cursor-pointer ${activeSection === section.id ? "bg-[#0F162F99]" : "bg-transparent"}`}
+                                onSetActive={handleSetActive}
+                            >
+                                <img src='https://dz1x1c630cl14.cloudfront.net/webassets/arrow_left.svg' alt='arrow' className={`w-[20px] lg:w-auto ${index === 0 || index === 2 ? "mt-[7px]" : "mt-[2px] lg:mt-[4px] xl:mt-[7px]"}`} />
+                                <h3 className='text-[#FFFFFF] text-[16px] lg:text-[22px] xl:text-[26px] font-medium'>{section.title}</h3>
+                            </Link>
+                        </li>
+                    ))}
+                </ul>
             </aside>
         </div>
     )

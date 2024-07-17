@@ -1,5 +1,5 @@
 import React from 'react'
-import { TbMenuDeep } from "react-icons/tb"
+// import { TbMenuDeep } from "react-icons/tb"
 import { RxCross2 } from "react-icons/rx";
 
 export default function Mobile({setIsForm}) {
@@ -51,7 +51,7 @@ export default function Mobile({setIsForm}) {
             ) : (
                 <div className='w-full flex justify-between items-center p-[20px]  border-b-[1px] border-[#24203D] z-[5]'>
                     <a href='/'><img src='https://dz1x1c630cl14.cloudfront.net/webassets/one_ai-Logo1.svg' alt='logo' /></a>
-                    <TbMenuDeep className='bg-gradient-to-t from-[#111830] to-[#13131300] text-[#E2E8FFBF] w-[24px] h-[24px] p-[3px] border-[#E2E8FFBF] border-[1px] rounded' onClick={() => setIsOpen(!isOpen)} />
+                    {/* <TbMenuDeep className='bg-gradient-to-t from-[#111830] to-[#13131300] text-[#E2E8FFBF] w-[24px] h-[24px] p-[3px] border-[#E2E8FFBF] border-[1px] rounded' onClick={() => setIsOpen(!isOpen)} /> */}
                 </div>
             )}
             {isOpen && (
