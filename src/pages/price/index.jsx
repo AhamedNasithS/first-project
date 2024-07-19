@@ -55,14 +55,14 @@ export default function Pricing({ setPricingPackage }) {
                     setCurrencySymbol('$');
                     setPrice(toggleValue === "Month" ? 7 : 84); // Set the fixed price in USD
                     setOriginalPrice(toggleValue === "Month" ? 5 : 60); // Set the fixed original price in USD
-                }
+                } 
             } catch (error) {
                 console.error('Error fetching location data', error);
             }
         };
 
         fetchLocationAndSetPrice();
-    }, []);
+    }, [toggleValue]);
 
     const handleClick = async (e) => {
         setPricingPackage('STARTER'); 
