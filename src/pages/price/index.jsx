@@ -39,7 +39,7 @@ export default function Pricing({ setPricingPackage }) {
     const [currencySymbol, setCurrencySymbol] = React.useState('₹');
 
     React.useEffect(() => {
-        setPrice(toggleValue === "Month" ? 580 : 6960);
+        setPrice(toggleValue === "Month" ? 580 : 5999);
         setOriginalPrice(toggleValue === "Month" ? 400 : 4800);
     }, [toggleValue]);
 
