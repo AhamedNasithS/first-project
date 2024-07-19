@@ -39,7 +39,7 @@ export default function Pricing({ setPricingPackage }) {
     const [currencySymbol, setCurrencySymbol] = React.useState('₹');
 
     React.useEffect(() => {
-        setPrice(toggleValue === "Month" ? 199 : 1999);
+        setPrice(toggleValue === "Month" ? 580 : 6960);
         setOriginalPrice(toggleValue === "Month" ? 400 : 4800);
     }, [toggleValue]);
 
@@ -53,7 +53,7 @@ export default function Pricing({ setPricingPackage }) {
                 if (countryCode !== 'IN') {
                     // Set to USD without actual currency conversion
                     setCurrencySymbol('$');
-                    setPrice(toggleValue === "Month" ? 3 : 36); // Set the fixed price in USD
+                    setPrice(toggleValue === "Month" ? 7 : 84); // Set the fixed price in USD
                     setOriginalPrice(toggleValue === "Month" ? 5 : 60); // Set the fixed original price in USD
                 }
             } catch (error) {
@@ -194,7 +194,9 @@ export default function Pricing({ setPricingPackage }) {
                                 <h3 className='text-[#A5A5A5] text-[12px] sm:text-[14px] lg:text-[16px] font-medium relative z-[10]'>For advanced teams & businesses</h3>
                             </div>
                             <div className='flex gap-[15px] lg:gap-[29px] items-center'>
-                                <h2 className='text-[#FFFFFF] text-[30px] sm:text-[36px] lg:text-[44px] font-bold relative z-[10]'>{currencySymbol}{price} <span className={`text-[#545454] font-normal line-through decoration-2 lg:decoration-4 ${currencySymbol === '₹' ? 'text-[16px] lg:text-[20px]' : "text-[22px] sm:text-[26px] lg:text-[30px]"}`}>{currencySymbol}{originalPrice}</span></h2>
+                                <h2 className='text-[#FFFFFF] text-[30px] sm:text-[36px] lg:text-[44px] font-bold relative z-[10]'>{currencySymbol}{price} 
+{/*                                     <span className={`text-[#545454] font-normal line-through decoration-2 lg:decoration-4 ${currencySymbol === '₹' ? 'text-[16px] lg:text-[20px]' : "text-[22px] sm:text-[26px] lg:text-[30px]"}`}>{currencySymbol}{originalPrice}</span> */}
+                                </h2>
                                 <div> 
                                     <h2 className='text-[#818181] font-medium text-[12px] sm:text-[14px] lg:text-[16px] relative z-[10]'>{toggleValue === "Month" ? "Per member / month" : "Per member / year" }</h2>
                                     <h2 className='text-[#818181] font-medium text-[12px] sm:text-[14px] lg:text-[16px] relative z-[10]'>{toggleValue === "Month" ? "billed monthly" : "billed annually" }</h2>
