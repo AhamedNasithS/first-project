@@ -37,7 +37,7 @@ if (mode === "LOCAL") {
 
   API["CREATECHANNEL"] = "https://oneappstage.hifrds.com/api/v1/createChannel";
 
-  API["INVESTORS"] = "https://devarus.aftergen.in/dev/API/release_v45/investor.php"
+  API["INVESTORS"] = "https://backend.hifrds.com/pepul/addInvestorWorkfast.php"
 }
 
 if (mode === "DEV") {
@@ -59,7 +59,7 @@ if (mode === "DEV") {
 
   API["CREATECHANNEL"] = "https://oneappstage.hifrds.com/api/v1/createChannel";
 
-  API["INVESTORS"] = "https://devarus.aftergen.in/dev/API/release_v45/investor.php"
+  API["INVESTORS"] = "https://backend.hifrds.com/pepul/addInvestorWorkfast.php"
 }
 
 if (mode === "STAGE") {
@@ -83,7 +83,7 @@ if (mode === "STAGE") {
 
   API["CREATECHANNEL"] = "https://oneappuat.hifrnds.in/api/v1/createChannel";
 
-  API["INVESTORS"] = "https://devarus.aftergen.in/dev/API/release_v45/investor.php"
+  API["INVESTORS"] = "https://backend.hifrds.com/pepul/addInvestorWorkfast.php"
 }
 
 if (mode === "UAT") {
@@ -103,7 +103,7 @@ if (mode === "UAT") {
 
   API["CREATECHANNEL"] = "https://oneappstage.hifrds.com/v2/api/v1/createChannel";
 
-  API["INVESTORS"] = "https://devarus.aftergen.in/dev/API/release_v45/investor.php"
+  API["INVESTORS"] = "https://backend.hifrds.com/pepul/addInvestorWorkfast.php"
 }
 
 if (mode === "LIVE") {
@@ -127,7 +127,7 @@ if (mode === "LIVE") {
 
   API["CREATECHANNEL"] = "https://k8s.onlyapp.in/oneapp/v2/api/v1/createChannel";
 
-  API["INVESTORS"] = "https://backend.hifrds.com/pepul/addInvestor.php"
+  API["INVESTORS"] = "https://backend.hifrds.com/pepul/addInvestorWorkfast.php"
 }
 
 module.exports = API;
