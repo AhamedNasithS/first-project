@@ -33,6 +33,10 @@ import Pricing from './pages/price';
 // import Campaign from './pages/campaign';
 // import Todoist from './pages/landingpages/todoist';
 // import Slack from './pages/landingpages/slack';
+// import TimeAndFocus from './pages/landingpages/time&focus';
+// import TaskManagement from './pages/landingpages/taskmanagement';
+// import Asana from './pages/comparison/asana';
+// import Monday from './pages/comparison/monday';
 // import MainForm from './pages/mainfrom';
 
 export default function App() {
@@ -72,7 +76,11 @@ export default function App() {
         <Route path='/pricing' element={<Pricing setPricingPackage={setPricingPackage}/>}/>
         {/* <Route path='/campaign' element={<Campaign/>}/>
         <Route path='/comparison/todoist' element={<Todoist/>}/>
-        <Route path='/comparison/slack' element={<Slack/>}/> */}
+        <Route path='/comparison/slack' element={<Slack/>}/>
+        <Route path='/comparison/time-focus' element={<TimeAndFocus/>}/>
+        <Route path='/comparison/taskmanagement' element={<TaskManagement/>}/>
+        <Route path='/comparison/asana' element={<Asana/>}/>
+        <Route path='/comparison/monday' element={<Monday/>}/> */}
       </Routes>
     </Router>
   )

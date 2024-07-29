@@ -1,5 +1,5 @@
 import React from 'react'
-import bannerImg from "../../../../../images/slackbanner.svg";
+import bannerImg from "../../../../../images/todoistBanner.svg";
 import eclipse from "../../../../../images/comparisonEclipse.png";
 
 
@@ -7,14 +7,11 @@ export default function Banner() {
     const [isColour, setIsColour] = React.useState(0);
     const [isList, setIsList] = React.useState(0);
     const list = [
-        { title: "Direct messages to ping anyone in your team urgently" },
-        { title: "Group Messages to chat with team casually" },
-        { title: "Channels for project and task discussion to get in focus" },
-        { title: "Voting and ticketing channels" },
-        { title: "Town hall for sharing great news" },
-        { title: "Express your platform and app Feedbacks in seperate channels" },
-        { title: "Add any messages to Task list." },
-        { title: "Check-In to show your team that you are up for work." },
+        { title: "Create task and set title, description, status, tags and priority." },
+        { title: "Directly Comment on tasks so , your team knows better about it ." },
+        { title: "See the timeline and history to get educated with the task for later." },
+        { title: "Attach files and collect the necessary assets for the tasks" },
+        { title: "See in different views to see who allocated what tasks ." },
     ];
 
     const scrollContainerRef = React.useRef(null);
@@ -34,7 +31,7 @@ export default function Banner() {
 
     React.useEffect(() => {
         const interval = setInterval(() => {
-          setIsList((prevIsList) => (prevIsList + 1) % 8);
+          setIsList((prevIsList) => (prevIsList + 1) % 5);
         }, 3000); 
     
         return () => clearInterval(interval);
@@ -42,7 +39,7 @@ export default function Banner() {
 
     React.useEffect(() => {
         const interval = setInterval(() => {
-          setIsColour((prevIsList) => (prevIsList + 1) % 2);
+          setIsColour((prevIsList) => (prevIsList + 1) % 3);
         }, 2000);
     
         return () => clearInterval(interval);
@@ -51,8 +48,8 @@ export default function Banner() {
     return (
         <div className='w-full sm:w-11/12 lg:w-10/12 flex flex-col justify-center items-center bg-[#FFF] mx-auto px-[20px] sm:px-0'>
             <div className='flex flex-col gap-[22px] justify-center items-center'>
-                <h1 className='text-[24px] sm:text-[32px] lg:text-[50px] font-bold text-[#161000] text-center'>No <span className={`${isColour === 0 ? "text-[#FF2D55]" : "text-[#34C759]"}`}>#1 Alternative to Slack</span> to manage your team communication in half the Price</h1>
-                <h3 className='text-[#161000] font-medium text-[14px] sm:text-[18px] lg:text-[24px] text-center w-[80%] xl:leading-[60px]'>workfast.ai provides new updated features more than slack , so your team wont miss any piece of information when communicating in larger groups.</h3>
+                <h1 className='text-[24px] sm:text-[32px] lg:text-[50px] font-bold text-[#161000] text-center sm:w-[74%]'>Achieve more with an organised <span className={`${isColour === 0 ? "text-[#007AFF]" : isColour === 0 ?  "text-[#34C759]" : "text-[#AF52DE]"}`}>Task management</span> system</h1>
+                <h3 className='text-[#161000] font-medium text-[14px] sm:text-[18px] lg:text-[24px] text-center xl:leading-[60px] w-full sm:w-[74%]'>Manage your projects by breaking down complex task into sub tasks and assign to right resource to get more output with workfast.ai</h3>
                 <button className='text-[#2A2200] text-[14px] sm:text-[18px] lg:text-[21px] font-semibold px-[30px] py-[14px] lg:px-[38px] lg:py-[18px] bg-gradient-to-bl from-[#FDD01F] via-[#FDD320] to-[#F8861B] rounded-[11px] relative z-[10] border border-[#FFF]'>Get Started</button>
             </div>
             <div className='mt-[20px] sm:mt-[46px] lg:mt-[116px] relative'>
@@ -64,29 +61,23 @@ export default function Banner() {
                     {[...list, ...list, ...list].map((item, index) => (
                         <div
                             key={index}
-                            className={`w-[80%] mx-auto rounded-[24px] border h-[100px] sm:h-[151px] flex shrink-0 justify-center items-center text-center transition-transform duration-500 ${index % 8 === 0
+                            className={`w-[80%] mx-auto rounded-[24px] border h-[100px] sm:h-[151px] flex shrink-0 justify-center items-center text-center transition-transform duration-500 ${index % 5 === 0
                                     ? "border-[#FF3B30]"
-                                    : index % 8 === 1
+                                    : index % 5 === 1
                                         ? "border-[#FF9500]"
-                                        : index % 8 === 2
+                                        : index % 5 === 2
                                             ? "border-[#007AFF]" 
-                                            : index % 8 === 3 ?
+                                            : index % 5 === 3 ?
                                             "border-[#34C759]"
-                                            : index % 8 === 4 ? 
-                                            "border-[#00C7BE]" 
-                                            : index % 8 === 5 ? 
-                                            "border-[#32ADE6]"
-                                            : index % 8 === 6 ? 
-                                            "border-[#5856D6]"
-                                            : 'border-[#AF52DE]' 
-                                 } ${isList === 0 ? "translate-x-[165%] sm:translate-x-[155%]" : isList === 1 ? "translate-x-[55%]" : isList === 2 ? "-translate-x-[55%]" : isList === 3 ? "-translate-x-[165%] sm:-translate-x-[155%]" : isList === 4 ? "-translate-x-[275%] sm:-translate-x-[257%]" : isList === 5 ? "-translate-x-[385%] sm:-translate-x-[360%]" : isList === 6 ? "-translate-x-[495%] sm:-translate-x-[463%]" : isList === 7 ? "-translate-x-[605%] sm:-translate-x-[565%]" :  ""}`}
+                                            : "border-[#00C7BE]" 
+                                 } ${isList === 0 ? "translate-x-[218%] sm:translate-x-[210%] lg:translate-x-[205%]" : isList === 1 ? "translate-x-[109%] sm:translate-x-[103%]" : isList === 2 ? "translate-x-[0%]" : isList === 3 ? "-translate-x-[110%] sm:-translate-x-[103%]" : isList === 4 ? "-translate-x-[220%] sm:-translate-x-[205%]" :  ""}`}
                         >
-                            <div className={`text-[#261900] font-semibold text-[14px] sm:text-[20px] lg:text-[24px] ${ index % 8 === 0 ? "w-9/12 lg:w-8/12" : index % 8 === 2 ? "w-9/12 lg:w-8/12" : index % 8 ===  5 ? "w-9/12 lg:w-8/12" : index % 8 ===  7 && "w-9/12 lg:w-8/12" }`}>{item?.title}</div>
+                            <div className={`text-[#261900] font-semibold text-[14px] sm:text-[20px] lg:text-[24px] w-9/12 lg:w-8/12`}>{item?.title}</div>
                         </div>
                     ))}
                 </div>
                 <div className='flex flex-col gap-[18px] justify-center items-center'>
-                    <h4 className='text-[#383838] text-[22px] sm:text-[32px] lg:text-[44px] font-semibold text-center'>Focus is the new currency , earn it with Workfast.ai</h4>
+                    <h4 className='text-[#383838] text-[22px] sm:text-[32px] lg:text-[44px] font-semibold text-center'>Make complex work looks simpler to your team with Workfast.ai</h4>
                     <button className='text-[#2A2200] text-[14px] sm:text-[18px] lg:text-[21px] font-semibold px-[30px] py-[14px] lg:px-[38px] lg:py-[18px] bg-gradient-to-bl from-[#FDD01F] via-[#FDD320] to-[#F8861B] rounded-[11px] relative z-[10] border border-[#FFF]'>Try it Free</button>
                 </div>
             </div>
