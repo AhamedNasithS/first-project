@@ -29,7 +29,7 @@ export default function Features() {
                 </div>
                 <h3 className='text-[#E2E8FF] text-[19px] font-medum'>Channel</h3>
               </div>
-              <h3 className='mt-[5px] sm:mt-[15px] lg:mt-[5px] text-[#E2E8FF8C] text-[14px] lg:text-[17px] inter-normal'>A Space to Communicate and get aligned with your team on Project and tasks </h3>
+              <h3 className='mt-[5px] sm:mt-[15px] lg:mt-[5px] text-[#E2E8FF8C] text-[14px] lg:text-[17px] font-normal'>A Space to Communicate and get aligned with your team on Project and tasks </h3>
             </div>
             <div className='h-[30px] w-[1px] bg-[#E2E8FF] block sm:hidden lg:block '></div>
           </div>
@@ -46,7 +46,7 @@ export default function Features() {
                 </div>
                 <h3 className='text-[#E2E8FF] text-[19px] font-medum'>Project</h3>
               </div>
-              <h3 className='mt-[5px] sm:mt-[15px] lg:mt-[5px] text-[#E2E8FF8C] text-[14px] lg:text-[17px] inter-normal'>A Space to Carefully Plan and Achieve a collection aim. </h3>
+              <h3 className='mt-[5px] sm:mt-[15px] lg:mt-[5px] text-[#E2E8FF8C] text-[14px] lg:text-[17px] font-normal'>A Space to Carefully Plan and Achieve a collection aim. </h3>
             </div>
             <div className='h-[30px] w-[1px] bg-[#E2E8FF] block sm:hidden lg:block'></div>
           </div>
@@ -63,7 +63,7 @@ export default function Features() {
                 </div>
                 <h3 className='text-[#E2E8FF] text-[19px] font-medum'>Task</h3>
               </div>
-              <h3 className='mt-[5px] sm:mt-[15px] lg:mt-[5px] text-[#E2E8FF8C] text-[14px] lg:text-[17px] inter-normal'>Tasks are to-do-list which often completed in a specific time frame  </h3>
+              <h3 className='mt-[5px] sm:mt-[15px] lg:mt-[5px] text-[#E2E8FF8C] text-[14px] lg:text-[17px] font-normal'>Tasks are to-do-list which often completed in a specific time frame  </h3>
             </div>
             <div className='h-[30px] w-[1px] bg-[#E2E8FF] block sm:hidden lg:block'></div>
           </div>
@@ -80,7 +80,7 @@ export default function Features() {
                 </div>
                 <h3 className='text-[#E2E8FF] text-[19px] font-medum'>Chat</h3>
               </div>
-              <h3 className='mt-[5px] sm:mt-[15px] lg:mt-[5px] text-[#E2E8FF8C] text-[14px] lg:text-[17px] inter-normal'>A space where one can Dm and group chat with anyone in organisation  officially  </h3>
+              <h3 className='mt-[5px] sm:mt-[15px] lg:mt-[5px] text-[#E2E8FF8C] text-[14px] lg:text-[17px] font-normal'>A space where one can Dm and group chat with anyone in organisation  officially  </h3>
             </div>
             <div className='h-[30px] w-[1px] bg-[#E2E8FF] block sm:hidden lg:block'></div>
           </div>
@@ -96,7 +96,7 @@ export default function Features() {
                 </div>
                 <h3 className='text-[#E2E8FF] text-[19px] font-medum'>Ai</h3>
               </div>
-              <h3 className='mt-[5px] sm:mt-[15px] lg:mt-[5px] text-[#E2E8FF8C] text-[14px] lg:text-[17px] inter-normal'>Get Intelligence response from workfast.ai any data, information, report or summary about your organisation  </h3>
+              <h3 className='mt-[5px] sm:mt-[15px] lg:mt-[5px] text-[#E2E8FF8C] text-[14px] lg:text-[17px] font-normal'>Get Intelligence response from workfast.ai any data, information, report or summary about your organisation  </h3>
             </div>
             <div className='h-[30px] w-[1px] bg-[#E2E8FF] block sm:hidden lg:block'></div>
           </div>
@@ -113,7 +113,7 @@ export default function Features() {
                 </div>
                 <h3 className='text-[#E2E8FF] text-[19px] font-medum'>Personalisation</h3>
               </div>
-              <h3 className='mt-[5px] sm:mt-[15px] lg:mt-[5px] text-[#E2E8FF8C] text-[14px] lg:text-[17px] inter-normal'>Customise the navigation bar according to one’s own need comfort and priority.</h3>
+              <h3 className='mt-[5px] sm:mt-[15px] lg:mt-[5px] text-[#E2E8FF8C] text-[14px] lg:text-[17px] font-normal'>Customise the navigation bar according to one’s own need comfort and priority.</h3>
             </div>
             <div className='h-[30px] w-[1px] bg-[#E2E8FF] block sm:hidden lg:block '></div>
           </div>

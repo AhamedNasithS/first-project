@@ -1701,3 +1701,111 @@ input[type="radio"] {
   border-radius: 8px;
   width: 100%;
 }
+
+.reseller.react-international-phone-input-container {
+  height: 100%;
+}
+
+.reseller.react-international-phone-input-container .react-international-phone-country-selector-button {
+  border-radius: 0px !important;
+  margin-right: 10px !important;
+  /* border-bottom-right-radius: 0;
+  border-top-right-radius: 0; */
+  border: none;
+  opacity: 1;
+  padding-block: 0px 0px !important;
+  box-shadow: none;
+  height: 100%;
+  background: transparent !important;
+}
+
+.reseller.react-international-phone-input-container .react-international-phone-country-selector-button:focus {
+  box-shadow: none;
+}
+
+.reseller.react-international-phone-input-container .react-international-phone-input {
+  border: none !important;
+  box-shadow: none;
+  width: 100%;
+  background: transparent !important;
+  font-size: 14px !important;
+  padding-block: 0px 0px !important;
+  color: #000 !important;
+  height: 100% !important;
+  margin-top: 0px;
+}
+
+.reseller.react-international-phone-input-container .react-international-phone-input:focus {
+  box-shadow: none;
+}
+
+.reseller .react-international-phone-flag-emoji {
+  width: 20px !important;
+  height: 20px !important;
+  box-sizing: border-box;
+  object-fit: cover;
+}
+
+.reseller .react-international-phone-country-selector-button__flag-emoji {
+  margin: 0px 6px !important;
+}
+
+.reseller .react-international-phone-country-selector-dropdown {
+  pointer-events: auto !important;
+  z-index: 50 !important;
+  list-style: none;
+  padding-block: 10px;
+  inset-block-start: 20px !important;
+  box-shadow: none !important;
+  background-color: white !important;
+  width: 450px !important;
+  max-height: 200px !important;
+  overflow-y: scroll;
+  border-radius: 6px !important;
+  border: 2px solid #000 !important;
+}
+
+.reseller .react-international-phone-country-selector-dropdown__list-item:hover {
+  background-color: #FFFFFF4d !important;
+  border: 1px solid #000 !important;
+}
+
+.reseller .react-international-phone-country-selector-dropdown__list-item {
+  height: 34px;
+  max-width: 100%;
+  width: auto !important;
+  margin-inline: 16px;
+  margin-block-end: 4px;
+  position: relative;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  border-radius: 2px;
+  background-color: #e6e6e61a !important;
+  box-shadow: rgba(102, 102, 102, 0.6) 0px 0px 0px 1px inset;
+  color: #000 !important;
+  outline: 0px;
+  padding-block: 4px;
+  transition-duration: 0.1s;
+  transition-property: color;
+  transition-timing-function: ease-out;
+  width: 100%;
+  word-break: break-word;
+  cursor: pointer;
+  opacity: 1;
+  padding: 0px 8px !important;
+}
+
+.reseller .react-international-phone-country-selector-dropdown__list-item-country-name {
+  color: #000 !important;
+  font-size: 14px !important;
+  line-height: 28px !important;
+  font-family: 'Avenir Next';
+}
+
+.reseller .react-international-phone-country-selector-dropdown__list-item-dial-code {
+  color: #000 !important;
+  font-size: 14px !important;
+  line-height: 28px !important;
+  margin-left: 10px;
+}

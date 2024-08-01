@@ -68,8 +68,8 @@ export default function Intro({ setIsForm, email, setEmail }) {
             <div
                 // data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1500" 
                 className='text-center'>
-                <h2 className='text-[24px] sm:text-[40px] xl:text-[70px] text-[#FFFFFF] inter-bold mt-[40px]'>One intelligent Platform</h2>
-                <h2 className='text-[24px]  sm:text-[40px] xl:text-[70px] bg-gradient-to-l from-[#FDD220] to-[#FFFFFF] bg-clip-text text-transparent inter-bold'>for your team to work faster</h2>
+                <h2 className='text-[24px] sm:text-[40px] xl:text-[70px] text-[#FFFFFF] font-bold mt-[40px]'>One intelligent Platform</h2>
+                <h2 className='text-[24px]  sm:text-[40px] xl:text-[70px] bg-gradient-to-l from-[#FDD220] to-[#FFFFFF] bg-clip-text text-transparent font-bold'>for your team to work faster</h2>
             </div>
             {/* <div className='flex gap-[20px] items-center mt-[20px] lg:mt-[30px] xl:mt-[40px]'
             data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1500"

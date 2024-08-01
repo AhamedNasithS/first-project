@@ -14,7 +14,7 @@ export default function Banner() {
             <div id='stars2'></div>
             <div id='stars3'></div>
             <div className='flex flex-col gap-[20px] lg:gap-[35px] text-center items-center my-[40px]'>
-                <h2 className='text-[24px]  sm:text-[40px] xl:text-[70px] bg-gradient-to-l from-[#FDD220] to-[#FFFFFF] bg-clip-text text-transparent inter-bold'>Investors</h2>
+                <h2 className='text-[24px]  sm:text-[40px] xl:text-[70px] bg-gradient-to-l from-[#FDD220] to-[#FFFFFF] bg-clip-text text-transparent font-bold'>Investors</h2>
                 <div className='hidden sm:flex flex-col gap-[10px] xl:gap-[20px]'>
                     <h2 className='text-[16px] lg:text-[22px] xl:text-[27px] text-[#FFFFFF] font-medium'>We are on a mission to change the world! To accomplish this audacious vision, we are open </h2>
                     <h2 className='text-[16px]  lg:text-[22px] xl:text-[27px] text-[#FFFFFF] font-medium'> to investments with great people, who can travel with us in long term.</h2>

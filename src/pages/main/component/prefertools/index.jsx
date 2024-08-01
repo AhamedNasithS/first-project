@@ -11,19 +11,19 @@ export default function PreferTools() {
                 <div className='w-[25px] h-[25px] rounded-[8px] p-[2px] bg-gradient-to-b from-[#AEA65D] to-[#B0ADAD00]'>
                     <div className='w-full h-full bg-[#D8B10F91] rounded-[6px]'></div>
                 </div>
-                <h3 className='inter-normal  text-[#E4E8EB] text-[24px]'>No More Excel Sheets</h3>
+                <h3 className='font-normal  text-[#E4E8EB] text-[24px]'>No More Excel Sheets</h3>
             </div>
             <div className='flex gap-6 items-center mx-[60px] mt-5'>
                 <div className='w-[25px] h-[25px] rounded-[8px] p-[2px] bg-gradient-to-b from-[#AEA65D] to-[#B0ADAD00]'>
                     <div className='w-full h-full bg-[#D8B10F91] rounded-[6px]'></div>
                 </div>
-                <h3 className='inter-normal  text-[#E4E8EB] text-[24px]'>No more Word Docs </h3>
+                <h3 className='font-normal  text-[#E4E8EB] text-[24px]'>No more Word Docs </h3>
             </div>
             <div className='flex gap-6 items-center mx-[60px] mt-5'>
                 <div className='w-[25px] h-[25px] rounded-[8px] p-[2px] bg-gradient-to-b from-[#AEA65D] to-[#B0ADAD00]'>
                     <div className='w-full h-full bg-[#D8B10F91] rounded-[6px]'></div>
                 </div>
-                <h3 className='inter-normal  text-[#E4E8EB] text-[24px]'>No more Miscommunication</h3>
+                <h3 className='font-normal  text-[#E4E8EB] text-[24px]'>No more Miscommunication</h3>
             </div>
         </div>
     </div>
