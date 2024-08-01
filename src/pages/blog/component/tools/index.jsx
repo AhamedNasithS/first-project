@@ -3,7 +3,7 @@ import React from 'react'
 export default function Tools() {
     return (
         <div className='flex flex-col justify-center items-center w-10/12 relative z-[1] mx-auto'>
-            <h2 className='text-[20px] md:text-[26px] lg:text-[32px] xl:text-[40px] bg-gradient-to-r from-[#FFFFFF] to-[#FDD220] bg-clip-text text-transparent inter-bold relative z-[1] lg:w-11/12 xl:w-10/12 text-center'>What software tools does the product managers use to bring productivity in development of a product?</h2>
+            <h2 className='text-[20px] md:text-[26px] lg:text-[32px] xl:text-[40px] bg-gradient-to-r from-[#FFFFFF] to-[#FDD220] bg-clip-text text-transparent font-bold relative z-[1] lg:w-11/12 xl:w-10/12 text-center'>What software tools does the product managers use to bring productivity in development of a product?</h2>
             <p className='text-[#E4E8EB] font-normal text-[16px] md:text-[20px] lg:text-[24px] xl:text-[32px] mt-[20px] md:mt-[40px] w-full lg:w-10/12 lg:mx-auto text-start'>Mostly <span className='text-[#FFDD09]'>product managers</span> use tools for</p>
             <div className='mt-[20px] md:mt-[40px] lg:w-10/12 xl:w-11/12 grid md:grid-cols-2 md:gap-[60px]'>
                 <div className='w-full xl:w-[458px] rounded-[20px] sm:rounded-[34px] p-[1px] bg-gradient-to-br from-[#1F44C5]/[80%] to-[#22398700]'>

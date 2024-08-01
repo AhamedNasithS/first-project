@@ -3,7 +3,7 @@ import React from 'react'
 export default function Roles() {
     return (
         <div className='flex flex-col justify-center items-center w-10/12 relative z-[1] mx-auto'>
-            <h2 className='text-[20px] md:text-[26px] lg:text-[32px] xl:text-[40px] bg-gradient-to-r from-[#FFFFFF] to-[#FDD220] bg-clip-text text-transparent inter-bold relative z-[1]'>What are the roles in product management?</h2>
+            <h2 className='text-[20px] md:text-[26px] lg:text-[32px] xl:text-[40px] bg-gradient-to-r from-[#FFFFFF] to-[#FDD220] bg-clip-text text-transparent font-bold relative z-[1]'>What are the roles in product management?</h2>
             <p className='text-[#E4E8EB] font-normal text-[16px] md:text-[18px] lg:text-[24px] xl:text-[32px] mt-[20px] lg:mt-[40px] mx-auto sm:text-center'>Generally the following roles are used in different companies across world. </p>
             <p className='text-[#E4E8EB] font-normal text-[16px] md:text-[18px] lg:text-[24px] xl:text-[32px] mt-[10px] lg:mt-[20px] sm:ml-[20px] lg:ml-[40px] xl:ml-[15px] text-start w-full xl:w-11/12'>They are :</p>
             <div className='mt-[20px] sm:mt-[40px] lg:w-[94%] xl:w-11/12 lg:grid lg:grid-cols-2 gap-[60px] relative'>

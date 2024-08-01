@@ -5,7 +5,7 @@ import React from 'react'
 export default function BestTools() {
     return (
         <div className='flex flex-col justify-center items-center w-10/12 relative z-[1] mx-auto'>
-            <h2 className='text-[20px] md:text-[26px] lg:text-[32px] xl:text-[40px] bg-gradient-to-r from-[#FFFFFF] to-[#FDD220] bg-clip-text text-transparent inter-bold relative z-[1]'>Which is the best tool for Product managers ?</h2>
+            <h2 className='text-[20px] md:text-[26px] lg:text-[32px] xl:text-[40px] bg-gradient-to-r from-[#FFFFFF] to-[#FDD220] bg-clip-text text-transparent font-bold relative z-[1]'>Which is the best tool for Product managers ?</h2>
             <div className='mt-[40px] grid grid-cols-5 h-[200px] md:h-[390px] md:w-11/12 lg:w-9/12'>
                 <div className='flex items-center'>
                     <img src='https://dz1x1c630cl14.cloudfront.net/webassets/microsoftTeam.svg' alt='teams' className='w-[50px] md:w-auto'/>

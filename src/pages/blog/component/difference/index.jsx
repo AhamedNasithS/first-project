@@ -4,7 +4,7 @@ import React from 'react'
 export default function Difference() {
     return (
         <div className='flex flex-col justify-center items-center w-11/12 relative z-[1] mx-auto border-b-[1px] border-[#18599F] rounded-b-[55px]'>
-            <h2 className='text-[20px] md:text-[26px] lg:text-[32px] xl:text-[40px] bg-gradient-to-r from-[#FFFFFF] to-[#FDD220] bg-clip-text text-transparent inter-bold relative z-[1]'>Product Vs Project management</h2>
+            <h2 className='text-[20px] md:text-[26px] lg:text-[32px] xl:text-[40px] bg-gradient-to-r from-[#FFFFFF] to-[#FDD220] bg-clip-text text-transparent font-bold relative z-[1]'>Product Vs Project management</h2>
             <div className='mb-[40px] mt-[20px] md:my-[40px] lg:my-[80px] w-11/12 grid md:grid-cols-2 gap-[20px] md:gap-[60px]'>
                 <div className='w-11/12 mx-auto md:w-full h-auto lg:h-[410px] rounded-[30px] sm:rounded-[34px] p-[1px] bg-gradient-to-br from-[#1F44C5CC] to-[#22398700]'>
                     <div className='w-full h-full rounded-[30px] sm:rounded-[34px] bg-[#010306] p-[5px] sm:p-[10px]'>

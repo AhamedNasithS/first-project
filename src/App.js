@@ -30,6 +30,7 @@ import Articles3 from './pages/articles/articles3';
 import Articles4 from './pages/articles/articles4';
 import Payment from './pages/payment';
 import Pricing from './pages/price';
+// import ResellerForm from './pages/reseller-form';
 // import Campaign from './pages/campaign';
 // import Todoist from './pages/landingpages/todoist';
 // import Slack from './pages/landingpages/slack';
@@ -74,6 +75,7 @@ export default function App() {
         <Route path='/investor/form' element={<InvestorFrom/>}/>
         <Route path='/payment' element={<Payment priceIndex={priceIndex}/>}/>
         <Route path='/pricing' element={<Pricing setPricingPackage={setPricingPackage}/>}/>
+        {/* <Route path='/resellerform' element={<ResellerForm/>}/> */}
         {/* <Route path='/campaign' element={<Campaign/>}/>
         <Route path='/comparison/todoist' element={<Todoist/>}/>
         <Route path='/comparison/slack' element={<Slack/>}/>

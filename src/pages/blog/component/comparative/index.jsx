@@ -32,14 +32,14 @@ export default function Comparative() {
     ]
     return (
         <div className='flex flex-col justify-center items-center w-10/12 relative z-[1] mx-auto'>
-            <h2 className='text-[20px] md:text-[26px] lg:text-[32px] xl:text-[40px] bg-gradient-to-r from-[#FFFFFF] to-[#FDD220] bg-clip-text text-transparent inter-bold relative z-[1] sm:w-10/12 lg:w-9/12'>How Workfast.ai is most efficient software tool comparatively ?</h2>
+            <h2 className='text-[20px] md:text-[26px] lg:text-[32px] xl:text-[40px] bg-gradient-to-r from-[#FFFFFF] to-[#FDD220] bg-clip-text text-transparent font-bold relative z-[1] sm:w-10/12 lg:w-9/12'>How Workfast.ai is most efficient software tool comparatively ?</h2>
             <Slider {...settings} className='w-full relative mt-[30px] md:mt-[60px] lg:mt-[100px] mb-[50px] comparative'>
                 {slides.map((each, index) => (
                     <div key={index} className='focus:outline-none relative'>
                         <div className='flex flex-col items-center justify-center'>
                             <img src={each?.image} alt='ai' className=" md:w-[80%]" />
                             <div className="w-[80%] mx-auto mt-[30px] md:mt-[60px] lg:mt-[100px]">
-                                <h2 className={`text-[20px] md:text-[26px] lg:text-[32px] xl:text-[40px] bg-gradient-to-r from-[#FFFFFF] to-[#FDD220] bg-clip-text text-transparent inter-bold ${index === 0 ? "w-[12%] md:w-[5%] xl:w-[4%]" : index === 1 || index === 2 ? "w-[60%] md:w-[30%] xl:w-[25%]" : index === 3 ? "w-[70%] md:w-[50%] xl:w-[38%]" : index === 4 ? "w-full md:w-[80%] lg:w-[70%] xl:w-[62%]" : "w-full md:w-[60%] lg:w-[50%] xl:w-[43%]" }`}>{each?.title}</h2>
+                                <h2 className={`text-[20px] md:text-[26px] lg:text-[32px] xl:text-[40px] bg-gradient-to-r from-[#FFFFFF] to-[#FDD220] bg-clip-text text-transparent font-bold ${index === 0 ? "w-[12%] md:w-[5%] xl:w-[4%]" : index === 1 || index === 2 ? "w-[60%] md:w-[30%] xl:w-[25%]" : index === 3 ? "w-[70%] md:w-[50%] xl:w-[38%]" : index === 4 ? "w-full md:w-[80%] lg:w-[70%] xl:w-[62%]" : "w-full md:w-[60%] lg:w-[50%] xl:w-[43%]" }`}>{each?.title}</h2>
                                 <p className='text-[#E4E8EB] font-normal text-[12px] md:text-[16px] lg:text-[20px] xl:text-[26px] mt-[20px]'>{each?.description}</p>
                                 {each?.description1 !== "" && (
                                     <p className='text-[#E4E8EB] font-normal text-[12px] md:text-[16px] lg:text-[20px] xl:text-[26px] mt-[10px]'>{each?.description1}</p>
