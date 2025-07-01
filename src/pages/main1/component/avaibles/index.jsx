@@ -30,51 +30,51 @@ export default function Availbles() {
         </div>
       </div>
       <div className='grid grid-cols-2 sm:grid-cols-3 xl:flex gap-6 lg:gap-12 items-center justify-center mt-[20px] lg:mt-[50px] w-full relative z-10'>
-        <div className='flex gap-1.5 items-center' onMouseEnter={() => { setMacHover(true) }} onMouseLeave={() => { setMacHover(false) }}>
+        <div className='flex gap-[15px] items-center' onMouseEnter={() => { setMacHover(true) }} onMouseLeave={() => { setMacHover(false) }}>
           {macHover ? (
-            <img src='https://dz1x1c630cl14.cloudfront.net/webassets/apple.svg' alt='apple' className='w-[30px] lg:w-auto' />
+            <img src='https://dz1x1c630cl14.cloudfront.net/webassets/apple.svg' alt='apple' className='w-[30px] lg:w-[45px]' />
           ) : (
-            <img src='https://dz1x1c630cl14.cloudfront.net/webassets/apple1.svg' alt='apple' className='w-[30px] lg:w-auto' />
+            <img src='https://dz1x1c630cl14.cloudfront.net/webassets/apple1.svg' alt='apple' className='w-[30px] lg:w-[45px]' />
           )}
           <h2 className='text-[#FFF] font-semibold text-[18px] lg:text-[32px]'>Mac</h2>
         </div>
-        <div className='flex gap-1.5 items-center sm:justify-center lg:justify-end' onMouseEnter={() => { setWindowsHover(true) }} onMouseLeave={() => { setWindowsHover(false) }}>
-          {windowsHover ? (
-            <img src='https://dz1x1c630cl14.cloudfront.net/webassets/windows.svg' alt='apple' className='w-[30px] lg:w-auto' />
+        <div className='flex gap-[15px] items-center ml-0 sm:ml-[40px] xl:ml-0 xl:justify-end' onMouseEnter={() => { setIosHover(true) }} onMouseLeave={() => { setIosHover(false) }}>
+          {IosHover ? (
+            <img src='https://dz1x1c630cl14.cloudfront.net/webassets/apple.svg' alt='apple' className='w-[30px] lg:w-[45px]' />
           ) : (
-            <img src='https://dz1x1c630cl14.cloudfront.net/webassets/windows1.svg' alt='apple' className='w-[30px] lg:w-auto' />
+            <img src='https://dz1x1c630cl14.cloudfront.net/webassets/apple1.svg' alt='apple' className='w-[30px] lg:w-[45px]' />
           )}
-          <h2 className='text-[#FFF] font-semibold text-[18px] lg:text-[32px]'>Windows</h2>
+          <h2 className='text-[#FFF] font-semibold text-[18px] lg:text-[32px]'>iOS</h2>
         </div>
-        <div className='flex gap-1.5 items-center ml-0 sm:ml-[80px] lg:ml-0' onMouseEnter={() => { setAndroidHover(true) }} onMouseLeave={() => { setAndroidHover(false) }}>
-          {androidHover ? (
-            <img src='https://dz1x1c630cl14.cloudfront.net/webassets/android.svg' alt='apple' className='w-[30px] lg:w-auto' />
-          ) : (
-            <img src='https://dz1x1c630cl14.cloudfront.net/webassets/android1.svg' alt='apple' className='w-[30px] lg:w-auto' />
-          )}
-          <h2 className='text-[#FFF] font-semibold text-[18px] lg:text-[32px]'>Android</h2>
-        </div>
-        <div className='flex gap-1.5 items-center' onMouseEnter={() => { setWearablesHover(true) }} onMouseLeave={() => { setWearablesHover(false) }}>
+        <div className='flex gap-[15px] items-center ml-0 sm:ml-[80px] xl:ml-0' onMouseEnter={() => { setWearablesHover(true) }} onMouseLeave={() => { setWearablesHover(false) }}>
           {wearablesHover ? (
-            <img src='https://dz1x1c630cl14.cloudfront.net/webassets/wearables.svg' alt='apple' className='w-[30px] lg:w-auto' />
+            <img src='https://dz1x1c630cl14.cloudfront.net/webassets/wearables.svg' alt='apple' className='w-[30px] lg:w-[45px]' />
           ) : (
-            <img src='https://dz1x1c630cl14.cloudfront.net/webassets/wearables1.svg' alt='apple' className='w-[30px] lg:w-auto' />
+            <img src='https://dz1x1c630cl14.cloudfront.net/webassets/wearables1.svg' alt='apple' className='w-[30px] lg:w-[45px]' />
           )}
           <h2 className='text-[#FFF] font-semibold text-[18px] lg:text-[32px]'>Wearables</h2>
         </div>
-        <div className='flex gap-1.5 items-center ml-0 sm:ml-[40px] xl:ml-0 xl:justify-end' onMouseEnter={() => { setIosHover(true) }} onMouseLeave={() => { setIosHover(false) }}>
-          {IosHover ? (
-            <img src='https://dz1x1c630cl14.cloudfront.net/webassets/apple.svg' alt='apple' className='w-[30px] lg:w-auto' />
+        <div className='flex gap-[15px] items-center ml-0 lg:ml-0' onMouseEnter={() => { setAndroidHover(true) }} onMouseLeave={() => { setAndroidHover(false) }}>
+          {androidHover ? (
+            <img src='https://dz1x1c630cl14.cloudfront.net/webassets/android.svg' alt='apple' className='w-[30px] lg:w-[45px]' />
           ) : (
-            <img src='https://dz1x1c630cl14.cloudfront.net/webassets/apple1.svg' alt='apple' className='w-[30px] lg:w-auto' />
+            <img src='https://dz1x1c630cl14.cloudfront.net/webassets/android1.svg' alt='apple' className='w-[30px] lg:w-[45px]' />
           )}
-          <h2 className='text-[#FFF] font-semibold text-[18px] lg:text-[32px]'>IOS</h2>
+          <h2 className='text-[#FFF] font-semibold text-[18px] lg:text-[32px]'>Android</h2>
         </div>
-        <div className='flex gap-1.5 items-center xl:justify-end ml-0 sm:ml-[80px] lg:ml-0' onMouseEnter={() => { setWebHover(true) }} onMouseLeave={() => { setWebHover(false) }}>
-          {webHover ? (
-            <img src='https://dz1x1c630cl14.cloudfront.net/webassets/web.svg' alt='apple' className='w-[30px] lg:w-auto' />
+        <div className='flex gap-[15px] items-center sm:justify-center lg:justify-end' onMouseEnter={() => { setWindowsHover(true) }} onMouseLeave={() => { setWindowsHover(false) }}>
+          {windowsHover ? (
+            <img src='https://dz1x1c630cl14.cloudfront.net/webassets/windows.svg' alt='apple' className='w-[30px] lg:w-[45px]' />
           ) : (
-            <img src='https://dz1x1c630cl14.cloudfront.net/webassets/web1.svg' alt='apple' className='w-[30px] lg:w-auto' />
+            <img src='https://dz1x1c630cl14.cloudfront.net/webassets/windows1.svg' alt='apple' className='w-[30px] lg:w-[45px]' />
+          )}
+          <h2 className='text-[#FFF] font-semibold text-[18px] lg:text-[32px]'>Windows</h2>
+        </div>
+        <div className='flex gap-[15px] items-center xl:justify-end ml-0 sm:ml-[80px] lg:ml-0' onMouseEnter={() => { setWebHover(true) }} onMouseLeave={() => { setWebHover(false) }}>
+          {webHover ? (
+            <img src='https://dz1x1c630cl14.cloudfront.net/webassets/web.svg' alt='apple' className='w-[30px] lg:w-[45px]' />
+          ) : (
+            <img src='https://dz1x1c630cl14.cloudfront.net/webassets/web1.svg' alt='apple' className='w-[30px] lg:w-[45px]' />
           )}
           <h2 className='text-[#FFF] font-semibold text-[18px] lg:text-[32px]'>Web</h2>
         </div>

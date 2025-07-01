@@ -19,10 +19,10 @@ export default function Pricing({ setIsForm }) {
             <h2 className='text-[#F9F9F9] text-[22px] lg:text-[43px] font-bold'>Our Pricing Solutions</h2>
             <h3 className='text-[#F9F9F9] text-[12px] lg:text-[22px] font-medium mt-[10px] text-center'>No hidden fees, just simple and affordable plans tailored to your needs</h3>
             <div className='p-[3px] lg:p-2 bg-[#2B2D37] rounded-[28px] flex items-center mt-[10px] lg:mt-[20px]'>
-                <div className={`p-[3px] lg:p-2 ${toggleValue === "Month" ? " bg-gradient-to-bl from-[#FDD01F] via-[#FDD320] via-[#F8C240] to-[#F8861B] text-[#2A2200]" : "bg-transparent text-[#F9F9F9]"} cursor-pointer rounded-[20px]`} onClick={() => { setToggleValue("Month") }}>
+                <div className={`p-[3px] lg:p-2 ${toggleValue === "Month" ? " bg-gradient-to-bl from-[#FDD01F] via-[#FDD320] to-[#F8861B] text-[#2A2200]" : "bg-transparent text-[#F9F9F9]"} cursor-pointer rounded-[20px]`} onClick={() => { setToggleValue("Month") }}>
                     <h1 className='mx-[10px] font-normal text-[12px] lg:text-[16px]'>Monthly</h1>
                 </div>
-                <div className={`p-[3px] lg:p-2 ${toggleValue === "Year" ? " bg-gradient-to-bl from-[#FDD01F] via-[#FDD320] via-[#F8C240] to-[#F8861B] text-[#2A2200]" : "bg-transparent text-[#F9F9F9]"} cursor-pointer rounded-[20px]`}>
+                <div className={`p-[3px] lg:p-2 ${toggleValue === "Year" ? " bg-gradient-to-bl from-[#FDD01F] via-[#FDD320] to-[#F8861B] text-[#2A2200]" : "bg-transparent text-[#F9F9F9]"} cursor-pointer rounded-[20px]`}>
                     <h1 className='mx-[10px] font-normal text-[12px] lg:text-[16px]' onClick={() => { setToggleValue("Year") }}>Yearly</h1>
                 </div>
             </div>
@@ -81,7 +81,7 @@ export default function Pricing({ setIsForm }) {
                                 <h3 className='text-[#FFDD09] text-[11px] lg:text-[13px] font-medium lg:ml-[20px] my-[10px] lg:my-[15px] cursor-pointer relative z-[1]' onClick={() => { setKnowMoreB1M(false) }}>less...</h3>
                                 <div className='bg-[#355D86] w-[100px] h-[100px] rounded-full absolute blur-[55px] bottom-[20px] z-0 -right-[0]'></div>
                             </>)}
-                        <button className='w-10/12 lg:w-[170px] h-[45px] absolute bottom-4 z-[1] left-[50%] -translate-x-[50%] bg-gradient-to-bl from-[#FDD01F] via-[#FDD320] via-[#F8C240] to-[#F8861B] rounded-[5px] lg:rounded-[10px] text-[#2A2200] font-medium text-[16px] border-[1px] border-[#FFE784]' onClick={() => { setIsForm(true) }}>Get Started</button>
+                        <button className='w-10/12 lg:w-[170px] h-[45px] absolute bottom-4 z-[1] left-[50%] -translate-x-[50%] bg-gradient-to-bl from-[#FDD01F] via-[#FDD320] to-[#F8861B] rounded-[5px] lg:rounded-[10px] text-[#2A2200] font-medium text-[16px] border-[1px] border-[#FFE784]' onClick={() => { setIsForm(true) }}>Get Started</button>
                     </div>
                     <div className={`p-5 w-full lg:w-[320px] border-[1px] border-[#FFFFFF1A] rounded-[10px] lg:rounded-[30px] sm:hover:scale-[1.1] transition-all duration-700 relative overflow-hidden ${knowMoreB2M ? "h-[830px] lg:h-[1050px]" : "h-[380px] lg:h-[500px]"}`}>
                         <div className='bg-[#355D86] w-[200px] h-[200px] rounded-full absolute blur-[67px] top-[50%] -translate-y-[59%] z-0 -left-[40%]'></div>
@@ -184,7 +184,7 @@ export default function Pricing({ setIsForm }) {
                                 <div className='bg-[#355D86] w-[100px] h-[100px] rounded-full absolute blur-[55px] bottom-[20px] z-0 -right-[0]'></div>
                             </>
                         )}
-                        <button className='w-10/12 lg:w-[170px] h-[45px] absolute z-[1] bottom-4 left-[50%] -translate-x-[50%] bg-gradient-to-bl from-[#FDD01F] via-[#FDD320] via-[#F8C240] to-[#F8861B] rounded-[5px] lg:rounded-[10px] text-[#2A2200] font-medium text-[16px] border-[1px] border-[#FFE784]' onClick={() => { setIsForm(true) }}>Get Started</button>
+                        <button className='w-10/12 lg:w-[170px] h-[45px] absolute z-[1] bottom-4 left-[50%] -translate-x-[50%] bg-gradient-to-bl from-[#FDD01F] via-[#FDD320] to-[#F8861B] rounded-[5px] lg:rounded-[10px] text-[#2A2200] font-medium text-[16px] border-[1px] border-[#FFE784]' onClick={() => { setIsForm(true) }}>Get Started</button>
                     </div>
                     <div className={`p-5 w-full lg:w-[320px] border-[1px] border-[#FFFFFF1A] rounded-[10px] lg:rounded-[30px] sm:hover:scale-[1.1] transition-all duration-700 relative overflow-hidden ${knowMoreB3M ? "h-[810px] lg:h-[1050px]" : "h-[380px] lg:h-[500px]"}`}>
                         <div className='bg-[#355D86] w-[200px] h-[200px] rounded-full absolute blur-[67px] top-[50%] -translate-y-[59%] z-0 -left-[40%]'></div>
@@ -284,7 +284,7 @@ export default function Pricing({ setIsForm }) {
                                 <div className='bg-[#355D86] w-[100px] h-[100px] rounded-full absolute blur-[55px] bottom-[20px] z-0 -right-[0]'></div>
                             </>
                         )}
-                        <button className='w-10/12 lg:w-[170px] h-[45px] absolute z-[1] bottom-4 left-[50%] -translate-x-[50%] bg-gradient-to-bl from-[#FDD01F] via-[#FDD320] via-[#F8C240] to-[#F8861B] rounded-[5px] lg:rounded-[10px] text-[#2A2200] font-medium text-[16px] border-[1px] border-[#FFE784]' onClick={() => { setIsForm(true) }}>Get Started</button>
+                        <button className='w-10/12 lg:w-[170px] h-[45px] absolute z-[1] bottom-4 left-[50%] -translate-x-[50%] bg-gradient-to-bl from-[#FDD01F] via-[#FDD320] to-[#F8861B] rounded-[5px] lg:rounded-[10px] text-[#2A2200] font-medium text-[16px] border-[1px] border-[#FFE784]' onClick={() => { setIsForm(true) }}>Get Started</button>
                     </div>
                     <div className={`p-5 w-full lg:w-[320px] border-[1px] border-[#FFFFFF1A] rounded-[10px] lg:rounded-[30px] sm:hover:scale-[1.1] transition-all duration-700 relative overflow-hidden ${knowMoreB4M ? "h-[860px] lg:h-[1100px]" : "h-[380px] lg:h-[500px]"}`}>
                         <div className='bg-[#355D86] w-[200px] h-[200px] rounded-full absolute blur-[67px] top-[50%] -translate-y-[59%] z-0 -left-[40%]'></div>
@@ -392,7 +392,7 @@ export default function Pricing({ setIsForm }) {
                                 <div className='bg-[#355D86] w-[100px] h-[100px] rounded-full absolute blur-[55px] bottom-[20px] z-0 -right-[0]'></div>
                             </>
                         )}
-                        <button className='w-10/12 lg:w-[170px] h-[45px] absolute z-[1] bottom-4 left-[50%] -translate-x-[50%] bg-gradient-to-bl from-[#FDD01F] via-[#FDD320] via-[#F8C240] to-[#F8861B] rounded-[5px] lg:rounded-[10px] text-[#2A2200] font-medium text-[16px] border-[1px] border-[#FFE784]' onClick={() => { setIsForm(true) }}>Contact Sales</button>
+                        <button className='w-10/12 lg:w-[170px] h-[45px] absolute z-[1] bottom-4 left-[50%] -translate-x-[50%] bg-gradient-to-bl from-[#FDD01F] via-[#FDD320] to-[#F8861B] rounded-[5px] lg:rounded-[10px] text-[#2A2200] font-medium text-[16px] border-[1px] border-[#FFE784]' onClick={() => { setIsForm(true) }}>Contact Sales</button>
                     </div>
                 </div>
             ) : toggleValue === "Year" && (
@@ -450,7 +450,7 @@ export default function Pricing({ setIsForm }) {
                                 <h3 className='text-[#FFDD09] text-[11px] lg:text-[13px] font-medium lg:ml-[20px] my-[10px] lg:my-[15px] cursor-pointer relative z-[1]' onClick={() => { setKnowMoreB1Y(false) }}>less...</h3>
                                 <div className='bg-[#355D86] w-[100px] h-[100px] rounded-full absolute blur-[55px] bottom-[20px] z-0 -right-[0]'></div>
                             </>)}
-                        <button className='w-10/12 lg:w-[170px] h-[45px] absolute bottom-4 z-[1] left-[50%] -translate-x-[50%] bg-gradient-to-bl from-[#FDD01F] via-[#FDD320] via-[#F8C240] to-[#F8861B] rounded-[5px] lg:rounded-[10px] text-[#2A2200] font-medium text-[16px] border-[1px] border-[#FFE784]' onClick={() => { setIsForm(true) }}>Get Started</button>
+                        <button className='w-10/12 lg:w-[170px] h-[45px] absolute bottom-4 z-[1] left-[50%] -translate-x-[50%] bg-gradient-to-bl from-[#FDD01F] via-[#FDD320] to-[#F8861B] rounded-[5px] lg:rounded-[10px] text-[#2A2200] font-medium text-[16px] border-[1px] border-[#FFE784]' onClick={() => { setIsForm(true) }}>Get Started</button>
                     </div>
                     <div className={`p-5 w-full lg:w-[320px] border-[1px] border-[#FFFFFF1A] rounded-[10px] lg:rounded-[30px] sm:hover:scale-[1.1] transition-all duration-700 relative overflow-hidden ${knowMoreB2Y ? "h-[830px] lg:h-[1050px]" : "h-[380px] lg:h-[500px]"}`}>
                         <div className='bg-[#355D86] w-[200px] h-[200px] rounded-full absolute blur-[67px] top-[50%] -translate-y-[59%] z-0 -left-[40%]'></div>
@@ -553,7 +553,7 @@ export default function Pricing({ setIsForm }) {
                                 <div className='bg-[#355D86] w-[100px] h-[100px] rounded-full absolute blur-[55px] bottom-[20px] z-0 -right-[0]'></div>
                             </>
                         )}
-                        <button className='w-10/12 lg:w-[170px] h-[45px] absolute z-[1] bottom-4 left-[50%] -translate-x-[50%] bg-gradient-to-bl from-[#FDD01F] via-[#FDD320] via-[#F8C240] to-[#F8861B] rounded-[5px] lg:rounded-[10px] text-[#2A2200] font-medium text-[16px] border-[1px] border-[#FFE784]' onClick={() => { setIsForm(true) }}>Get Started</button>
+                        <button className='w-10/12 lg:w-[170px] h-[45px] absolute z-[1] bottom-4 left-[50%] -translate-x-[50%] bg-gradient-to-bl from-[#FDD01F] via-[#FDD320] to-[#F8861B] rounded-[5px] lg:rounded-[10px] text-[#2A2200] font-medium text-[16px] border-[1px] border-[#FFE784]' onClick={() => { setIsForm(true) }}>Get Started</button>
                     </div>
                     <div className={`p-5 w-full lg:w-[320px] border-[1px] border-[#FFFFFF1A] rounded-[10px] lg:rounded-[30px] sm:hover:scale-[1.1] transition-all duration-700 relative overflow-hidden ${knowMoreB3Y ? "h-[810px] lg:h-[1050px]" : "h-[380px] lg:h-[500px]"}`}>
                         <div className='bg-[#355D86] w-[200px] h-[200px] rounded-full absolute blur-[67px] top-[50%] -translate-y-[59%] z-0 -left-[40%]'></div>
@@ -653,7 +653,7 @@ export default function Pricing({ setIsForm }) {
                                 <div className='bg-[#355D86] w-[100px] h-[100px] rounded-full absolute blur-[55px] bottom-[20px] z-0 -right-[0]'></div>
                             </>
                         )}
-                        <button className='w-10/12 lg:w-[170px] h-[45px] absolute z-[1] bottom-4 left-[50%] -translate-x-[50%] bg-gradient-to-bl from-[#FDD01F] via-[#FDD320] via-[#F8C240] to-[#F8861B] rounded-[5px] lg:rounded-[10px] text-[#2A2200] font-medium text-[16px] border-[1px] border-[#FFE784]' onClick={() => { setIsForm(true) }}>Get Started</button>
+                        <button className='w-10/12 lg:w-[170px] h-[45px] absolute z-[1] bottom-4 left-[50%] -translate-x-[50%] bg-gradient-to-bl from-[#FDD01F] via-[#FDD320] to-[#F8861B] rounded-[5px] lg:rounded-[10px] text-[#2A2200] font-medium text-[16px] border-[1px] border-[#FFE784]' onClick={() => { setIsForm(true) }}>Get Started</button>
                     </div>
                     <div className={`p-5 w-full lg:w-[320px] border-[1px] border-[#FFFFFF1A] rounded-[10px] lg:rounded-[30px] sm:hover:scale-[1.1] transition-all duration-700 relative overflow-hidden ${knowMoreB4Y ? "h-[860px] lg:h-[1100px]" : "h-[380px] lg:h-[500px]"}`}>
                         <div className='bg-[#355D86] w-[200px] h-[200px] rounded-full absolute blur-[67px] top-[50%] -translate-y-[59%] z-0 -left-[40%]'></div>
@@ -761,7 +761,7 @@ export default function Pricing({ setIsForm }) {
                                 <div className='bg-[#355D86] w-[100px] h-[100px] rounded-full absolute blur-[55px] bottom-[20px] z-0 -right-[0]'></div>
                             </>
                         )}
-                        <button className='w-10/12 lg:w-[170px] h-[45px] absolute z-[1] bottom-4 left-[50%] -translate-x-[50%] bg-gradient-to-bl from-[#FDD01F] via-[#FDD320] via-[#F8C240] to-[#F8861B] rounded-[5px] lg:rounded-[10px] text-[#2A2200] font-medium text-[16px] border-[1px] border-[#FFE784]' onClick={() => { setIsForm(true) }}>Contact Sales</button>
+                        <button className='w-10/12 lg:w-[170px] h-[45px] absolute z-[1] bottom-4 left-[50%] -translate-x-[50%] bg-gradient-to-bl from-[#FDD01F] via-[#FDD320] to-[#F8861B] rounded-[5px] lg:rounded-[10px] text-[#2A2200] font-medium text-[16px] border-[1px] border-[#FFE784]' onClick={() => { setIsForm(true) }}>Contact Sales</button>
                     </div>
                 </div>
             )}

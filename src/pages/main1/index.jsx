@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from '../header';
+import Header from './component/header';
 import Intro from './component/intro';
 import Channel from './component/channel';
 import Project from './component/project';
@@ -10,21 +10,20 @@ import Features from './component/features';
 import Footer from './component/footer';
 import Testimonial from './component/testimonials';
 import Availbles from './component/avaibles';
-import Pricing from './component/price';
+// import Pricing from './component/price';
 import IpadView from './component/ipadview';
 import Support from './component/support';
 import Access from './component/access';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { IoCloseSharp } from "react-icons/io5";
-import user from "../../images/profileicon.svg";
-import emailIcon from "../../images/emailicon.svg";
-import phone from "../../images/phoneicon.svg";
-import company from "../../images/companyicon.svg";
 import API from '../../utils/API';
 import axios from 'axios';
 import LoadLottie from '../loadLottie';
 import sucess from "../../sucess.json";
+import appStore from "../../images/appstore.svg";
+import playStore from "../../images/playstore.svg";
+
 
 export default function Main1() {
   const [isVideo, setIsVideo] = React.useState(false);
@@ -40,7 +39,9 @@ export default function Main1() {
 
 
   const handleNameChange = (e) => {
-    setName(e.target.value)
+    if (/^[\x20-\x7E]*$/.test(e.target.value)) {
+      setName(e.target.value)
+    }
   }
 
   const handleEmailChange = (e) => {
@@ -58,17 +59,19 @@ export default function Main1() {
   }
 
   const handleCompanyNameChange = (e) => {
-    setCompanyName(e.target.value);
+    if (/^[\x20-\x7E]*$/.test(e.target.value)) {
+      setCompanyName(e.target.value);
+    }
   }
 
   const handlePhoneNumberChange = (e) => {
-    setPhoneNumber(e.target.value)
-    const phoneNumber = e.target.value;
+    const phoneNumbers = e.target.value.replace(/\D/g, '');
+    setPhoneNumber(phoneNumbers)
     const isValidPhoneNumber = /^\d{10}$/;
-    if (phoneNumber === "") {
+    if (phoneNumbers === "") {
       setPhoneNumberError(false);
     }
-    else if (!isValidPhoneNumber.test(phoneNumber)) {
+    else if (!isValidPhoneNumber.test(phoneNumbers)) {
       setPhoneNumberError(true);
     } else {
       setPhoneNumberError(false);
@@ -84,6 +87,10 @@ export default function Main1() {
         phone: phoneNumber,
         company_name: companyName
       });
+    const response = await axios.post(API.HOST, { email: email });
+    if (response.data) {
+      console.log("success")
+    }
     if (data?.statusCode === 200) {
       setName('');
       setEmail('');
@@ -104,7 +111,7 @@ export default function Main1() {
       <Header setIsForm={setIsForm} />
       <Intro setIsForm={setIsForm} email={email} setEmail={setEmail} />
       <Features />
-      <img src='https://dz1x1c630cl14.cloudfront.net/webassets/mobiles.webp' alt='mobileView'
+      <img src="https://dz1x1c630cl14.cloudfront.net/webassets/mobile.webp" alt='mobileView'
         // data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="10000" 
         className='my-[20px] lg:my-[100px] p-[20px] w-[80%]' />
       <Channel />
@@ -113,9 +120,29 @@ export default function Main1() {
       <Chat />
       <Ai />
       <Availbles />
-      <img src='https://dz1x1c630cl14.cloudfront.net/webassets/Devicemockup.webp' alt='availble' className='mt-[10px] lg:mt-[50px] p-[20px] w-[80%]'
+      <img src="https://dz1x1c630cl14.cloudfront.net/webassets/Devicemockup1.webp" alt='availble' className='mt-[10px] lg:mt-[50px] p-[20px] sm:w-[80%] relative z-[1]'
       // data-aos="zoom-in" data-aos-duration="2000" 
       />
+      <div className='mt-[10px] lg:mt-[50px] relative z-[1] grid sm:flex md:flex-row justify-center items-center gap-[30px]'>
+        <a href="https://apps.apple.com/in/app/workfast-team-productivity/id6504078096" target="_blank" rel="noopener noreferrer">
+          <div className='px-[20px] lg:px-[30px] py-[10px] border-[1px] border-[#004B9D] bg-[#0A0D1900] rounded-[14px] sm:rounded-[20px] flex gap-[20px] items-center cursor-pointer'>
+            <img src={appStore} alt='appstore' className='w-[25px] sm:w-[30px] lg:w-auto'/>
+            <div className='flex flex-col justify-between'>
+              <h3 className='text-[#FFFFFF] text-[12px] sm:text-[16px] lg:text-[18px] font-medium'>Download on the</h3>
+              <h2 className='text-[#FFFFFF] text-[16px] sm:text-[22px] lg:text-[26px] font-semibold'>App Store</h2>
+            </div>
+          </div>
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=com.workfast.ai.app" target="_blank" rel="noopener noreferrer">
+          <div className='px-[20px] lg:px-[30px] py-[10px] border-[1px] border-[#004B9D] bg-[#0A0D1900] rounded-[14px] sm:rounded-[20px] flex gap-[20px] items-center cursor-pointer'>
+            <img src={playStore} alt='playstore' className='w-[25px] sm:w-[30px] lg:w-auto'/>
+            <div className='flex flex-col justify-between'>
+              <h3 className='text-[#FFFFFF] text-[12px] sm:text-[16px] lg:text-[18px] font-medium'>GET IT ON</h3>
+              <h2 className='text-[#FFFFFF] text-[16px] sm:text-[22px] lg:text-[26px] font-semibold'>Google Play</h2>
+            </div>
+          </div>
+        </a>
+      </div>
       {/* <Pricing setIsForm={setIsForm} /> */}
       <IpadView />
       <Support />
@@ -138,7 +165,7 @@ export default function Main1() {
                   autoPlay
                 >
                   <source
-                    src={`https://dz1x1c630cl14.cloudfront.net/webassets/testimonial1.mp4`}
+                    src={`https://dz1x1c630cl14.cloudfront.net/webassets/TestimonialLandscape.mp4`}
                     type="video/mp4"
                   />
                   Your browser does not support the video tag.
@@ -188,7 +215,7 @@ export default function Main1() {
             <div className='grid md:grid-cols-2 gap-5 items-center mt-[15px] md:mt-[30px] w-full'>
               <div className='w-full'>
                 <div className='flex items-center gap-1'>
-                  <img src={user} alt='user' className='w-[19px] md:w-[23x]' />
+                  <img src="https://dz1x1c630cl14.cloudfront.net/webassets/profileicon.svg" alt='user' className='w-[19px] md:w-[23x]' />
                   <h3 className='text-[#FFFFFF] text-[12px] md:text-[14px] font-medium'>Name*</h3>
                 </div>
                 <div className={`w-full h-[38px] md:h-[44px] bg-[#1C2437] lg:py-[10px] mt-[10px] rounded-[8px]`}>
@@ -197,7 +224,7 @@ export default function Main1() {
               </div>
               <div className='w-full'>
                 <div className='flex items-center gap-1'>
-                  <img src={emailIcon} alt='user' className='w-[19px] md:w-[23x]' />
+                  <img src="https://dz1x1c630cl14.cloudfront.net/webassets/emailicon.svg" alt='user' className='w-[19px] md:w-[23x]' />
                   <h3 className='text-[#FFFFFF] text-[12px] md:text-[14px] font-medium'>Email*</h3>
                 </div>
                 <div className={`w-full h-[38px] md:h-[44px] bg-[#1C2437] lg:py-[10px] mt-[10px] rounded-[8px] ${emailError ? "border-[1px] border-[#F92A4B]" : ""}`}>
@@ -206,7 +233,7 @@ export default function Main1() {
               </div>
               <div className='w-full'>
                 <div className='flex items-center gap-1'>
-                  <img src={phone} alt='user' className='w-[19px] md:w-[23x]' />
+                  <img src="https://dz1x1c630cl14.cloudfront.net/webassets/phoneicon.svg" alt='user' className='w-[19px] md:w-[23x]' />
                   <h3 className='text-[#FFFFFF] text-[12px] md:text-[14px] font-medium'>Phone Number*</h3>
                 </div>
                 <div className={`w-full h-[38px] md:h-[44px] bg-[#1C2437] lg:py-[10px] mt-[10px] rounded-[8px] ${phoneNumberError ? "border-[1px] border-[#F92A4B]" : ""}`}>
@@ -215,7 +242,7 @@ export default function Main1() {
               </div>
               <div className='w-full'>
                 <div className='flex items-center gap-1'>
-                  <img src={company} alt='user' className='w-[19px] md:w-[23x]' />
+                  <img src="https://dz1x1c630cl14.cloudfront.net/webassets/companyicon.svg" alt='user' className='w-[19px] md:w-[23x]' />
                   <h3 className='text-[#FFFFFF] text-[12px] md:text-[14px] font-medium'>Company name*</h3>
                 </div>
                 <div className={`w-full h-[38px] md:h-[44px] bg-[#1C2437] lg:py-[10px] mt-[10px] rounded-[8px]`}>

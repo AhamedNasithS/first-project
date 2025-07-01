@@ -1,5 +1,4 @@
 import React from 'react'
-import logo from "../../../../images/one_ai-Logo1.svg"
 
 export default function Footer() {
     return (
@@ -30,18 +29,23 @@ export default function Footer() {
                 </div>
             </div> */}
             <div className='flex justify-between gap-[20px] lg:gap-[60px] lg:w-11/12 mx-auto borderFooter py-8 px-[20px]'>
-            <img src={logo} alt='logo' className='w-[110px]' />
+            <img src="https://dz1x1c630cl14.cloudfront.net/webassets/one_ai-Logo1.svg" alt='logo' className='w-[110px]' />
             <div className="flex flex-col gap-[10px] lg:ml-[40px] w-[110px] sm:w-auto">
                         <h2 className='text-[#E2E8FFBF] text-[14px] font-medium'>Company</h2>
                         {/* <h3 className='text-[#E2E8FF8C] text-[14px] font-normal mt-[10px]'>About Us</h3> */}
+                        {/* <a href='/blog'><h3 className='text-[#E2E8FF8C] text-[14px] font-normal cursor-pointer'>Blog</h3></a> */}
                         <a href='/privacy'><h3 className='text-[#E2E8FF8C] text-[14px] font-normal cursor-pointer'>Privacy Policy</h3></a>
                         <a href='/terms'><h3 className='text-[#E2E8FF8C] text-[14px] font-normal cursor-pointer'>Terms And Condition</h3></a>
+
+                        {/* <a href='/refund'><h3 className='text-[#E2E8FF8C] text-[14px] font-normal cursor-pointer'>Refund Policy </h3></a> */}
+                        <a href='/about'><h3 className='text-[#E2E8FF8C] text-[14px] font-normal cursor-pointer'>About us</h3></a> 
+                        <a href='/contact'><h3 className='text-[#E2E8FF8C] text-[14px] font-normal cursor-pointer'>Contact us</h3></a>
                         {/* <a href='/refund'><h3 className='text-[#E2E8FF8C] text-[14px] font-normal cursor-pointer'>Refund Policy</h3></a> */}
                     </div>
             </div>
             <div className='mt-[100px] w-11/12 mx-auto pb-8'>
                 <div className='col-span-2'>
-                    <p className='text-[#E2E8FF59] text-[12px] font-normal'>Copyright © 2024. All rights reserved.</p>
+                    <p className='text-[#E2E8FF59] text-[12px] font-normal'>Copyright © 2024, Pepul Tech Privated Limited. All rights reserved.</p>
                 </div>
                 {/* <div className='flex items-center gap-[50px]'>
                     <p className='text-[#E2E8FF59] text-[12px] font-normal'>Privacy Policy</p>
