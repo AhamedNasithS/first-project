@@ -194,40 +194,39 @@ body {
   background: none;
   z-index: 1;
   box-shadow: 0 8px 20px rgba(33, 4, 104, 0.2);
+}
 
-  .span {
-    z-index: 1;
-    position: relative;
-    display: block;
-    padding: 10px 28px;
-    box-sizing: border-box;
-    width: 100%;
-    /* min-width: 124px; */
-    border-radius: inherit;
-    background-color: transparent;
-    overflow: hidden;
-    -webkit-mask-image: -webkit-radial-gradient(white, black);
+.glow-button .span {
+  z-index: 1;
+  position: relative;
+  display: block;
+  padding: 10px 28px;
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: inherit;
+  background-color: transparent;
+  overflow: hidden;
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
+}
 
-    &:before {
-      content: '';
-      position: absolute;
-      left: -16px;
-      top: -16px;
-      transform: translate(var(--pointer-x, 0px), var(--pointer-y, 0px)) translateZ(0);
-      width: 32px;
-      height: 32px;
-      border-radius: 50%;
-      background-color: var(--button-glow, transparent);
-      opacity: var(--button-glow-opacity, 0);
-      transition: opacity var(--button-glow-duration, .5s);
-      filter: blur(10px);
-    }
-  }
+.glow-button .span::before {
+  content: '';
+  position: absolute;
+  left: -16px;
+  top: -16px;
+  transform: translate(var(--pointer-x, 0px), var(--pointer-y, 0px)) translateZ(0);
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: var(--button-glow, transparent);
+  opacity: var(--button-glow-opacity, 0);
+  transition: opacity var(--button-glow-duration, .5s);
+  filter: blur(10px);
+}
 
-  &:hover {
-    --button-glow-opacity: 1;
-    --button-glow-duration: .25s;
-  }
+.glow-button:hover {
+  --button-glow-opacity: 1;
+  --button-glow-duration: .25s;
 }
 
 @property --shimmer {
