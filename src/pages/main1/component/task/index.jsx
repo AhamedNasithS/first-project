@@ -1,6 +1,8 @@
 import React from 'react'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import banner from "../../../../images/main/security.png"
+import { LuLock } from 'react-icons/lu';
 
 export default function Task() {
   React.useEffect(() => {
@@ -16,15 +18,18 @@ export default function Task() {
         </div>
       </div>
       <div className='lg:basis-1/2'>
-        <div className='flex gap-2'>
-          <img src='https://dz1x1c630cl14.cloudfront.net/webassets/taskIcon.svg' alt='task' className='w-[20px] lg:w-[40px]'/>
-          <h2 className='bg-gradient-to-r from-[#D5AA31] to-[#D56C31] bg-clip-text text-transparent text-[24px] lg:text-[60px] font-semibold'>Task</h2>
+        <div className='flex gap-2 md:gap-4 items-center'>
+          <div className='size-[30px] md:size-[60px] bg-[#FCFCFC17] border-[1px] border-[#FCE05E] flex justify-center items-center relative rounded-[10px] overflow-hidden'>
+            <LuLock className='relative z-[1] text-[#FCE05E] text-[20px] md:text-[30px]' />
+            <div className='absolute -bottom-[38%] -translate-y-[50%] w-[13px] h-[10px] rounded-full bg-[#FCE05E] blur-[3px] glowTask z-0'></div>
+          </div>
+          <h2 className='bg-gradient-to-r from-[#D5AA31] to-[#D56C31] bg-clip-text text-transparent text-[24px] lg:text-[60px] font-semibold'>Security</h2>
         </div>
-        <h3 className='mt-[10px] text-[#E4E8EB] font-medium text-[14px] lg:text-[28px]'>Tasks are items on a to-do list that are often completed within a specific time frame.</h3>
+        <h3 className='mt-[10px] text-[#E4E8EB] font-medium text-[14px] lg:text-[28px]'>Protect your data with strong authentication and privacy controls.</h3>
       </div>
       <div className='lg:basis-1/2 flex justify-end mt-[15px] sm:mt-0'>
-        <img src="https://dz1x1c630cl14.cloudfront.net/webassets/task.webp" alt='channel' 
-        // data-aos="zoom-in-left" data-aos-duration="1000"
+        <img src={banner} alt='channel'
+          data-aos="zoom-in-left" data-aos-duration="1000"
         />
       </div>
     </div>

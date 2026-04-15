@@ -1,6 +1,8 @@
 import React from 'react'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { LuRocket } from 'react-icons/lu';
+import banner from "../../../../images/main/dashboard.png"
 
 export default function Channel() {
 
@@ -17,16 +19,19 @@ export default function Channel() {
         </div>
       </div>
       <div className='lg:basis-1/2'>
-        <div className='flex gap-2'>
-          <img src='https://dz1x1c630cl14.cloudfront.net/webassets/channelIcon.svg' alt='channel' className='w-[20px] lg:w-[40px]' />
-          <h2 className='text-[24px] lg:text-[60px] font-semibold bg-gradient-to-r from-[#FFA3B4] to-[#FFA3EB] bg-clip-text text-transparent'>Channels</h2>
+        <div className='flex gap-2 md:gap-4 items-center'>
+          <div className='size-[30px] md:size-[60px] bg-[#FCFCFC17] border-[1px] border-[#F78C9F] flex justify-center items-center relative rounded-[10px] overflow-hidden'>
+            <LuRocket className='relative z-[1] text-[#F78C9F] text-[20px] md:text-[30px]' />
+            <div className='absolute -bottom-[38%] -translate-y-[50%] w-[13px] h-[10px] rounded-full bg-[#F78C9F] blur-[3px] glow z-0'></div>
+          </div>
+          <h2 className='text-[24px] lg:text-[60px] font-semibold bg-gradient-to-r from-[#FFA3B4] to-[#FFA3EB] bg-clip-text text-transparent'>Dashboard</h2>
         </div>
-        <h3 className='mt-[10px] text-[#E4E8EB] font-medium text-[14px] lg:text-[28px]'>A space to communicate and align with your team on projects and tasks.</h3>
+        <h3 className='mt-[10px] text-[#E4E8EB] font-medium text-[14px] lg:text-[28px]'>Get a clear overview of activities, stats, and updates in one place.</h3>
       </div>
-      <div className='lg:basis-1/2 flex justify-end mt-[20px] lg:mt-0' 
-      // data-aos="zoom-in-left" data-aos-duration="4000"
+      <div className='lg:basis-1/2 flex justify-end mt-[20px] lg:mt-0'
+        data-aos="zoom-in-left" data-aos-duration="4000"
       >
-        <img src='https://dz1x1c630cl14.cloudfront.net/webassets/channel1.webp' alt='channel' />
+        <img src={banner} alt='channel' />
       </div>
     </div>
   )

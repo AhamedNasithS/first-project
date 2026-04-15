@@ -1,6 +1,8 @@
 import React from 'react'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import banner from "../../../../images/main/analytics.png"
+import { LuBarChart } from 'react-icons/lu';
 
 export default function Chat() {
 
@@ -18,16 +20,19 @@ export default function Chat() {
         </div>
       </div>
       <div className='lg:basis-1/2 flex justify-start'>
-        <img src="https://dz1x1c630cl14.cloudfront.net/webassets/chats.webp" alt='channel' 
-        // data-aos="zoom-in-right" data-aos-duration="1000"
+        <img src={banner} alt='channel'
+          data-aos="zoom-in-right" data-aos-duration="1000"
         />
       </div>
       <div className='lg:basis-1/2 lg:ml-[160px]'>
-        <div className='flex gap-2'>
-          <img src='https://dz1x1c630cl14.cloudfront.net/webassets/chatIcon.svg' alt='chat' className='w-[20px] lg:w-[40px]'/>
-          <h2 className='bg-gradient-to-r from-[#3973E3] to-[#203F7D] bg-clip-text text-transparent text-[24px] lg:text-[60px] font-semibold'>Chat</h2>
+        <div className='flex gap-2 md:gap-4 items-center'>
+          <div className='size-[30px] md:size-[60px] bg-[#FCFCFC17] border-[1px] border-[#255DCA] flex justify-center items-center relative rounded-[10px] overflow-hidden'>
+            <LuBarChart className='relative z-[1] text-[#255DCA] text-[20px] md:text-[30px]' />
+            <div className='absolute -bottom-[38%] -translate-y-[50%] w-[13px] h-[10px] rounded-full bg-[#255DCA] blur-[3px] glowChat z-0'></div>
+          </div>
+          <h2 className='bg-gradient-to-r from-[#3973E3] to-[#203F7D] bg-clip-text text-transparent text-[24px] lg:text-[60px] font-semibold'>Analytics</h2>
         </div>
-        <h3 className='mt-[10px] text-[#E4E8EB] font-medium text-[14px] lg:text-[28px]'>A space where one can DM and group chat with anyone in the organization officially.</h3>
+        <h3 className='mt-[10px] text-[#E4E8EB] font-medium text-[14px] lg:text-[28px]'>Track performance and generate insights with detailed reports.</h3>
       </div>
     </div>
   )

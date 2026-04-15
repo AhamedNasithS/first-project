@@ -1,80 +1,45 @@
-import React from 'react'
-// import logo from "../../../../../images/one_ai-Logo1.svg";
-import API from '../../../../../utils/API';
-import axios from 'axios';
-import { useNavigate } from 'react-router-dom';
+import React, { useEffect, useState } from 'react'
+import { Logo } from '../SVG';
+import { toast } from 'react-toastify';
 
-export default function Desktop({ setIsForm }) {
-    const navigate = useNavigate();
+export default function Desktop() {
 
     const handleFeatureClick = () => {
-        const element = document.getElementById('features');
-        if (element) {
-            element.scrollIntoView({ behavior: 'smooth' });
-        }
+        toast.success("Coming soon...!", {
+            position: "top-center",
+            autoClose: 3000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: false,
+            progress: undefined,
+            theme: "colored"
+        });
     };
 
-    // const handlePricingClick = () => {
-    //     const element = document.getElementById('pricing');
-    //     if (element) {
-    //         element.scrollIntoView({ behavior: 'smooth' });
-    //     }
-    // };
+    const [position, setPosition] = useState(window.innerWidth);
 
-    const handleClick = async (e) => {
-        e.preventDefault();
-        const response = await axios.post(API.BUTTON,
-            {
-                "eventName": "SIGN_UP_FOR_FREE_MAIN"
-            }
-        );
-        if (response.data.statusCode === 200) {
-            // window.location.href = 'https://app.workfast.ai/';
-            navigate('/signup')
-        }
-    };
-
-    const handleLiginClick = async (e) => {
-        e.preventDefault();
-        const response = await axios.post(API.BUTTON,
-            {
-                "eventName": "LOG_IN_FOR_FREE_MAIN"
-            }
-        );
-        if (response.data.statusCode === 200) {
-            window.location.href = 'https://app.workfast.ai/';
-            // navigate('/signup')
-        }
-    };
-
-    const handleBlog = async (e) => {
-        e.preventDefault();
-        const response = await axios.post(API.BUTTON,
-            {
-                "eventName": "BLOG_MAIN"
-            }
-        );
-        if (response.data.statusCode === 200) {
-            navigate('/blog')
-        }
-    };
+    useEffect(() => {
+        window.onresize = function () {
+            setPosition(window.innerWidth);
+        };
+    }, []);
 
     return (
         <div className='flex justify-between items-center h-[80px] w-full bg-gradient-to-t from-[#111830] to-[#13131300] p-[24px]'>
-            <a href='/'><img src="https://dz1x1c630cl14.cloudfront.net/webassets/one_ai-Logo1.svg" alt='logo' /></a>
+            <a title='logo' href='/'>
+                <Logo width={position >= 1024 ? "133" : "100"} height={position >= 1024 ? "51" : "45"} />
+            </a>
             <div className='flex gap-8 px-8 py-4 rounded-[40px] border-[1px] border-[#E2E8FF1A]'>
-                {/* <h3 className='text-[#E2E8FFBF] font-normal text-[14px] cursor-pointer'>Product</h3> */}
                 <h3 className='text-[#FFF] font-normal text-[14px] cursor-pointer' onClick={() => { handleFeatureClick() }}>Features</h3>
-                <h3 className='text-[#FFF] font-normal text-[14px] cursor-pointer' onClick={(e) => { handleBlog(e) }}>Blog</h3>
-                <h3 className='text-[#FFF] font-normal text-[14px] cursor-pointer' onClick={() => { navigate('/pricing') }}>Pricing</h3>
-                <h3 className='text-[#FFF] font-normal text-[14px] cursor-pointer' onClick={(e) => { navigate('/investor') }}>Investor</h3>
-                {/* <h3 className='text-[#E2E8FFBF] font-normal text-[14px] cursor-pointer' onClick={() => { setIsForm(true) }}>Enterprise</h3> */}
+                <h3 className='text-[#FFF] font-normal text-[14px] cursor-pointer' onClick={(e) => { handleFeatureClick() }}>Blog</h3>
+                <h3 className='text-[#FFF] font-normal text-[14px] cursor-pointer' onClick={() => { handleFeatureClick() }}>Pricing</h3>
+                <h3 className='text-[#FFF] font-normal text-[14px] cursor-pointer' onClick={(e) => { handleFeatureClick() }}>Investor</h3>
             </div>
-            {/* <button className='py-[8px] px-[12px] text-[#1B1600] text-[14px] font-semibold rounded-[8px] bg-gradient-to-bl from-[#FDD01F] via-[#FDD320] to-[#F8861B]' onClick={(e) => { handleClick(e) }}>Sign up for free</button> */}
             <div className='p-[1px] bg-gradient-to-bl from-[#FDD01F] via-[#FDD320] to-[#F8861B] rounded-[12px]'>
                 <div className='p-[3px] lg:p-[6px] rounded-[12px] flex gap-[10px] items-center bg-[#111830]'>
-                    <button className='py-[8px] px-[12px] text-[#FFFFFF] hover:text-[#000] text-[14px] font-semibold rounded-[8px] bg-transparent hover:bg-[#E2E8FFBF]' onClick={(e) => { handleLiginClick(e) }}>Log in</button>
-                    <button className='py-[8px] px-[12px] text-[#1B1600] text-[14px] font-semibold rounded-[8px] bg-gradient-to-bl from-[#FDD01F] via-[#FDD320] to-[#F8861B]' onClick={(e) => { handleClick(e) }}>Sign up</button>
+                    <button className='py-[8px] px-[12px] text-[#FFFFFF] hover:text-[#000] text-[14px] font-semibold rounded-[8px] bg-transparent hover:bg-[#E2E8FFBF]' onClick={(e) => { handleFeatureClick() }}>Log in</button>
+                    <button className='py-[8px] px-[12px] text-[#1B1600] text-[14px] font-semibold rounded-[8px] bg-gradient-to-bl from-[#FDD01F] via-[#FDD320] to-[#F8861B]' onClick={(e) => { handleFeatureClick() }}>Sign up</button>
                 </div>
             </div>
         </div>
